@@ -1,8 +1,9 @@
 #include "geral.h"
 
-int main(int argc, char argv)
+int main(int argc, char argv[])
 {
-    argv = arrayToInteger(argc, argv);
+    int array_Parametros[5];
+    arrayToInteger(array_Parametros, argc, argv);
     FILE *arquivo_Binario = criarArquivo(argv[1], argv[2], argv[3]);
     int itens_Pagina = defineItensPagina(argv[2]);
 
@@ -34,9 +35,9 @@ int buscarPagina(int *tabela_Indice, int tam_Tabela, int tipo_Ordenacao, int cha
 
 void montarTabela(FILE *arquivo, int *tabela_Indice, int itens_Pagina)
 {
-    registro aux[itens_Pagina];
+    Registro aux[itens_Pagina];
 
-    for (int i = 0; fread(&aux, sizeof(registro), itens_Pagina, arquivo); i++)
+    for (int i = 0; fread(&aux, sizeof(Registro), itens_Pagina, arquivo); i++)
         tabela_Indice[i] = aux[0].chave;
 }
 

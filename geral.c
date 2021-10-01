@@ -5,18 +5,17 @@
 //argv[3] = Situação
 //argv[4] = chave
 //argv[5] = [P] -> printf chaves dos registros
-int **arrayToInteger(int argc, char *argv[])
+
+void arrayToInteger(int *array_Parametros, int argc, char *argv[])
 {
     for (int i = 1; i < 5; i++)
-        argv[i] = atoi(argv[i]);
-
-    return argv;
+        array_Parametros[i] = atoi(argv[i]);
 }
 
 FILE *criarArquivo(int metodo_Pesquisa, int nro_Registros, int tipo_Ordenacao)
 {
     FILE *arquivo_Binario;
-    registro aux;
+    Registro aux;
 
     arquivo_Binario = fopen("arquivo_binario.bin", "wb");
     if (!arquivo_Binario)
@@ -39,20 +38,22 @@ FILE *criarArquivo(int metodo_Pesquisa, int nro_Registros, int tipo_Ordenacao)
         for (int i = 0; i < nro_Registros; i++)
         {
             aux.chave = i + 1;
-            fwrite(&aux, sizeof(registro), 1, arquivo_Binario);
+            fwrite(&aux, sizeof(Registro), 1, arquivo_Binario);
         }
         break;
     case 2: //Ordem Decrescente.
         for (int i = nro_Registros; i > 0; i++)
         {
-            fwrite(&aux, sizeof(registro), 1, arquivo_Binario);
+            fwrite(&aux, sizeof(Registro), 1, arquivo_Binario);
             aux.chave = i - 1;
         }
         break;
-    case 3: //Desordenado.
-        registro *array = (registro *)malloc(nro_Registros * sizeof(registro));
-
+    case 3:; //Desordenado.
+        Registro *array = (Registro *)malloc(nro_Registros * sizeof(Registro));
         srand(time(NULL));
+
+        for (int i = 0; i < nro_Registros; i++)
+            array[i].chave = i + 1;
 
         for (int i = 0; i < nro_Registros; i++)
         {
@@ -62,8 +63,7 @@ FILE *criarArquivo(int metodo_Pesquisa, int nro_Registros, int tipo_Ordenacao)
             array[j] = aux;
         }
 
-        for (int i = 0; i < nro_Registros; i++)
-            fwrite(&array, sizeof(registro), 1, arquivo_Binario);
+        fwrite(&array, sizeof(Registro), nro_Registros, arquivo_Binario);
 
         free(array);
         break;
