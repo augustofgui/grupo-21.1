@@ -12,7 +12,7 @@ typedef struct registro
     int chave;
     long int dado1;
     char dado2[1000];
-    char dado3[500];
+    char dado3[5000];
 } Registro;
 
 FILE *criarArquivo(int metodo_Pesquisa, int nro_Registros, int tipo_Ordenacao);
