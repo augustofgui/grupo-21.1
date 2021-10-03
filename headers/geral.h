@@ -15,9 +15,13 @@ typedef struct registro
     char dado3[5000];
 } Registro;
 
+//Verificação dos parâmetros e adequação char->int
 void verif_Parametros(int argc);
 void array_ToInteger(int argc, char *argv[]);
-FILE *criarArquivo(int metodo_Pesquisa, int nro_Registros, int tipo_Ordenacao);
-void imprimirRegistro(Registro x);
+//Criação do arquivo binário a partir dos parâmetros da execução
+FILE *criar_Arquivo(int metodo_Pesquisa, int nro_Registros, int tipo_Ordenacao);
+//Imprimir resultado
+void imprimir_Registro(Registro x);
+void imprimir_NaoEncontrado();
 
 #endif

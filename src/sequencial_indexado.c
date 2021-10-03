@@ -13,7 +13,7 @@ int sequencial_Indexado(int argc, char argv[])
     //Caso encontrado, imprimir e retornar 1. Se não, retornar 0.
 }
 
-int buscarPagina(int *tabela_Indice, int tam_Tabela, int tipo_Ordenacao, int chave_Buscada)
+int buscar_Pagina(int *tabela_Indice, int tam_Tabela, int tipo_Ordenacao, int chave_Buscada)
 {
     int aux;
 
@@ -34,7 +34,7 @@ int buscarPagina(int *tabela_Indice, int tam_Tabela, int tipo_Ordenacao, int cha
     return -1;
 }
 
-void montarTabela(FILE *arquivo, int *tabela_Indice, int itens_Pagina)
+void montar_Tabela(FILE *arquivo, int *tabela_Indice, int itens_Pagina)
 {
     Registro aux[itens_Pagina];
 
@@ -42,7 +42,7 @@ void montarTabela(FILE *arquivo, int *tabela_Indice, int itens_Pagina)
         tabela_Indice[i] = aux[0].chave;
 }
 
-int defineItensPagina(int nro_Registros)
+int define_ItensPagina(int nro_Registros)
 {
     switch (nro_Registros)
     {

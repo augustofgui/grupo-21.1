@@ -9,31 +9,19 @@ int main(int argc, char *argv[])
     {
     case 1:
         if (!sequencial_Indexado(argc, argv))
-        {
-            printf("Chave buscada não encontrada.\n");
-            exit(1);
-        }
+            imprimir_NaoEncontrado();
         break;
     case 2:
         if (!arvore_Externa(argc, argv))
-        {
-            printf("Chave buscada não encontrada.\n");
-            exit(1);
-        }
+            imprimir_NaoEncontrado();
         break;
     case 3:
         if (!arvore_B(argc, argv))
-        {
-            printf("Chave buscada não encontrada.\n");
-            exit(1);
-        }
+            imprimir_NaoEncontrado();
         break;
     case 4:
         if (!arvore_Bx(argc, argv))
-        {
-            printf("Chave buscada não encontrada.\n");
-            exit(1);
-        }
+            imprimir_NaoEncontrado();
         break;
     default:
         printf("Método de pesquisa externa inválido.\n");

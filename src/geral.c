@@ -22,7 +22,7 @@ void array_ToInteger(int argc, char *argv[])
         argv[i] -= 48;
 }
 
-void imprimirRegistro(Registro x)
+void imprimir_Registro(Registro x)
 {
     printf("Chave do registro: %d\n", x.chave);
     printf("dado1: %ld\n", x.dado1);
@@ -30,7 +30,12 @@ void imprimirRegistro(Registro x)
     printf("dado3: %s\n", x.dado3);
 }
 
-FILE *criarArquivo(int metodo_Pesquisa, int nro_Registros, int tipo_Ordenacao)
+void imprimir_NaoEncontrado()
+{
+    printf("Chave buscada não encontrada no arquivo binário.\n");
+}
+
+FILE *criar_Arquivo(int metodo_Pesquisa, int nro_Registros, int tipo_Ordenacao)
 {
     FILE *arquivo_Binario;
     Registro aux;
