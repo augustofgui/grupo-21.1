@@ -3,13 +3,23 @@
 //argv[1] = Método
 //argv[2] = Quantidade
 //argv[3] = Situação
-//argv[4] = chave
-//argv[5] = [P] -> printf chaves dos registros
+//argv[4] = Chave
+//argv[5] = [-P] -> printf chaves dos registros
 
-void arrayToInteger(int *array_Parametros, int argc, char *argv[])
+void verif_Parametros(int argc)
 {
-    for (int i = 1; i < 5; i++)
-        array_Parametros[i] = atoi(argv[i]);
+    if (argc < 5)
+    {
+        printf("Parâmetros insuficientes para a execução.\n");
+        exit(1);
+    }
+}
+
+//argv[] continuará sendo um array de char, utilizaremos os valores inteiros da tabela ASCII
+void array_ToInteger(int argc, char *argv[])
+{
+    for (int i = 1; i < 6; i++)
+        argv[i] -= 48;
 }
 
 void imprimirRegistro(Registro x)
@@ -72,11 +82,10 @@ FILE *criarArquivo(int metodo_Pesquisa, int nro_Registros, int tipo_Ordenacao)
         }
 
         fwrite(array, sizeof(Registro), nro_Registros, arquivo_Binario);
-
         free(array);
         break;
     }
 
-    printf("Arquivo binário criado! Configurações: %d (método), %d (número de registros), %d (tipo de ordenação).\n", metodo_Pesquisa, nro_Registros, tipo_Ordenacao);
+    printf("Arquivo binário criado com sucesso! Configurações: %d (método), %d (número de registros), %d (tipo de ordenação).\n", metodo_Pesquisa, nro_Registros, tipo_Ordenacao);
     return arquivo_Binario;
 }

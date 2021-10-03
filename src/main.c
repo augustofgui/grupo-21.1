@@ -2,19 +2,38 @@
 
 int main(int argc, char *argv[])
 {
-    switch (atoi(argv[1]))
+    verif_Parametros(argc);
+    array_ToInteger(argc, argv);
+
+    switch (argv[1])
     {
     case 1:
-        sequencial_Indexado(argc, argv);
+        if (!sequencial_Indexado(argc, argv))
+        {
+            printf("Chave buscada não encontrada.\n");
+            exit(1);
+        }
         break;
     case 2:
-        arvore_Externa(argc, argv);
+        if (!arvore_Externa(argc, argv))
+        {
+            printf("Chave buscada não encontrada.\n");
+            exit(1);
+        }
         break;
     case 3:
-        arvore_B(argc, argv);
+        if (!arvore_B(argc, argv))
+        {
+            printf("Chave buscada não encontrada.\n");
+            exit(1);
+        }
         break;
     case 4:
-        arvore_Bx(argc, argv);
+        if (!arvore_Bx(argc, argv))
+        {
+            printf("Chave buscada não encontrada.\n");
+            exit(1);
+        }
         break;
     default:
         printf("Método de pesquisa externa inválido.\n");

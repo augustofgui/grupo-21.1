@@ -15,7 +15,9 @@ typedef struct registro
     char dado3[5000];
 } Registro;
 
+void verif_Parametros(int argc);
+void array_ToInteger(int argc, char *argv[]);
 FILE *criarArquivo(int metodo_Pesquisa, int nro_Registros, int tipo_Ordenacao);
-void arrayToInteger(int *array_Parametros, int argc, char *argv[]);
+void imprimirRegistro(Registro x);
 
 #endif

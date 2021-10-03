@@ -1,16 +1,15 @@
 #include "geral.h"
 
-int sequencial_Indexado(int argc, char argv[])
+int main(int argc, char argv[])
 {
-    FILE *arquivo_Binario = criarArquivo(argv[1], argv[2], argv[3]);
-    int itens_Pagina = defineItensPagina(argv[2]);
-    int tam_Tabela = itens_Pagina / argv[2] + 1;
+    int array_Parametros[5];
+    arrayToInteger(array_Parametros, argc, argv);
+    FILE *arquivo_Binario = criarArquivo(array_Parametros[1], array_Parametros[2], array_Parametros[3]);
+    int itens_Pagina = defineItensPagina(array_Parametros[2]);
+    int tam_Tabela = itens_Pagina / array_Parametros[2] + 1;
     int tabela_Indice[tam_Tabela];
-    int indice_Pagina = buscarPagina(tabela_Indice, tam_Tabela, argv[3], argv[4]);
-    //Buscar página no arquivo de acordo com o índice encontrado.
-    fclose(arquivo_Binario);
-    //Buscar o registro na página em memória principal.
-    //Caso encontrado, imprimir e retornar 1. Se não, retornar 0.
+
+    int indice_Pagina = buscarPagina(tabela_Indice, tam_Tabela, array_Parametros[3], array_Parametros[4]);
 }
 
 int buscarPagina(int *tabela_Indice, int tam_Tabela, int tipo_Ordenacao, int chave_Buscada)
@@ -28,7 +27,6 @@ int buscarPagina(int *tabela_Indice, int tam_Tabela, int tipo_Ordenacao, int cha
         for (aux = tam_Tabela - 1; aux > -1; aux--)
             if (tabela_Indice[aux] < chave_Buscada)
                 return (aux + 1);
-        return (aux + 1);
     }
 
     return -1;
@@ -56,8 +54,5 @@ int defineItensPagina(int nro_Registros)
         return 200;
     case 1000000:
         return 1000;
-    default:
-        printf("Número de registros não condiz com as instruções.\n");
-        exit(1);
     }
 }
