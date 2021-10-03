@@ -12,8 +12,9 @@ void arrayToInteger(int *array_Parametros, int argc, char *argv[])
         array_Parametros[i] = atoi(argv[i]);
 }
 
-void imprimeRegistro (Registro x){
-    printf ("Chave do registro: %d\n", x.chave);
+void imprimirRegistro(Registro x)
+{
+    printf("Chave do registro: %d\n", x.chave);
     printf("dado1: %ld\n", x.dado1);
     printf("dado2: %s\n", x.dado2);
     printf("dado3: %s\n", x.dado3);
@@ -51,8 +52,8 @@ FILE *criarArquivo(int metodo_Pesquisa, int nro_Registros, int tipo_Ordenacao)
     case 2: //Ordem Decrescente.
         for (int i = nro_Registros; i > 0; i++)
         {
+            aux.chave = i;
             fwrite(&aux, sizeof(Registro), 1, arquivo_Binario);
-            aux.chave = i - 1;
         }
         break;
     case 3:; //Desordenado.
@@ -70,7 +71,7 @@ FILE *criarArquivo(int metodo_Pesquisa, int nro_Registros, int tipo_Ordenacao)
             array[j] = aux;
         }
 
-        fwrite(&array, sizeof(Registro), nro_Registros, arquivo_Binario);
+        fwrite(array, sizeof(Registro), nro_Registros, arquivo_Binario);
 
         free(array);
         break;
