@@ -16,6 +16,9 @@ int main(int argc, char *argv[])
     case 4:
         arvore_Bx(argc, argv);
         break;
+    default:
+        printf("Método de pesquisa externa inválido.\n");
+        exit(1);
     }
 
     return 0;
