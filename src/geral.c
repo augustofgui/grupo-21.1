@@ -1,4 +1,4 @@
-#include "geral.h"
+#include "../headers/geral.h"
 
 //argv[1] = Método
 //argv[2] = Quantidade

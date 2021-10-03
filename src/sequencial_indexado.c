@@ -1,4 +1,4 @@
-#include "geral.h"
+#include "../headers/geral.h"
 
 int sequencial_Indexado(int argc, char argv[])
 {
