@@ -1,22 +1,10 @@
-#include "geral.h"
+#include <stdio.h>
 
-int main(int argc, char *argv[])
-{
-    switch (atoi(argv[1]))
-    {
-    case 1:
-        sequencial_Indexado(argc, argv);
-        break;
-    case 2:
-        arvore_Externa(argc, argv);
-        break;
-    case 3:
-        arvore_B(argc, argv);
-        break;
-    case 4:
-        arvore_Bx(argc, argv);
-        breal;
-    }
+int main( int argc, char * argv[] ){
+
+    int i;
+    for( i = 0; i < argc; i++)
+        printf("%s\n", argv[i]);
 
     return 0;
 }

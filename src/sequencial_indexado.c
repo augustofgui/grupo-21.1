@@ -1,6 +1,6 @@
 #include "geral.h"
 
-int sequencial_Indexado(int argc, char argv[])
+int main(int argc, char argv[])
 {
     int array_Parametros[5];
     arrayToInteger(array_Parametros, argc, argv);
