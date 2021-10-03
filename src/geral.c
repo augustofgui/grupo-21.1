@@ -12,6 +12,13 @@ void arrayToInteger(int *array_Parametros, int argc, char *argv[])
         array_Parametros[i] = atoi(argv[i]);
 }
 
+void imprimeRegistro (Registro x){
+    printf ("Chave do registro: %d\n", x.chave);
+    printf("dado1: %ld\n", x.dado1);
+    printf("dado2: %s\n", x.dado2);
+    printf("dado3: %s\n", x.dado3);
+}
+
 FILE *criarArquivo(int metodo_Pesquisa, int nro_Registros, int tipo_Ordenacao)
 {
     FILE *arquivo_Binario;
