@@ -2,10 +2,12 @@
 
 int sequencial_Indexado(FILE *arquivo_Binario, int n_Metodo, int n_Registros, int n_Situacao, int n_Chave, char argv[5])
 {
-    int itens_Pagina = define_itensPagina(n_Registros);
+    int itens_Pagina = SI_defineItensPagina(n_Registros);
     int tam_Tabela = (n_Registros / itens_Pagina) + 1;
     int tabela_Indice[tam_Tabela];
-    int indice_Pagina = buscarIndice(tabela_Indice, tam_Tabela, n_Situacao, n_Chave);
+
+    SI_montar_Tabela(arquivo_Binario, tabela_Indice, itens_Pagina);
+    int indice_Pagina = SI_buscar_Indice(tabela_Indice, tam_Tabela, n_Situacao, n_Chave);
 
     if (indice_Pagina == -1) //Caso toda a tabela de índice tenha sido percorrida e a chave seja maior que o último item.
         return 0;
@@ -30,7 +32,7 @@ int sequencial_Indexado(FILE *arquivo_Binario, int n_Metodo, int n_Registros, in
     return 0;
 }
 
-int buscar_Indice(int *tabela_Indice, int tam_Tabela, int n_Situacao, int n_Chave)
+int SI_buscar_Indice(int *tabela_Indice, int tam_Tabela, int n_Situacao, int n_Chave)
 {
     int aux;
 
@@ -57,7 +59,7 @@ int buscar_Indice(int *tabela_Indice, int tam_Tabela, int n_Situacao, int n_Chav
     return -1;
 }
 
-void montar_Tabela(FILE *arquivo_Binario, int *tabela_Indice, int itens_Pagina)
+void SI_montar_Tabela(FILE *arquivo_Binario, int *tabela_Indice, int itens_Pagina)
 {
     Registro aux[itens_Pagina];
 
@@ -65,7 +67,7 @@ void montar_Tabela(FILE *arquivo_Binario, int *tabela_Indice, int itens_Pagina)
         tabela_Indice[i] = aux[0].chave;
 }
 
-int define_itensPagina(int n_Registros)
+int SI_defineItensPagina(int n_Registros)
 {
     switch (n_Registros)
     {
