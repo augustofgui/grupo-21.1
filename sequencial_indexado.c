@@ -1,32 +1,29 @@
 #include "geral.h"
 
-int main(int argc, char argv[])
+int sequencial_Indexado(FILE *arquivo_Binario, int n_Metodo, int n_Registros, int n_Situacao, int n_Chave, char argv[5])
 {
-    int array_Parametros[5];
-    arrayToInteger(array_Parametros, argc, argv);
-    FILE *arquivo_Binario = criarArquivo(array_Parametros[1], array_Parametros[2], array_Parametros[3]);
-    int itens_Pagina = defineItensPagina(array_Parametros[2]);
-    int tam_Tabela = itens_Pagina / array_Parametros[2] + 1;
+    int itens_Pagina = defineItensPagina(n_Registros);
+    int tam_Tabela = (n_Registros / itens_Pagina) + 1;
     int tabela_Indice[tam_Tabela];
-
-    int indice_Pagina = buscarPagina(tabela_Indice, tam_Tabela, array_Parametros[3], array_Parametros[4]);
+    int indice_Pagina = buscarPagina(tabela_Indice, tam_Tabela, n_Situacao, n_Chave);
 }
 
-int buscarPagina(int *tabela_Indice, int tam_Tabela, int tipo_Ordenacao, int chave_Buscada)
+int buscarPagina(int *tabela_Indice, int tam_Tabela, int n_Situacao, int n_Chave)
 {
     int aux;
 
-    switch (tipo_Ordenacao)
+    switch (n_Situacao)
     {
     case 1:
         for (aux = 0; aux < tam_Tabela; aux++)
-            if (tabela_Indice[aux] > chave_Buscada)
+            if (tabela_Indice[aux] > n_Chave)
                 return (aux - 1);
         return (aux - 1);
     case 2:
         for (aux = tam_Tabela - 1; aux > -1; aux--)
-            if (tabela_Indice[aux] < chave_Buscada)
+            if (tabela_Indice[aux] < n_Chave)
                 return (aux + 1);
+        return (aux + 1);
     }
 
     return -1;
@@ -40,9 +37,9 @@ void montarTabela(FILE *arquivo, int *tabela_Indice, int itens_Pagina)
         tabela_Indice[i] = aux[0].chave;
 }
 
-int defineItensPagina(int nro_Registros)
+int defineItensPagina(int n_Registros)
 {
-    switch (nro_Registros)
+    switch (n_Registros)
     {
     case 100:
         return 5;
