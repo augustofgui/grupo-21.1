@@ -2,7 +2,7 @@
 #define geral_h
 
 /* ED2 - TP 1 -> https://github.com/augustofgui/ed2-tp1
-    - Augusto Guillarducci (20.1.4012)
+    - Augusto Guilarducci (20.1.4012)
     - Caio Monteiro (20.1.4110)
     - Paulo Correa (20.1.4036)
     - Pedro Lucas Damasceno (20.1.4003)
