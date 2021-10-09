@@ -1,50 +1,75 @@
-#include "../headers/geral.h"
+#include "geral.h"
 
-int sequencial_Indexado(int argc, char argv[])
+int sequencial_Indexado(FILE *arquivo_Binario, int n_Metodo, int n_Registros, int n_Situacao, int n_Chave, char argv[5])
 {
-    FILE *arquivo_Binario = criarArquivo(argv[1], argv[2], argv[3]);
-    int itens_Pagina = defineItensPagina(argv[2]);
-    int tam_Tabela = itens_Pagina / argv[2] + 1;
+    int itens_Pagina = SI_defineItensPagina(n_Registros);
+    int tam_Tabela = (n_Registros / itens_Pagina) + 1;
     int tabela_Indice[tam_Tabela];
-    int indice_Pagina = buscarPagina(tabela_Indice, tam_Tabela, argv[3], argv[4]);
-    //Buscar página no arquivo de acordo com o índice encontrado.
-    fclose(arquivo_Binario);
-    //Buscar o registro na página em memória principal.
-    //Caso encontrado, imprimir e retornar 1. Se não, retornar 0.
+
+    SI_montar_Tabela(arquivo_Binario, tabela_Indice, itens_Pagina);
+    int indice_Pagina = SI_buscar_Indice(tabela_Indice, tam_Tabela, n_Situacao, n_Chave);
+
+    if (indice_Pagina == -1) //Caso toda a tabela de índice tenha sido percorrida e a chave seja maior que o último item.
+        return 0;
+
+    //Leitura da página referente ao indice encontrado na tabela.
+    Registro aux[itens_Pagina];
+    long int desloc_Ponteiro = indice_Pagina * sizeof(Registro);
+    fseek(arquivo_Binario, desloc_Ponteiro, SEEK_SET);
+    fread(&aux, sizeof(Registro), itens_Pagina, arquivo_Binario);
+
+    //Pesquisa sequencial na página lida.
+    for (int i = 0; i < itens_Pagina; i++)
+    {
+        if (aux[i].chave == n_Chave)
+        {
+            print_f("Registro encontrado!\n");
+            imprimir_Registro(aux[i]);
+            return 1;
+        }
+    }
+
+    return 0;
 }
 
-int buscar_Pagina(int *tabela_Indice, int tam_Tabela, int tipo_Ordenacao, int chave_Buscada)
+int SI_buscar_Indice(int *tabela_Indice, int tam_Tabela, int n_Situacao, int n_Chave)
 {
     int aux;
 
-    switch (tipo_Ordenacao)
+    switch (n_Situacao)
     {
     case 1:
         for (aux = 0; aux < tam_Tabela; aux++)
-            if (tabela_Indice[aux] > chave_Buscada)
-                return (aux - 1);
-        return (aux - 1);
+        {
+            if (tabela_Indice[aux] == n_Chave)
+                return tabela_Indice[aux];
+            if (tabela_Indice[aux] > n_Chave)
+                return tabela_Indice[aux - 1];
+        }
     case 2:
-        for (aux = tam_Tabela - 1; aux > -1; aux--)
-            if (tabela_Indice[aux] < chave_Buscada)
-                return (aux + 1);
-        return (aux + 1);
+        for (aux = 0; aux < tam_Tabela; aux++)
+        {
+            if (tabela_Indice[aux] == n_Chave)
+                return tabela_Indice[aux];
+            if (tabela_Indice[aux] < n_Chave)
+                return tabela_Indice[aux - 1];
+        }
     }
 
     return -1;
 }
 
-void montar_Tabela(FILE *arquivo, int *tabela_Indice, int itens_Pagina)
+void SI_montar_Tabela(FILE *arquivo_Binario, int *tabela_Indice, int itens_Pagina)
 {
     Registro aux[itens_Pagina];
 
-    for (int i = 0; fread(&aux, sizeof(Registro), itens_Pagina, arquivo); i++)
+    for (int i = 0; fread(&aux, sizeof(Registro), itens_Pagina, arquivo_Binario); i++)
         tabela_Indice[i] = aux[0].chave;
 }
 
-int define_ItensPagina(int nro_Registros)
+int SI_defineItensPagina(int n_Registros)
 {
-    switch (nro_Registros)
+    switch (n_Registros)
     {
     case 100:
         return 5;
@@ -56,8 +81,5 @@ int define_ItensPagina(int nro_Registros)
         return 200;
     case 1000000:
         return 1000;
-    default:
-        printf("Número de registros não condiz com as instruções.\n");
-        exit(1);
     }
 }
