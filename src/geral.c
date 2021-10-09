@@ -12,7 +12,7 @@ void verif_Parametros(int argc, char *argv[])
 
     aux2 = atoi(argv[1]);
 
-    if (aux2 < 1 || aux2 > 4)
+    if (aux2 != 1 && aux2 != 2 && aux2 != 3 && aux2 != 3)
     {
         printf("Método fornecido não corresponde ao enunciado do trabalho. Por favor, corrija os parâmetros de execução.\n");
         exit(1);
@@ -28,7 +28,7 @@ void verif_Parametros(int argc, char *argv[])
 
     aux1 = atoi(argv[3]);
 
-    if (aux1 < 1 || aux1 > 3)
+    if (aux1 != 1 && aux1 != 2 && aux1 != 3)
     {
         printf("Situação fornecida não corresponde ao enunciado do trabalho. Por favor, corrija os parâmetros de execução.\n");
         exit(1);
