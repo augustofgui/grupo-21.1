@@ -12,7 +12,7 @@ void verif_Parametros(int argc, char *argv[])
 
     aux2 = atoi(argv[1]);
 
-    if (aux2 != 1 && aux2 != 2 && aux2 != 3 && aux2 != 3)
+    if (aux2 != 1 && aux2 != 2 && aux2 != 3 && aux2 != 4)
     {
         printf("Método fornecido não corresponde ao enunciado do trabalho. Por favor, corrija os parâmetros de execução.\n");
         exit(1);
