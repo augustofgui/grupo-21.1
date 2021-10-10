@@ -39,6 +39,8 @@ int SI_buscar_Indice(int *tabela_Indice, int tam_Tabela, int n_Situacao, int n_C
     switch (n_Situacao)
     {
     case 1:
+        if (tabela_Indice[0] > n_Chave)
+            return -1;
         for (aux = 0; aux < tam_Tabela; aux++)
         {
             if (tabela_Indice[aux] == n_Chave)
@@ -48,6 +50,8 @@ int SI_buscar_Indice(int *tabela_Indice, int tam_Tabela, int n_Situacao, int n_C
         }
         break;
     case 2:
+        if (tabela_Indice[0] < n_Chave)
+            return -1;
         for (aux = 0; aux < tam_Tabela; aux++)
         {
             if (tabela_Indice[aux] == n_Chave)
