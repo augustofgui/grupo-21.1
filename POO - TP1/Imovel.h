@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <iomanip>
 
 using namespace std;
 
@@ -41,6 +42,8 @@ public:
     int getNumero();
     int getQuartos();
     int getBanheiros();
+
+    friend ostream &operator<<(ostream &out, const Imovel &);
 };
 
 #endif

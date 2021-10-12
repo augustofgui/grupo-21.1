@@ -26,6 +26,8 @@ public:
     bool getCampoFutebol();
     bool getChurrasqueira();
     bool getPiscina();
+
+    friend ostream &operator<<(ostream &, const Chacara &);
 };
 
 #endif

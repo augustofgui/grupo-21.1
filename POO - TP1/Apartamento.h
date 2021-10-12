@@ -23,6 +23,8 @@ public:
     float getTaxaCondominio();
     bool getElevador();
     bool getSacada();
+
+    friend ostream &operator<<(ostream &, const Apartamento &);
 };
 
 #endif
