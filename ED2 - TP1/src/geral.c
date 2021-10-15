@@ -59,7 +59,7 @@ FILE *criar_Arquivo(int n_Metodo, int n_Registros, int n_Situacao)
     FILE *arquivo_Binario;
     Registro aux;
 
-    arquivo_Binario = fopen("arquivo_binario.bin", "wb");
+    arquivo_Binario = fopen("arquivo_binario.txt", "w+b");
     if (!arquivo_Binario)
     {
         printf("Erro ao criar o arquivo binário de registros.\n");
@@ -78,7 +78,7 @@ FILE *criar_Arquivo(int n_Metodo, int n_Registros, int n_Situacao)
         }
         break;
     case 2: //Ordem Decrescente.
-        for (int i = n_Registros; i > 0; i++)
+        for (int i = n_Registros; i > 0; i--)
         {
             aux.chave = i;
             fwrite(&aux, sizeof(Registro), 1, arquivo_Binario);
@@ -105,5 +105,7 @@ FILE *criar_Arquivo(int n_Metodo, int n_Registros, int n_Situacao)
     }
 
     printf("Arquivo binário criado com sucesso! Configurações: %d (método), %d (número de registros), %d (tipo de ordenação).\n", n_Metodo, n_Registros, n_Situacao);
+    rewind(arquivo_Binario);
     return arquivo_Binario;
 }
+
