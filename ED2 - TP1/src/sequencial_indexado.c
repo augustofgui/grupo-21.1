@@ -1,35 +1,35 @@
-#include "geral.h"
+#include "../headers/sequencial_indexado.h"
 
-int sequencial_Indexado(FILE *arquivo_Binario, int n_Metodo, int n_Registros, int n_Situacao, int n_Chave, char argv[5])
+int sequencial_indexado(FILE *arquivo_binario, int nro_metodo, int nro_registros, int nro_situacao, int nro_chave, char argv[5])
 {
     //Definição do tamanho das páginas e da tabela.
-    int itens_Pagina = SI_defineItensPagina(n_Registros);
-    Registro aux[itens_Pagina];
-    int tam_Tabela = n_Registros / itens_Pagina;
-    int tabela_Indice[tam_Tabela];
+    int itens_pagina = definir_itens_por_pagina(nro_registros);
+    Registro aux[itens_pagina];
+    int tam_tabela = nro_registros / itens_pagina;
+    int tabela_indice[tam_tabela];
 
     //Leitura dos índices da tabela.
-    SI_montar_Tabela(arquivo_Binario, tabela_Indice, itens_Pagina);
+    montar_tabela(arquivo_binario, tabela_indice, itens_pagina);
 
     //Busca sequencial na tabela pela página que pode conter a chave buscada.
-    int indice_Pagina = SI_buscar_Indice(tabela_Indice, tam_Tabela, n_Situacao, n_Chave);
+    int indice_pagina = buscar_indice(tabela_indice, tam_tabela, nro_situacao, nro_chave);
 
     //Chave buscada menor ou maior (em caso de arquivo decrescente) do que o primeiro índice da tabela.
-    if (indice_Pagina == -1)
+    if (indice_pagina == -1)
         return 0;
 
     //Cálculo do deslocamento para leitura da página correspondente ao índice da tabela.
-    long int desloc_Ponteiro = itens_Pagina * indice_Pagina * sizeof(Registro);
-    fseek(arquivo_Binario, desloc_Ponteiro, SEEK_SET);
-    fread(aux, sizeof(Registro), itens_Pagina, arquivo_Binario);
+    long int deslocamento_ponteiro = itens_pagina * indice_pagina * sizeof(Registro);
+    fseek(arquivo_binario, deslocamento_ponteiro, SEEK_SET);
+    fread(aux, sizeof(Registro), itens_pagina, arquivo_binario);
 
     //Pesquisa sequencial na página lida.
-    for (int i = 0; i < itens_Pagina; i++)
+    for (int i = 0; i < itens_pagina; i++)
     {
-        if (aux[i].chave == n_Chave)
+        if (aux[i].chave == nro_chave)
         {
             printf("Registro encontrado!\n");
-            imprimir_Registro(aux[i]);
+            imprimir_registro(aux[i]);
             return 1;
         }
     }
@@ -37,32 +37,32 @@ int sequencial_Indexado(FILE *arquivo_Binario, int n_Metodo, int n_Registros, in
     return 0;
 }
 
-int SI_buscar_Indice(int *tabela_Indice, int tam_Tabela, int n_Situacao, int n_Chave)
+int buscar_indice(int *tabela_indice, int tam_tabela, int nro_situacao, int nro_chave)
 {
     int aux;
 
-    switch (n_Situacao)
+    switch (nro_situacao)
     {
     case 1:
-        if (tabela_Indice[0] > n_Chave)
+        if (tabela_indice[0] > nro_chave)
             return -1;
-        for (aux = 0; aux < tam_Tabela; aux++)
+        for (aux = 0; aux < tam_tabela; aux++)
         {
-            if (tabela_Indice[aux] == n_Chave)
+            if (tabela_indice[aux] == nro_chave)
                 return aux;
-            if (tabela_Indice[aux] > n_Chave)
+            if (tabela_indice[aux] > nro_chave)
                 return aux - 1;
         }
         return aux - 1;
         break;
     case 2:
-        if (tabela_Indice[0] < n_Chave)
+        if (tabela_indice[0] < nro_chave)
             return -1;
-        for (aux = 0; aux < tam_Tabela; aux++)
+        for (aux = 0; aux < tam_tabela; aux++)
         {
-            if (tabela_Indice[aux] == n_Chave)
+            if (tabela_indice[aux] == nro_chave)
                 return aux;
-            if (tabela_Indice[aux] < n_Chave)
+            if (tabela_indice[aux] < nro_chave)
                 return aux - 1;
         }
         return aux - 1;
@@ -72,23 +72,23 @@ int SI_buscar_Indice(int *tabela_Indice, int tam_Tabela, int n_Situacao, int n_C
     return -1;
 }
 
-void SI_montar_Tabela(FILE *arquivo_Binario, int *tabela_Indice, int itens_Pagina)
+void montar_tabela(FILE *arquivo_binario, int *tabela_indice, int itens_pagina)
 {
     int aux;
 
-    for (int i = 0; fread(&aux, sizeof(int), 1, arquivo_Binario); i++)
+    for (int i = 0; fread(&aux, sizeof(int), 1, arquivo_binario); i++)
     {
-        tabela_Indice[i] = aux;
+        tabela_indice[i] = aux;
         //Leitura apenas da chave do primeiro registro de cada página.
-        fseek(arquivo_Binario, (itens_Pagina * sizeof(Registro)) - sizeof(int), SEEK_CUR);
+        fseek(arquivo_binario, (itens_pagina * sizeof(Registro)) - sizeof(int), SEEK_CUR);
     }
 
-    rewind(arquivo_Binario);
+    rewind(arquivo_binario);
 }
 
-int SI_defineItensPagina(int n_Registros)
+int definir_itens_por_pagina(int nro_registros)
 {
-    switch (n_Registros)
+    switch (nro_registros)
     {
     case 100:
         return 5;

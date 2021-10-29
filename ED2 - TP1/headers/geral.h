@@ -22,18 +22,12 @@ typedef struct registro
     char dado3[5000];
 } Registro;
 
-//Métodos de pesquisa
-int sequencial_Indexado(FILE *arquivo_Binario, int n_Metodo, int n_Registros, int n_Situacao, int n_Chave, char argv[5]);
-//Funções dos métodos de pesquisa
-int SI_buscar_Indice(int *tabela_Indice, int tam_Tabela, int n_Situacao, int n_Chave);
-void SI_montar_Tabela(FILE *arquivo_Binario, int *tabela_Indice, int itens_Pagina);
-int SI_defineItensPagina(int n_Registros);
 //Verificação dos parâmetros de execução
-void verif_Parametros(int argc, char *argv[]);
+void verificar_parametros(int argc, char *argv[]);
 //Criação do arquivo binário a partir dos parâmetros
-FILE *criar_Arquivo(int n_Metodo, int n_Registros, int n_Situacao);
+FILE criar_arquivo(int nro_metodo, int nro_registros, int nro_situacao);
 //Imprimir resultado
-void imprimir_Registro(Registro x);
-void imprimir_NaoEncontrado(int n_Chave);
+void imprimir_registro(Registro x);
+void imprimir_nao_encontrado(int nro_chave);
 
 #endif

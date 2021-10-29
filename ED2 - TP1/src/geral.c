@@ -1,6 +1,6 @@
 #include "../headers/geral.h"
 
-void verif_Parametros(int argc, char *argv[])
+void verificar_parametros(int argc, char *argv[])
 {
     int aux1, aux2;
 
@@ -41,7 +41,7 @@ void verif_Parametros(int argc, char *argv[])
     }
 }
 
-void imprimir_Registro(Registro x)
+void imprimir_registro(Registro x)
 {
     printf("Chave do registro: %d\n", x.chave);
     printf("dado1: %ld\n", x.dado1);
@@ -49,18 +49,18 @@ void imprimir_Registro(Registro x)
     printf("dado3: %s\n", x.dado3);
 }
 
-void imprimir_NaoEncontrado(int n_Chave)
+void imprimir_nao_encontrado(int nro_chave)
 {
-    printf("Chave buscada ( %d ) não encontrada no arquivo binário.\n", n_Chave);
+    printf("Chave buscada ( %d ) não encontrada no arquivo binário.\n", nro_chave);
 }
 
-FILE *criar_Arquivo(int n_Metodo, int n_Registros, int n_Situacao)
+FILE criar_arquivo(int nro_metodo, int nro_registros, int nro_situacao)
 {
-    FILE *arquivo_Binario;
+    FILE *arquivo_binario;
     Registro aux;
 
-    arquivo_Binario = fopen("arquivo_binario.txt", "w+b");
-    if (!arquivo_Binario)
+    arquivo_binario = fopen("arquivo_binario.txt", "w+b");
+    if (!arquivo_binario)
     {
         printf("Erro ao criar o arquivo binário de registros.\n");
         exit(1);
@@ -68,44 +68,43 @@ FILE *criar_Arquivo(int n_Metodo, int n_Registros, int n_Situacao)
 
     printf("Arquivo binário em criação, aguarde...\n");
 
-    switch (n_Situacao)
+    switch (nro_situacao)
     {
     case 1: //Ordem Crescente.
-        for (int i = 0; i < n_Registros; i++)
+        for (int i = 0; i < nro_registros; i++)
         {
             aux.chave = i + 1;
-            fwrite(&aux, sizeof(Registro), 1, arquivo_Binario);
+            fwrite(&aux, sizeof(Registro), 1, arquivo_binario);
         }
         break;
     case 2: //Ordem Decrescente.
-        for (int i = n_Registros; i > 0; i--)
+        for (int i = nro_registros; i > 0; i--)
         {
             aux.chave = i;
-            fwrite(&aux, sizeof(Registro), 1, arquivo_Binario);
+            fwrite(&aux, sizeof(Registro), 1, arquivo_binario);
         }
         break;
-    case 3:; //Desordenado.
-        Registro *array = (Registro *)malloc(n_Registros * sizeof(Registro));
+    case 3:; //Desordenado. ------------> Elaborar um método melhor de desordenação.
+        Registro *array = (Registro *)malloc(nro_registros * sizeof(Registro));
         srand(time(NULL));
 
-        for (int i = 0; i < n_Registros; i++)
+        for (int i = 0; i < nro_registros; i++)
             array[i].chave = i + 1;
 
-        for (int i = 0; i < n_Registros; i++)
+        for (int i = 0; i < nro_registros; i++)
         {
-            int j = rand() % (n_Registros - 1);
+            int j = rand() % (nro_registros - 1);
             aux = array[i];
             array[i] = array[j];
             array[j] = aux;
         }
 
-        fwrite(array, sizeof(Registro), n_Registros, arquivo_Binario);
+        fwrite(array, sizeof(Registro), nro_registros, arquivo_binario);
         free(array);
         break;
     }
 
-    printf("Arquivo binário criado com sucesso! Configurações: %d (método), %d (número de registros), %d (tipo de ordenação).\n", n_Metodo, n_Registros, n_Situacao);
-    rewind(arquivo_Binario);
-    return arquivo_Binario;
+    printf("Arquivo binário criado com sucesso! Configurações: %d (método), %d (número de registros), %d (tipo de ordenação).\n", nro_metodo, nro_registros, nro_situacao);
+    rewind(arquivo_binario);
+    return arquivo_binario;
 }
-
