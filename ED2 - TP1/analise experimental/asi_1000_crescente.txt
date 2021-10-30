@@ -2,7 +2,7 @@ Arquivo binário em criação, aguarde...
 Arquivo binário criado com sucesso! Configurações: 1 (método), 1000 (número de registros), 1 (tipo de ordenação).
 Registro encontrado!
 Nº de comparações: 83
-Nº de transferências: 1
+Nº de transferências: 21
 Chave do registro: 750
 dado1: 0
 dado2:
@@ -13,7 +13,7 @@ Arquivo binário em criação, aguarde...
 Arquivo binário criado com sucesso! Configurações: 1 (método), 1000 (número de registros), 1 (tipo de ordenação).
 Registro encontrado!
 Nº de comparações: 38
-Nº de transferências: 1
+Nº de transferências: 21
 Chave do registro: 321
 dado1: 0
 dado2:
@@ -24,7 +24,7 @@ Arquivo binário em criação, aguarde...
 Arquivo binário criado com sucesso! Configurações: 1 (método), 1000 (número de registros), 1 (tipo de ordenação).
 Registro encontrado!
 Nº de comparações: 45
-Nº de transferências: 1
+Nº de transferências: 21
 Chave do registro: 520
 dado1: 0
 dado2:
@@ -35,7 +35,7 @@ Arquivo binário em criação, aguarde...
 Arquivo binário criado com sucesso! Configurações: 1 (método), 1000 (número de registros), 1 (tipo de ordenação).
 Registro encontrado!
 Nº de comparações: 42
-Nº de transferências: 1
+Nº de transferências: 21
 Chave do registro: 133
 dado1: 0
 dado2:
@@ -46,7 +46,7 @@ Arquivo binário em criação, aguarde...
 Arquivo binário criado com sucesso! Configurações: 1 (método), 1000 (número de registros), 1 (tipo de ordenação).
 Registro encontrado!
 Nº de comparações: 78
-Nº de transferências: 1
+Nº de transferências: 21
 Chave do registro: 937
 dado1: 0
 dado2:
@@ -57,7 +57,7 @@ Arquivo binário em criação, aguarde...
 Arquivo binário criado com sucesso! Configurações: 1 (método), 1000 (número de registros), 1 (tipo de ordenação).
 Registro encontrado!
 Nº de comparações: 53
-Nº de transferências: 1
+Nº de transferências: 21
 Chave do registro: 528
 dado1: 0
 dado2:
@@ -68,7 +68,7 @@ Arquivo binário em criação, aguarde...
 Arquivo binário criado com sucesso! Configurações: 1 (método), 1000 (número de registros), 1 (tipo de ordenação).
 Registro encontrado!
 Nº de comparações: 17
-Nº de transferências: 1
+Nº de transferências: 21
 Chave do registro: 351
 dado1: 0
 dado2:
@@ -79,7 +79,7 @@ Arquivo binário em criação, aguarde...
 Arquivo binário criado com sucesso! Configurações: 1 (método), 1000 (número de registros), 1 (tipo de ordenação).
 Registro encontrado!
 Nº de comparações: 53
-Nº de transferências: 1
+Nº de transferências: 21
 Chave do registro: 864
 dado1: 0
 dado2:
@@ -90,7 +90,7 @@ Arquivo binário em criação, aguarde...
 Arquivo binário criado com sucesso! Configurações: 1 (método), 1000 (número de registros), 1 (tipo de ordenação).
 Registro encontrado!
 Nº de comparações: 20
-Nº de transferências: 1
+Nº de transferências: 21
 Chave do registro: 159
 dado1: 0
 dado2:
@@ -101,7 +101,7 @@ Arquivo binário em criação, aguarde...
 Arquivo binário criado com sucesso! Configurações: 1 (método), 1000 (número de registros), 1 (tipo de ordenação).
 Registro encontrado!
 Nº de comparações: 78
-Nº de transferências: 1
+Nº de transferências: 21
 Chave do registro: 841
 dado1: 0
 dado2: 

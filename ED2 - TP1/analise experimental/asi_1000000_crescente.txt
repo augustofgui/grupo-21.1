@@ -1,6 +1,6 @@
 Registro encontrado!
 Nº de comparações: 706
-Nº de transferências: 1
+Nº de transferências: 2001
 Chave do registro: 75899
 dado1: 0
 dado2:
@@ -9,7 +9,7 @@ Tempo de execução: 0.015625 segundos.
 
 Registro encontrado!
 Nº de comparações: 2561
-Nº de transferências: 1
+Nº de transferências: 2001
 Chave do registro: 623562
 dado1: 0
 dado2:
@@ -18,7 +18,7 @@ Tempo de execução: 0.015625 segundos.
 
 Registro encontrado!
 Nº de comparações: 1694
-Nº de transferências: 1
+Nº de transferências: 2001
 Chave do registro: 331365
 dado1: 0
 dado2:
@@ -27,7 +27,7 @@ Tempo de execução: 0.015625 segundos.
 
 Registro encontrado!
 Nº de comparações: 307
-Nº de transferências: 1
+Nº de transferências: 2001
 Chave do registro: 22214
 dado1: 0
 dado2:
@@ -36,7 +36,7 @@ Tempo de execução: 0.015625 segundos.
 
 Registro encontrado!
 Nº de comparações: 2927
-Nº de transferências: 1
+Nº de transferências: 2001
 Chave do registro: 683688
 dado1: 0
 dado2:
@@ -45,7 +45,7 @@ Tempo de execução: 0.015625 segundos.
 
 Registro encontrado!
 Nº de comparações: 4154
-Nº de transferências: 1
+Nº de transferências: 2001
 Chave do registro: 994671
 dado1: 0
 dado2:
@@ -54,7 +54,7 @@ Tempo de execução: 0.015625 segundos.
 
 Registro encontrado!
 Nº de comparações: 1915
-Nº de transferências: 1
+Nº de transferências: 2001
 Chave do registro: 386864
 dado1: 0
 dado2:
@@ -63,7 +63,7 @@ Tempo de execução: 0.015625 segundos.
 
 Registro encontrado!
 Nº de comparações: 2355
-Nº de transferências: 1
+Nº de transferências: 2001
 Chave do registro: 522760
 dado1: 0
 dado2:
@@ -72,7 +72,7 @@ Tempo de execução: 0.015625 segundos.
 
 Registro encontrado!
 Nº de comparações: 4086
-Nº de transferências: 1
+Nº de transferências: 2001
 Chave do registro: 941317
 dado1: 0
 dado2:
@@ -81,7 +81,7 @@ Tempo de execução: 0.015625 segundos.
 
 Registro encontrado!
 Nº de comparações: 1660
-Nº de transferências: 1
+Nº de transferências: 2001
 Chave do registro: 386111
 dado1: 0
 dado2:
