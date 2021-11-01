@@ -25,7 +25,7 @@ typedef struct registro
 //Verificação dos parâmetros de execução
 void verificar_parametros(int argc, char *argv[]);
 //Criação do arquivo binário a partir dos parâmetros
-FILE criar_arquivo(int nro_metodo, int nro_registros, int nro_situacao);
+FILE *criar_arquivo(int nro_metodo, int nro_registros, int nro_situacao);
 //Imprimir resultado
 void imprimir_registro(Registro x);
 void imprimir_nao_encontrado(int nro_chave);
