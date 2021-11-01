@@ -54,12 +54,12 @@ void imprimir_nao_encontrado(int nro_chave)
     printf("Chave buscada ( %d ) não encontrada no arquivo binário.\n", nro_chave);
 }
 
-FILE criar_arquivo(int nro_metodo, int nro_registros, int nro_situacao)
+FILE *criar_arquivo(int nro_metodo, int nro_registros, int nro_situacao)
 {
     FILE *arquivo_binario;
     Registro aux;
 
-    arquivo_binario = fopen("arquivo_binario.txt", "w+b");
+    arquivo_binario = fopen("arquivo_binario", "w+b");
     if (!arquivo_binario)
     {
         printf("Erro ao criar o arquivo binário de registros.\n");
@@ -84,25 +84,55 @@ FILE criar_arquivo(int nro_metodo, int nro_registros, int nro_situacao)
             fwrite(&aux, sizeof(Registro), 1, arquivo_binario);
         }
         break;
-    case 3:; //Desordenado. ------------> Elaborar um método melhor de desordenação.
-        Registro *array = (Registro *)malloc(nro_registros * sizeof(Registro));
-        srand(time(NULL));
-
-        for (int i = 0; i < nro_registros; i++)
-            array[i].chave = i + 1;
-
+    case 3:; //Desordenado.
         for (int i = 0; i < nro_registros; i++)
         {
-            int j = rand() % (nro_registros - 1);
-            aux = array[i];
-            array[i] = array[j];
-            array[j] = aux;
+            aux.chave = i + 1;
+            fwrite(&aux, sizeof(Registro), 1, arquivo_binario);
         }
 
-        fwrite(array, sizeof(Registro), nro_registros, arquivo_binario);
-        free(array);
+        fseek(arquivo_binario, 0, SEEK_SET);
+
+        
+        
+        int tam_bloco = 0;
+        int max_bloco = nro_registros / 2;
+        int max_end;
+        int num_trocas = rand() % max_bloco;
+        
+        for (int i = 0; i < num_trocas; i++)
+        {
+            tam_bloco = (rand() % nro_registros) + 1;
+            max_end = nro_registros - tam_bloco;
+            int end = ( max_end != 0) ? rand() % max_end : 1;
+            fseek(arquivo_binario, end, SEEK_SET);
+            Registro *bloco = (Registro *)calloc(nro_registros, sizeof(Registro));
+
+            fread(bloco, sizeof(Registro), tam_bloco, arquivo_binario);
+            
+            for (int j = 0; j < tam_bloco; j++)
+            {
+                int troca = rand() % tam_bloco;
+                Registro aux = bloco[j];
+                bloco[j] = bloco[troca];
+                bloco[troca] = aux;
+            }
+            fseek(arquivo_binario, end, SEEK_SET);
+            fwrite(bloco, sizeof(Registro), tam_bloco, arquivo_binario);
+            fseek(arquivo_binario, 0, SEEK_SET);
+            free(bloco);
+        }
+        
         break;
     }
+    Registro aux1;
+    fseek(arquivo_binario, 0, SEEK_SET);
+    for (int i = 0; i < nro_registros; i++)
+    {
+        fread(&aux1, sizeof(Registro), 1, arquivo_binario);
+        printf("%d\n", aux1.chave);
+    }
+    fseek(arquivo_binario, 0, SEEK_SET);
 
     printf("Arquivo binário criado com sucesso! Configurações: %d (método), %d (número de registros), %d (tipo de ordenação).\n", nro_metodo, nro_registros, nro_situacao);
     rewind(arquivo_binario);
