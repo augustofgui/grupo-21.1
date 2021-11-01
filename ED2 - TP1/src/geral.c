@@ -59,7 +59,7 @@ FILE *criar_arquivo(int nro_metodo, int nro_registros, int nro_situacao)
     FILE *arquivo_binario;
     Registro aux;
 
-    arquivo_binario = fopen("arquivo_binario", "w+b");
+    arquivo_binario = fopen("arquivo_binario.bin", "w+b");
     if (!arquivo_binario)
     {
         printf("Erro ao criar o arquivo binário de registros.\n");
