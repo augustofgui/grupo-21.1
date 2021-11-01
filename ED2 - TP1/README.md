@@ -1,6 +1,6 @@
-# Estrutura de Dados 2
-## Trabalho Prático 1
+# Estrutura de Dados 2 - Trabalho Prático 1
 
+### Membros
 ```
 Acesso Sequencial Indexado - Pedro
 Árvore Binária Externa - Paulo
@@ -8,6 +8,7 @@ Acesso Sequencial Indexado - Pedro
 Árvore B* - Augusto
 ```
 
+### Diretivas de compilação
 ```
 gcc geral.c -c
 gcc sequencial_indexado.c -c
