@@ -14,6 +14,7 @@
 #include <math.h>
 #include <time.h>
 #include <stdbool.h>
+#include <ctype.h>
 
 typedef struct registro
 {
@@ -30,5 +31,6 @@ FILE *criar_arquivo(int nro_metodo, int nro_registros, int nro_situacao);
 //Imprimir resultado
 void imprimir_registro(Registro x);
 void imprimir_nao_encontrado(int nro_chave);
+void arquivo_nao_encontrado();
 
 #endif

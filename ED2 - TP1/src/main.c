@@ -15,16 +15,17 @@ int main(int argc, char *argv[])
     int nro_situacao = atoi(argv[3]);
     int nro_chave = atoi(argv[4]);
     bool print_registro = false;
+
     if (argc > 5)
         print_registro = (!strcmp(argv[5], "-P"));
     if (argc > 6)
     {
         arquivo_binario = fopen(argv[6], "r+b");
         if (arquivo_binario == NULL)
-            exit(1);
+            arquivo_nao_encontrado();
     }
-    else
-        arquivo_binario = criar_arquivo(nro_metodo, nro_registros, nro_situacao);
+
+    arquivo_binario = criar_arquivo(nro_metodo, nro_registros, nro_situacao);
 
     switch (nro_metodo)
     {
