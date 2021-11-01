@@ -22,10 +22,15 @@ int main(int argc, char *argv[])
     {
         arquivo_binario = fopen(argv[6], "r+b");
         if (arquivo_binario == NULL)
+        {
+            printf("Arquivo não encontrado.\n");
             arquivo_binario = criar_arquivo(nro_metodo, nro_registros, nro_situacao);
+        }
     }
     else
         arquivo_binario = criar_arquivo(nro_metodo, nro_registros, nro_situacao);
+
+    clock_t t = clock();
 
     switch (nro_metodo)
     {
@@ -34,18 +39,22 @@ int main(int argc, char *argv[])
             imprimir_nao_encontrado(nro_chave);
         break;
     case 2:
-        if (!arvore_externa(arquivo_binario, nro_metodo, nro_registros, nro_situacao, nro_chave, print_registro))
-            imprimir_nao_encontrado(nro_chave);
+        //if (!arvore_externa(arquivo_binario, nro_metodo, nro_registros, nro_situacao, nro_chave, print_registro))
+        imprimir_nao_encontrado(nro_chave);
         break;
     case 3:
-        if (!arvore_b(arquivo_binario, nro_metodo, nro_registros, nro_situacao, nro_chave, print_registro))
-            imprimir_nao_encontrado(nro_chave);
+        //if (!arvore_b(arquivo_binario, nro_metodo, nro_registros, nro_situacao, nro_chave, print_registro))
+        imprimir_nao_encontrado(nro_chave);
         break;
     case 4:
-        if (!arvore_bx(arquivo_binario, nro_metodo, nro_registros, nro_situacao, nro_chave, print_registro))
-            imprimir_nao_encontrado(nro_chave);
+        // if (!arvore_bx(arquivo_binario, nro_metodo, nro_registros, nro_situacao, nro_chave, print_registro))
+        imprimir_nao_encontrado(nro_chave);
         break;
     }
+
+    t = clock() - t;
+    double tempo_execucao = ((double)t) / CLOCKS_PER_SEC; // in seconds
+    printf("Tempo de execução: %f segundos.\n", tempo_execucao);
 
     return 0;
 }
