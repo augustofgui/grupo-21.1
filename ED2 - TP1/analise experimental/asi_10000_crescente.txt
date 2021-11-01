@@ -1,109 +1,82 @@
 Arquivo binário em criação, aguarde...
 Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 1 (tipo de ordenação).
 Registro encontrado!
+Nº de comparações: 116
+Nº de transferências: 101
+Chave do registro: 3051
+dado1: 0
+dado2: 
+dado3: #|���
+Tempo de execução: 0.000000 segundos.
+Registro encontrado!
+Nº de comparações: 35
+Nº de transferências: 101
+Chave do registro: 226
+dado1: 0
+dado2: 
+dado3: #|���
+Tempo de execução: 0.000000 segundos.
+Registro encontrado!
 Nº de comparações: 129
 Nº de transferências: 101
-Chave do registro: 2378
+Chave do registro: 5220
 dado1: 0
-dado2:
-#do3: #|
+dado2: 
+dado3: #|���
 Tempo de execução: 0.000000 segundos.
-
-Arquivo binário em criação, aguarde...
-Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 1 (tipo de ordenação).
 Registro encontrado!
-Nº de comparações: 207
+Nº de comparações: 100
 Nº de transferências: 101
-Chave do registro: 8630
+Chave do registro: 1663
 dado1: 0
-dado2:
-dado3: #|
+dado2: 
+dado3: #|���
 Tempo de execução: 0.000000 segundos.
-
-Arquivo binário em criação, aguarde...
-Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 1 (tipo de ordenação).
 Registro encontrado!
-Nº de comparações: 96
+Nº de comparações: 237
 Nº de transferências: 101
-Chave do registro: 1659
+Chave do registro: 8758
 dado1: 0
-dado2:
-dado3: #|}k
-Tempo de execução: 0.000000 segundos.
-
-Arquivo binário em criação, aguarde...
-Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 1 (tipo de ordenação).
-Registro encontrado!
-Nº de comparações: 112
-Nº de transferências: 101
-Chave do registro: 3243
-dado1: 0
-dado2:
-dado3: #|       
-Tempo de execução: 0.000000 segundos.
-
-Arquivo binário em criação, aguarde...
-Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 1 (tipo de ordenação).
-Registro encontrado!
-Nº de comparações: 142
-Nº de transferências: 101
-Chave do registro: 6017
-dado1: 0
-dado2:
-dado3: #|,
+dado2: 
+dado3: #|���
 Tempo de execução: 0.015625 segundos.
-
-Arquivo binário em criação, aguarde...
-Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 1 (tipo de ordenação).
 Registro encontrado!
-Nº de comparações: 238
+Nº de comparações: 109
 Nº de transferências: 101
-Chave do registro: 7289
+Chave do registro: 1378
 dado1: 0
-dado2:
-dado3: #|n
+dado2: 
+dado3: #|���
 Tempo de execução: 0.000000 segundos.
-
-Arquivo binário em criação, aguarde...
-Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 1 (tipo de ordenação).
 Registro encontrado!
-Nº de comparações: 195
+Nº de comparações: 186
 Nº de transferências: 101
-Chave do registro: 8618
+Chave do registro: 5865
 dado1: 0
-dado2:
-dado3: #|͒
+dado2: 
+dado3: #|���
 Tempo de execução: 0.000000 segundos.
-
-Arquivo binário em criação, aguarde...
-Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 1 (tipo de ordenação).
 Registro encontrado!
-Nº de comparações: 139
+Nº de comparações: 210
 Nº de transferências: 101
-Chave do registro: 3368
+Chave do registro: 9711
 dado1: 0
-dado2:
-dado3: #|W
+dado2: 
+dado3: #|���
 Tempo de execução: 0.000000 segundos.
-
-Arquivo binário em criação, aguarde...
-Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 1 (tipo de ordenação).
 Registro encontrado!
-Nº de comparações: 82
+Nº de comparações: 117
 Nº de transferências: 101
-Chave do registro: 861
+Chave do registro: 4032
 dado1: 0
-dado2:
-dado3: #|
+dado2: 
+dado3: #|���
 Tempo de execução: 0.000000 segundos.
-
-Arquivo binário em criação, aguarde...
-Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 1 (tipo de ordenação).
 Registro encontrado!
-Nº de comparações: 162
+Nº de comparações: 164
 Nº de transferências: 101
-Chave do registro: 6919
+Chave do registro: 3393
 dado1: 0
-dado2:
-dado3: #|+z-
+dado2: 
+dado3: #|���
 Tempo de execução: 0.000000 segundos.

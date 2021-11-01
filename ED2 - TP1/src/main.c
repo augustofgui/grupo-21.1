@@ -1,4 +1,6 @@
 #include "../headers/geral.h"
+#include "../headers/sequencial_indexado.h"
+#include "../headers/arvore_b.h"
 
 int main(int argc, char *argv[])
 {
