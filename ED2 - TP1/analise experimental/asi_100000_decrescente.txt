@@ -1,91 +1,82 @@
 Arquivo binário em criação, aguarde...
 Arquivo binário criado com sucesso! Configurações: 1 (método), 100000 (número de registros), 2 (tipo de ordenação).
 Registro encontrado!
-Nº de comparações: 405
+Nº de comparações: 1034
 Nº de transferências: 501
-Chave do registro: 71089
+Chave do registro: 9674
 dado1: 0
-dado2:
-dado3: #|Kf
-Tempo de execução: 0.015625 segundos.
-
-Registro encontrado!
-Nº de comparações: 223
-Nº de transferências: 501
-Chave do registro: 83547
-dado1: 0
-dado2:
-dado3: #|Kf
-Tempo de execução: 0.015625 segundos.
-
-Registro encontrado!
-Nº de comparações: 196
-Nº de transferências: 501
-Chave do registro: 92484
-dado1: 0
-dado2:
-dado3: #|Kf
-Tempo de execução: 0.015625 segundos.
-
-Registro encontrado!
-Nº de comparações: 560
-Nº de transferências: 501
-Chave do registro: 56084
-dado1: 0
-dado2:
-dado3: #|Kf
-Tempo de execução: 0.015625 segundos.
-
-Registro encontrado!
-Nº de comparações: 354
-Nº de transferências: 501
-Chave do registro: 77476
-dado1: 0
-dado2:
-dado3: #|Kf
+dado2: 
+dado3: #|ϴ�
 Tempo de execução: 0.000000 segundos.
-
 Registro encontrado!
-Nº de comparações: 339
+Nº de comparações: 557
 Nº de transferências: 501
-Chave do registro: 74719
+Chave do registro: 62225
 dado1: 0
-dado2:
-dado3: #|Kf
+dado2: 
+dado3: #|ϴ�
+Tempo de execução: 0.015625 segundos.
+Registro encontrado!
+Nº de comparações: 723
+Nº de transferências: 501
+Chave do registro: 42853
+dado1: 0
+dado2: 
+dado3: #|ϴ�
 Tempo de execução: 0.000000 segundos.
-
 Registro encontrado!
-Nº de comparações: 652
+Nº de comparações: 1075
 Nº de transferências: 501
-Chave do registro: 45102
+Chave do registro: 7851
 dado1: 0
-dado2:
-dado3: #|Kf
-Tempo de execução: 0.015625 segundos.
-
-Registro encontrado!
-Nº de comparações: 731
-Nº de transferências: 501
-Chave do registro: 45617
-dado1: 0
-dado2:
-dado3: #|Kf
+dado2: 
+dado3: #|ϴ�
 Tempo de execução: 0.000000 segundos.
-
 Registro encontrado!
-Nº de comparações: 684
+Nº de comparações: 470
 Nº de transferências: 501
-Chave do registro: 43288
+Chave do registro: 60530
 dado1: 0
-dado2:
-dado3: #|Kf
+dado2: 
+dado3: #|ϴ�
 Tempo de execução: 0.015625 segundos.
-
 Registro encontrado!
-Nº de comparações: 382
+Nº de comparações: 291
 Nº de transferências: 501
-Chave do registro: 73290
+Chave do registro: 84667
 dado1: 0
-dado2:
-dado3: #|Kf
+dado2: 
+dado3: #|ϴ�
+Tempo de execução: 0.000000 segundos.
+Registro encontrado!
+Nº de comparações: 66
+Nº de transferências: 501
+Chave do registro: 94396
+dado1: 0
+dado2: 
+dado3: #|ϴ�
 Tempo de execução: 0.015625 segundos.
+Registro encontrado!
+Nº de comparações: 416
+Nº de transferências: 501
+Chave do registro: 73256
+dado1: 0
+dado2: 
+dado3: #|ϴ�
+Tempo de execução: 0.000000 segundos.
+Registro encontrado!
+Nº de comparações: 893
+Nº de transferências: 501
+Chave do registro: 29021
+dado1: 0
+dado2: 
+dado3: #|ϴ�
+Tempo de execução: 0.000000 segundos.
+Registro encontrado!
+Nº de comparações: 206
+Nº de transferências: 501
+Chave do registro: 87722
+dado1: 0
+dado2: 
+dado3: #|ϴ�
+Tempo de execução: 0.000000 segundos.
