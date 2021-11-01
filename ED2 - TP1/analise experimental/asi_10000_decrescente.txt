@@ -1,82 +1,109 @@
 Arquivo binário em criação, aguarde...
 Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 2 (tipo de ordenação).
-Registro encontrado!
-Nº de comparações: 71
+Registro encontrado!   
+Nº de comparações: 119 
 Nº de transferências: 101
-Chave do registro: 8759
+Chave do registro: 5183
 dado1: 0
-dado2: 
-dado3: #|���
+dado2:
+dado3: #|t
 Tempo de execução: 0.000000 segundos.
+pedropcw@DESKTOP-M1U4SBM:/mnt/d/ED2 - TP1/src$ ./main 1 10000 2 15
+Arquivo binário em criação, aguarde...
+Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 2 (tipo de ordenação).
 Registro encontrado!
-Nº de comparações: 211
+Nº de comparações: 163
 Nº de transferências: 101
-Chave do registro: 1563
+Chave do registro: 4551
 dado1: 0
-dado2: 
-dado3: #|���
+dado2:
+dado3: #|h1
 Tempo de execução: 0.000000 segundos.
+
+Arquivo binário em criação, aguarde...
+Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 2 (tipo de ordenação).
 Registro encontrado!
-Nº de comparações: 87
+Nº de comparações: 133
 Nº de transferências: 101
-Chave do registro: 7959
+Chave do registro: 7815
 dado1: 0
-dado2: 
-dado3: #|���
-Tempo de execução: 0.000000 segundos.
-Registro encontrado!
-Nº de comparações: 235
-Nº de transferências: 101
-Chave do registro: 1735
-dado1: 0
-dado2: 
-dado3: #|���
-Tempo de execução: 0.000000 segundos.
-Registro encontrado!
-Nº de comparações: 198
-Nº de transferências: 101
-Chave do registro: 4418
-dado1: 0
-dado2: 
-dado3: #|���
-Tempo de execução: 0.000000 segundos.
-Registro encontrado!
-Nº de comparações: 79
-Nº de transferências: 101
-Chave do registro: 8653
-dado1: 0
-dado2: 
-dado3: #|���
+dado2:
+dado3: #|d
 Tempo de execução: 0.015625 segundos.
+
+Arquivo binário em criação, aguarde...
+Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 2 (tipo de ordenação).
 Registro encontrado!
-Nº de comparações: 241
+Nº de comparações: 206
 Nº de transferências: 101
-Chave do registro: 3003
+Chave do registro: 4018
 dado1: 0
-dado2: 
-dado3: #|���
+dado2:
+dado3: #|
+
+Arquivo binário em criação, aguarde...
+Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 2 (tipo de ordenação).
+Registro encontrado!
+Nº de comparações: 128
+Nº de transferências: 101
+Chave do registro: 8408
+dado1: 0
+dado2:
+dado3: #|N
 Tempo de execução: 0.000000 segundos.
+
+Arquivo binário em criação, aguarde...
+Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 2 (tipo de ordenação).
 Registro encontrado!
-Nº de comparações: 125
+Nº de comparações: 165
 Nº de transferências: 101
-Chave do registro: 6941
+Chave do registro: 5039
 dado1: 0
-dado2: 
-dado3: #|���
+dado2:
+dado3: #|n
 Tempo de execução: 0.000000 segundos.
+
+Arquivo binário em criação, aguarde...
+Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 2 (tipo de ordenação).
 Registro encontrado!
-Nº de comparações: 116
+Nº de comparações: 206
 Nº de transferências: 101
-Chave do registro: 7930
+Chave do registro: 1372
 dado1: 0
-dado2: 
-dado3: #|���
+dado2:
+dado3: #|Ĕ
 Tempo de execução: 0.000000 segundos.
+
+Arquivo binário em criação, aguarde...
+Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 2 (tipo de ordenação).
 Registro encontrado!
-Nº de comparações: 162
+Nº de comparações: 260
 Nº de transferências: 101
-Chave do registro: 3376
+Chave do registro: 1318
 dado1: 0
-dado2: 
-dado3: #|���
+dado2:
+dado3: #|
+!
+Tempo de execução: 0.000000 segundos.
+
+Arquivo binário em criação, aguarde...
+Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 2 (tipo de ordenação).
+Registro encontrado!
+Nº de comparações: 192
+Nº de transferências: 101
+Chave do registro: 2856
+dado1: 0
+dado2:
+dado3: #|gR|
+Tempo de execução: 0.000000 segundos.
+
+Arquivo binário em criação, aguarde...
+Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 2 (tipo de ordenação).
+Registro encontrado!
+Nº de comparações: 195
+Nº de transferências: 101
+Chave do registro: 2363
+dado1: 0
+dado2:
+dado3: #|̇
 Tempo de execução: 0.000000 segundos.
