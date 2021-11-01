@@ -1,6 +1,8 @@
 #include "../headers/sequencial_indexado.h"
 
-int sequencial_indexado(FILE *arquivo_binario, int nro_metodo, int nro_registros, int nro_situacao, int nro_chave, char argv[5])
+int asi_comparacoes = 0, asi_transferencias = 0;
+
+int sequencial_indexado(FILE *arquivo_binario, int nro_metodo, int nro_registros, int nro_situacao, int nro_chave, bool print_registro)
 {
     //Definição do tamanho das páginas e da tabela.
     int itens_pagina = definir_itens_por_pagina(nro_registros);
@@ -21,15 +23,20 @@ int sequencial_indexado(FILE *arquivo_binario, int nro_metodo, int nro_registros
     //Cálculo do deslocamento para leitura da página correspondente ao índice da tabela.
     long int deslocamento_ponteiro = itens_pagina * indice_pagina * sizeof(Registro);
     fseek(arquivo_binario, deslocamento_ponteiro, SEEK_SET);
+    asi_transferencias++;
     fread(aux, sizeof(Registro), itens_pagina, arquivo_binario);
 
     //Pesquisa sequencial na página lida.
     for (int i = 0; i < itens_pagina; i++)
     {
+        asi_comparacoes++;
         if (aux[i].chave == nro_chave)
         {
             printf("Registro encontrado!\n");
-            imprimir_registro(aux[i]);
+            printf("Nº de transferências: %d\n", asi_transferencias);
+            printf("Nº de comparações: %d\n", asi_comparacoes);
+            if (print_registro)
+                imprimir_registro(aux[i]);
             return 1;
         }
     }
@@ -44,24 +51,30 @@ int buscar_indice(int *tabela_indice, int tam_tabela, int nro_situacao, int nro_
     switch (nro_situacao)
     {
     case 1:
+        asi_comparacoes++;
         if (tabela_indice[0] > nro_chave)
             return -1;
         for (aux = 0; aux < tam_tabela; aux++)
         {
+            asi_comparacoes++;
             if (tabela_indice[aux] == nro_chave)
                 return aux;
+            asi_comparacoes++;
             if (tabela_indice[aux] > nro_chave)
                 return aux - 1;
         }
         return aux - 1;
         break;
     case 2:
+        asi_comparacoes++;
         if (tabela_indice[0] < nro_chave)
             return -1;
         for (aux = 0; aux < tam_tabela; aux++)
         {
+            asi_comparacoes++;
             if (tabela_indice[aux] == nro_chave)
                 return aux;
+            asi_comparacoes++;
             if (tabela_indice[aux] < nro_chave)
                 return aux - 1;
         }
@@ -80,6 +93,7 @@ void montar_tabela(FILE *arquivo_binario, int *tabela_indice, int itens_pagina)
     {
         tabela_indice[i] = aux;
         //Leitura apenas da chave do primeiro registro de cada página.
+        asi_transferencias++;
         fseek(arquivo_binario, (itens_pagina * sizeof(Registro)) - sizeof(int), SEEK_CUR);
     }
 
