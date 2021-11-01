@@ -54,22 +54,6 @@ void imprimir_nao_encontrado(int nro_chave)
     printf("Chave buscada ( %d ) não encontrada no arquivo binário.\n", nro_chave);
 }
 
-void arquivo_nao_encontrado()
-{
-    char resposta;
-    printf("Arquivo não encontrado, gostaria de criar um novo a partir dos parâmetros inseridos (S/N)?\n");
-    while (1)
-    {
-        scanf(" %c", &resposta);
-        resposta = toupper(resposta);
-        if (resposta == 83)
-            return;
-        if (resposta == 78)
-            exit(0);
-        printf("Resposta inválida. Por favor, insira apenas 'S' ou 'N'.\n");
-    }
-}
-
 FILE *criar_arquivo(int nro_metodo, int nro_registros, int nro_situacao)
 {
     FILE *arquivo_binario;

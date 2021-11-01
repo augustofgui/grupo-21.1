@@ -22,10 +22,10 @@ int main(int argc, char *argv[])
     {
         arquivo_binario = fopen(argv[6], "r+b");
         if (arquivo_binario == NULL)
-            arquivo_nao_encontrado();
+            arquivo_binario = criar_arquivo(nro_metodo, nro_registros, nro_situacao);
     }
-
-    arquivo_binario = criar_arquivo(nro_metodo, nro_registros, nro_situacao);
+    else
+        arquivo_binario = criar_arquivo(nro_metodo, nro_registros, nro_situacao);
 
     switch (nro_metodo)
     {
