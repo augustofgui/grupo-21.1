@@ -1,0 +1,82 @@
+Arquivo binário em criação, aguarde...
+Arquivo binário criado com sucesso! Configurações: 1 (método), 10000 (número de registros), 1 (tipo de ordenação).
+Registro encontrado!
+Nº de comparações: 116
+Nº de transferências: 101
+Chave do registro: 3051
+dado1: 0
+dado2: 
+dado3: #|���
+Tempo de execução: 0.000000 segundos.
+Registro encontrado!
+Nº de comparações: 35
+Nº de transferências: 101
+Chave do registro: 226
+dado1: 0
+dado2: 
+dado3: #|���
+Tempo de execução: 0.000000 segundos.
+Registro encontrado!
+Nº de comparações: 129
+Nº de transferências: 101
+Chave do registro: 5220
+dado1: 0
+dado2: 
+dado3: #|���
+Tempo de execução: 0.000000 segundos.
+Registro encontrado!
+Nº de comparações: 100
+Nº de transferências: 101
+Chave do registro: 1663
+dado1: 0
+dado2: 
+dado3: #|���
+Tempo de execução: 0.000000 segundos.
+Registro encontrado!
+Nº de comparações: 237
+Nº de transferências: 101
+Chave do registro: 8758
+dado1: 0
+dado2: 
+dado3: #|���
+Tempo de execução: 0.015625 segundos.
+Registro encontrado!
+Nº de comparações: 109
+Nº de transferências: 101
+Chave do registro: 1378
+dado1: 0
+dado2: 
+dado3: #|���
+Tempo de execução: 0.000000 segundos.
+Registro encontrado!
+Nº de comparações: 186
+Nº de transferências: 101
+Chave do registro: 5865
+dado1: 0
+dado2: 
+dado3: #|���
+Tempo de execução: 0.000000 segundos.
+Registro encontrado!
+Nº de comparações: 210
+Nº de transferências: 101
+Chave do registro: 9711
+dado1: 0
+dado2: 
+dado3: #|���
+Tempo de execução: 0.000000 segundos.
+Registro encontrado!
+Nº de comparações: 117
+Nº de transferências: 101
+Chave do registro: 4032
+dado1: 0
+dado2: 
+dado3: #|���
+Tempo de execução: 0.000000 segundos.
+Registro encontrado!
+Nº de comparações: 164
+Nº de transferências: 101
+Chave do registro: 3393
+dado1: 0
+dado2: 
+dado3: #|���
+Tempo de execução: 0.000000 segundos.
