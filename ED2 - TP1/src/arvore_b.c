@@ -159,12 +159,11 @@ int arvore_b(FILE *arquivo_binario, int nro_metodo, int nro_registros, int nro_s
     int i = 0;
     ab_comparacoes++;
     if (Pesquisa(pesquisa, arv)) { 
-        i++;
         printf("Registro encontrado!\n");
         printf("Nº de transferências: %d\n", ab_transferencias);
         printf("Nº de comparações: %d\n", ab_comparacoes);
         if (print_registro)
-            imprimir_registro(pesquisa[i]);
+            imprimir_registro(*pesquisa);
         return 1; 
     }
    

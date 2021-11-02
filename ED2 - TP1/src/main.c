@@ -4,6 +4,7 @@
 
 int main(int argc, char *argv[])
 {
+    srand(time(NULL));
     verificar_parametros(argc, argv);
     FILE *arquivo_binario;
 
@@ -43,7 +44,7 @@ int main(int argc, char *argv[])
         imprimir_nao_encontrado(nro_chave);
         break;
     case 3:
-        //if (!arvore_b(arquivo_binario, nro_metodo, nro_registros, nro_situacao, nro_chave, print_registro))
+        if (!arvore_b(arquivo_binario, nro_metodo, nro_registros, nro_situacao, nro_chave, print_registro))
         imprimir_nao_encontrado(nro_chave);
         break;
     case 4:
