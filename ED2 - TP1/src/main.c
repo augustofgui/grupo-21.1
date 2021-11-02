@@ -1,7 +1,8 @@
 #include "../headers/geral.h"
 #include "../headers/sequencial_indexado.h"
-#include "../headers/arvore_b.h"
 #include "../headers/arvore_binaria.h"
+#include "../headers/arvore_b.h"
+
 
 int main(int argc, char *argv[])
 {
@@ -42,7 +43,7 @@ int main(int argc, char *argv[])
         break;
     case 2:
         if (!arvore_binaria(arquivo_binario, nro_metodo, nro_registros, nro_situacao, nro_chave, print_registro))
-        imprimir_nao_encontrado(nro_chave);
+            imprimir_nao_encontrado(nro_chave);
         break;
     case 3:
         if (!arvore_b(arquivo_binario, nro_metodo, nro_registros, nro_situacao, nro_chave, print_registro))
