@@ -1,0 +1,46 @@
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 100000 2 31232 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 100000 (n├║mero de registros), 2 (tipo de ordena├º├úo).     
+Registro encontrado!
+N┬║ de compara├º├Áes: 5313605
+Chave do registro: 31232
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+Tempo de execu├º├úo: 3.180000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 100000 2 312 -P .\arquivo_binario.bin
+Registro encontrado!
+N┬║ de transfer├¬ncias: 100001
+N┬║ de compara├º├Áes: 5313620
+Chave do registro: 312
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+Tempo de execu├º├úo: 24.893000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 100000 2 87312 -P .\arquivo_binario.bin
+Registro encontrado!
+N┬║ de transfer├¬ncias: 100001
+N┬║ de compara├º├Áes: 5313620
+Chave do registro: 87312
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+Tempo de execu├º├úo: 38.750000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 100000 2 1234 -P .\arquivo_binario.bin
+Registro encontrado!
+N┬║ de transfer├¬ncias: 100001
+N┬║ de compara├º├Áes: 5313620
+Chave do registro: 1234
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+Tempo de execu├º├úo: 42.691000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 100000 2 91234 -P .\arquivo_binario.bin
+Registro encontrado!
+N┬║ de transfer├¬ncias: 100001
+N┬║ de compara├º├Áes: 5313620
+Chave do registro: 91234
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+Tempo de execu├º├úo: 43.534000 segundos.

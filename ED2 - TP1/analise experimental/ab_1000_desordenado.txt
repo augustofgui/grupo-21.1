@@ -1,0 +1,104 @@
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 3 32 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 3 (tipo de ordena├º├úo).
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 29516
+Chave do registro: 32
+dado1: 0
+dado2:
+dado3:
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 3 134 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 3 (tipo de ordena├º├úo).       
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 28847
+Chave do registro: 134
+dado1: 0
+dado2:
+dado3:
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 3 675 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 3 (tipo de ordena├º├úo).       
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 28875
+Chave do registro: 675
+dado1: 0
+dado2:
+dado3:
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 3 905 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 3 (tipo de ordena├º├úo).       
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 29129
+Chave do registro: 905
+dado1: 0
+dado2:
+dado3:
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 3 5 -P  
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 3 (tipo de ordena├º├úo).       
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 29040
+Chave do registro: 5
+dado1: 0
+dado2:
+dado3:
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 3 525 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 3 (tipo de ordena├º├úo).       
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 28844
+Chave do registro: 525
+dado1: 0
+dado2:
+dado3:
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 3 125 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 3 (tipo de ordena├º├úo).       
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 29259
+Chave do registro: 125
+dado1: 0
+dado2:
+dado3:
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 3 87 -P 
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 3 (tipo de ordena├º├úo).       
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 29314
+Chave do registro: 87
+dado1: 0
+dado2:
+dado3:
+Tempo de execu├º├úo: 0.074000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 3 187 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 3 (tipo de ordena├º├úo).       
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 29104
+Chave do registro: 187
+dado1: 0
+dado2:
+dado3:
+Tempo de execu├º├úo: 0.072000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 3 117 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 3 (tipo de ordena├º├úo).
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 29248
+Chave do registro: 117
+dado1: 0
+dado2:
+dado3:
+Tempo de execu├º├úo: 0.074000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> 
