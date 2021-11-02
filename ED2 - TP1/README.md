@@ -12,11 +12,11 @@ Acesso Sequencial Indexado - Pedro
 ```
 gcc geral.c -c
 gcc sequencial_indexado.c -c
-gcc arvore_externa.c -c
+gcc arvore_binaria.c -c
 gcc arvore_b.c -c
 gcc arvore_bx.c -c
 gcc main.c -c
-gcc geral.o sequencial_indexado.o arvore_externa.o arvore_b.o arvore_bx.o main.o -o pesquisa
+gcc geral.o sequencial_indexado.o arvore_binaria.o arvore_b.o arvore_bx.o main.o -o pesquisa
 ```
 
 ### Instruções
