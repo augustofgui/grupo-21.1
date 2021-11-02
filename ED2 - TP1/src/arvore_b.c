@@ -148,18 +148,16 @@ int arvore_b(FILE *arquivo_binario, int nro_metodo, int nro_registros, int nro_s
     Registro *pesquisa = (Registro*) malloc (sizeof(Registro));
     pesquisa->chave = nro_chave;
 
-    if (Pesquisa(pesquisa, arv)) {
-        for (int i = 0; i < (!feof(arquivo_binario)); i++) {
-            ab_comparacoes++;
-            if (Pesquisa(pesquisa, arv)) {
-                printf("Registro encontrado!\n");
-                printf("Nº de inserções: %d\n", ab_insercoes);
-                printf("Nº de comparações: %d\n", ab_comparacoes);
-                if (print_registro)
-                    imprimir_registro(pesquisa[i]);
-            }    return 1;
-        }
-    }    
-    else
-        return 0;
+    for (int i = 0; i < (!feof(arquivo_binario)); i++) {
+        ab_comparacoes++;
+        if (Pesquisa(pesquisa, arv)) {
+            printf("Registro encontrado!\n");
+            printf("Nº de inserções: %d\n", ab_insercoes);
+            printf("Nº de comparações: %d\n", ab_comparacoes);
+            if (print_registro)
+                imprimir_registro(pesquisa[i]);
+            return 1;
+        }   
+    }
+      return 0;  
 }
