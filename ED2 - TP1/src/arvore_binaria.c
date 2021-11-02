@@ -22,10 +22,12 @@ int TArvore_Insere (TNo **pRaiz , int x){
         arvore_binaria_comparacoes++;
         if (x<(*pAux)->item)
             pAux = &((*pAux)->pEsq);
-        arvore_binaria_comparacoes++;
-        if (x>(*pAux)->item)
-            pAux = &((*pAux)->pDir);
-        else return 0;
+        else {
+            arvore_binaria_comparacoes++;
+            if (x>(*pAux)->item)
+                pAux = &((*pAux)->pDir);
+            else return 0;
+        }
     }
     *pAux = TNo_Cria(x);
     return 1;
@@ -108,6 +110,8 @@ gcc arvore_b.c -c
 gcc main.c -c
 gcc geral.o sequencial_indexado.o arvore_binaria.o arvore_b.o main.o -o pesquisa
 .\pesquisa.exe 2 100 1 10 -P
+.\pesquisa.exe 2 100 2 10 -P
+.\pesquisa.exe 2 100 3 10 -P
 cd ..
 .\pesquisa.exe 2 100 1 10 -P
 */
