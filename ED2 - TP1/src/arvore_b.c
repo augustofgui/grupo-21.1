@@ -1,38 +1,42 @@
 #include "../headers/arvore_b.h"
 
-int ab_comparacoes = 0, ab_insercoes = 0;
+int ab_comparacoes = 0, ab_transferencias = 0;
 
 void Inicializa(Apontador Arvore) {
     Arvore = NULL;
 }
 
-int Pesquisa (Registro *x, Apontador Ap){
+int Pesquisa (Registro *x, Apontador Ap) {
     long i = 1;
+    ab_comparacoes++;
     if (Ap == NULL){
         //printf ("Não existe\n");
         return 0;
     }
     while (i < Ap->n && x->chave > Ap->r[i-1].chave) i++;
-
+    ab_comparacoes++;
     if (x->chave == Ap->r[i-1].chave){
         *x = Ap->r[i-1];
         return 1;
     }
-
-    if (x->chave < Ap->r[i-1].chave)
+    ab_comparacoes++;
+    if (x->chave < Ap->r[i-1].chave) {
         return Pesquisa (x, Ap->p[i-1]);
-    else   
+    }    
+    else {
         return Pesquisa (x, Ap->p[i]);
-
+    }
     return 0;    
 }
 
 void Imprime(Apontador arvore) {
     int i = 0;
+    ab_comparacoes++;
     if (arvore == NULL)
         return;
     while (i <= arvore->n) {
         Imprime(arvore->p[i]);
+        ab_comparacoes++;
         if (i != arvore->n)
             printf("'%d' \n", arvore->r[i].chave);
         i++;
@@ -43,9 +47,11 @@ void Imprime(Apontador arvore) {
 void InsereNaPagina (Apontador Ap, Registro Reg, Apontador ApDir){
     short naoAchou;
     int k = Ap->n;
+    ab_comparacoes++;
     if (k>0)
         naoAchou = 1;
     while (naoAchou){
+        ab_comparacoes++;
         if (Reg.chave >= Ap->r[k-1].chave) {
             naoAchou = 0;
             break;
@@ -53,6 +59,7 @@ void InsereNaPagina (Apontador Ap, Registro Reg, Apontador ApDir){
         Ap->r[k] = Ap->r[k-1];
         Ap->p[k+1] = Ap->p[k];
         k--;
+        ab_comparacoes++;
         if(k < 1) naoAchou = 0;
     }
     Ap->r[k] = Reg;
@@ -63,7 +70,7 @@ void InsereNaPagina (Apontador Ap, Registro Reg, Apontador ApDir){
 void Ins (Registro Reg, Apontador Ap, short *Cresceu, Registro *RegRetorno, Apontador *ApRetorno){
     long i = 1; long j;
     Apontador ApTemp;
-
+    ab_comparacoes++;
     if (Ap == NULL) {
         *Cresceu = 1;
         (*RegRetorno) = Reg;
@@ -72,20 +79,21 @@ void Ins (Registro Reg, Apontador Ap, short *Cresceu, Registro *RegRetorno, Apon
     }
 
     while (i < Ap->n && Reg.chave > Ap->r[i-1].chave) i++;
-
+    ab_comparacoes++;
     if (Reg.chave == Ap->r[i-1].chave) {
         //printf ("Já existe essa chave no local...\n");
         *Cresceu = 0;
         return;
     }
-
+    ab_comparacoes++;
     if (Reg.chave < Ap->r[i-1].chave) i--;
     
     Ins(Reg, Ap->p[i], Cresceu, RegRetorno, ApRetorno);
-
+    ab_comparacoes++;
     if(!*Cresceu) return;
 
     // A página tem espaço.
+    ab_comparacoes++;
     if (Ap->n < MM){
         InsereNaPagina (Ap, *RegRetorno, *ApRetorno);
         *Cresceu = 0;
@@ -95,7 +103,7 @@ void Ins (Registro Reg, Apontador Ap, short *Cresceu, Registro *RegRetorno, Apon
     ApTemp = (Apontador)malloc(sizeof(Pagina));
     ApTemp->n = 0;
     ApTemp->p[0] = NULL;
-
+    ab_comparacoes++;
     if (i < M+1){
         InsereNaPagina(ApTemp, Ap->r[MM-1], Ap->p[MM]);
         Ap->n --;
@@ -120,7 +128,7 @@ void Insere (Registro Reg, Apontador *Ap) {
     Pagina *ApRetorno, *ApTemp;
 
     Ins (Reg, *Ap, &Cresceu, &RegRetorno, &ApRetorno);
-
+    ab_comparacoes++;
     if (Cresceu){ // Verifica se ocorreu o crescimento da árvore
         ApTemp = (Pagina *) malloc (sizeof(Pagina));
         ApTemp->n = 1;
@@ -140,24 +148,25 @@ int arvore_b(FILE *arquivo_binario, int nro_metodo, int nro_registros, int nro_s
     Registro *reg = (Registro*) malloc (sizeof(Registro));
     
     while (!feof(arquivo_binario)) {
+        ab_transferencias++;
         fread(reg, sizeof(Registro), 1, arquivo_binario);
         Insere(*reg, &arv);
-        ab_insercoes++;
     }
     
     Registro *pesquisa = (Registro*) malloc (sizeof(Registro));
     pesquisa->chave = nro_chave;
 
-    for (int i = 0; i < (!feof(arquivo_binario)); i++) {
-        ab_comparacoes++;
-        if (Pesquisa(pesquisa, arv)) {
-            printf("Registro encontrado!\n");
-            printf("Nº de inserções: %d\n", ab_insercoes);
-            printf("Nº de comparações: %d\n", ab_comparacoes);
-            if (print_registro)
-                imprimir_registro(pesquisa[i]);
-            return 1;
-        }   
+    int i = 0;
+    ab_comparacoes++;
+    if (Pesquisa(pesquisa, arv)) { 
+        i++;
+        printf("Registro encontrado!\n");
+        printf("Nº de transferências: %d\n", ab_transferencias);
+        printf("Nº de comparações: %d\n", ab_comparacoes);
+        if (print_registro)
+            imprimir_registro(pesquisa[i]);
+        return 1; 
     }
-      return 0;  
+   
+    return 0; 
 }
