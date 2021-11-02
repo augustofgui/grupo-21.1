@@ -7,6 +7,7 @@ void TArvore_Inicia (TNo **pRaiz){
 }
 
 void TArvore_Insere_Raiz (TNo **pRaiz , int x){
+    ab_comparacoes++;
     if (*pRaiz==NULL) {
         *pRaiz = TNo_Cria(x);
         return;
@@ -19,12 +20,12 @@ int TArvore_Insere (TNo **pRaiz , int x){
     pAux = pRaiz;
 
     while (*pAux!=NULL) {
+        ab_comparacoes++;
         if (x<(*pAux)->item)
             pAux = &((*pAux)->pEsq);
-        else if (x>(*pAux)->item)
+        ab_comparacoes++;
+        if (x>(*pAux)->item)
             pAux = &((*pAux)->pDir);
-        else
-            return 0;
     }
     *pAux = TNo_Cria(x);
     return 1;
@@ -39,6 +40,7 @@ TNo *TNo_Cria (int x){
 }
 
 void Infixa(TNo *p){
+    ab_comparacoes++;
     if (p == NULL )
         return ;
     Infixa(p->pEsq);
@@ -51,8 +53,10 @@ int Buscar (TNo *pRaiz, Registro *x){
 	if (pRaiz == NULL)
 		return 0;
     ab_comparacoes++;
-	if (x->chave == pRaiz->item)
+	if (x->chave == pRaiz->item){
+        x->chave=pRaiz->item;
 		return 1;
+    }
     ab_comparacoes++;
 	if (x->chave < pRaiz->item)
 		return Buscar(pRaiz->pEsq, x);
