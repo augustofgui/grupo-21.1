@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
     switch (nro_metodo)
     {
     case 1:
-        if (!sequencial_indexado(arquivo_binario, nro_metodo, nro_registros, nro_situacao, nro_chave, print_registro))
+        if (!sequencial_indexado(arquivo_binario, nro_registros, nro_situacao, nro_chave, print_registro))
             imprimir_nao_encontrado(nro_chave);
         break;
     case 2:
@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
             imprimir_nao_encontrado(nro_chave);
         break;
     case 3:
-        if (!arvore_b(arquivo_binario, nro_metodo, nro_registros, nro_situacao, nro_chave, print_registro))
+        if (!arvore_b(arquivo_binario, nro_chave, print_registro))
         imprimir_nao_encontrado(nro_chave);
         break;
     case 4:

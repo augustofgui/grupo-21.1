@@ -11,10 +11,9 @@ typedef struct Pagina {
     Apontador p[MM + 1];
 } Pagina;
 
-void Inicializa(Apontador Arvore);
 int Pesquisa (Registro *x, Apontador Ap);
 void Imprime(Apontador arvore);
 void InsereNaPagina(Apontador Ap, Registro Reg, Apontador ApDir);
 void Ins(Registro Reg, Apontador Ap, short *Cresceu, Registro *RegRetorno, Apontador *ApRetorno);
 void Insere (Registro Reg, Apontador *Ap);
-int arvore_b(FILE *arquivo_binario, int nro_metodo, int nro_registros, int nro_situacao, int nro_chave, bool print_registro);
+int arvore_b(FILE *arquivo_binario, int nro_chave, bool print_registro);

@@ -2,10 +2,6 @@
 
 int ab_comparacoes = 0, ab_transferencias = 0;
 
-void Inicializa(Apontador Arvore) {
-    Arvore = NULL;
-}
-
 int Pesquisa (Registro *x, Apontador Ap) {
     long i = 1;
     ab_comparacoes++;
@@ -139,11 +135,10 @@ void Insere (Registro Reg, Apontador *Ap) {
     }
 }
 
-int arvore_b(FILE *arquivo_binario, int nro_metodo, int nro_registros, int nro_situacao, int nro_chave,bool print_registro) {
+int arvore_b(FILE *arquivo_binario, int nro_chave,bool print_registro) {
     rewind(arquivo_binario);
     
-    Apontador arv;
-    Inicializa(arv);
+    Apontador arv = NULL;
 
     Registro *reg = (Registro*) malloc (sizeof(Registro));
     
@@ -156,7 +151,6 @@ int arvore_b(FILE *arquivo_binario, int nro_metodo, int nro_registros, int nro_s
     Registro *pesquisa = (Registro*) malloc (sizeof(Registro));
     pesquisa->chave = nro_chave;
 
-    int i = 0;
     ab_comparacoes++;
     if (Pesquisa(pesquisa, arv)) { 
         printf("Registro encontrado!\n");

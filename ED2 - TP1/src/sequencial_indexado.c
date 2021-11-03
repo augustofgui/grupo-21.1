@@ -2,7 +2,7 @@
 
 int asi_comparacoes = 0, asi_transferencias = 0;
 
-int sequencial_indexado(FILE *arquivo_binario, int nro_metodo, int nro_registros, int nro_situacao, int nro_chave, bool print_registro)
+int sequencial_indexado(FILE *arquivo_binario, int nro_registros, int nro_situacao, int nro_chave, bool print_registro)
 {
     //Definição do tamanho das páginas e da tabela.
     int itens_pagina = definir_itens_por_pagina(nro_registros);

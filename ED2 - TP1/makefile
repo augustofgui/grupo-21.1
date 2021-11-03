@@ -15,6 +15,7 @@ CC=gcc
 # Flags for compiler
 CC_FLAGS=-c         \
          -W         \
+         -Wextra    \
          -Wall      
 
 # Command used at clean target
