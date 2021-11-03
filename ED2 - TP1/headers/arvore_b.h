@@ -3,16 +3,18 @@
 #define MM 4
 #define M 2
 
-typedef struct TipoPagina *TipoApontador;
-typedef struct TipoPagina
-{
+typedef struct Pagina *Apontador;
+
+typedef struct Pagina {
     short n;
     Registro r[MM];
-    TipoApontador p[MM + 1];
-} TipoPagina;
+    Apontador p[MM + 1];
+} Pagina;
 
-void Inicializa(TipoApontador Arvore);
-void Imprime(TipoApontador arvore);
-void InsereNaPagina(TipoApontador Ap, Registro Reg, TipoApontador ApDir);
-void Ins(Registro Reg, TipoApontador Ap, short *Cresceu, Registro *RegRetorno, TipoApontador *ApRetorno);
-void Insere(Registro Reg, TipoApontador *Ap);
+void Inicializa(Apontador Arvore);
+int Pesquisa (Registro *x, Apontador Ap);
+void Imprime(Apontador arvore);
+void InsereNaPagina(Apontador Ap, Registro Reg, Apontador ApDir);
+void Ins(Registro Reg, Apontador Ap, short *Cresceu, Registro *RegRetorno, Apontador *ApRetorno);
+void Insere (Registro Reg, Apontador *Ap);
+int arvore_b(FILE *arquivo_binario, int nro_metodo, int nro_registros, int nro_situacao, int nro_chave, bool print_registro);
