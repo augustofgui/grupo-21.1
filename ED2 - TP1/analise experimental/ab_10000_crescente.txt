@@ -1,0 +1,88 @@
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 10000 1 1107 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 10000 (n├║mero de registros), 1 (tipo de ordena├º├úo).
+Registro encontrado!
+N┬║ de transfer├¬ncias: 10001
+N┬║ de compara├º├Áes: 373742
+Chave do registro: 1107
+dado1: 2147483646
+dado3: ↑Ùa
+Tempo de execu├º├úo: 0.265000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 10000 1 9107 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 10000 (n├║mero de registros), 1 (tipo de ordena├º├úo).      
+Registro encontrado!
+N┬║ de transfer├¬ncias: 10001
+N┬║ de compara├º├Áes: 373751
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+Tempo de execu├º├úo: 0.364000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 10000 1 107 -P .\arquivo_binario.bin 
+Registro encontrado!
+N┬║ de transfer├¬ncias: 10001
+N┬║ de compara├º├Áes: 373751
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+Tempo de execu├º├úo: 0.418000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 10000 1 9087 -P .\arquivo_binario.bin
+Registro encontrado!
+N┬║ de transfer├¬ncias: 10001
+N┬║ de compara├º├Áes: 373748
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+Tempo de execu├º├úo: 0.337000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 10000 1 5087 -P .\arquivo_binario.bin
+Registro encontrado!
+N┬║ de transfer├¬ncias: 10001
+N┬║ de compara├º├Áes: 373751
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+Tempo de execu├º├úo: 0.293000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 10000 1 1087 -P .\arquivo_binario.bin
+Registro encontrado!
+N┬║ de transfer├¬ncias: 10001
+N┬║ de compara├º├Áes: 373751
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+Tempo de execu├º├úo: 0.322000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 10000 1 87 -P .\arquivo_binario.bin  
+Registro encontrado!
+N┬║ de transfer├¬ncias: 10001
+N┬║ de compara├º├Áes: 373748
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+Tempo de execu├º├úo: 0.346000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 10000 1 1787 -P .\arquivo_binario.bin
+Registro encontrado!
+N┬║ de transfer├¬ncias: 10001
+N┬║ de compara├º├Áes: 373751
+Chave do registro: 1787
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+Tempo de execu├º├úo: 0.332000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 10000 1 8000 -P .\arquivo_binario.bin
+Registro encontrado!
+N┬║ de transfer├¬ncias: 10001
+N┬║ de compara├º├Áes: 373751
+Chave do registro: 8000
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+Tempo de execu├º├úo: 0.341000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 10000 1 3000 -P .\arquivo_binario.bin
+Registro encontrado!
+N┬║ de transfer├¬ncias: 10001
+N┬║ de compara├º├Áes: 373748
+Chave do registro: 3000
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+Tempo de execu├º├úo: 0.297000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> 

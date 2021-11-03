@@ -1,0 +1,104 @@
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 1 200 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 1 (tipo de ordena├º├úo).
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 29087
+Chave do registro: 200
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 1 100 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 1 (tipo de ordena├º├úo).       
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 29087
+Chave do registro: 100
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 1 24 -P 
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 1 (tipo de ordena├º├úo).       
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 29084
+Chave do registro: 24
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 1 724 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 1 (tipo de ordena├º├úo).       
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 29087
+Chave do registro: 724
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 1 999 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 1 (tipo de ordena├º├úo).       
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 29087
+Chave do registro: 999
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 1 124 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 1 (tipo de ordena├º├úo).       
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 29087
+Chave do registro: 124
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 1 4 -P  
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 1 (tipo de ordena├º├úo).       
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 29087
+Chave do registro: 4
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 1 99 -P 
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 1 (tipo de ordena├º├úo).       
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 29081
+Chave do registro: 99
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+Tempo de execu├º├úo: 0.078000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 1 89 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 1 (tipo de ordena├º├úo).       
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 29087
+Chave do registro: 89
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+Tempo de execu├º├úo: 0.074000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> ./main 3 1000 1 1 -P 
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 3 (m├®todo), 1000 (n├║mero de registros), 1 (tipo de ordena├º├úo).
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 29087
+Chave do registro: 1
+dado1: 2147483646
+dado2: ,Ùa
+dado3: ↑Ùa
+Tempo de execu├º├úo: 0.076000 segundos.
+PS C:\Users\cainh\OneDrive\Área de Trabalho\grupo-21.1\ED2 - TP1\src> 
