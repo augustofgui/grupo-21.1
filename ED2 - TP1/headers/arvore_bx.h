@@ -32,6 +32,6 @@ int ins_interna_bx( Registro registro, ApontadorBX raiz, int * bx_comparacoes, R
 int ins_externa_bx( Registro registro, ApontadorBX raiz, int * bx_comparacoes, Registro * reg_out, ApontadorBX * pag_out);
 void insere_pagina_bx(Registro registro, ApontadorBX pagina, ApontadorBX aux, int * bx_comparacoes);
 int ins_bx( Registro registro, ApontadorBX raiz, int * bx_comparacoes, Registro * reg_out, ApontadorBX * pag_out);
-int arvore_bx(FILE * arquivo_binario, int nro_metodo, int nro_registros, int nro_situacao, int nro_chave, bool print_registro);
+int arvore_bx(FILE * arquivo_binario, int nro_chave, bool print_registro);
 
 #endif

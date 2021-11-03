@@ -197,7 +197,7 @@ int ins_bx( Registro registro, ApontadorBX raiz, int * bx_comparacoes, Registro 
         return ins_interna_bx(registro, raiz, bx_comparacoes, reg_out, pag_out);
 }
 
-int arvore_bx(FILE * arquivo_binario, int nro_metodo, int nro_registros, int nro_situacao, int nro_chave, bool print_registro){
+int arvore_bx(FILE * arquivo_binario, int nro_chave, bool print_registro){
     rewind(arquivo_binario);
 
     int bx_transferencias = 0;
