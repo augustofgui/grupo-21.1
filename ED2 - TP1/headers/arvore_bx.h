@@ -3,7 +3,8 @@
 
 #include "geral.h"
 
-#define O 4
+#define N 4
+#define NN N*2
 
 typedef enum {Interna, Externa} TipoPaginaBX;
 
@@ -14,13 +15,13 @@ typedef struct PaginaBX{
     union {
         struct { // pagina index
             int ni;
-            int ri[O * 2];
-            ApontadorBX pi[(O * 2) + 1];
+            int ri[NN];
+            ApontadorBX pi[NN + 1];
         } U0;
 
         struct { // folha
             int ne;
-            Registro re[(O * 2) * 2];
+            Registro re[NN];
         } U1;
     } UU;
 } PaginaBX;

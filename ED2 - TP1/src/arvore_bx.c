@@ -28,10 +28,11 @@ int pesquisa_bx(Registro* registro, ApontadorBX pagina, int * bx_comparacoes){
 
 void insere_bx( Registro registro, ApontadorBX * raiz, int * bx_comparacoes ){
     if((*raiz) == NULL ){
-        (*raiz) = (PaginaBX *) malloc(sizeof(PaginaBX));
-        (*raiz)->tipo = Externa;
-        (*raiz)->UU.U1.ne = 1;
-        (*raiz)->UU.U1.re[0] = registro;
+        ApontadorBX pag_temp = (ApontadorBX) malloc(sizeof(PaginaBX));
+        pag_temp->tipo = Externa;
+        pag_temp->UU.U1.ne = 1;
+        pag_temp->UU.U1.re[0] = registro;
+        (*raiz) = pag_temp;
         return;
     }
 
@@ -39,12 +40,12 @@ void insere_bx( Registro registro, ApontadorBX * raiz, int * bx_comparacoes ){
     PaginaBX * pag_out;
 
     if(ins_bx(registro, *raiz, bx_comparacoes, &reg_out, &pag_out)){
-        PaginaBX * pag_temp = (PaginaBX*) malloc(sizeof(PaginaBX));
+        ApontadorBX pag_temp = (ApontadorBX) malloc(sizeof(PaginaBX));
         pag_temp->tipo = Interna;
         pag_temp->UU.U0.ni = 1;
         pag_temp->UU.U0.ri[0] = reg_out.chave;
-        pag_temp->UU.U0.pi[0] = (*raiz);
         pag_temp->UU.U0.pi[1] = pag_out;
+        pag_temp->UU.U0.pi[0] = (*raiz);
         (*raiz) = pag_temp;
     }
 
@@ -54,18 +55,18 @@ void insere_bx( Registro registro, ApontadorBX * raiz, int * bx_comparacoes ){
 int ins_interna_bx( Registro registro, ApontadorBX raiz, int * bx_comparacoes, Registro * reg_out, ApontadorBX * pag_out){
     long long i = 1;
     
-    while(i < raiz->UU.U0.ni && registro.chave > raiz->UU.U0.ri[i-1]) i++;
+    while(i < raiz->UU.U0.ni && registro.chave > raiz->UU.U0.ri[i - 1]) i++;
 
     (*bx_comparacoes) += i + 1;
     if(registro.chave == raiz->UU.U0.ri[i - 1]) return 0;    
 
     (*bx_comparacoes)++;
-    if(registro.chave < raiz->UU.U0.ri[i-1]) i--;
+    if(registro.chave < raiz->UU.U0.ri[i - 1]) i--;
     
     
     if(!ins_bx(registro, raiz->UU.U0.pi[i], bx_comparacoes, reg_out, pag_out)) return 0;
     
-    if(raiz->UU.U0.ni < (O * 2)){
+    if(raiz->UU.U0.ni < NN){
         insere_pagina_bx(*reg_out, raiz, *pag_out, bx_comparacoes);
         return 0;
     }
@@ -76,31 +77,31 @@ int ins_interna_bx( Registro registro, ApontadorBX raiz, int * bx_comparacoes, R
     temp->UU.U0.ni = 0;
     temp->UU.U0.pi[0] = NULL;
 
-    if(i < (O + 1)){
-        aux.chave = raiz->UU.U0.ri[(O * 2) - 1];
-        insere_pagina_bx(aux, temp, raiz->UU.U0.pi[O * 2], bx_comparacoes);
+    if(i < (N + 1)){
+        aux.chave = raiz->UU.U0.ri[NN - 1];
+        insere_pagina_bx(aux, temp, raiz->UU.U0.pi[NN], bx_comparacoes);
         raiz->UU.U0.ni--;
         insere_pagina_bx(*reg_out, raiz, *pag_out, bx_comparacoes);
     } else insere_pagina_bx(*reg_out, temp, *pag_out, bx_comparacoes);
     
     long long j;
-    for (j = (O + 2); j <= (O * 2); j++){
+    for (j = (N + 2); j <= NN; j++){
         aux.chave = raiz->UU.U0.ri[j - 1];
         insere_pagina_bx(aux, temp, raiz->UU.U0.pi[j], bx_comparacoes);
     }
 
-    raiz->UU.U0.ni = O;
-    temp->UU.U0.pi[0] = raiz->UU.U0.pi[O + 1];
-    reg_out->chave = raiz->UU.U0.ri[O];
+    raiz->UU.U0.ni = N;
+    temp->UU.U0.pi[0] = raiz->UU.U0.pi[N + 1];
+    reg_out->chave = raiz->UU.U0.ri[N];
     *pag_out = temp;
 
-    return 0;
+    return 1;
 }
 
 int ins_externa_bx( Registro registro, ApontadorBX raiz, int * bx_comparacoes, Registro * reg_out, ApontadorBX * pag_out){
     long long i = 1;
 
-    while(i < raiz->UU.U1.ne && registro.chave > raiz->UU.U1.re[i-1].chave) i++;
+    while(i < raiz->UU.U1.ne && registro.chave > raiz->UU.U1.re[i - 1].chave) i++;
 
     (*bx_comparacoes) += i + 1;
 
@@ -110,9 +111,9 @@ int ins_externa_bx( Registro registro, ApontadorBX raiz, int * bx_comparacoes, R
     if(registro.chave < raiz->UU.U1.re[i - 1].chave) i--;
     
     (*bx_comparacoes)++;
-    if(raiz->UU.U1.ne < ((O * 2) * 2)){
+    if(raiz->UU.U1.ne < NN){
         *reg_out = registro;
-        insere_pagina_bx(*reg_out, raiz, *pag_out, bx_comparacoes);
+        insere_pagina_bx(registro, raiz, *pag_out, bx_comparacoes);
         return 0;
     }
     *reg_out = registro;
@@ -122,18 +123,18 @@ int ins_externa_bx( Registro registro, ApontadorBX raiz, int * bx_comparacoes, R
     temp->tipo = Externa;
     temp->UU.U1.ne = 0;
     
-    if(i < (O + 1)){
-        insere_pagina_bx(raiz->UU.U1.re[((O * 2) * 2) - 1], temp, *pag_out, bx_comparacoes);
+    if(i < (N + 1)){
+        insere_pagina_bx(raiz->UU.U1.re[NN - 1], temp, *pag_out, bx_comparacoes);
         raiz->UU.U1.ne--;
         insere_pagina_bx(*reg_out, raiz, *pag_out, bx_comparacoes);
     } else insere_pagina_bx(*reg_out, temp, *pag_out, bx_comparacoes);
 
     long long j;
-    for (j = 1; j <= O; j++)
-        insere_pagina_bx(raiz->UU.U1.re[((O * 2) * 2) - j], temp, *pag_out, bx_comparacoes);
+    for (j = 1; j <= N; j++)
+        insere_pagina_bx(raiz->UU.U1.re[NN - j], temp, *pag_out, bx_comparacoes);
     
-    raiz->UU.U1.ne = O;
-    *reg_out = raiz->UU.U1.re[O];
+    raiz->UU.U1.ne = N;
+    *reg_out = raiz->UU.U1.re[N];
     *pag_out = temp;
     return 1;
 }
@@ -207,9 +208,8 @@ int arvore_bx(FILE * arquivo_binario, int nro_metodo, int nro_registros, int nro
 
     Registro aux;
     
-    while (!feof(arquivo_binario)) {
+    while (fread(&aux, sizeof(Registro), 1, arquivo_binario)){
         bx_transferencias++;
-        fread(&aux, sizeof(Registro), 1, arquivo_binario);
         insere_bx(aux, &arvore_bx, &bx_comparacoes);
     }
     
