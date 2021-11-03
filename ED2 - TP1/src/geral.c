@@ -74,6 +74,9 @@ FILE *criar_arquivo(int nro_metodo, int nro_registros, int nro_situacao)
         for (int i = 0; i < nro_registros; i++)
         {
             aux.chave = i + 1;
+            aux.dado1 = i + 1;
+            strcpy(aux.dado2, "Qual seu nome?");
+            strcpy(aux.dado3, "Irineu, voce nao sabe nem eu...");
             fwrite(&aux, sizeof(Registro), 1, arquivo_binario);
         }
         break;
@@ -81,34 +84,49 @@ FILE *criar_arquivo(int nro_metodo, int nro_registros, int nro_situacao)
         for (int i = nro_registros; i > 0; i--)
         {
             aux.chave = i;
+            aux.dado1 = i;
+            strcpy(aux.dado2, "Qual seu nome?");
+            strcpy(aux.dado3, "Irineu, voce nao sabe nem eu...");
             fwrite(&aux, sizeof(Registro), 1, arquivo_binario);
         }
         break;
     case 3: //Desordenado.
-        if (10000 <= nro_registros){
+        if (10000 <= nro_registros)
+        {
             int chave_aux = 1;
             Registro *array = (Registro *)malloc((nro_registros / 100) * sizeof(Registro));
 
-            for (int i = 0; i < 100; i++){
-                 for (int j = 0; j < (nro_registros / 100); j++){
-                     array[j].chave = chave_aux;
-                     chave_aux++;
-                 }
-                 for (int k = 0; k < (nro_registros / 100); k++){
-                     int l = rand () % ((nro_registros/100) - 1);
-                     aux = array[k];
-                     array[k] = array[l];
-                     array[l] = aux;
-                 }
-                 fwrite(array, sizeof(Registro), (nro_registros/100), arquivo_binario);
+            for (int i = 0; i < 100; i++)
+            {
+                for (int j = 0; j < (nro_registros / 100); j++)
+                {
+                    array[j].chave = chave_aux;
+                    array[j].dado1 = chave_aux;
+                    strcpy(array[j].dado2, "Qual seu nome?");
+                    strcpy(array[j].dado3, "Irineu, voce nao sabe nem eu...");
+                    chave_aux++;
+                }
+                for (int k = 0; k < (nro_registros / 100); k++)
+                {
+                    int l = rand() % ((nro_registros / 100) - 1);
+                    aux = array[k];
+                    array[k] = array[l];
+                    array[l] = aux;
+                }
+                fwrite(array, sizeof(Registro), (nro_registros / 100), arquivo_binario);
             }
         }
-        else{
+        else
+        {
             Registro *array = (Registro *)malloc(nro_registros * sizeof(Registro));
 
             for (int i = 0; i < nro_registros; i++)
+            {
                 array[i].chave = i + 1;
-
+                array[i].dado1 = i + 1;
+                strcpy(array[i].dado2, "Qual seu nome?");
+                strcpy(array[i].dado3, "Irineu, voce nao sabe nem eu...");
+            }
             for (int i = 0; i < nro_registros; i++)
             {
                 int j = rand() % (nro_registros - 1);
