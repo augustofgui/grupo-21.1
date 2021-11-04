@@ -24,10 +24,9 @@ class Imovel
     int banheiros;
 
 public:
-    Imovel(int = -1, float = -1, string = "", string = "", string = "", string = "", int = -1, int = -1, int = -1);
+    Imovel(float = -1, string = "", string = "", string = "", string = "", int = -1, int = -1, int = -1);
     virtual ~Imovel();
 
-    void setId(int id);
     void setValor(float valor);
     void setProprietario(string proprietario);
     void setRua(string rua);
@@ -37,7 +36,6 @@ public:
     void setQuartos(int quartos);
     void setBanheiros(int banheiros);
 
-    int getId();
     float getValor();
     string getProprietario();
     string getRua();

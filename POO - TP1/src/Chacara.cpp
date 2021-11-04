@@ -1,6 +1,6 @@
 #include "../headers/Chacara.h"
 
-Chacara::Chacara(int id, float valor, string proprietario, string rua, string bairro, string cidade, int numero, int quartos, int banheiros, bool salao_festa, bool salao_jogos, bool campo_futebol, bool churrasqueira, bool piscina) : Imovel(id, valor, proprietario, rua, bairro, cidade, numero, quartos, banheiros), salao_festa(salao_festa), salao_jogos(salao_jogos), campo_futebol(campo_futebol), churrasqueira(churrasqueira), piscina(piscina) {}
+Chacara::Chacara(float valor, string proprietario, string rua, string bairro, string cidade, int numero, int quartos, int banheiros, bool salao_festa, bool salao_jogos, bool campo_futebol, bool churrasqueira, bool piscina) : Imovel(valor, proprietario, rua, bairro, cidade, numero, quartos, banheiros), salao_festa(salao_festa), salao_jogos(salao_jogos), campo_futebol(campo_futebol), churrasqueira(churrasqueira), piscina(piscina) {}
 Chacara::~Chacara() {}
 
 void Chacara::setSalaoFesta(bool salao_festa)

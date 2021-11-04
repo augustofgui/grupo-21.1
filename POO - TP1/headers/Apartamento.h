@@ -11,7 +11,7 @@ class Apartamento : public Imovel
     bool sacada;
 
 public:
-    Apartamento(int = -1, float = -1, string = "", string = "", string = "", string = "", int = -1, int = -1, int = -1, int = -1, float = -1, bool = false, bool = false);
+    Apartamento(float = -1, string = "", string = "", string = "", string = "", int = -1, int = -1, int = -1, int = -1, float = -1, bool = false, bool = false);
     ~Apartamento();
 
     void setAndar(int andar);

@@ -1,12 +1,7 @@
 #include "../headers/Imovel.h"
 
-Imovel::Imovel(int id, float valor, string proprietario, string rua, string bairro, string cidade, int numero, int quartos, int banheiros) : id(id), valor(valor), proprietario(proprietario), rua(rua), bairro(bairro), cidade(cidade), numero(numero), quartos(quartos), banheiros(banheiros) {}
+Imovel::Imovel(float valor, string proprietario, string rua, string bairro, string cidade, int numero, int quartos, int banheiros) : valor(valor), proprietario(proprietario), rua(rua), bairro(bairro), cidade(cidade), numero(numero), quartos(quartos), banheiros(banheiros) {}
 Imovel::~Imovel() {}
-
-void Imovel::setId(int id)
-{
-    this->id = id;
-}
 
 void Imovel::setValor(float valor)
 {
@@ -48,11 +43,6 @@ void Imovel::setBanheiros(int banheiros)
     this->banheiros = banheiros;
 }
 
-int Imovel::getId()
-{
-    return id;
-}
-
 float Imovel::getValor()
 {
     return valor;
@@ -91,15 +81,4 @@ int Imovel::getQuartos()
 int Imovel::getBanheiros()
 {
     return banheiros;
-}
-
-ostream &operator<<(ostream &out, const Imovel &imovel)
-{
-    out << "\nProprietario: " << imovel.proprietario
-        << "\nValor: " << imovel.valor
-        << "\nQuartos: " << imovel.quartos
-        << "\nRua: " << imovel.rua
-        << "\nBairro: " << imovel.bairro
-        << "\nCidade: " << imovel.cidade;
-    return out;
 }

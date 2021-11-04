@@ -12,6 +12,11 @@ int main (int argc, char *argv[]){
 
     string linha_imovel;
     vector<string> linhas;
+    Casa* casas_database;
+    vector<Imovel*> imoveis_database;
+    Apartamento* apartamentos_database;
+    Chacara* chacaras_database;
+
 
     ifstream input_file(argv[1]);
     if (!input_file.is_open()) {
@@ -23,7 +28,17 @@ int main (int argc, char *argv[]){
     while(getline(input_file, linha_imovel)){
         cout << linha_imovel << endl;
         vector<string> v = explode(linha_imovel, ';');
-        for (int i = 0; i < (int)v.size(); i++)
-            cout << v[i] << endl;
+            if (v[0] == "casa"){
+                casas_database = new Casa(stof(v[1]), v[2], v[3], v[4], v[5], stoi(v[6]), stoi(v[7]), stoi(v[8]), stoi(v[9]), stoi(v[10]));
+                imoveis_database.push_back(casas_database);
+            }
+            else if (v[0] == "apartamento"){
+                apartamentos_database = new Apartamento(stof(v[1]), v[2], v[3], v[4], v[5], stoi(v[6]), stoi(v[7]), stoi(v[8]), stoi(v[9]), stof(v[10]), stoi(v[11]), stoi(v[12]));
+                imoveis_database.push_back(apartamentos_database);
+            }
+            else if (v[0] == "chacara"){
+                chacaras_database = new Chacara(stof(v[1]), v[2], v[3], v[4], v[5], stoi(v[6]), stoi(v[7]), stoi(v[8]), stoi(v[9]), stoi(v[10]), stoi(v[11]), stoi(v[12]), stoi(v[13]));
+                imoveis_database.push_back(chacaras_database);
+            }
     }
 }

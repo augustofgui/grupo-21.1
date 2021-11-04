@@ -12,7 +12,7 @@ class Chacara : public Imovel
     bool piscina;
 
 public:
-    Chacara(int = -1, float = -1, string = "", string = "", string = "", string = "", int = -1, int = -1, int = -1, bool = false, bool = false, bool = false, bool = false, bool = false);
+    Chacara(float = -1, string = "", string = "", string = "", string = "", int = -1, int = -1, int = -1, bool = false, bool = false, bool = false, bool = false, bool = false);
     ~Chacara();
 
     void setSalaoFesta(bool salao_festa);

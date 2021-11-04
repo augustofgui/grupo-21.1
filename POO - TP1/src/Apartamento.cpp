@@ -1,6 +1,6 @@
 #include "../headers/Apartamento.h"
 
-Apartamento::Apartamento(int id, float valor, string proprietario, string rua, string bairro, string cidade, int numero, int quartos, int banheiros, int andar, float taxa_condominio, bool elevador, bool sacada) : Imovel(id, valor, proprietario, rua, bairro, cidade, numero, quartos, banheiros), andar(andar), taxa_condominio(taxa_condominio), elevador(elevador), sacada(sacada) {}
+Apartamento::Apartamento(float valor, string proprietario, string rua, string bairro, string cidade, int numero, int quartos, int banheiros, int andar, float taxa_condominio, bool elevador, bool sacada) : Imovel(valor, proprietario, rua, bairro, cidade, numero, quartos, banheiros), andar(andar), taxa_condominio(taxa_condominio), elevador(elevador), sacada(sacada) {}
 Apartamento::~Apartamento() {}
 
 void Apartamento::setAndar(int andar)

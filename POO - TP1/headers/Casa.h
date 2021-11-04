@@ -9,7 +9,7 @@ class Casa : public Imovel
     bool sala_jantar;
 
 public:
-    Casa(int = -1, float = -1, string = "", string = "", string = "", string = "", int = -1, int = -1, int = -1, int = -1, bool = false);
+    Casa(float = -1, string = "", string = "", string = "", string = "", int = -1, int = -1, int = -1, int = -1, bool = false);
     ~Casa();
 
     void setAndares(int andares);
