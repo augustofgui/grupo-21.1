@@ -17,6 +17,8 @@ gcc arvore_b.c -c
 gcc arvore_bx.c -c
 gcc main.c -c
 gcc geral.o sequencial_indexado.o arvore_binaria.o arvore_b.o arvore_bx.o main.o -o pesquisa
+-
+Ou apenas 'make' para utilizar o makefile
 ```
 
 ### Instruções
