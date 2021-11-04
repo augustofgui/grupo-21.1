@@ -1,0 +1,73 @@
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 1000 1 100 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001 
+N┬║ de compara├º├Áes: 1002301
+Chave do registro: 100
+Tempo de execu├º├úo: 0.028000 segundos.
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 1000 1 200 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 1002601
+Chave do registro: 200
+Tempo de execu├º├úo: 0.027000 segundos.
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 1000 1 300 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 1002901
+Chave do registro: 300
+Tempo de execu├º├úo: 0.023000 segundos.
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 1000 1 400 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 1003201
+Chave do registro: 400
+Tempo de execu├º├úo: 0.026000 segundos.
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 1000 1 500 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 1003501
+Chave do registro: 500
+Tempo de execu├º├úo: 0.022000 segundos.
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 1000 1 600 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 1003801
+Chave do registro: 600
+Tempo de execu├º├úo: 0.022000 segundos.
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 1000 1 700 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 1004101
+Chave do registro: 700
+Tempo de execu├º├úo: 0.037000 segundos.
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 1000 1 800 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 2 (m├®todo), 1000 (n├║mero de registros), 1 (tipo de ordena├º├úo).
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 1004401
+Chave do registro: 800
+Tempo de execu├º├úo: 0.022000 segundos.
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 1000 1 900 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 2 (m├®todo), 1000 (n├║mero de registros), 1 (tipo de ordena├º├úo).
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 1004701
+Chave do registro: 900
+Tempo de execu├º├úo: 0.026000 segundos.
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 1000 1 1000 -P
+Arquivo bin├írio em cria├º├úo, aguarde...
+Arquivo bin├írio criado com sucesso! Configura├º├Áes: 2 (m├®todo), 1000 (n├║mero de registros), 1 (tipo de ordena├º├úo).
+Registro encontrado!
+N┬║ de transfer├¬ncias: 1001
+N┬║ de compara├º├Áes: 1005001
+Chave do registro: 1000
+Tempo de execu├º├úo: 0.025000 segundos.

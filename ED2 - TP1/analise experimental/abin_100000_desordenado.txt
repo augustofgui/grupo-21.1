@@ -1,0 +1,54 @@
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 100000 3 10000 -P arquivo_binario.bin
+Registro encontrado!
+N┬║ de compara├º├Áes: 77205700
+Chave do registro: 10000
+Tempo de execu├º├úo: 2.196000 segundos.
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 100000 3 20000 -P arquivo_binario.bin
+Registro encontrado!
+N┬║ de compara├º├Áes: 77205931
+Chave do registro: 20000
+Tempo de execu├º├úo: 2.129000 segundos.
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 100000 3 30000 -P arquivo_binario.bin
+Registro encontrado!
+N┬║ de compara├º├Áes: 77206153
+Chave do registro: 30000
+Tempo de execu├º├úo: 2.086000 segundos.
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 100000 3 40000 -P arquivo_binario.bin
+Registro encontrado!
+N┬║ de compara├º├Áes: 77206360
+Chave do registro: 40000
+Tempo de execu├º├úo: 2.189000 segundos.
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 100000 3 50000 -P arquivo_binario.bin
+Registro encontrado! 
+N┬║ de compara├º├Áes: 77206597
+Chave do registro: 50000
+Tempo de execu├º├úo: 2.113000 segundos.
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 100000 3 60000 -P arquivo_binario.bin
+Registro encontrado!
+N┬║ de compara├º├Áes: 77206819
+Chave do registro: 60000
+Tempo de execu├º├úo: 2.096000 segundos.
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 100000 3 70000 -P arquivo_binario.bin
+Registro encontrado!
+N┬║ de transfer├¬ncias: 100001
+N┬║ de compara├º├Áes: 77207062
+Chave do registro: 70000
+Tempo de execu├º├úo: 2.109000 segundos.
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 100000 3 80000 -P arquivo_binario.bin
+Registro encontrado!
+N┬║ de transfer├¬ncias: 100001
+N┬║ de compara├º├Áes: 77207323
+Chave do registro: 80000
+Tempo de execu├º├úo: 2.157000 segundos.
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 100000 3 90000 -P arquivo_binario.bin
+Registro encontrado!
+N┬║ de transfer├¬ncias: 100001
+N┬║ de compara├º├Áes: 77207548
+Chave do registro: 90000
+Tempo de execu├º├úo: 2.133000 segundos.
+PS C:\EXERCICIOS\Gp-21.1\grupo-21.1\ED2 - TP1\src> .\pesquisa.exe 2 100000 3 100000 -P arquivo_binario.bin
+Registro encontrado!
+N┬║ de transfer├¬ncias: 100001
+N┬║ de compara├º├Áes: 77207800
+Chave do registro: 100000
+Tempo de execu├º├úo: 2.140000 segundos.
