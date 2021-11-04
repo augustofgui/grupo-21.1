@@ -20,8 +20,8 @@ typedef struct registro
 {
     int chave;
     long int dado1;
-    char dado2[1000];
-    char dado3[5000];
+    char dado2[100];
+    char dado3[400];
 } Registro;
 
 //Verificação dos parâmetros de execução

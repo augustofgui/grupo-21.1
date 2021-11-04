@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
             imprimir_nao_encontrado(nro_chave);
         break;
     case 2:
-        if (!arvore_binaria(arquivo_binario, nro_metodo, nro_registros, nro_situacao, nro_chave, print_registro))
+        if (!arvore_binaria(arquivo_binario, nro_registros, nro_chave, print_registro))
             imprimir_nao_encontrado(nro_chave);
         break;
     case 3:
