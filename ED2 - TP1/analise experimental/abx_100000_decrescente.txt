@@ -1,0 +1,44 @@
+Arquivo binário em criação, aguarde...
+Arquivo binário criado com sucesso! Configurações: 4 (método), 100000 (número de registros), 2 (tipo de ordenação).
+Registro encontrado!
+Nº de transferências: 100000
+Nº de comparações: 3032657
+Chave do registro: 79094
+dado1: 79094
+dado2: Qual seu nome?
+dado3: Irineu, voce nao sabe nem eu...
+Tempo de execução: 5.341860 segundos.
+
+Registro encontrado!
+Nº de transferências: 91708
+Nº de comparações: 2771410
+Chave do registro: 22758
+dado1: 22758
+dado2: Qual seu nome?
+dado3: Irineu, voce nao sabe nem eu...
+Tempo de execução: 4.190108 segundos.
+
+Chave buscada ( 10394 ) não encontrada no arquivo binário.
+Tempo de execução: 0.000065 segundos.
+
+Chave buscada ( 42944 ) não encontrada no arquivo binário.
+Tempo de execução: 0.000055 segundos.
+
+Chave buscada ( 66602 ) não encontrada no arquivo binário.
+Tempo de execução: 0.000045 segundos.
+
+Chave buscada ( 9643 ) não encontrada no arquivo binário.
+Tempo de execução: 0.000040 segundos.
+
+Chave buscada ( 69689 ) não encontrada no arquivo binário.
+Tempo de execução: 0.008148 segundos.
+
+Chave buscada ( 31481 ) não encontrada no arquivo binário.
+Tempo de execução: 0.008172 segundos.
+
+Chave buscada ( 26840 ) não encontrada no arquivo binário.
+Tempo de execução: 0.008988 segundos.
+
+Chave buscada ( 41809 ) não encontrada no arquivo binário.
+Tempo de execução: 0.007410 segundos.
+

@@ -1,0 +1,92 @@
+Arquivo binário em criação, aguarde...
+Arquivo binário criado com sucesso! Configurações: 4 (método), 1000 (número de registros), 1 (tipo de ordenação).
+Registro encontrado!
+Nº de transferências: 1000
+Nº de comparações: 33746
+Chave do registro: 307
+dado1: 307
+dado2: Qual seu nome?
+dado3: Irineu, voce nao sabe nem eu...
+Tempo de execução: 0.059776 segundos.
+
+Registro encontrado!
+Nº de transferências: 1000
+Nº de comparações: 33752
+Chave do registro: 536
+dado1: 536
+dado2: Qual seu nome?
+dado3: Irineu, voce nao sabe nem eu...
+Tempo de execução: 0.057141 segundos.
+
+Registro encontrado!
+Nº de transferências: 1000
+Nº de comparações: 33752
+Chave do registro: 651
+dado1: 651
+dado2: Qual seu nome?
+dado3: Irineu, voce nao sabe nem eu...
+Tempo de execução: 0.059302 segundos.
+
+Registro encontrado!
+Nº de transferências: 1000
+Nº de comparações: 33754
+Chave do registro: 897
+dado1: 897
+dado2: Qual seu nome?
+dado3: Irineu, voce nao sabe nem eu...
+Tempo de execução: 0.068478 segundos.
+
+Registro encontrado!
+Nº de transferências: 1000
+Nº de comparações: 33754
+Chave do registro: 878
+dado1: 878
+dado2: Qual seu nome?
+dado3: Irineu, voce nao sabe nem eu...
+Tempo de execução: 0.055766 segundos.
+
+Registro encontrado!
+Nº de transferências: 1000
+Nº de comparações: 33750
+Chave do registro: 608
+dado1: 608
+dado2: Qual seu nome?
+dado3: Irineu, voce nao sabe nem eu...
+Tempo de execução: 0.052039 segundos.
+
+Registro encontrado!
+Nº de transferências: 1000
+Nº de comparações: 33752
+Chave do registro: 555
+dado1: 555
+dado2: Qual seu nome?
+dado3: Irineu, voce nao sabe nem eu...
+Tempo de execução: 0.027245 segundos.
+
+Registro encontrado!
+Nº de transferências: 1000
+Nº de comparações: 33752
+Chave do registro: 882
+dado1: 882
+dado2: Qual seu nome?
+dado3: Irineu, voce nao sabe nem eu...
+Tempo de execução: 0.027786 segundos.
+
+Registro encontrado!
+Nº de transferências: 1000
+Nº de comparações: 33751
+Chave do registro: 436
+dado1: 436
+dado2: Qual seu nome?
+dado3: Irineu, voce nao sabe nem eu...
+Tempo de execução: 0.056351 segundos.
+
+Registro encontrado!
+Nº de transferências: 1000
+Nº de comparações: 33743
+Chave do registro: 65
+dado1: 65
+dado2: Qual seu nome?
+dado3: Irineu, voce nao sabe nem eu...
+Tempo de execução: 0.064139 segundos.
+
