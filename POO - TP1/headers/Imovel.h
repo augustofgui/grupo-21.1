@@ -5,6 +5,9 @@
 #include <string>
 #include <iomanip>
 #include <fstream>
+#include <vector>
+#include <sstream>
+#include <utility>
 
 using namespace std;
 
