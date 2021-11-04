@@ -8,13 +8,12 @@
 
 int main (int argc, char *argv[]){
 
-    verifParametros(argc, argv);
+    verifParametros(argc);
 
-    FILE* data_base;
-
-    data_base = fopen(argv[1], "rt");
-
-    if (data_base != NULL)
-        cout << "OK" << endl;
-    else cout << "NÃO OK" << endl;
+    ifstream input_file(argv[1]);
+    if (!input_file.is_open()) {
+        cerr << "Não foi possível abrir o arquivo - '"
+             << argv[1] << "'" << endl;
+        return EXIT_FAILURE;
+    }
 }
