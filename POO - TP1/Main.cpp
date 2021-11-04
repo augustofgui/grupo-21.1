@@ -10,12 +10,11 @@ int main (int argc, char *argv[]){
 
     verifParametros(argc, argv);
 
-    Imovel *imoveis[nro_imoveis];
+    FILE* data_base;
 
-    for (int i = 0; i < nro_imoveis; i++){
-            //Implementar leitura do arquivo e comparador para criação de cada objeto do vetor de referência.
-            imoveis[i] = new Apartamento();
-            imoveis[i] = new Casa();
-            imoveis[i] = new Chacara();
-    }
+    data_base = fopen(argv[1], "rt");
+
+    if (data_base != NULL)
+        cout << "OK" << endl;
+    else cout << "NÃO OK" << endl;
 }

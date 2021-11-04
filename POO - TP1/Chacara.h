@@ -27,7 +27,7 @@ public:
     bool getChurrasqueira();
     bool getPiscina();
 
-    friend ostream &operator<<(ostream &, const Chacara &);
+    friend ostream &operator<<(ostream &, Chacara &);
 };
 
 #endif

@@ -18,7 +18,7 @@ public:
     int getAndares();
     bool getSalaJantar();
 
-    friend ostream &operator<<(ostream &, const Casa &);
+    friend ostream &operator<<(ostream &, Casa &);
 };
 
 #endif

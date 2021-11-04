@@ -24,7 +24,7 @@ public:
     bool getElevador();
     bool getSacada();
 
-    friend ostream &operator<<(ostream &, const Apartamento &);
+    friend ostream &operator<<(ostream &, Apartamento &);
 };
 
 #endif
