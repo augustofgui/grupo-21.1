@@ -1,23 +1,52 @@
-all:  Imovel.o Casa.o Apartamento.o Chacara.o Geral.o main.cpp
-	g++ -o pesquisa main.cpp Imovel.o Casa.o Apartamento.o Chacara.o Geral.o
+PROJ_NAME=imobiliaria
 
-Apartamento.o: Apartamento.cpp
-	g++ -o Apartamento.o -c Apartamento.cpp
+# .cpp files
+CPP_src=$(wildcard ./src/*.cpp)
 
-Casa.o: Casa.cpp
-	g++ -o Casa.o -c Casa.cpp
+# .h files
+H_src=$(wildcard ./headers/*.h)
 
-Chacara.o: Chacara.cpp
-	g++ -o Chacara.o -c Chacara.cpp
+# Object files
+OBJ=$(subst .cpp,.o,$(subst src,obj,$(CPP_src)))
 
-Geral.o: Geral.cpp
-	g++ -o Geral.o -c Geral.cpp
+# Compiler and linker
+CC=g++
 
-Imovel.o: Imovel.cpp
-	g++ -o Imovel.o -c Imovel.cpp
+# Flags for compiler
+CC_FLAGS=-c         \
+         -W         \
+         -Wextra    \
+         -Wall      
+
+# Command used at clean target
+RM = rm -rf
+
+#
+# Compilation and linking
+#
+all: objFolder $(PROJ_NAME)
+
+$(PROJ_NAME): $(OBJ)
+	@ echo 'Building binary using GCC linker: $@'
+	$(CC) $^ -o $@
+	@ echo 'Finished building binary: $@'
+	@ echo ' '
+
+./obj/%.o: ./src/%.cpp ./headers/%.h
+	@ echo 'Building target using GCC compiler: $<'
+	$(CC) $< $(CC_FLAGS) -o $@
+	@ echo ' '
+
+./obj/Main.o: ./src/Main.cpp $(H_src)
+	@ echo 'Building target using GCC compiler: $<'
+	$(CC) $< $(CC_FLAGS) -o $@
+	@ echo ' '
+
+objFolder:
+	@ mkdir -p obj
 
 clean:
-	rm -f *.o pesquisa
+	@ $(RM) ./obj/*.o $(PROJ_NAME) *~
+	@ rmdir obj
 
-run:
-	./pesquisa
+.PHONY: all clean
