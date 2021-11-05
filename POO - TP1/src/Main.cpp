@@ -10,12 +10,11 @@ int main (int argc, char *argv[]){
 
     verifParametros(argc);
 
-    string linha_imovel;
-    vector<string> linhas;
-    Casa* casas_database;
     vector<Imovel*> imoveis_database;
+    Casa* casas_database;
     Apartamento* apartamentos_database;
     Chacara* chacaras_database;
+    string linha_imovel;
 
 
     ifstream input_file(argv[1]);
@@ -26,7 +25,6 @@ int main (int argc, char *argv[]){
     }
 
     while(getline(input_file, linha_imovel)){
-        cout << linha_imovel << endl;
         vector<string> v = explode(linha_imovel, ';');
             if (v[0] == "casa"){
                 casas_database = new Casa(stof(v[1]), v[2], v[3], v[4], v[5], stoi(v[6]), stoi(v[7]), stoi(v[8]), stoi(v[9]), stoi(v[10]));
@@ -41,4 +39,8 @@ int main (int argc, char *argv[]){
                 imoveis_database.push_back(chacaras_database);
             }
     }
+
+    string nome = "Pedrão kkkk";
+    cout << buscar_por_proprietario(imoveis_database, nome) << endl;
+
 }

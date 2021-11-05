@@ -19,3 +19,12 @@ std::vector<std::string> explode(std::string const & s, char delim)
 
     return result;
 }
+
+bool buscar_por_proprietario(vector<Imovel*> imoveis_database, string nome)
+{
+    for (int i = 0; i < (int)imoveis_database.size(); i++){
+        if (imoveis_database[i]->getProprietario() == nome)
+            return true;
+    }
+    return false;
+}
