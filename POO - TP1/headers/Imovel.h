@@ -23,6 +23,8 @@ class Imovel
     int quartos;
     int banheiros;
 
+    friend ostream &operator<<(ostream &out, Imovel &);
+
 public:
     Imovel(float = -1, string = "", string = "", string = "", string = "", int = -1, int = -1, int = -1);
     virtual ~Imovel();
@@ -45,7 +47,6 @@ public:
     int getQuartos();
     int getBanheiros();
 
-    friend ostream &operator<<(ostream &out, Imovel &);
 };
 
 #endif

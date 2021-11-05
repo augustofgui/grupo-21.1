@@ -85,8 +85,9 @@ int Imovel::getBanheiros()
 
 ostream &operator<<(ostream &out, Imovel &imovel)
 {
+    out << setprecision(2);
     out << "\nProprietario: " << imovel.getProprietario()
-        << "\nValor: " << imovel.getValor()
+        << "\nValor: " << fixed << imovel.getValor()
         << "\nQuartos: " << imovel.getQuartos()
         << "\nRua: " << imovel.getRua()
         << "\nBairro: " << imovel.getBairro()

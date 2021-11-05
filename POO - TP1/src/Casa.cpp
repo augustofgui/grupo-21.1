@@ -25,8 +25,9 @@ bool Casa::getSalaJantar()
 
 ostream &operator<<(ostream &out, Casa &casa)
 {
+    out << setprecision(2);
     out << "Proprietário: " << casa.getProprietario() << endl;
-    out << "Preço: " << casa.getValor() << endl;
+    out << "Preço: " << fixed << casa.getValor() << endl;
     out << "Número de quartos: " << casa.getQuartos() << endl;
     out << "Rua: " << casa.getRua() << endl;
     out << "Bairro: " << casa.getBairro() << endl;
