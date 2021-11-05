@@ -83,13 +83,13 @@ int Imovel::getBanheiros()
     return banheiros;
 }
 
-ostream &operator<<(ostream &out, const Imovel &imovel)
+ostream &operator<<(ostream &out, Imovel &imovel)
 {
-    out << "\nProprietario: " << imovel.proprietario
-        << "\nValor: " << imovel.valor
-        << "\nQuartos: " << imovel.quartos
-        << "\nRua: " << imovel.rua
-        << "\nBairro: " << imovel.bairro
-        << "\nCidade: " << imovel.cidade;
+    out << "\nProprietario: " << imovel.getProprietario()
+        << "\nValor: " << imovel.getValor()
+        << "\nQuartos: " << imovel.getQuartos()
+        << "\nRua: " << imovel.getRua()
+        << "\nBairro: " << imovel.getBairro()
+        << "\nCidade: " << imovel.getCidade();
     return out;
 }

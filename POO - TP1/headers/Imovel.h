@@ -45,7 +45,7 @@ public:
     int getQuartos();
     int getBanheiros();
 
-    friend ostream &operator<<(ostream &out, const Imovel &);
+    friend ostream &operator<<(ostream &out, Imovel &);
 };
 
 #endif

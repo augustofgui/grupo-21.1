@@ -16,7 +16,6 @@ int main (int argc, char *argv[]){
     Chacara* chacaras_database;
     string linha_imovel;
 
-
     ifstream input_file(argv[1]);
     if (!input_file.is_open()) {
         cerr << "Não foi possível abrir o arquivo - '"
@@ -25,7 +24,9 @@ int main (int argc, char *argv[]){
     }
 
     while(getline(input_file, linha_imovel)){
+
         vector<string> v = explode(linha_imovel, ';');
+
             if (v[0] == "casa"){
                 casas_database = new Casa(stof(v[1]), v[2], v[3], v[4], v[5], stoi(v[6]), stoi(v[7]), stoi(v[8]), stoi(v[9]), stoi(v[10]));
                 imoveis_database.push_back(casas_database);
@@ -40,7 +41,7 @@ int main (int argc, char *argv[]){
             }
     }
 
-    string nome = "Pedrão kkkk";
-    cout << buscar_por_proprietario(imoveis_database, nome) << endl;
+    for (int i = 0; i < (int)imoveis_database.size(); i++)
+        cout << *imoveis_database[i] << endl;
 
 }
