@@ -30,7 +30,7 @@ public:
     virtual void saida (ostream &out){
         Imovel::saida(out);
         out << setprecision(2);
-        out << "    Piscina: " << piscina << endl;
+        out << "    Piscina: " << std::boolalpha << piscina << endl;
     }
 
     friend ostream &operator <<(ostream & out, Chacara &chacara){
