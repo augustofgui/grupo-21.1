@@ -3,11 +3,14 @@
 
 #include <iostream>
 #include <string>
+#include <cstring>
 #include <iomanip>
 #include <fstream>
 #include <vector>
 #include <sstream>
 #include <utility>
+#include <typeinfo>
+#include <algorithm>
 
 using namespace std;
 
@@ -35,7 +38,7 @@ public:
     void setQuartos(int quartos);
     void setBanheiros(int banheiros);
 
-    float getValor();
+    float getValor() const;
     string getProprietario();
     string getRua();
     string getBairro();

@@ -29,7 +29,8 @@ public:
 
     virtual void saida (ostream &out){
         Imovel::saida(out);
-        out << "    Piscina: " << piscina << endl;
+        out << setprecision(2);
+        out << "    Piscina: " << std::boolalpha << piscina << endl;
     }
 
     friend ostream &operator <<(ostream & out, Chacara &chacara){

@@ -105,3 +105,48 @@ void print_colecao_imoveis(vector<Imovel*> imoveis_database){
         cout << "- - - - -\n" << endl;
     }
 }
+
+bool operator<(const Imovel &s1, const Imovel &s2){
+    return s1.getValor() < s2.getValor();
+}
+
+vector<Imovel*> buscar_por_tipo_imovel(vector<Imovel*> imoveis_database){
+    char tipo_imovel [100];
+    vector<Imovel*> vetor_imoveis;
+    
+    getchar();
+    cout << "\nInsira o tipo do imóvel: ";
+    cin.getline(tipo_imovel, sizeof(tipo_imovel));
+    cout << endl;
+
+    if (strcmp(tipo_imovel, "casa") == 0){
+        for (int i = 0; i < (int)imoveis_database.size(); i++){
+            if (typeid(*imoveis_database[i]).name() == typeid(class Casa).name())
+                vetor_imoveis.push_back(imoveis_database[i]);
+        }
+    }
+    else if (strcmp(tipo_imovel, "apartamento") == 0){
+        for (int i = 0; i < (int)imoveis_database.size(); i++){
+            if (typeid(*imoveis_database[i]).name() == typeid(class Apartamento).name())
+                vetor_imoveis.push_back(imoveis_database[i]);
+        }
+    }
+    else if (strcmp(tipo_imovel, "chacara") == 0){
+        for (int i = 0; i < (int)imoveis_database.size(); i++){
+            if (typeid(*imoveis_database[i]).name() == typeid(class Chacara).name())
+                vetor_imoveis.push_back(imoveis_database[i]);
+        }
+    }
+
+    for (int i = 0; i < (int)vetor_imoveis.size();i++){
+        for (int j = 0; j < (int)vetor_imoveis.size() - (i + 1); j++){
+            if (vetor_imoveis[j]->getValor() < vetor_imoveis[j+1]->getValor()){
+                Imovel* aux = vetor_imoveis[j];
+                vetor_imoveis[j] = vetor_imoveis[j+1];
+                vetor_imoveis[j+1] = aux;
+            }
+        }
+    }
+
+    return vetor_imoveis;
+}
