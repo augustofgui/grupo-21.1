@@ -29,6 +29,7 @@ public:
 
     virtual void saida (ostream &out){
         Imovel::saida(out);
+        out << setprecision(2);
         out << "    Piscina: " << piscina << endl;
     }
 

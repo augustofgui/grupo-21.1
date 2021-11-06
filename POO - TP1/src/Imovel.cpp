@@ -43,7 +43,7 @@ void Imovel::setBanheiros(int banheiros)
     this->banheiros = banheiros;
 }
 
-float Imovel::getValor()
+float Imovel::getValor() const
 {
     return valor;
 }

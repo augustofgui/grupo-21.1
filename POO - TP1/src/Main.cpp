@@ -68,7 +68,7 @@ int main (int argc, char *argv[]){
             }
             case 4 : {
                 vector <Imovel*> colecao_buscada;
-                //colecao_buscada = buscar_por_tipo_imovel(imoveis_database);
+                colecao_buscada = buscar_por_tipo_imovel(imoveis_database);
                 print_colecao_imoveis(colecao_buscada);
                 break;
             }
