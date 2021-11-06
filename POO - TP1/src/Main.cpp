@@ -4,8 +4,6 @@
 #include "../headers/Chacara.h"
 #include "../headers/Geral.h"
 
-#define nro_imoveis 16
-
 int main (int argc, char *argv[]){
 
     verifParametros(argc);
