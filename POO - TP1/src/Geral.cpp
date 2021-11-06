@@ -1,5 +1,6 @@
 #include "../headers/Geral.h"
 
+// Verifica os parametros do programa
 void verifParametros (int argc){
     if (argc < 2){
         cout << "Parâmetros insuficientes para a execução. Por favor, informe o arquivo database por argumento.\n";
@@ -7,6 +8,7 @@ void verifParametros (int argc){
     }
 }
 
+// Separa uma string em substrings dividindo por um caractere
 std::vector<std::string> explode(std::string const & s, char delim)
 {
     std::vector<std::string> result;
