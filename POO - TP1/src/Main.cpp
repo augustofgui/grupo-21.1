@@ -48,9 +48,7 @@ int main (int argc, char *argv[]){
             case 0 : 
                 return 0;
             case 1 : { 
-                bool eh_propriedade;
-                eh_propriedade = buscar_por_proprietario(imoveis_database);
-                if (eh_propriedade)
+                if (buscar_por_proprietario(imoveis_database))
                     cout << "O proprietário possui imóveis na coleção!\n" << endl;
                 else
                     cout << "O proprietário não possui imóveis na coleção.\n" << endl;
