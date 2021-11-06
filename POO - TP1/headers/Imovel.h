@@ -58,7 +58,6 @@ public:
         imovel.saida(out);
         return out;
     }
-
 };
 
 #endif
