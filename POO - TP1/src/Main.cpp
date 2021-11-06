@@ -47,6 +47,7 @@ int main (int argc, char *argv[]){
     // Loop do menu de opções
     while (opcao_menu){
         // Recebe a entrada do usuário
+        cout << "Digite qual opção deseja: ";
         cin >> opcao_menu;
 
         // Ordena o fluxo dependendo da escolha do usuario 
@@ -85,9 +86,12 @@ int main (int argc, char *argv[]){
                 print_colecao_imoveis(colecao_buscada);
                 break;
             }
-            case 6 :  // Busca pelo nome proprietario
-                //criar_iterador
+            case 6 : {  // Busca pelo nome proprietario
+                vector <Imovel*> colecao_buscada;
+                colecao_buscada = buscar_e_exibe_por_proprietario(imoveis_database);
+                print_colecao_imoveis(colecao_buscada);
                 break;
+            }
             case 7 : // Salva arquivo com coleção de imoveis
                 //exibir_salvar_colecao
                 break;
