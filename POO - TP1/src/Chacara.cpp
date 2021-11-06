@@ -52,16 +52,3 @@ bool Chacara::getPiscina()
 {
     return piscina;
 }
-
-ostream &operator<<(ostream &out, Chacara &chacara)
-{
-    out << setprecision(2);
-    out << "Proprietário: " << chacara.getProprietario() << endl;
-    out << "Preço: " << fixed << chacara.getValor() << endl;
-    out << "Número de quartos: " << chacara.getQuartos() << endl;
-    out << "Rua: " << chacara.getRua() << endl;
-    out << "Bairro: " << chacara.getBairro() << endl;
-    out << "Cidade: " << chacara.getCidade() << endl;
-    out << "Piscina: " << chacara.getPiscina();
-    return out;
-}

@@ -15,6 +15,7 @@ int main (int argc, char *argv[]){
     Apartamento* apartamentos_database;
     Chacara* chacaras_database;
     string linha_imovel;
+    int opcao_menu = 1;
 
     ifstream input_file(argv[1]);
     if (!input_file.is_open()) {
@@ -41,7 +42,58 @@ int main (int argc, char *argv[]){
             }
     }
 
-    for (int i = 0; i < (int)imoveis_database.size(); i++)
-        cout << *imoveis_database[i] << endl;
+    print_menu_opcoes();
 
+    while (opcao_menu){
+        cin >> opcao_menu;
+        switch(opcao_menu){
+            case 0 : 
+                return 0;
+            case 1 : { 
+                bool eh_propriedade;
+                eh_propriedade = buscar_por_proprietario(imoveis_database);
+                if (eh_propriedade)
+                    cout << "O proprietário possui imóveis na coleção!\n" << endl;
+                else
+                    cout << "O proprietário não possui imóveis na coleção.\n" << endl;
+                break;
+            }
+            case 2 : { 
+                vector <Imovel*> colecao_buscada;
+                colecao_buscada = buscar_por_valor_maximo(imoveis_database);
+                print_colecao_imoveis(colecao_buscada);
+                break;
+            }
+            case 3 : {
+                vector <Imovel*> colecao_buscada;
+                colecao_buscada = buscar_por_quartos(imoveis_database);
+                print_colecao_imoveis(colecao_buscada);
+                break;
+            }
+            case 4 : {
+                vector <Imovel*> colecao_buscada;
+                //colecao_buscada = buscar_por_tipo_imovel(imoveis_database);
+                print_colecao_imoveis(colecao_buscada);
+                break;
+            }
+            case 5 : {
+                vector <Imovel*> colecao_buscada;
+                colecao_buscada = buscar_por_cidade(imoveis_database);
+                print_colecao_imoveis(colecao_buscada);
+                break;
+            }
+            case 6 :
+                //criar_iterador
+                break;
+            case 7 :
+                //exibir_salvar_colecao
+                break;
+            case 8 : 
+                print_menu_opcoes();
+                break;
+            default : 
+                cout << "Opção inválida!" << endl;
+                break;
+        } 
+    }
 }

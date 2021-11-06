@@ -13,7 +13,6 @@ using namespace std;
 
 class Imovel
 {
-    int id;
     float valor;
     string proprietario;
     string rua;
@@ -23,10 +22,8 @@ class Imovel
     int quartos;
     int banheiros;
 
-    friend ostream &operator<<(ostream &out, Imovel &);
-
 public:
-    Imovel(float = -1, string = "", string = "", string = "", string = "", int = -1, int = -1, int = -1);
+    Imovel(float valor = -1, string proprietario = "", string rua = "", string bairro = "", string cidade = "", int numero = -1, int quartos = -1, int banheiros = -1);
     virtual ~Imovel();
 
     void setValor(float valor);
@@ -46,6 +43,21 @@ public:
     int getNumero();
     int getQuartos();
     int getBanheiros();
+
+    virtual void saida (ostream &out){
+        out << "Proprietario: " << proprietario << endl
+            << "    Valor: " << fixed << valor << endl
+            << "    Quartos: " << quartos << endl
+            << "    Rua: " << rua << endl
+            << "    Bairro: " << bairro << endl
+            << "    Cidade: " << cidade << endl;
+    }
+    
+    friend ostream &operator<<(ostream &out, Imovel &imovel)
+    {
+        imovel.saida(out);
+        return out;
+    }
 
 };
 

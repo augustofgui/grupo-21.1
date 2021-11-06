@@ -42,15 +42,3 @@ bool Apartamento::getSacada()
 {
     return sacada;
 }
-
-ostream &operator<<(ostream &out, Apartamento &apartamento)
-{
-    out << "Proprietário: " << apartamento.getProprietario() << endl;
-    out << "Preço: " << apartamento.getValor() << endl;
-    out << "Número de quartos: " << apartamento.getQuartos() << endl;
-    out << "Rua: " << apartamento.getRua() << endl;
-    out << "Bairro: " << apartamento.getBairro() << endl;
-    out << "Cidade: " << apartamento.getCidade() << endl;
-    out << "Elevador: " << apartamento.getElevador();
-    return out;
-}

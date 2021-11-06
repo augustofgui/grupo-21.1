@@ -27,7 +27,15 @@ public:
     bool getChurrasqueira();
     bool getPiscina();
 
-    friend ostream &operator<<(ostream &, Chacara &);
+    virtual void saida (ostream &out){
+        Imovel::saida(out);
+        out << "    Piscina: " << piscina << endl;
+    }
+
+    friend ostream &operator <<(ostream & out, Chacara &chacara){
+        chacara.saida(out);
+        return out;
+    }
 };
 
 #endif

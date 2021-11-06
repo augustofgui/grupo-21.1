@@ -18,7 +18,16 @@ public:
     int getAndares();
     bool getSalaJantar();
 
-    friend ostream &operator<<(ostream &, Casa &);
+    virtual void saida (ostream &out){
+        out << setprecision(2);
+        Imovel::saida(out);
+        out << "    Andares: " << andares << endl;
+    }
+
+    friend ostream &operator <<(ostream & out, Casa &casa){
+        casa.saida(out);
+        return out;
+    }
 };
 
 #endif
