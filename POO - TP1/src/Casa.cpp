@@ -22,3 +22,14 @@ bool Casa::getSalaJantar()
 {
     return sala_jantar;
 }
+
+void Casa::saida (ostream &out){
+    out << setprecision(2);
+    Imovel::saida(out);
+    out << "    Andares: " << andares << endl;
+}
+
+ostream &operator <<(ostream & out, Casa &casa){
+    casa.saida(out);
+    return out;
+}

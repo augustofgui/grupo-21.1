@@ -82,3 +82,17 @@ int Imovel::getBanheiros()
 {
     return banheiros;
 }
+
+void Imovel::saida (ostream &out){
+    out << "Proprietario: " << proprietario << endl
+        << "    Valor: " << fixed << valor << endl
+        << "    Quartos: " << quartos << endl
+        << "    Rua: " << rua << endl
+        << "    Bairro: " << bairro << endl
+        << "    Cidade: " << cidade << endl;
+}
+
+ostream &operator<<(ostream &out, Imovel &imovel){
+    imovel.saida(out);
+    return out;
+}

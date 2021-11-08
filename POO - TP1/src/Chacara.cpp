@@ -52,3 +52,14 @@ bool Chacara::getPiscina()
 {
     return piscina;
 }
+
+void Chacara::saida(ostream &out){
+    Imovel::saida(out);
+    out << setprecision(2);
+    out << "    Piscina: " << std::boolalpha << piscina << endl;
+}
+
+ostream &operator <<(ostream & out, Chacara &chacara){
+    chacara.saida(out);
+    return out;
+}

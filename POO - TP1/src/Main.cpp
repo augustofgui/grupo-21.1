@@ -87,20 +87,26 @@ int main (int argc, char *argv[]){
                 break;
             }
             case 6 : {  // Busca pelo nome proprietario
-                vector <Imovel*> colecao_buscada;
-                colecao_buscada = buscar_e_exibe_por_proprietario(imoveis_database);
-                print_colecao_imoveis(colecao_buscada);
+                vector <int> iteradores;
+                iteradores = fazer_iterador(imoveis_database);
+                for (int i = 0; i < (int) iteradores.size(); i++){
+                    cout << *imoveis_database[iteradores[i]] << endl;
+                    cout << "- - - - -\n" << endl;
+                }
                 break;
             }
-            case 7 : // Salva arquivo com coleção de imoveis
-                //exibir_salvar_colecao
+            case 7 : {  // Imprime ou salva a coleção de imóveis
+                imprimir_ou_salvar(imoveis_database);
                 break;
-            case 8 : // Escreve na tela o menu de opções
+            }
+            case 8 : {  // Escreve na tela o menu de opções
                 print_menu_opcoes();
                 break;
-            default : // Opção inválida
+            }
+            default : {  // Opção inválida
                 cout << "Opção inválida!" << endl;
                 break;
+            }
         } 
     }
 }

@@ -47,20 +47,8 @@ public:
     int getQuartos();
     int getBanheiros();
 
-    virtual void saida (ostream &out){
-        out << "Proprietario: " << proprietario << endl
-            << "    Valor: " << fixed << valor << endl
-            << "    Quartos: " << quartos << endl
-            << "    Rua: " << rua << endl
-            << "    Bairro: " << bairro << endl
-            << "    Cidade: " << cidade << endl;
-    }
-    
-    friend ostream &operator<<(ostream &out, Imovel &imovel)
-    {
-        imovel.saida(out);
-        return out;
-    }
+    virtual void saida (ostream &out);
+    friend ostream &operator<<(ostream &out, Imovel &imovel);
 };
 
 #endif

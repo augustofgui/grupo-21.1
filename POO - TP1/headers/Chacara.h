@@ -27,16 +27,8 @@ public:
     bool getChurrasqueira();
     bool getPiscina();
 
-    virtual void saida (ostream &out){
-        Imovel::saida(out);
-        out << setprecision(2);
-        out << "    Piscina: " << std::boolalpha << piscina << endl;
-    }
-
-    friend ostream &operator <<(ostream & out, Chacara &chacara){
-        chacara.saida(out);
-        return out;
-    }
+    virtual void saida (ostream &out);
+    friend ostream &operator <<(ostream & out, Chacara &chacara);
 };
 
 #endif

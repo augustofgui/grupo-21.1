@@ -42,3 +42,14 @@ bool Apartamento::getSacada()
 {
     return sacada;
 }
+
+void Apartamento::saida (ostream &out){
+    Imovel::saida(out);
+    out << setprecision(2);
+    out << "    Elevador: " << std::boolalpha << elevador << endl;
+}
+
+ostream &operator <<(ostream & out, Apartamento &apartamento){
+    apartamento.saida(out);
+    return out;
+}

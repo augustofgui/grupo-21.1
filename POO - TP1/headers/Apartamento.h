@@ -24,16 +24,8 @@ public:
     bool getElevador();
     bool getSacada();
 
-    virtual void saida (ostream &out){
-        Imovel::saida(out);
-        out << setprecision(2);
-        out << "    Elevador: " << std::boolalpha << elevador << endl;
-    }
-
-    friend ostream &operator <<(ostream & out, Apartamento &apartamento){
-        apartamento.saida(out);
-        return out;
-    }
+    virtual void saida (ostream &out);
+    friend ostream &operator <<(ostream & out, Apartamento &apartamento);
 };
 
 #endif

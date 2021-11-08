@@ -91,70 +91,21 @@ std::vector<Imovel *> buscar_por_cidade(vector<Imovel *> imoveis_database)
     return imoveis_cidade;
 }
 
-std::vector<Imovel *> buscar_e_exibe_por_proprietario(vector<Imovel *> imoveis_database)
-{
-    char nome[100];
-    bool tem_casa, tem_apartamento, tem_chacara;
-    tem_casa = tem_apartamento = tem_chacara = false;
+vector<int> fazer_iterador (vector<Imovel *> imoveis_database){
+    char nome_proprietario[100];
+    vector <int> iteradores;
 
     getchar();
     cout << "\nInsira o nome do proprietário: ";
-    cin.getline(nome, sizeof(nome));
-
-    vector<Imovel *> vetor_imoveis;
-    for (int i = 0; i < (int)imoveis_database.size(); i++)
-    {
-        if (imoveis_database[i]->getProprietario() == nome)
-        {
-            vetor_imoveis.push_back(imoveis_database[i]);
-            if (typeid(*imoveis_database[i]).name() == typeid(class Casa).name())
-                tem_casa = true;
-            else if (typeid(*imoveis_database[i]).name() == typeid(class Apartamento).name())
-                tem_apartamento = true;
-            else if (typeid(*imoveis_database[i]).name() == typeid(class Chacara).name())
-                tem_chacara = true;
-        }
-    }
-
-    int j = 1;
-    int existe_tipos[3] = { 0, 0, 0};
-
-    if(!(tem_casa || tem_apartamento || tem_chacara)){
-        cout << "Nada encontrado..." << endl << endl;
-        return vetor_imoveis;
-    }
-
-    cout << j << " - ";
-    if (tem_casa){
-        existe_tipos[0] = j;
-        j++;
-        cout << "Casa" << endl
-             << j << " - ";
-    }             
-    if (tem_apartamento){
-        existe_tipos[1] = j;
-        j++;
-        cout << "Apartamento" << endl
-             << j << " - ";
-    }
-    if (tem_chacara){
-        existe_tipos[2] = j;
-        cout << "Chacara" << endl;
-    }
-
-    int resposta;
-    cout << endl << "Qual tipo de imovel exibir: ";
-    cin >> resposta;
+    cin.getline(nome_proprietario, sizeof(nome_proprietario));
     cout << endl;
-    if( resposta == existe_tipos[0]){
-        vetor_imoveis = buscar_por_tipo(vetor_imoveis, "casa");
-    } else if( resposta == existe_tipos[1]){
-        vetor_imoveis = buscar_por_tipo(vetor_imoveis, "apartamento");
-    } else if( resposta == existe_tipos[2]){
-        vetor_imoveis = buscar_por_tipo(vetor_imoveis, "chacara");
+
+    for (int i = 0; i < (int) imoveis_database.size(); i++){
+        if (imoveis_database[i]->getProprietario() == nome_proprietario)
+            iteradores.push_back(i);
     }
 
-    return vetor_imoveis;
+    return iteradores;
 }
 
 void print_menu_opcoes()
@@ -177,17 +128,12 @@ void print_colecao_imoveis(vector<Imovel *> imoveis_database)
     for (int i = 0; i < (int)imoveis_database.size(); i++)
     {
         cout << *imoveis_database[i] << endl;
-        cout << "- - - - -\n"
-             << endl;
+        cout << "- - - - -\n" << endl;
     }
 }
 
-bool operator<(const Imovel &s1, const Imovel &s2)
+vector<Imovel *> buscar_por_tipo(vector<Imovel *> imoveis_database, const char * tipo_busca)
 {
-    return s1.getValor() < s2.getValor();
-}
-
-vector<Imovel *> buscar_por_tipo(vector<Imovel *> imoveis_database, const char * tipo_busca){
     vector<Imovel *> vetor_imoveis;
     
     if (strcmp(tipo_busca, "casa") == 0)
@@ -228,6 +174,9 @@ vector<Imovel *> buscar_por_tipo_imovel(vector<Imovel *> imoveis_database)
     cin.getline(tipo_imovel, sizeof(tipo_imovel));
     cout << endl;
 
+    for(auto& c : tipo_imovel)
+        c = tolower(c);
+
     vetor_imoveis = buscar_por_tipo(imoveis_database, tipo_imovel);
 
     Imovel *aux;
@@ -244,4 +193,76 @@ vector<Imovel *> buscar_por_tipo_imovel(vector<Imovel *> imoveis_database)
         }
     }
     return vetor_imoveis;
+}
+
+void imprimir_ou_salvar(vector <Imovel*> imoveis_database)
+{
+    char opcao[100];
+
+    getchar();
+    cout << "\nVocê gostaria de imprimir ou salvar? ";
+    cin.getline(opcao, sizeof(opcao));
+    cout << endl;
+
+    for(auto& c : opcao)
+        c = tolower(c);
+
+    if (strcmp(opcao, "imprimir") == 0)
+        print_colecao_imoveis(imoveis_database);
+    else if (strcmp(opcao, "salvar") == 0){
+        ofstream arquivo_saida;
+        arquivo_saida.open("salvar_imoveis.txt");
+
+        for (int i = 0; i < (int)imoveis_database.size(); i++){
+            if (typeid(*imoveis_database[i]).name() == typeid(class Casa).name()){
+                Casa* casa = dynamic_cast<Casa *> (imoveis_database[i]);
+                arquivo_saida << "casa;" <<
+                casa->getValor() << ";" <<
+                casa->getProprietario() << ";" <<
+                casa->getRua() << ";" <<
+                casa->getBairro() << ";" <<
+                casa->getCidade() << ";" <<
+                casa->getNumero() << ";" <<
+                casa->getQuartos() << ";" <<
+                casa->getBanheiros() << ";" <<
+                casa->getAndares() << ";" <<
+                casa->getSalaJantar() << ";" << endl;
+            }
+            else if (typeid(*imoveis_database[i]).name() == typeid(class Apartamento).name()){
+                Apartamento* apartamento = dynamic_cast<Apartamento* > (imoveis_database[i]);
+                arquivo_saida << "apartamento;" <<
+                apartamento->getValor() << ";" <<
+                apartamento->getProprietario() << ";" <<
+                apartamento->getRua() << ";" <<
+                apartamento->getBairro() << ";" <<
+                apartamento->getCidade() << ";" <<
+                apartamento->getNumero() << ";" <<
+                apartamento->getQuartos() << ";" <<
+                apartamento->getBanheiros() << ";" <<
+                apartamento->getAndar() << ";" <<
+                apartamento->getTaxaCondominio() << ";" <<
+                apartamento->getElevador() << ";" <<
+                apartamento->getSacada() << ";" << endl;
+            }
+            else if (typeid(*imoveis_database[i]).name() == typeid(class Chacara).name()){
+                Chacara* chacara = dynamic_cast<Chacara* > (imoveis_database[i]);
+                arquivo_saida << "chacara;" <<
+                chacara->getValor() << ";" <<
+                chacara->getProprietario() << ";" <<
+                chacara->getRua() << ";" <<
+                chacara->getBairro() << ";" <<
+                chacara->getCidade() << ";" <<
+                chacara->getNumero() << ";" <<
+                chacara->getQuartos() << ";" <<
+                chacara->getBanheiros() << ";" <<
+                chacara->getSalaoFesta() << ";" <<
+                chacara->getSalaoJogos() << ";" <<
+                chacara->getCampoFutebol() << ";" <<
+                chacara->getChurrasqueira() << ";" <<
+                chacara->getPiscina() << ";" << endl;
+            }
+        }
+        arquivo_saida.close();
+    }
+    cout << "Coleção de imóveis salva no arquivo 'salvar_imoveis.txt'.\n" << endl;
 }
