@@ -16,3 +16,4 @@ bool operator<(const Imovel &s1, const Imovel &s2);
 void print_menu_opcoes();
 void print_colecao_imoveis(vector<Imovel*> imoveis_database);
 void imprimir_ou_salvar(vector <Imovel*> imoveis_database);
+void salvar_arquivo(vector<Imovel*> imoveis_database);

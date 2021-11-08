@@ -57,9 +57,9 @@ int main (int argc, char *argv[]){
                 break;
             case 1 : { // Busca pelo nome do proprietario
                 if (buscar_por_proprietario(imoveis_database))
-                    cout << "O proprietário possui imóveis na coleção!\n" << endl;
+                    cout << "\nO proprietário possui imóveis na coleção!\n" << endl;
                 else
-                    cout << "O proprietário não possui imóveis na coleção.\n" << endl;
+                    cout << "\nO proprietário não possui imóveis na coleção.\n" << endl;
                 break;
             }
             case 2 : { // Busca pelo valor máximo
