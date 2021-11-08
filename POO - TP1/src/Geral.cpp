@@ -287,8 +287,8 @@ void salvar_arquivo(vector<Imovel*> imoveis_database){
             chacara->getCampoFutebol() << ";" <<
             chacara->getChurrasqueira() << ";" <<
             chacara->getPiscina() << ";" << endl;
-            }
         }
-        arquivo_saida.close();
-        cout << "Coleção de imóveis salva no arquivo 'salvar_imoveis.txt'.\n" << endl;
+    }
+    arquivo_saida.close();
+    cout << "Coleção de imóveis salva no arquivo 'salvar_imoveis.txt'.\n" << endl;
 }
