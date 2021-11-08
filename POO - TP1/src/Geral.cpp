@@ -164,6 +164,10 @@ vector<Imovel *> buscar_por_tipo(vector<Imovel *> imoveis_database, const char *
     return vetor_imoveis;
 }
 
+bool compararImoveis(const Imovel *imovel1, const Imovel *imovel2){
+    return imovel1->getValor() < imovel2->getValor();
+}
+
 vector<Imovel *> buscar_por_tipo_imovel(vector<Imovel *> imoveis_database)
 {
     char tipo_imovel[100];
@@ -179,19 +183,8 @@ vector<Imovel *> buscar_por_tipo_imovel(vector<Imovel *> imoveis_database)
 
     vetor_imoveis = buscar_por_tipo(imoveis_database, tipo_imovel);
 
-    Imovel *aux;
-    for (int i = 0; i < (int)vetor_imoveis.size(); i++)
-    {
-        for (int j = 0; j < ((int)vetor_imoveis.size() - (i + 1)); j++)
-        {
-            if (vetor_imoveis[j]->getValor() < vetor_imoveis[j + 1]->getValor())
-            {
-                aux = vetor_imoveis[j];
-                vetor_imoveis[j] = vetor_imoveis[j + 1];
-                vetor_imoveis[j + 1] = aux;
-            }
-        }
-    }
+    std::sort(vetor_imoveis.begin(), vetor_imoveis.end(), compararImoveis);
+
     return vetor_imoveis;
 }
 
