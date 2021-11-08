@@ -1,0 +1,866 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="13.00" multi-file="no" uid="simp6bd497812466461ba4cca78484ee13f0">
+  <meta>
+    <name>(Project)</name>
+    <authors>the best</authors>
+    <description />
+  </meta>
+  <counters models="2">
+    <entity-names />
+    <entity-ids>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="group" type="Group" />
+        <value>44</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlPackageDiagram</type>
+        <value>1</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>2</value>
+      </counter>
+    </diagrams>
+    <fields />
+  </counters>
+  <alias-groups />
+  <management uid="md-55a8e58f1f7445cbbc0631aac0e8b5cc" name="" task-id-sequence="0">
+    <working-schedule uid="ws-2a67723eb960437db11ed2fa97710872" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+    <persons>
+      <person id="">
+        <first-name>the</first-name>
+        <last-name>best</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-e5839f9c9dcf4783aafa1e31b90ec3e7" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+      <person id="">
+        <first-name>the</first-name>
+        <last-name>best</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-605dc13af51643368ade2a3bee85f14b" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+      <person id="">
+        <first-name>the</first-name>
+        <last-name>best</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-3492a70243cf42ec912dccc5d6c026bf" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <type id="float" tid="" name="float" description="" />
+      <type id="string" tid="" name="string" description="" />
+      <type id="int" tid="" name="int" description="" />
+      <type id="bool" tid="" name="bool" description="" />
+      <type id="ostream &amp;" tid="" name="ostream &amp;" description="" />
+      <type id="Apartamento &amp;" tid="" name="Apartamento &amp;" description="" />
+      <type id="Casa &amp;" tid="" name="Casa &amp;" description="" />
+      <type id="Chacara &amp;" tid="" name="Chacara &amp;" description="" />
+      <type id="std::vector&lt;std::string&gt;" tid="" name="std::vector&lt;std::string&gt;" description="" />
+      <type id="std::string const &amp;" tid="" name="std::string const &amp;" description="" />
+      <type id="char" tid="" name="char" description="" />
+      <type id="vector&lt;Imovel*&gt;" tid="" name="vector&lt;Imovel*&gt;" description="" />
+      <type id="std::vector&lt;Imovel*&gt;" tid="" name="std::vector&lt;Imovel*&gt;" description="" />
+      <type id="vector&lt;int&gt;" tid="" name="vector&lt;int&gt;" description="" />
+      <type id="vector&lt;Imovel *&gt;" tid="" name="vector&lt;Imovel *&gt;" description="" />
+      <type id="const char *" tid="" name="const char *" description="" />
+      <type id="const Imovel &amp;" tid="" name="const Imovel &amp;" description="" />
+      <type id="vector &lt;Imovel*&gt;" tid="" name="vector &lt;Imovel*&gt;" description="" />
+      <type id="Imovel &amp;" tid="" name="Imovel &amp;" description="" />
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="p46c4ae9025124aa98dcc9af81f468a0c_685783027" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author>the best</author>
+        </authors>
+        <description />
+        <creation-date>11/08/2021 14:35:36</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items>
+        <item id="b4a0587885c8492d9dc9e7e061eeaf63" cid="PKG001" type="package" name="" style-class="" creator="" creation-date="11/08/2021 14:36:13" visibility="undefined">
+          <tagged-values>
+            <tagged-value id="tv364fe1f1fdfa4c0eadccd6e8cecd645e" name="namespace" type="text" multiple="false" hidden="false" value="" />
+            <tagged-value id="tvac92660bf3de453b99bf32faa47306d9" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+          </tagged-values>
+        </item>
+      </abstract-items>
+      <sub-models>
+        <model id="p2e7d7f99700d4f06b4c0ae2b53d4b5ef_886989144" name="" namespace="" order-index="2">
+          <meta>
+            <authors>
+              <author>the best</author>
+            </authors>
+            <description />
+            <creation-date>11/08/2021 14:36:13</creation-date>
+            <change-date>01/01/0001 00:00:00</change-date>
+            <revision-count>0</revision-count>
+            <version />
+          </meta>
+          <tagged-values>
+            <tagged-value id="tvd52d826247da4ee5ab3901f114c80277" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+          </tagged-values>
+          <abstract-items>
+            <item id="1a0dbc16f7aa453ea160b4fd554166f9" cid="C001" type="class" name="Apartamento" style-class="" creation-date="11/08/2021 14:36:13" visibility="undefined">
+              <tagged-values>
+                <tagged-value id="tv1ea809a319ab47dbb19ee11cd22ffe09" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv47956d9431794b958bdead24a1d6c007" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Apartamento" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="e9d94581dcdb442ea391f0d6a72872be" />
+                <owned-item ref="e47039f7bef94c49a0378a5f3431c547" />
+                <owned-item ref="54f6251aff264019bab02373469c1f5e" />
+                <owned-item ref="080e120222fa4632a8c3177c6ef4642c" />
+              </owned-items>
+              <attributes>
+                <attribute id="a1bfe7b31dcde448bb9bc2f99087b7570224" cid="PROP001" name="andar" creation-date="11/08/2021 14:36:13" property-ref="e9d94581dcdb442ea391f0d6a72872be" />
+                <attribute id="aee55c1125ce64a348ce5e9123c53453d224" cid="PROP002" name="taxa_condominio" creation-date="11/08/2021 14:36:13" property-ref="e47039f7bef94c49a0378a5f3431c547" />
+                <attribute id="a2553c30d4f934b96909fee6238c6cefe224" cid="PROP003" name="elevador" creation-date="11/08/2021 14:36:13" property-ref="54f6251aff264019bab02373469c1f5e" />
+                <attribute id="a10cbbc8f54a34897b9d35fa9a0df2f48224" cid="PROP004" name="sacada" creation-date="11/08/2021 14:36:13" property-ref="080e120222fa4632a8c3177c6ef4642c" />
+              </attributes>
+              <operations>
+                <operation id="o6074a82195804b8db81ca18718312454224" cid="OP001" name="Apartamento" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p3fb1cf0d36f84cc7868cca9474a0dff2" name="?" type="float" type-id="float" default-value="-1" />
+                    <parameter id="p2d0721fc701b47b5833167caf5d072e1" name="?" type="string" type-id="string" default-value="&quot;&quot;" />
+                    <parameter id="p8a35f19b5d094124b453001548acbcbd" name="?" type="string" type-id="string" default-value="&quot;&quot;" />
+                    <parameter id="p34b53c5780a34a4fa13722f77a5fa49e" name="?" type="string" type-id="string" default-value="&quot;&quot;" />
+                    <parameter id="pb5adb57b398147e284c9fa571f47143f" name="?" type="string" type-id="string" default-value="&quot;&quot;" />
+                    <parameter id="p4d1f05e7466c4e9a9e41b9b600b5681f" name="?" type="int" type-id="int" default-value="-1" />
+                    <parameter id="p7e23a1b906d7464fa34638066061d7cd" name="?" type="int" type-id="int" default-value="-1" />
+                    <parameter id="pcc5cc60f04594dfd86d12f746fdfd93a" name="?" type="int" type-id="int" default-value="-1" />
+                    <parameter id="p8423647a427449a79d25ad2f4b8656ec" name="?" type="int" type-id="int" default-value="-1" />
+                    <parameter id="p728316147f0c4381b1fb3a887c09fe1b" name="?" type="float" type-id="float" default-value="-1" />
+                    <parameter id="pad12d464f06546809cb5b5269d2c00cb" name="?" type="bool" type-id="bool" default-value="false" />
+                    <parameter id="p200ff5354c254728a2883c03bbb124ea" name="?" type="bool" type-id="bool" default-value="false" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="o9f68c8a681794dc182e37e2b3dcbbe45225" cid="OP002" name="Apartamento" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="o4862dcb96aaf4f88940018765dbc1cd8225" cid="OP003" name="setAndar" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p285ea4f021ff4a51a5e409b24984e77d" name="andar" type="int" type-id="int" />
+                  </parameters>
+                </operation>
+                <operation id="o0262479f40cb4363834a84009ef97a11225" cid="OP004" name="setTaxaCondominio" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p0790991cdcd6435cb7d2a7a2f698ca9c" name="taxa_condominio" type="float" type-id="float" />
+                  </parameters>
+                </operation>
+                <operation id="obf749510cbd44198838d5eb4268ab02e225" cid="OP005" name="setElevador" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pe24c8bcaa27c4ebaafb80c69eda0b8b8" name="elevador" type="bool" type-id="bool" />
+                  </parameters>
+                </operation>
+                <operation id="of6ea54331a124d2fb120934bc925fe59225" cid="OP006" name="setSacada" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p9d90ed17ab574d33be84094910983068" name="sacada" type="bool" type-id="bool" />
+                  </parameters>
+                </operation>
+                <operation id="o11b0b7de24534ee696abb50f2ec2c5f1225" cid="OP007" name="getAndar" creation-date="11/08/2021 14:36:13" type="int" type-id="int" visibility="public" />
+                <operation id="o624dea5a620445c29c1bd371c652e491225" cid="OP008" name="getTaxaCondominio" creation-date="11/08/2021 14:36:13" type="float" type-id="float" visibility="public" />
+                <operation id="o2da63156218641d6b77946990d530eec225" cid="OP009" name="getElevador" creation-date="11/08/2021 14:36:13" type="bool" type-id="bool" visibility="public" />
+                <operation id="ob095831f637f43f39f919b7cc245fb68225" cid="OP010" name="getSacada" creation-date="11/08/2021 14:36:13" type="bool" type-id="bool" visibility="public" />
+                <operation id="o65a79b7b3280422fa1501b62eae14537225" cid="OP011" name="saida" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public" virtual="true">
+                  <parameters>
+                    <parameter id="p891f0ef1b49f4e2e8c297db95f62908e" name="out" type="ostream &amp;" type-id="ostream &amp;" />
+                  </parameters>
+                </operation>
+                <operation id="od573a02d684044018e7f38a40c976a37225" cid="OP012" name="&lt;&lt;" creation-date="11/08/2021 14:36:13" type="ostream &amp;" type-id="ostream &amp;" visibility="public">
+                  <parameters>
+                    <parameter id="p32303182dd764d5fa1341a3b5f073e27" name="out" type="ostream &amp;" type-id="ostream &amp;" />
+                    <parameter id="p1c766895d4bf497cb7f40508401c2a2e" name="apartamento" type="Apartamento &amp;" type-id="Apartamento &amp;" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>operator</stereotype>
+                  </stereotypes>
+                </operation>
+              </operations>
+            </item>
+            <item id="e9d94581dcdb442ea391f0d6a72872be" cid="PROP001" type="property" name="andar" style-class="" owner="1a0dbc16f7aa453ea160b4fd554166f9" creation-date="11/08/2021 14:36:13" visibility="undefined">
+              <tagged-values>
+                <tagged-value id="tv1f07f6cff738443aa04c5005df9e9f34" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="andar" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="int" type-id="int" />
+              <property />
+            </item>
+            <item id="e47039f7bef94c49a0378a5f3431c547" cid="PROP002" type="property" name="taxa_condominio" style-class="" owner="1a0dbc16f7aa453ea160b4fd554166f9" creation-date="11/08/2021 14:36:13" visibility="undefined">
+              <tagged-values>
+                <tagged-value id="tv842b5943f9054767b4294cbde9122ca7" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="taxa_condominio" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="float" type-id="float" />
+              <property />
+            </item>
+            <item id="54f6251aff264019bab02373469c1f5e" cid="PROP003" type="property" name="elevador" style-class="" owner="1a0dbc16f7aa453ea160b4fd554166f9" creation-date="11/08/2021 14:36:13" visibility="undefined">
+              <tagged-values>
+                <tagged-value id="tv733307aadaf949268db8ced717ad3a55" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="elevador" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="bool" type-id="bool" />
+              <property />
+            </item>
+            <item id="080e120222fa4632a8c3177c6ef4642c" cid="PROP004" type="property" name="sacada" style-class="" owner="1a0dbc16f7aa453ea160b4fd554166f9" creation-date="11/08/2021 14:36:13" visibility="undefined">
+              <tagged-values>
+                <tagged-value id="tvd0bda1c27f35443f8e5880cc59ea447e" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="sacada" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="bool" type-id="bool" />
+              <property />
+            </item>
+            <item id="b49e95cce0ac4e858c0a0ee9e386b844" cid="C002" type="class" name="Casa" style-class="" creation-date="11/08/2021 14:36:13" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv67500eeb86004618ae22dd6f68f3a074" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv6ee86323b1c24e9b87598f5549d8b2b9" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Casa" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="fc8d14d87cdf4d65b1d00036c7090fc6" />
+                <owned-item ref="c358c8a8194246ff8e65698caf97a47e" />
+              </owned-items>
+              <attributes>
+                <attribute id="a799617264e784033bcc49eae3f8d12a5225" cid="PROP005" name="andares" creation-date="11/08/2021 14:36:13" property-ref="fc8d14d87cdf4d65b1d00036c7090fc6" />
+                <attribute id="a99e8eafebeaf4b6f8c4a1c6cfc243196225" cid="PROP006" name="sala_jantar" creation-date="11/08/2021 14:36:13" property-ref="c358c8a8194246ff8e65698caf97a47e" />
+              </attributes>
+              <operations>
+                <operation id="o166657218b764d28a633b42eab08de99225" cid="OP013" name="Casa" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pcf93a5c71899484fb073aebadcba0e65" name="?" type="float" type-id="float" default-value="-1" />
+                    <parameter id="p6fa2e5e6f3184d38ae5b9b6978adbf59" name="?" type="string" type-id="string" default-value="&quot;&quot;" />
+                    <parameter id="p7f5bdf0fe2a14b5c829f1c0f042f2c38" name="?" type="string" type-id="string" default-value="&quot;&quot;" />
+                    <parameter id="pf20cc9f24c1f4041b1a40298e3a0f4ae" name="?" type="string" type-id="string" default-value="&quot;&quot;" />
+                    <parameter id="pfe82954839e743628abd20e2086c004d" name="?" type="string" type-id="string" default-value="&quot;&quot;" />
+                    <parameter id="p156aaf1e004b4960bbf055f7f8b8387f" name="?" type="int" type-id="int" default-value="-1" />
+                    <parameter id="p872f05af2c6d4a9ca78e706f344e30f6" name="?" type="int" type-id="int" default-value="-1" />
+                    <parameter id="p3d353667511c4760a7ea57853e2b07b0" name="?" type="int" type-id="int" default-value="-1" />
+                    <parameter id="pa420bfa0230f4b599fec27736ecb5c4a" name="?" type="int" type-id="int" default-value="-1" />
+                    <parameter id="p2793741f179a42c2b346b0ad54efd00f" name="?" type="bool" type-id="bool" default-value="false" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="ofaebec43d0994723ad6d0d82749d972e225" cid="OP014" name="Casa" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="ob3a831a7f2874896ab9eb7d44c0949ed225" cid="OP015" name="setAndares" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pde82b526ced74c31b61733127d7d9500" name="andares" type="int" type-id="int" />
+                  </parameters>
+                </operation>
+                <operation id="oef53ec867e4448d0892351fe753debd3225" cid="OP016" name="setSalaJantar" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p8e657a0cc121470d879f16ef30b82ddc" name="sala_jantar" type="bool" type-id="bool" />
+                  </parameters>
+                </operation>
+                <operation id="o3f6c11c9495d4731ad5770f3d74bc797225" cid="OP017" name="getAndares" creation-date="11/08/2021 14:36:13" type="int" type-id="int" visibility="public" />
+                <operation id="o55034303baa7472a97f57f4c28ba27b6225" cid="OP018" name="getSalaJantar" creation-date="11/08/2021 14:36:13" type="bool" type-id="bool" visibility="public" />
+                <operation id="oc11d02941d3c4e4e8e91d8b628b9527d225" cid="OP019" name="saida" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public" virtual="true">
+                  <parameters>
+                    <parameter id="p951cc150c7fa40bb9bf3a876af35659a" name="out" type="ostream &amp;" type-id="ostream &amp;" />
+                  </parameters>
+                </operation>
+                <operation id="o650359c5ad124d81b8b510ab6a0121e8225" cid="OP020" name="&lt;&lt;" creation-date="11/08/2021 14:36:13" type="ostream &amp;" type-id="ostream &amp;" visibility="public">
+                  <parameters>
+                    <parameter id="p18af9116fefb42cb8ed976fa0be604a4" name="out" type="ostream &amp;" type-id="ostream &amp;" />
+                    <parameter id="p5e7a5dfc583d4b44907b84490470a2e2" name="casa" type="Casa &amp;" type-id="Casa &amp;" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>operator</stereotype>
+                  </stereotypes>
+                </operation>
+              </operations>
+            </item>
+            <item id="fc8d14d87cdf4d65b1d00036c7090fc6" cid="PROP005" type="property" name="andares" style-class="" owner="b49e95cce0ac4e858c0a0ee9e386b844" creation-date="11/08/2021 14:36:13" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvde41f048fe1c42578bca9f5644eac28e" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="andares" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="int" type-id="int" />
+              <property />
+            </item>
+            <item id="c358c8a8194246ff8e65698caf97a47e" cid="PROP006" type="property" name="sala_jantar" style-class="" owner="b49e95cce0ac4e858c0a0ee9e386b844" creation-date="11/08/2021 14:36:13" visibility="public">
+              <tagged-values>
+                <tagged-value id="tve00e8dee4a2d4088b1e9b7288dbd75c4" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="sala_jantar" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="bool" type-id="bool" />
+              <property />
+            </item>
+            <item id="1aa2a283f3094dada89a2af6411ce421" cid="C003" type="class" name="Chacara" style-class="" creation-date="11/08/2021 14:36:13" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv967d91df97cd41a69c0988471580cae4" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tvfefdcffcbd1b4695a2efe6b344cf5e50" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Chacara" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="27f9b87750184e61a91ff0b95b6a04af" />
+                <owned-item ref="9231ab8f4da94da499a032c984369304" />
+                <owned-item ref="df3b2926d4f14034b86feb1f0f3a6365" />
+                <owned-item ref="e302e0d7a68b45f3812f777167c476cf" />
+                <owned-item ref="8c9736bdaa30410d9e33d8b31747315c" />
+              </owned-items>
+              <attributes>
+                <attribute id="a2f35241a2c5a42f0b18ce547b6e6c79f225" cid="PROP007" name="salao_festa" creation-date="11/08/2021 14:36:13" property-ref="27f9b87750184e61a91ff0b95b6a04af" />
+                <attribute id="a5d3edfa233e6438db38ef2e933bd0bd2225" cid="PROP008" name="salao_jogos" creation-date="11/08/2021 14:36:13" property-ref="9231ab8f4da94da499a032c984369304" />
+                <attribute id="a46d9397b18a74b6b83d1d500f95b19e6225" cid="PROP009" name="campo_futebol" creation-date="11/08/2021 14:36:13" property-ref="df3b2926d4f14034b86feb1f0f3a6365" />
+                <attribute id="a3eed2269e29f4a6990a3a7413f240a07225" cid="PROP010" name="churrasqueira" creation-date="11/08/2021 14:36:13" property-ref="e302e0d7a68b45f3812f777167c476cf" />
+                <attribute id="a5a7d8f77ba57496ead40842c128f6c55225" cid="PROP011" name="piscina" creation-date="11/08/2021 14:36:13" property-ref="8c9736bdaa30410d9e33d8b31747315c" />
+              </attributes>
+              <operations>
+                <operation id="oe6aa9f67175644fabe39ca3644628ebc225" cid="OP021" name="Chacara" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p0a765a571e604982a31c2cc928e83a3e" name="?" type="float" type-id="float" default-value="-1" />
+                    <parameter id="p3f69eeabe4f84e0496affddaf5cf7077" name="?" type="string" type-id="string" default-value="&quot;&quot;" />
+                    <parameter id="p9d36be70458f45aeb657d0c0b8650973" name="?" type="string" type-id="string" default-value="&quot;&quot;" />
+                    <parameter id="p176bb367f46748e7a92a27c7264b9b90" name="?" type="string" type-id="string" default-value="&quot;&quot;" />
+                    <parameter id="p76c37be8e98f4b4ebf121d436d50a939" name="?" type="string" type-id="string" default-value="&quot;&quot;" />
+                    <parameter id="pa1935d6312254d1ca6bcad2ab47267d9" name="?" type="int" type-id="int" default-value="-1" />
+                    <parameter id="p98bf42cb2a784e15b11483a63ae9662c" name="?" type="int" type-id="int" default-value="-1" />
+                    <parameter id="p0988430e8fa4486c96717e7459b77e71" name="?" type="int" type-id="int" default-value="-1" />
+                    <parameter id="p2cee9a40c26e4555974d65bca22426cc" name="?" type="bool" type-id="bool" default-value="false" />
+                    <parameter id="p799b66a00f794d7ba2d86c10b0870f62" name="?" type="bool" type-id="bool" default-value="false" />
+                    <parameter id="p74f5bdd9ce02427aa302753210d98ef8" name="?" type="bool" type-id="bool" default-value="false" />
+                    <parameter id="p541c4aed8bd4470dae059b80e6089f21" name="?" type="bool" type-id="bool" default-value="false" />
+                    <parameter id="p4415bdb9d3cc4910965aa123d4278de2" name="?" type="bool" type-id="bool" default-value="false" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="od4486962f96f4468a6590af0b6720661225" cid="OP022" name="Chacara" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="o4c9069c33d524aab95bfe189e1e23956225" cid="OP023" name="setSalaoFesta" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p9fd70cc2ad4c4045a5e4bcdf3d9dfe3e" name="salao_festa" type="bool" type-id="bool" />
+                  </parameters>
+                </operation>
+                <operation id="ob3f9096f712c451daa4b8c379329f21b225" cid="OP024" name="setSalaoJogos" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pf8bdbc5269ce4bc79586f20146a47fba" name="salao_jogos" type="bool" type-id="bool" />
+                  </parameters>
+                </operation>
+                <operation id="ofb5f2d1413294ef1973248ce0667997e225" cid="OP025" name="setCampoFutebol" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pf73b5db8f8354b8795ba9b42aa52b44a" name="campo_futebol" type="bool" type-id="bool" />
+                  </parameters>
+                </operation>
+                <operation id="o13b5dfcd273143d39f37a0599c835157225" cid="OP026" name="setChurrasqueira" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p212eb10e67f343fb9a0fae63dee561cb" name="churrasqueira" type="bool" type-id="bool" />
+                  </parameters>
+                </operation>
+                <operation id="o866dae156db64232af4adff6abca3bcf225" cid="OP027" name="setPiscina" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p0cad5d28f4f44973b425eb7bf12b9576" name="piscina" type="bool" type-id="bool" />
+                  </parameters>
+                </operation>
+                <operation id="o70f373dd91984bb49147f0668522b805225" cid="OP028" name="getSalaoFesta" creation-date="11/08/2021 14:36:13" type="bool" type-id="bool" visibility="public" />
+                <operation id="o8b318740434645adacb51f542d111079225" cid="OP029" name="getSalaoJogos" creation-date="11/08/2021 14:36:13" type="bool" type-id="bool" visibility="public" />
+                <operation id="oc4b6a30f2cd041e5a7641cb5cde03c05225" cid="OP030" name="getCampoFutebol" creation-date="11/08/2021 14:36:13" type="bool" type-id="bool" visibility="public" />
+                <operation id="o2bbcd19b7a144127a4e2ba727e9792ff225" cid="OP031" name="getChurrasqueira" creation-date="11/08/2021 14:36:13" type="bool" type-id="bool" visibility="public" />
+                <operation id="ob8ed4a44bc79424db4c8129c5a21c3b6225" cid="OP032" name="getPiscina" creation-date="11/08/2021 14:36:13" type="bool" type-id="bool" visibility="public" />
+                <operation id="oc09632aa00bb445cbfe8e6560efd26bc225" cid="OP033" name="saida" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public" virtual="true">
+                  <parameters>
+                    <parameter id="p754ec306db1e43c89955c5cfaa0013d7" name="out" type="ostream &amp;" type-id="ostream &amp;" />
+                  </parameters>
+                </operation>
+                <operation id="o3852ecef61384519b604021c46175e13225" cid="OP034" name="&lt;&lt;" creation-date="11/08/2021 14:36:13" type="ostream &amp;" type-id="ostream &amp;" visibility="public">
+                  <parameters>
+                    <parameter id="p576c100f458b41cea5d8f8e5ebd72667" name="out" type="ostream &amp;" type-id="ostream &amp;" />
+                    <parameter id="p7a5bb3b2f836496eaaf9729a666e09b5" name="chacara" type="Chacara &amp;" type-id="Chacara &amp;" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>operator</stereotype>
+                  </stereotypes>
+                </operation>
+              </operations>
+            </item>
+            <item id="27f9b87750184e61a91ff0b95b6a04af" cid="PROP007" type="property" name="salao_festa" style-class="" owner="1aa2a283f3094dada89a2af6411ce421" creation-date="11/08/2021 14:36:13" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv2a6d5b7086da44d0aad5403a69409664" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="salao_festa" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="bool" type-id="bool" />
+              <property />
+            </item>
+            <item id="9231ab8f4da94da499a032c984369304" cid="PROP008" type="property" name="salao_jogos" style-class="" owner="1aa2a283f3094dada89a2af6411ce421" creation-date="11/08/2021 14:36:13" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvc73434f77fa54db58db737147dcbf884" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="salao_jogos" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="bool" type-id="bool" />
+              <property />
+            </item>
+            <item id="df3b2926d4f14034b86feb1f0f3a6365" cid="PROP009" type="property" name="campo_futebol" style-class="" owner="1aa2a283f3094dada89a2af6411ce421" creation-date="11/08/2021 14:36:13" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvfd588f46cf8641ad852289958adf7cf8" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="campo_futebol" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="bool" type-id="bool" />
+              <property />
+            </item>
+            <item id="e302e0d7a68b45f3812f777167c476cf" cid="PROP010" type="property" name="churrasqueira" style-class="" owner="1aa2a283f3094dada89a2af6411ce421" creation-date="11/08/2021 14:36:13" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv228dcfe3e153470181332ae307834e63" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="churrasqueira" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="bool" type-id="bool" />
+              <property />
+            </item>
+            <item id="8c9736bdaa30410d9e33d8b31747315c" cid="PROP011" type="property" name="piscina" style-class="" owner="1aa2a283f3094dada89a2af6411ce421" creation-date="11/08/2021 14:36:13" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv502ed8390c414f66bc06211df9e6e57f" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="piscina" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="bool" type-id="bool" />
+              <property />
+            </item>
+            <item id="2362f127b7584460928466541d58d371" cid="C004" type="class" name="Main" style-class="" creation-date="11/08/2021 14:36:13" visibility="undefined">
+              <stereotypes>
+                <stereotype name="main" />
+              </stereotypes>
+              <stereotype-instances>
+                <stereotype id="2362f127b7584460928466541d58d371_main_c" type="main" ref="" />
+              </stereotype-instances>
+              <operations>
+                <operation id="o6be9f1bd97d149c883ffe6a4082de2dc225" cid="OP035" name="verifParametros" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pd279e59408a743d0a38ee97bc33dd398" name="argc" type="int" type-id="int" />
+                  </parameters>
+                </operation>
+                <operation id="o04e9b48c2afd4fe98372d66a8ae01fce225" cid="OP036" name="explode" creation-date="11/08/2021 14:36:13" type="std::vector&lt;std::string&gt;" type-id="std::vector&lt;std::string&gt;" visibility="public">
+                  <parameters>
+                    <parameter id="p8a6faccb23be42afacdf1a9f34283856" name="s" type="std::string const &amp;" type-id="std::string const &amp;" />
+                    <parameter id="pf5aa9ac078be46aab034f054a4d25b6e" name="delim" type="char" type-id="char" />
+                  </parameters>
+                </operation>
+                <operation id="ofd040a4ee8894dc9834b0de046a922f5225" cid="OP037" name="buscar_por_proprietario" creation-date="11/08/2021 14:36:13" type="bool" type-id="bool" visibility="public">
+                  <parameters>
+                    <parameter id="p671ebc7e58974d568a8b1bf80dec8357" name="imoveis_database" type="vector&lt;Imovel*&gt;" type-id="vector&lt;Imovel*&gt;" />
+                  </parameters>
+                </operation>
+                <operation id="ofd5a59f151bf4f8591a075bb92147a07225" cid="OP038" name="buscar_por_valor_maximo" creation-date="11/08/2021 14:36:13" type="std::vector&lt;Imovel*&gt;" type-id="std::vector&lt;Imovel*&gt;" visibility="public">
+                  <parameters>
+                    <parameter id="p2e4cbdbbeedc48c5877990818400c624" name="imoveis_database" type="vector&lt;Imovel*&gt;" type-id="vector&lt;Imovel*&gt;" />
+                  </parameters>
+                </operation>
+                <operation id="oadb9e5850e8745ab9ac55ee6793aba28226" cid="OP039" name="buscar_por_quartos" creation-date="11/08/2021 14:36:13" type="std::vector&lt;Imovel*&gt;" type-id="std::vector&lt;Imovel*&gt;" visibility="public">
+                  <parameters>
+                    <parameter id="p730b7348d60c4d50a4d71ed98b9d9133" name="imoveis_database" type="vector&lt;Imovel*&gt;" type-id="vector&lt;Imovel*&gt;" />
+                  </parameters>
+                </operation>
+                <operation id="ofbda20b3c4ae47548a680c24dddc9d6f226" cid="OP040" name="buscar_por_tipo_imovel" creation-date="11/08/2021 14:36:13" type="std::vector&lt;Imovel*&gt;" type-id="std::vector&lt;Imovel*&gt;" visibility="public">
+                  <parameters>
+                    <parameter id="p290b893548f64e3cbf7f987d535078f8" name="imoveis_database" type="vector&lt;Imovel*&gt;" type-id="vector&lt;Imovel*&gt;" />
+                  </parameters>
+                </operation>
+                <operation id="ocd894a5a08774559b3f8e6bb42d47694226" cid="OP041" name="buscar_por_cidade" creation-date="11/08/2021 14:36:13" type="std::vector&lt;Imovel*&gt;" type-id="std::vector&lt;Imovel*&gt;" visibility="public">
+                  <parameters>
+                    <parameter id="p2fdafa49476a4ce0b000e8185ca3c5c6" name="imoveis_database" type="vector&lt;Imovel*&gt;" type-id="vector&lt;Imovel*&gt;" />
+                  </parameters>
+                </operation>
+                <operation id="o94f190aead394466a864b17a7262fc15226" cid="OP042" name="fazer_iterador" creation-date="11/08/2021 14:36:13" type="vector&lt;int&gt;" type-id="vector&lt;int&gt;" visibility="public">
+                  <parameters>
+                    <parameter id="p6edd6d885a10432fb1186352da264d51" name="imoveis_database" type="vector&lt;Imovel *&gt;" type-id="vector&lt;Imovel *&gt;" />
+                  </parameters>
+                </operation>
+                <operation id="of40a7bfb27cc47a1980c3a486c8ef406226" cid="OP043" name="buscar_por_tipo" creation-date="11/08/2021 14:36:13" type="vector&lt;Imovel *&gt;" type-id="vector&lt;Imovel *&gt;" visibility="public">
+                  <parameters>
+                    <parameter id="p7ba3666fa29a46f4b14efb0554a77f2f" name="imoveis_database" type="vector&lt;Imovel *&gt;" type-id="vector&lt;Imovel *&gt;" />
+                    <parameter id="p0b5cdb7401aa4dd2a5cecc93d5fa5769" name="tipo_busca" type="const char *" type-id="const char *" />
+                  </parameters>
+                </operation>
+                <operation id="o4674588c889f460da5512c647b01ea7a226" cid="OP044" name="&lt;" creation-date="11/08/2021 14:36:13" type="bool" type-id="bool" visibility="public">
+                  <parameters>
+                    <parameter id="p3488c8913d6b4cb18073971d69f7c29d" name="s1" type="const Imovel &amp;" type-id="const Imovel &amp;" />
+                    <parameter id="pb18f3d7a43594fe7b110efc617673c2f" name="s2" type="const Imovel &amp;" type-id="const Imovel &amp;" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>operator</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="o1f0679bb28594ea8ba138748aacbc315226" cid="OP045" name="print_menu_opcoes" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public" />
+                <operation id="oe09da134f56b4b5bb9f8a6e7d4bfdcbf226" cid="OP046" name="print_colecao_imoveis" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p5b77c0fc333d4b22b497af81b831baaa" name="imoveis_database" type="vector&lt;Imovel*&gt;" type-id="vector&lt;Imovel*&gt;" />
+                  </parameters>
+                </operation>
+                <operation id="o09466766a4fe4ea783efbb2c2787f032226" cid="OP047" name="imprimir_ou_salvar" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p580309ffe1bd41c1bb1b50cd09a4a9c1" name="imoveis_database" type="vector &lt;Imovel*&gt;" type-id="vector &lt;Imovel*&gt;" />
+                  </parameters>
+                </operation>
+                <operation id="oaeb2ce1c5d05495cacd408c5072ca9f6226" cid="OP048" name="salvar_arquivo" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p6e2dde99aff54a1db4ac11ec3ed2b10a" name="imoveis_database" type="vector&lt;Imovel*&gt;" type-id="vector&lt;Imovel*&gt;" />
+                  </parameters>
+                </operation>
+              </operations>
+            </item>
+            <item id="ecad1470f34347cf8ba58f7e227016b4" cid="C005" type="class" name="Imovel" style-class="" creation-date="11/08/2021 14:36:13" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv9df2eaf2bf494f678e257b742e8c3987" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv9e02541ab347476a964386cbeadfd5e2" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Imovel" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="1835002e232d48598566830eb10168ed" />
+                <owned-item ref="d0d514179820485fb99052496cafa9ea" />
+                <owned-item ref="cb95b38c80844ce99d9fd055a6678449" />
+                <owned-item ref="7fec9f878a894b5eaacfbae1952437f4" />
+                <owned-item ref="f4e1fbc9a56041a398cf3f13d0d4bdaf" />
+                <owned-item ref="676ad8a26496474b8f4c8ddc769620a1" />
+                <owned-item ref="272c576506d340f8ad2fcc8c16883348" />
+                <owned-item ref="89d8bdbb00ed4767833e401108854264" />
+              </owned-items>
+              <attributes>
+                <attribute id="af4709731c91242faa86534b3404f61b5226" cid="PROP012" name="valor" creation-date="11/08/2021 14:36:13" property-ref="1835002e232d48598566830eb10168ed" />
+                <attribute id="ac5c1fd5c12454df98e9bcaa94fb30391226" cid="PROP013" name="proprietario" creation-date="11/08/2021 14:36:13" property-ref="d0d514179820485fb99052496cafa9ea" />
+                <attribute id="a39a71e7bf7974133991bdbc605608d5e226" cid="PROP014" name="rua" creation-date="11/08/2021 14:36:13" property-ref="cb95b38c80844ce99d9fd055a6678449" />
+                <attribute id="ac93d6b37ee7749cb9b041e7ba8b5d204226" cid="PROP015" name="bairro" creation-date="11/08/2021 14:36:13" property-ref="7fec9f878a894b5eaacfbae1952437f4" />
+                <attribute id="ad86ce8187f9b45df94c5bd01b8a15c2d226" cid="PROP016" name="cidade" creation-date="11/08/2021 14:36:13" property-ref="f4e1fbc9a56041a398cf3f13d0d4bdaf" />
+                <attribute id="a8879b68cb0584b828fef550c11aba2ed226" cid="PROP017" name="numero" creation-date="11/08/2021 14:36:13" property-ref="676ad8a26496474b8f4c8ddc769620a1" />
+                <attribute id="a31e1d3fa25ae4fa79804ff937e5a1d2e226" cid="PROP018" name="quartos" creation-date="11/08/2021 14:36:13" property-ref="272c576506d340f8ad2fcc8c16883348" />
+                <attribute id="a3f322efd9a9840768e8a43088a8b4c60226" cid="PROP019" name="banheiros" creation-date="11/08/2021 14:36:13" property-ref="89d8bdbb00ed4767833e401108854264" />
+              </attributes>
+              <operations>
+                <operation id="oe6818005b1d04b568bdbbd91df38be59226" cid="OP049" name="Imovel" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pe3669783aa7644f5b61c5a0f8b9405ba" name="valor" type="float" type-id="float" default-value="-1" />
+                    <parameter id="pdfa081225500458a87e1e268ce37ffc7" name="proprietario" type="string" type-id="string" default-value="&quot;&quot;" />
+                    <parameter id="pe2937d9977884fed9bd67f072a6c4ebd" name="rua" type="string" type-id="string" default-value="&quot;&quot;" />
+                    <parameter id="pefa17e8cab7d479e8dc0c19ec51e389c" name="bairro" type="string" type-id="string" default-value="&quot;&quot;" />
+                    <parameter id="pcb59394fb253424ba3d79d35c35ca6a6" name="cidade" type="string" type-id="string" default-value="&quot;&quot;" />
+                    <parameter id="pb4bc04be361d4c8abcbb159a053aac4b" name="numero" type="int" type-id="int" default-value="-1" />
+                    <parameter id="pf0699e0561284e8a85a149ecdecbef4e" name="quartos" type="int" type-id="int" default-value="-1" />
+                    <parameter id="p137e63e906db400ab2ad2d3fcba30ce5" name="banheiros" type="int" type-id="int" default-value="-1" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="oe1de5f17cc994df4bd1b979e805e5ed5226" cid="OP050" name="Imovel" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public" virtual="true">
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="o2f51bccd84704b078da06b8f0f75f231226" cid="OP051" name="setValor" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p791c28c4304d42ffb172b59862eef3d2" name="valor" type="float" type-id="float" />
+                  </parameters>
+                </operation>
+                <operation id="o5cd2c65d5c2140b2a446e1944f86febf226" cid="OP052" name="setProprietario" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p4d7e9b40f55441a3b7b61679876a53db" name="proprietario" type="string" type-id="string" />
+                  </parameters>
+                </operation>
+                <operation id="o91e5c515966348e5baf358898e9584d3226" cid="OP053" name="setRua" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p51f3d15db27643d7b06458a54cecb0c7" name="rua" type="string" type-id="string" />
+                  </parameters>
+                </operation>
+                <operation id="o9e3bf25b7b6a4f8fac36ee0e531eadf7226" cid="OP054" name="setBairro" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p5c31e76a5b5f4f72957e7cddbabb36e1" name="bairro" type="string" type-id="string" />
+                  </parameters>
+                </operation>
+                <operation id="o4eab7b60dc204949b83e46c1a2884176226" cid="OP055" name="setCidade" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p3f606ceb07614ba991253f1e9fb46504" name="bairro" type="string" type-id="string" />
+                  </parameters>
+                </operation>
+                <operation id="o61c46d1556a44ffea9c7ee5c52cbfcc6226" cid="OP056" name="setNumero" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p742e04cc8ca54e7d971751e2e9fee7ad" name="numero" type="int" type-id="int" />
+                  </parameters>
+                </operation>
+                <operation id="o1f7924393e2148b29a49b8616eff1fa2226" cid="OP057" name="setQuartos" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p0ab3f7cde3604785a40ce38517b7dbd5" name="quartos" type="int" type-id="int" />
+                  </parameters>
+                </operation>
+                <operation id="o5bf06d9892c343878011fb225b5a73c4226" cid="OP058" name="setBanheiros" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p6f3f21e42de440d9b8a913045a06a24d" name="banheiros" type="int" type-id="int" />
+                  </parameters>
+                </operation>
+                <operation id="o47c986e5a2c04c2394b005b669bf8f4a226" cid="OP059" name="getValor" creation-date="11/08/2021 14:36:13" type="float" type-id="float" visibility="public" />
+                <operation id="o0d05e41ecd474202acf2b8c210c4172f226" cid="OP060" name="getProprietario" creation-date="11/08/2021 14:36:13" type="string" type-id="string" visibility="public" />
+                <operation id="od7bee5ed1c1d4508b628eac5ff4408ff226" cid="OP061" name="getRua" creation-date="11/08/2021 14:36:13" type="string" type-id="string" visibility="public" />
+                <operation id="o696abc7915d342b8bb8e4c54ba393801226" cid="OP062" name="getBairro" creation-date="11/08/2021 14:36:13" type="string" type-id="string" visibility="public" />
+                <operation id="oc592147514bc429b9367d610ab129b96226" cid="OP063" name="getCidade" creation-date="11/08/2021 14:36:13" type="string" type-id="string" visibility="public" />
+                <operation id="od8aff720374e487c8ee9803a27406cee226" cid="OP064" name="getNumero" creation-date="11/08/2021 14:36:13" type="int" type-id="int" visibility="public" />
+                <operation id="o19a39df4e545443fa9e9b51b354ba702226" cid="OP065" name="getQuartos" creation-date="11/08/2021 14:36:13" type="int" type-id="int" visibility="public" />
+                <operation id="o478a766c107e4b7eb6390159c07b85d5226" cid="OP066" name="getBanheiros" creation-date="11/08/2021 14:36:13" type="int" type-id="int" visibility="public" />
+                <operation id="ofbfe20176d744a72bb42a513c4f80067226" cid="OP067" name="saida" creation-date="11/08/2021 14:36:13" type="" type-id="" visibility="public" virtual="true">
+                  <parameters>
+                    <parameter id="pbea2a3c2a51f44f49e8267fc2217044f" name="out" type="ostream &amp;" type-id="ostream &amp;" />
+                  </parameters>
+                </operation>
+                <operation id="o2a4e0ce1059a44d88073af8db0d6abf5226" cid="OP068" name="&lt;&lt;" creation-date="11/08/2021 14:36:13" type="ostream &amp;" type-id="ostream &amp;" visibility="public">
+                  <parameters>
+                    <parameter id="pb9a8bd6080914ce4b461d97988cf139a" name="out" type="ostream &amp;" type-id="ostream &amp;" />
+                    <parameter id="pb254c849e4a0414cafddc168d02d43a6" name="imovel" type="Imovel &amp;" type-id="Imovel &amp;" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>operator</stereotype>
+                  </stereotypes>
+                </operation>
+              </operations>
+            </item>
+            <item id="1835002e232d48598566830eb10168ed" cid="PROP012" type="property" name="valor" style-class="" owner="ecad1470f34347cf8ba58f7e227016b4" creation-date="11/08/2021 14:36:13" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv23a077044b584f4bb5b2be35fd877fc6" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="valor" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="float" type-id="float" />
+              <property />
+            </item>
+            <item id="d0d514179820485fb99052496cafa9ea" cid="PROP013" type="property" name="proprietario" style-class="" owner="ecad1470f34347cf8ba58f7e227016b4" creation-date="11/08/2021 14:36:13" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv4936bf1b20254a6fa17c3c6bac1c37dd" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="proprietario" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="string" type-id="string" />
+              <property />
+            </item>
+            <item id="cb95b38c80844ce99d9fd055a6678449" cid="PROP014" type="property" name="rua" style-class="" owner="ecad1470f34347cf8ba58f7e227016b4" creation-date="11/08/2021 14:36:13" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv2439445c65d645b4bd9d3b94273c9c1d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="rua" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="string" type-id="string" />
+              <property />
+            </item>
+            <item id="7fec9f878a894b5eaacfbae1952437f4" cid="PROP015" type="property" name="bairro" style-class="" owner="ecad1470f34347cf8ba58f7e227016b4" creation-date="11/08/2021 14:36:13" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvfa241f0fe0c1456593364fe33c3a2d73" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="bairro" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="string" type-id="string" />
+              <property />
+            </item>
+            <item id="f4e1fbc9a56041a398cf3f13d0d4bdaf" cid="PROP016" type="property" name="cidade" style-class="" owner="ecad1470f34347cf8ba58f7e227016b4" creation-date="11/08/2021 14:36:13" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv687e67bf2eaf4d8583c5e810dba9e9a2" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="cidade" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="string" type-id="string" />
+              <property />
+            </item>
+            <item id="676ad8a26496474b8f4c8ddc769620a1" cid="PROP017" type="property" name="numero" style-class="" owner="ecad1470f34347cf8ba58f7e227016b4" creation-date="11/08/2021 14:36:13" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvbc40dc0a1a2c437e9be0f4733e269f15" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="numero" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="int" type-id="int" />
+              <property />
+            </item>
+            <item id="272c576506d340f8ad2fcc8c16883348" cid="PROP018" type="property" name="quartos" style-class="" owner="ecad1470f34347cf8ba58f7e227016b4" creation-date="11/08/2021 14:36:13" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv380aeefc6d324f58857a49fae9076990" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="quartos" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="int" type-id="int" />
+              <property />
+            </item>
+            <item id="89d8bdbb00ed4767833e401108854264" cid="PROP019" type="property" name="banheiros" style-class="" owner="ecad1470f34347cf8ba58f7e227016b4" creation-date="11/08/2021 14:36:13" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv5f59314bc02943438ec823b7eb0ef411" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="banheiros" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="int" type-id="int" />
+              <property />
+            </item>
+            <item id="9177a6adaf5542cf83baf399e21376a7" cid="GNR001" type="generalization" name="" style-class="" creation-date="11/08/2021 14:36:13" from="1a0dbc16f7aa453ea160b4fd554166f9" to="ecad1470f34347cf8ba58f7e227016b4" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv40d7b6f48a4143d0b437cfcf2e3adc50" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="384f3d013a4642fcb3918874af27c212" cid="GNR002" type="generalization" name="" style-class="" creation-date="11/08/2021 14:36:13" from="b49e95cce0ac4e858c0a0ee9e386b844" to="ecad1470f34347cf8ba58f7e227016b4" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv0f1ccbd4d796405582f4cbaee39ba925" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="4b26097b34e54d138596984aeaace1f1" cid="GNR003" type="generalization" name="" style-class="" creation-date="11/08/2021 14:36:13" from="1aa2a283f3094dada89a2af6411ce421" to="ecad1470f34347cf8ba58f7e227016b4" visibility="public">
+              <tagged-values>
+                <tagged-value id="tvea30be134e2848dcbe0d6454f3ed8041" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+          </abstract-items>
+          <sub-models />
+          <diagram type="uml-class" id="pfaf888cf41e945bf9fa8059b9b94f94f_809193686" name="" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" namespace="" view-location="-195,-75" zoom="0.8">
+            <style>
+              <background-color index="1" color="#FFFFFFFF" />
+              <background-color index="2" color="#FFFFFFFF" />
+              <background-type type="vertical-linear" />
+            </style>
+            <meta>
+              <authors>
+                <author>the best</author>
+              </authors>
+              <description />
+              <creation-date>11/08/2021 14:36:13</creation-date>
+              <change-date>11/08/2021 14:36:13</change-date>
+              <revision-count>0</revision-count>
+              <version />
+            </meta>
+            <tagged-values>
+              <tagged-value id="tvc94a6971bdd3452faa7e6c846c174d54" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+            </tagged-values>
+            <abstract-items />
+            <layer id="fe592b2d7ec7489a836c667d87afb9ac" name="Default" visible="true" enabled="true" locked="false">
+              <item id="1a0dbc16f7aa453ea160b4fd554166f9" iid="aa111e9509894ec0b2267726b1dd2d79" creation-date="11/08/2021 14:36:13" order-index="0" type="entity">
+                <layout ax="0" ay="726" awidth="360" aheight="415" x="0" y="726" width="360" height="415" />
+                <classifier />
+                <class />
+              </item>
+              <item id="b49e95cce0ac4e858c0a0ee9e386b844" iid="f86251650dd442d8b07150bdb9948eba" creation-date="11/08/2021 14:36:13" order-index="1" type="entity">
+                <layout ax="380" ay="726" awidth="358" aheight="284" x="380" y="726" width="358" height="284" />
+                <classifier />
+                <class />
+              </item>
+              <item id="1aa2a283f3094dada89a2af6411ce421" iid="92894c9acb57462c8f5cd6a185bf172d" creation-date="11/08/2021 14:36:13" order-index="2" type="entity">
+                <layout ax="758" ay="726" awidth="360" aheight="472" x="758" y="726" width="360" height="472" />
+                <classifier />
+                <class />
+              </item>
+              <item id="2362f127b7584460928466541d58d371" iid="99ccf3d94b4043b6a024a3fb59774ffe" creation-date="11/08/2021 14:36:13" order-index="3" type="entity">
+                <layout ax="1138" ay="0" awidth="355" aheight="522" x="1138" y="0" width="355" height="522" />
+                <classifier />
+                <class />
+              </item>
+              <item id="ecad1470f34347cf8ba58f7e227016b4" iid="d545b5b736864f80ac8d172e19f3961c" creation-date="11/08/2021 14:36:13" order-index="4" type="entity">
+                <layout ax="381" ay="0" awidth="356" aheight="626" x="381" y="0" width="356" height="626" />
+                <classifier />
+                <class />
+              </item>
+              <item id="9177a6adaf5542cf83baf399e21376a7" iid="5175410e74804b8d981aa38c9f727ca2" creation-date="11/08/2021 14:36:13" order-index="5" type="relation">
+                <layout line-style="perpendicular" lock-end-point="true" lock-to-fields="false" auto-path="" x1="179" y1="726" x2="489" y2="626" start-border-pos="0.1245" end-border-pos="0.674157303370786" end-local-pos="108" name-position="0,20">
+                  <points>
+                    <point x="179" y="726" />
+                    <point x="180" y="676" />
+                    <point x="438" y="676" />
+                    <point x="489" y="626" />
+                  </points>
+                </layout>
+                <relation from="1a0dbc16f7aa453ea160b4fd554166f9" from-iid="aa111e9509894ec0b2267726b1dd2d79" to="ecad1470f34347cf8ba58f7e227016b4" to-iid="d545b5b736864f80ac8d172e19f3961c" />
+              </item>
+              <item id="384f3d013a4642fcb3918874af27c212" iid="1897da4b6ed448a2b791076a78aeea7e" creation-date="11/08/2021 14:36:13" order-index="6" type="relation">
+                <layout line-style="perpendicular" lock-end-point="true" lock-to-fields="false" auto-path="" x1="558" y1="726" x2="559" y2="626" start-border-pos="0.1245" end-border-pos="0.625" end-local-pos="178" name-position="0,20">
+                  <points>
+                    <point x="558" y="726" />
+                    <point x="559" y="676" />
+                    <point x="559" y="676" />
+                    <point x="559" y="626" />
+                  </points>
+                </layout>
+                <relation from="b49e95cce0ac4e858c0a0ee9e386b844" from-iid="f86251650dd442d8b07150bdb9948eba" to="ecad1470f34347cf8ba58f7e227016b4" to-iid="d545b5b736864f80ac8d172e19f3961c" />
+              </item>
+              <item id="4b26097b34e54d138596984aeaace1f1" iid="8f674b1e83e8459cb6c2ca8cb6646017" creation-date="11/08/2021 14:36:13" order-index="7" type="relation">
+                <layout line-style="perpendicular" lock-end-point="true" lock-to-fields="false" auto-path="" x1="937" y1="726" x2="609" y2="626" start-border-pos="0.1245" end-border-pos="0.589887641370296" end-local-pos="228" name-position="0,20">
+                  <points>
+                    <point x="937" y="726" />
+                    <point x="938" y="676" />
+                    <point x="617" y="676" />
+                    <point x="609" y="626" />
+                  </points>
+                </layout>
+                <relation from="1aa2a283f3094dada89a2af6411ce421" from-iid="92894c9acb57462c8f5cd6a185bf172d" to="ecad1470f34347cf8ba58f7e227016b4" to-iid="d545b5b736864f80ac8d172e19f3961c" />
+              </item>
+            </layer>
+          </diagram>
+        </model>
+      </sub-models>
+      <diagram type="uml-package" id="pc89f01684172464c83edb5477f600ba6_296492129" name="Packages" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" namespace="">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="vertical-linear" />
+        </style>
+        <meta>
+          <authors>
+            <author>the best</author>
+          </authors>
+          <description />
+          <creation-date>11/08/2021 14:36:13</creation-date>
+          <change-date>11/08/2021 14:36:13</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <tagged-values>
+          <tagged-value id="tv3e290f6296b449098b7757c28242d952" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+        </tagged-values>
+        <abstract-items />
+        <layer id="804c8f2c361c4025a7722a9f987b7ee6" name="Default" visible="true" enabled="true" locked="false">
+          <item id="b4a0587885c8492d9dc9e7e061eeaf63" iid="8eb99edaf42643499eaded4eae14faed" creation-date="11/08/2021 14:36:13" order-index="0" type="entity">
+            <layout ax="0" ay="0" awidth="84" aheight="56" x="0" y="0" width="84" height="56" expanded="0,0,84,56" collapsed="0,0,0,0" />
+            <package name-in-body="false" />
+          </item>
+        </layer>
+      </diagram>
+      <diagram type="uml-class" id="pedecef144b3b4e21854c379dcdc30504_610501629" name="ClassDiagram2" order-index="3" overview-order-index="0" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" view-location="-100,-100">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author>the best</author>
+          </authors>
+          <description />
+          <creation-date>11/08/2021 16:15:48</creation-date>
+          <change-date>11/08/2021 16:15:48</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items />
+        <layer id="159d6fbb52294a30a34b60f6b3f39466" name="Default" visible="true" enabled="true" locked="false" />
+      </diagram>
+    </model>
+  </models>
+</sim-project>
