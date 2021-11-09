@@ -1,8 +1,10 @@
 #include "../headers/Apartamento.h"
 
+// Construtores
 Apartamento::Apartamento(float valor, string proprietario, string rua, string bairro, string cidade, int numero, int quartos, int banheiros, int andar, float taxa_condominio, bool elevador, bool sacada) : Imovel(valor, proprietario, rua, bairro, cidade, numero, quartos, banheiros), andar(andar), taxa_condominio(taxa_condominio), elevador(elevador), sacada(sacada) {}
 Apartamento::~Apartamento() {}
 
+// Sets e Gets
 void Apartamento::setAndar(int andar)
 {
     this->andar = andar;
@@ -43,6 +45,7 @@ bool Apartamento::getSacada()
     return sacada;
 }
 
+// Sobrecarga do operador "<<" e função de impressão
 void Apartamento::saida (ostream &out){
     Imovel::saida(out);
     out << setprecision(2);

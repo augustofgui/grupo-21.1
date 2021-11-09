@@ -1,8 +1,10 @@
 #include "../headers/Chacara.h"
 
+// Construtores
 Chacara::Chacara(float valor, string proprietario, string rua, string bairro, string cidade, int numero, int quartos, int banheiros, bool salao_festa, bool salao_jogos, bool campo_futebol, bool churrasqueira, bool piscina) : Imovel(valor, proprietario, rua, bairro, cidade, numero, quartos, banheiros), salao_festa(salao_festa), salao_jogos(salao_jogos), campo_futebol(campo_futebol), churrasqueira(churrasqueira), piscina(piscina) {}
 Chacara::~Chacara() {}
 
+// Sets e Gets
 void Chacara::setSalaoFesta(bool salao_festa)
 {
     this->salao_festa = salao_festa;
@@ -53,6 +55,7 @@ bool Chacara::getPiscina()
     return piscina;
 }
 
+// Sobrecarga do operador "<<" e função de impressão
 void Chacara::saida(ostream &out){
     Imovel::saida(out);
     out << setprecision(2);

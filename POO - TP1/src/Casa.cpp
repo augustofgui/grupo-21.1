@@ -1,8 +1,10 @@
 #include "../headers/Casa.h"
 
+// Construtores
 Casa::Casa(float valor, string proprietario, string rua, string bairro, string cidade, int numero, int quartos, int banheiros, int andares, bool sala_jantar) : Imovel(valor, proprietario, rua, bairro, cidade, numero, quartos, banheiros), andares(andares), sala_jantar(sala_jantar) {}
 Casa::~Casa() {}
 
+// Sets e Gets
 void Casa::setAndares(int andares)
 {
     this->andares = andares;
@@ -23,6 +25,7 @@ bool Casa::getSalaJantar()
     return sala_jantar;
 }
 
+// Sobrecarga do operador "<<" e função de impressão
 void Casa::saida (ostream &out){
     out << setprecision(2);
     Imovel::saida(out);

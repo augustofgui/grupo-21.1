@@ -1,8 +1,10 @@
 #include "../headers/Imovel.h"
 
+// Construtores
 Imovel::Imovel(float valor, string proprietario, string rua, string bairro, string cidade, int numero, int quartos, int banheiros) : valor(valor), proprietario(proprietario), rua(rua), bairro(bairro), cidade(cidade), numero(numero), quartos(quartos), banheiros(banheiros) {}
 Imovel::~Imovel() {}
 
+// Sets e Gets
 void Imovel::setValor(float valor)
 {
     this->valor = valor;
@@ -83,6 +85,7 @@ int Imovel::getBanheiros()
     return banheiros;
 }
 
+// Sobrecarga do operador "<<" e função de impressão
 void Imovel::saida (ostream &out){
     out << "Proprietario: " << proprietario << endl
         << "    Valor: " << fixed << valor << endl
