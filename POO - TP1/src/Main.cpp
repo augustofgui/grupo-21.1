@@ -6,7 +6,7 @@
 
 int main (int argc, char *argv[]){
 
-    verifParametros(argc); // Verifica os parametros de entrada
+    verifParametros(argc); // Verifica se um arquivo database de imóveis foi passado por argumento durante a execução
 
     vector<Imovel*> imoveis_database; // Vetor de imoveis polimorfico
     
@@ -25,7 +25,7 @@ int main (int argc, char *argv[]){
     // Percorre e lê linha por linha do arquivo
     while(getline(input_file, linha_imovel)){
 
-        // Separa cada linha do arquivo em substrings divididas pelo caractere ";"
+        // Separa cada linha do arquivo em substrings divididas pelo caractere ";". Função 'explode' nativa da linguagem PHP.
         vector<string> v = explode(linha_imovel, ';');
         
         // Verifica qual tipo de imovel foi lido e cria uma nova instancia dele,

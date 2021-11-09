@@ -1,6 +1,6 @@
 #include "../headers/Geral.h"
 
-// Verifica os parametros do programa
+// Verifica se um arquivo database de imóveis foi passado por argumento durante a execução
 void verifParametros(int argc)
 {
     if (argc < 2)
@@ -10,6 +10,7 @@ void verifParametros(int argc)
     }
 }
 
+//Funções comparadoras utilizadas para ordenar o vetor de imóveis com base no valor de cada um
 bool ordem_crescente(const Imovel *imovel1, const Imovel *imovel2){
     return imovel1->getValor() < imovel2->getValor();
 }
@@ -18,7 +19,7 @@ bool ordem_decrescente(const Imovel *imovel1, const Imovel *imovel2){
     return imovel1->getValor() > imovel2->getValor();
 }
 
-// Separa uma string em substrings dividindo por um caractere
+// Separa cada linha do arquivo em substrings divididas pelo caractere ";". Função 'explode' nativa da linguagem PHP.
 std::vector<std::string> explode(std::string const &s, char delim)
 {
     std::vector<std::string> result;
@@ -63,7 +64,7 @@ std::vector<Imovel *> buscar_por_valor_maximo(vector<Imovel *> imoveis_database)
             imoveis_preco_maximo.push_back(imoveis_database[i]);
     }
 
-    if(!(int)imoveis_preco_maximo.size())
+    if(imoveis_preco_maximo.empty())
         cout << "Não foram encontrados imóveis nessa faixa de preço!\n" << endl;
 
     return imoveis_preco_maximo;
@@ -83,7 +84,7 @@ std::vector<Imovel *> buscar_por_quartos(vector<Imovel *> imoveis_database)
             imoveis_quartos.push_back(imoveis_database[i]);
     }
 
-    if(!(int)imoveis_quartos.size())
+    if(imoveis_quartos.empty())
         cout << "\nNão foram encontrados imóveis com esse número de quartos!\n" << endl;
 
     return imoveis_quartos;
@@ -105,9 +106,10 @@ std::vector<Imovel *> buscar_por_cidade(vector<Imovel *> imoveis_database)
             imoveis_cidade.push_back(imoveis_database[i]);
     }
 
-    if(!(int)imoveis_cidade.size())
+    if(imoveis_cidade.empty())
         cout << "Não foram encontrados imóveis dessa cidade!\n" << endl;
 
+    //Algoritmo de ordenação da STL. Utiliza a função criada previamente para comparar objetos derivados da classe base 'Imovel'.
     std::sort(imoveis_cidade.begin(), imoveis_cidade.end(), ordem_decrescente);
 
     return imoveis_cidade;
@@ -127,7 +129,7 @@ vector<int> fazer_iterador (vector<Imovel *> imoveis_database){
             iteradores.push_back(i);
     }
 
-    if(!(int)iteradores.size())
+    if(iteradores.empty())
         cout << "Não foram encontrados imóveis desse proprietário (iterador vazio)!\n" << endl;
 
     return iteradores;
