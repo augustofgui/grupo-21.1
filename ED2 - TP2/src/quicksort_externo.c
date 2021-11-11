@@ -1,9 +1,14 @@
 #include "../headers/geral.h"
 #include "../headers/quicksort_externo.h"
 
+void quicksort_externo_main(){
+   //
+}
+
 void quicksort_externo(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, int Esq, int Dir){
     int i, j;
-    TipoArea Area;
+    Registro *Area = malloc(Registro*)(TAM_AREA * sizeof(Registro));
+
     if (Dir - Esq < 1) return;
     FAVazia(&Area);
     Particao(ArqLi, ArqEi, ArqLEs, Area, Esq, Dir, &i, &j);
@@ -17,7 +22,7 @@ void quicksort_externo(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, int Esq, int D
     }
 }
 
-void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq, int Dir, int *i, int *j){
+void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, Registro *Area, int Esq, int Dir, int *i, int *j){
     int Ls = Dir, Es = Dir, Li = Esq, Ei = Esq, NRArea = 0, Linf = INT_MIN, Lsup = INT_MAX;
     short OndeLer = 1;
     Registro UltLido, R;
@@ -28,14 +33,15 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
     *j = Dir + 1;
 
     while (Ls >= Li){
-        if (NRarea < TAMAREA - 1){
+        if (NRArea < TAM_AREA - 1){
             if (OndeLer)
-                LeSup(ArqLes, &UltLido, &Ls, &OndeLer);
+                LeSup(ArqLEs, &UltLido, &Ls, &OndeLer);
             else
                 LeInf(ArqLi, &UltLido, &Li, &OndeLer);
             InserirArea(&Area, &UltLido, &NRArea);
             continue;
         }
+
         if (Ls == Es)
             LeSup(ArqLEs, &UltLido, &Ls, &OndeLer);
         else if (Li == Ei)
@@ -45,28 +51,28 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
         else
             LeInf(ArqLi, &UltLido, &Li, &OndeLer);
 
-        if (UltLido.chave > Lsup){
+        if (UltLido.nota > Lsup){
             *j = Es;
             EscreveMax(ArqLEs, UltLido, &Es);
             continue;
         }
-        if (UltLido.chave < Linf){
+        if (UltLido.nota < Linf){
             *i = Ei;
             EscreveMin(ArqEi, UltLido, &Ei);
             continue;
         }
 
-        InserirArea(&Area, &UltLido, &NRarea);
+        InserirArea(Area, &UltLido, &NRArea);
         
         if (Ei - Esq < Dir - Es){
             RetiraMin(&Area, &R, &NRArea);
             EscreveMin(ArqEi, R, &Ei);
-            Linf = R.chave;
+            Linf = R.nota;
         }
         else{
             RetiraMax(&Area, &R, &NRArea);
             EscreveMax(ArqLEs, R, &Es);
-            Lsup = R.chave;
+            Lsup = R.nota;
         }
 
         while (Ei <= Es){
@@ -89,7 +95,7 @@ void LeInf(FILE **ArqLi, Registro *UltLido, int *Li, short *OndeLer){
     *OndeLer = 1;
 }
 
-void InserirArea(TipoArea *Area, Registro *UltLido, int *NRArea){
+void InserirArea(Registro *Area, Registro *UltLido, int *NRArea){
     InsereItem(*UltLido, Area);
     *NRArea = ObterNumCelOcupadas(Area);
 }
@@ -105,12 +111,12 @@ void EscreveMin(FILE **ArqEi, Registro R, int *Ei){
     (*Ei)++;
 }
 
-void RetiraMax(TipoArea *Area, Registro *R, int *NRArea){
+void RetiraMax(Registro *Area, Registro *R, int *NRArea){
     retira_ultimo(Area, R);
     *NRArea = ObterNumCelOcupadas(Area);
 }
 
-void RetiraMin(TipoArea *Area, Registro *R, int *NRArea){
+void RetiraMin(Registro *Area, Registro *R, int *NRArea){
     RetiraPrimeiro(Area, R);
     *NRArea = ObterNumCelOcupadas(Area);
 }
