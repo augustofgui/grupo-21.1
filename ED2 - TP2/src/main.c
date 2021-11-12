@@ -14,7 +14,7 @@ int main (int argc, char *argv[]){
     
     if (argc > 5)
         imprimir_dados = (!strcmp(argv[5], "-P"));
-        
+
     if (argc > 6)
         arquivo_texto = abrir_arquivo(argv[6]);
     else
@@ -22,7 +22,7 @@ int main (int argc, char *argv[]){
 
     switch (nro_metodo){
         case 1 : intercalacao_ordenacao_interna(nro_metodo, nro_quantidade, nro_situacao, imprimir_dados);
-        case 2 : intercalacao_substituicao_selecao(nro_metodo, nro_quantiade, nro_situacao, imprimir_dados);
+        case 2 : intercalacao_substituicao_selecao(nro_metodo, nro_quantidade, nro_situacao, imprimir_dados);
         case 3 : quicksort_externo(nro_metodo, nro_quantidade, nro_situacao, imprimir_dados);
     }
 
