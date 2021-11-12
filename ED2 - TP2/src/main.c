@@ -21,9 +21,15 @@ int main (int argc, char *argv[]){
         arquivo_texto = abrir_arquivo("PROVAO.TXT");
 
     switch (nro_metodo){
-        case 1 : intercalacao_ordenacao_interna(nro_metodo, nro_quantidade, nro_situacao, imprimir_dados);
-        case 2 : intercalacao_substituicao_selecao(nro_metodo, nro_quantidade, nro_situacao, imprimir_dados);
-        case 3 : quicksort_externo(nro_metodo, nro_quantidade, nro_situacao, imprimir_dados);
+        case 1 : 
+            intercalacao_ordenacao_interna(nro_metodo, nro_quantidade, nro_situacao, imprimir_dados);
+            break
+        case 2 : 
+            intercalacao_substituicao_selecao(nro_metodo, nro_quantidade, nro_situacao, imprimir_dados);
+            break;
+        case 3 : 
+            quicksort_externo(nro_metodo, nro_quantidade, nro_situacao, imprimir_dados);
+            break;
     }
 
     return 0;
