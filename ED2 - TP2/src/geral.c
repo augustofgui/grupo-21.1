@@ -1,15 +1,18 @@
 #include "../headers/geral.h"
 
 void verificar_parametros(int argc, int nro_metodo, int nro_quantidade, int nro_situacao){  
-    if (argc < 4)
+    if (argc < 4){
         printf("ERRO : Parâmetros insuficientes para a execução\n.");
         exit(1);
-    if (nro_metodo != 1 && nro_metodo != 2 && nro_metodo != 3)
+    }
+    if (nro_metodo != 1 && nro_metodo != 2 && nro_metodo != 3){
         printf("ERRO : Método fornecido não corresponde ao enunciado do trabalho. Por favor, corrija os parâmetros de execução.\n");
         exit(1);
-    if (nro_quantidade < 100 || nro_quantidade > 471705)
+    }
+    if (nro_quantidade < 100 || nro_quantidade > 471705){
         printf("ERRO : Quantidade de registros fornecida não corresponde ao enunciado do trabalho. Por favor, corrija os parãmetros de execução.\n");
         exit(1);
+    }
 }
 
 FILE* abrir_arquivo(char argv[]){
@@ -19,4 +22,12 @@ FILE* abrir_arquivo(char argv[]){
         exit(1);
     }
     return abrir_arquivo;
+}
+
+void imprimir_registro(Registro x){
+    printf("Inscrição: %ld\n", x.inscricao);
+    printf("Nota: %f\n", x.nota);
+    printf("Estado: %s\n", x.estado);
+    printf("Cidade: %s\n", x.cidade);
+    printf("Curso: %s\n", x.curso);
 }

@@ -3,6 +3,7 @@
 
 #define TAM_AREA 20
 
+void quicksort_externo_main(char argv[], int nro_quantidade);
 void quicksort_externo(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, int Esq, int Dir);
 void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, Registro *Area, int Esq, int Dir, int *i, int *j);
 void LeSup(FILE **ArqLEs, Registro *UltLido, int *Ls, short *OndeLer);

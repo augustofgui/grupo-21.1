@@ -1,17 +1,23 @@
 #include "../headers/geral.h"
 #include "../headers/quicksort_externo.h"
 
-void quicksort_externo_main(){
-   //
+void quicksort_externo_main(char argv[], int nro_quantidade){
+   FILE *ArqLi, *ArqEi, *ArqLEs;
+   ArqLi = abrir_arquivo(argv);
+   ArqEi = abrir_arquivo(argv);
+   ArqLEs = abrir_arquivo(argv);
+   quicksort_externo(&ArqLi, &ArqEi, &ArqLEs, 1, nro_quantidade);
 }
 
 void quicksort_externo(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, int Esq, int Dir){
     int i, j;
-    Registro *Area = malloc(Registro*)(TAM_AREA * sizeof(Registro));
 
     if (Dir - Esq < 1) return;
-    FAVazia(&Area);
+
+    Registro *Area = (Registro*)malloc(TAM_AREA * sizeof(Registro));
+
     Particao(ArqLi, ArqEi, ArqLEs, Area, Esq, Dir, &i, &j);
+
     if (i - Esq < Dir - j){
         quicksort_externo(ArqLi, ArqEi, ArqLEs, Esq, i);
         quicksort_externo(ArqLi, ArqEi, ArqLEs, j, Dir);
@@ -38,7 +44,7 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, Registro *Area, int Esq
                 LeSup(ArqLEs, &UltLido, &Ls, &OndeLer);
             else
                 LeInf(ArqLi, &UltLido, &Li, &OndeLer);
-            InserirArea(&Area, &UltLido, &NRArea);
+            InserirArea(Area, &UltLido, &NRArea);
             continue;
         }
 
@@ -65,18 +71,18 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, Registro *Area, int Esq
         InserirArea(Area, &UltLido, &NRArea);
         
         if (Ei - Esq < Dir - Es){
-            RetiraMin(&Area, &R, &NRArea);
+            RetiraMin(Area, &R, &NRArea);
             EscreveMin(ArqEi, R, &Ei);
             Linf = R.nota;
         }
         else{
-            RetiraMax(&Area, &R, &NRArea);
+            RetiraMax(Area, &R, &NRArea);
             EscreveMax(ArqLEs, R, &Es);
             Lsup = R.nota;
         }
 
         while (Ei <= Es){
-            RetiraMin(&Area, &R, &NRArea);
+            RetiraMin(Area, &R, &NRArea);
             EscreveMin(ArqEi, R, &Ei);
         }
     }
@@ -101,7 +107,7 @@ void InserirArea(Registro *Area, Registro *UltLido, int *NRArea){
 }
 
 void EscreveMax(FILE **ArqLEs, Registro R, int *Es){
-    fseek(*ArqLEs, (*ES - 1) * sizeof(Registro), SEEK_SET);
+    fseek(*ArqLEs, (*Es - 1) * sizeof(Registro), SEEK_SET);
     fwrite(&R, sizeof(Registro), 1, *ArqLEs);
     (*Es)--;
 }
@@ -112,7 +118,7 @@ void EscreveMin(FILE **ArqEi, Registro R, int *Ei){
 }
 
 void RetiraMax(Registro *Area, Registro *R, int *NRArea){
-    retira_ultimo(Area, R);
+    RetiraUltimo(Area, R);
     *NRArea = ObterNumCelOcupadas(Area);
 }
 
