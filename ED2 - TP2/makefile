@@ -1,4 +1,4 @@
-PROJ_NAME=pesquisa
+PROJ_NAME=ordena
 
 # .c files
 C_src=$(wildcard ./src/*.c)
