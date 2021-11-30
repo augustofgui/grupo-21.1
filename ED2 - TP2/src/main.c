@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     int nro_quantidade = atoi(argv[2]);
     int nro_situacao = atoi(argv[3]);
     bool imprimir_dados = false;
-    char nome_arquivo[100];
+    char nome_arquivo[50];
 
     verificar_parametros(argc, nro_metodo, nro_quantidade, nro_situacao);
 
