@@ -37,23 +37,34 @@ FILE *abrir_arquivo(char nome_arquivo[], char modo_abertura[])
 
 void imprimir_registro(Registro x)
 {
-    printf("Inscrição: %ld\n", x.inscricao);
-    printf("Nota: %f\n", x.nota);
-    printf("Estado: %s\n", x.estado);
-    printf("Cidade: %s\n", x.cidade);
-    printf("Curso: %s\n", x.curso);
+    printf("%08ld %05.1f %s", x.inscricao, x.nota, x.estado_cidade_curso);
 }
 
 FILE *converter_para_binario(FILE *arquivo_texto)
 {
     Registro aux;
 
-    FILE *arquivo_binario = abrir_arquivo("provao_binario.bin", "w+b");
+    FILE *arquivo_binario = abrir_arquivo("arquivo_binario.bin", "w+b");
 
-    while (fscanf(arquivo_texto, "%ld%f%s%s%s", &aux.inscricao, &aux.nota, aux.estado, aux.cidade, aux.curso))
+    while (fscanf(arquivo_texto, "%ld %f", &aux.inscricao, &aux.nota) != EOF)
+    {
+        fgets(aux.estado_cidade_curso, 80, arquivo_texto);
         fwrite(&aux, sizeof(Registro), 1, arquivo_binario);
+    }
 
     rewind(arquivo_binario);
 
     return arquivo_binario;
+}
+
+void converter_para_txt(FILE *arquivo_binario)
+{
+    Registro aux;
+
+    FILE *arquivo_txt = abrir_arquivo("arquivo_texto.txt", "w+");
+
+    while (fread(&aux, sizeof(Registro), 1, arquivo_binario))
+        fprintf(arquivo_txt, "%08ld %05.1f %s\n", aux.inscricao, aux.nota, aux.estado_cidade_curso);
+
+    fclose(arquivo_txt);
 }
