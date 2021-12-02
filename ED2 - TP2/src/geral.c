@@ -77,13 +77,13 @@ FILE *abrir_arquivo(char nome_arquivo[], char modo_abertura[])
 
     return abrir_arquivo;
 }
-    
+
 void imprimir_registro(Registro x)
 {
     printf("%08ld %05.1f%s\n", x.inscricao, x.nota, x.estado_cidade_curso);
 }
 
-FILE *converter_para_binario(FILE *arquivo_texto, char* argv)
+FILE *converter_para_binario(FILE *arquivo_texto, char *argv)
 {
     Registro aux;
 
@@ -100,7 +100,7 @@ FILE *converter_para_binario(FILE *arquivo_texto, char* argv)
     return arquivo_binario;
 }
 
-void converter_para_txt(FILE *arquivo_binario, char* argv)
+void converter_para_txt(FILE *arquivo_binario, char *argv)
 {
     Registro aux;
 
@@ -110,4 +110,12 @@ void converter_para_txt(FILE *arquivo_binario, char* argv)
         fprintf(arquivo_txt, "%08ld %05.1f%s\n", aux.inscricao, aux.nota, aux.estado_cidade_curso);
 
     fclose(arquivo_txt);
+}
+
+void print_estatisticas(int nro_comparacoes, int nro_leituras, int nro_escritas, double tempo_execucao)
+{
+    printf("Nº de comparações: %d\n", nro_comparacoes);
+    printf("Nº de leituras(fread): %d\n", nro_leituras);
+    printf("Nº de escritas(fwrite): %d\n", nro_escritas);
+    printf("Tempo de execução: %f segundos\n", tempo_execucao);
 }

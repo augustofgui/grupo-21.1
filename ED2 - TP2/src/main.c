@@ -7,10 +7,11 @@ int main(int argc, char *argv[])
 {
     int nro_metodo = atoi(argv[1]);
     int nro_quantidade = atoi(argv[2]);
+    int nro_situacao = atoi(argv[3]);
     bool imprimir_dados = false;
     char nome_arquivo[50];
 
-    //verificar_parametros(argc, nro_metodo, nro_quantidade, nro_situacao);
+    verificar_parametros(argc, nro_metodo, nro_quantidade, nro_situacao);
 
     if (argc > 5)
         imprimir_dados = (!strcmp(argv[5], "-P"));

@@ -1,6 +1,10 @@
 #include "../headers/geral.h"
 #include "../headers/quicksort_externo.h"
 
+int nro_comparacoes = 0;
+int nro_leituras = 0;
+int nro_escritas = 0;
+
 void quicksort_externo_main(char argv[], int nro_quantidade)
 {
     FILE *ArqLi, *ArqEi, *ArqLEs, *ArqTXT, *ArqBinario;
@@ -18,7 +22,12 @@ void quicksort_externo_main(char argv[], int nro_quantidade)
     ArqLEs = abrir_arquivo("arquivo_binario.bin", "r+b");
 
     printf("Ordenando o arquivo binário. Aguarde...\n");
+    clock_t t = clock();
     quicksort_externo(&ArqLi, &ArqEi, &ArqLEs, 1, nro_quantidade);
+    t = clock() - t;
+    double tempo_execucao = ((double)t) / CLOCKS_PER_SEC;
+
+    print_estatisticas(nro_comparacoes, nro_leituras, nro_escritas, tempo_execucao);
 
     printf("Convertendo o arquivo binário para .txt. Aguarde...\n");
     rewind(ArqLi);
@@ -35,6 +44,7 @@ void quicksort_externo(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, int Esq, int D
     int i, j;
     TipoArea Area;
 
+    nro_comparacoes++;
     if (Dir - Esq < 1)
         return;
 
@@ -42,6 +52,7 @@ void quicksort_externo(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, int Esq, int D
 
     Particao(ArqLi, ArqEi, ArqLEs, Area, Esq, Dir, &i, &j);
 
+    nro_comparacoes++;
     if (i - Esq < Dir - j)
     {
         quicksort_externo(ArqLi, ArqEi, ArqLEs, Esq, i);
@@ -68,8 +79,10 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
 
     while (Ls >= Li)
     {
+        nro_comparacoes+=2;
         if (NRArea < TAM_AREA - 1)
         {
+            nro_comparacoes++;
             if (OndeLer)
                 LeSup(ArqLEs, &UltLido, &Ls, &OndeLer);
             else
@@ -80,21 +93,32 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
             continue;
         }
 
+        nro_comparacoes++;
         if (Ls == Es)
+        {
             LeSup(ArqLEs, &UltLido, &Ls, &OndeLer);
+        }
         else if (Li == Ei)
+        {
+            nro_comparacoes++;
             LeInf(ArqLi, &UltLido, &Li, &OndeLer);
+        }
         else if (OndeLer)
+        {
+            nro_comparacoes++;
             LeSup(ArqLEs, &UltLido, &Ls, &OndeLer);
+        }
         else
             LeInf(ArqLi, &UltLido, &Li, &OndeLer);
 
+        nro_comparacoes++;
         if (UltLido.nota > Lsup)
         {
             *j = Es;
             EscreveMax(ArqLEs, UltLido, &Es);
             continue;
         }
+        nro_comparacoes++;
         if (UltLido.nota < Linf)
         {
             *i = Ei;
@@ -104,6 +128,7 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
 
         InserirArea(&Area, &UltLido, &NRArea);
 
+        nro_comparacoes++;
         if (Ei - Esq < Dir - Es)
         {
             RetiraMin(&Area, &R, &NRArea);
@@ -119,6 +144,7 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
     }
     while (Ei <= Es)
     {
+        nro_comparacoes++;
         RetiraMin(&Area, &R, &NRArea);
         EscreveMin(ArqEi, R, &Ei);
     }
@@ -127,6 +153,7 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
 void LeSup(FILE **ArqLEs, Registro *UltLido, int *Ls, short *OndeLer)
 {
     fseek(*ArqLEs, (*Ls - 1) * sizeof(Registro), SEEK_SET);
+    nro_leituras++;
     fread(UltLido, sizeof(Registro), 1, *ArqLEs);
     (*Ls)--;
     *OndeLer = 0;
@@ -134,6 +161,7 @@ void LeSup(FILE **ArqLEs, Registro *UltLido, int *Ls, short *OndeLer)
 
 void LeInf(FILE **ArqLi, Registro *UltLido, int *Li, short *OndeLer)
 {
+    nro_leituras++;
     fread(UltLido, sizeof(Registro), 1, *ArqLi);
     (*Li)++;
     *OndeLer = 1;
@@ -157,7 +185,6 @@ void RetiraUltimo(TipoArea *Area, Registro *R)
     *R = Area->array[Area->nro_cels_ocupadas - 1];
     Area->array[Area->nro_cels_ocupadas - 1].nota = MAX_NOTA;
     Area->nro_cels_ocupadas--;
-    merge_sort(Area->array, 0, TAM_AREA - 1);
 }
 
 void RetiraPrimeiro(TipoArea *Area, Registro *R)
@@ -171,6 +198,7 @@ void RetiraPrimeiro(TipoArea *Area, Registro *R)
 void EscreveMax(FILE **ArqLEs, Registro R, int *Es)
 {
     fseek(*ArqLEs, (*Es - 1) * sizeof(Registro), SEEK_SET);
+    nro_escritas++;
     fwrite(&R, sizeof(Registro), 1, *ArqLEs);
     (*Es)--;
 }

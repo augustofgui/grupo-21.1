@@ -22,4 +22,4 @@ void FAVazia(TipoArea* Area);
 void RetiraUltimo(TipoArea *Area, Registro *R);
 void RetiraPrimeiro(TipoArea *Area, Registro *R);
 void InsereItem(Registro *UltLido, TipoArea *Area);
-void printArea(TipoArea *Area);
+void PrintArea(TipoArea *Area);
