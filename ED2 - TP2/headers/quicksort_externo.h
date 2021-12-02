@@ -1,7 +1,7 @@
-#define INT_MIN  (-2147483648)
-#define INT_MAX   (2147483647)
+#include <limits.h>
 
 #define TAM_AREA 20
+#define MAX_NOTA 999999.99
 
 typedef struct {
     Registro array[TAM_AREA];
@@ -22,3 +22,4 @@ void FAVazia(TipoArea* Area);
 void RetiraUltimo(TipoArea *Area, Registro *R);
 void RetiraPrimeiro(TipoArea *Area, Registro *R);
 void InsereItem(Registro *UltLido, TipoArea *Area);
+void printArea(TipoArea *Area);
