@@ -1,20 +1,20 @@
 #include "../headers/geral.h"
 
-void merge_sort(Registro *vetor, int margem_esquerda, int n, int nro_situacao)
+void merge_sort(Registro *vetor, int margem_esquerda, int n)
 {
     if (margem_esquerda < n)
     {
         int nova_margem = (margem_esquerda + n) / 2;
         merge_sort(vetor, margem_esquerda, nova_margem);
         merge_sort(vetor, nova_margem + 1, n);
-        (nro_situacao == 1) ? merge_sort_crescente(vetor, margem_esquerda, nova_margem, n) : merge_sort_decrescente(vetor, margem_esquerda, nova_margem, n);
+        merge_sort_ascendente(vetor, margem_esquerda, nova_margem, n);
     }
 }
 
-void merge_sort_crescente(int *vetor, int margem_esquerda, int nova_margem, int n)
+void merge_sort_ascendente(Registro *vetor, int margem_esquerda, int nova_margem, int n)
 {
     int tamanho_esquerda = (nova_margem - margem_esquerda + 1), tamanho_direita = (n - nova_margem);
-    Registro *vetor_esquerda = (Registro *)malloc(tamanho_esquerda * sizeof(Registro)));
+    Registro *vetor_esquerda = (Registro *)malloc(tamanho_esquerda * sizeof(Registro));
     Registro *vetor_direita = (Registro *)malloc(tamanho_direita * sizeof(Registro));
     int i, j;
 
@@ -33,37 +33,6 @@ void merge_sort_crescente(int *vetor, int margem_esquerda, int nova_margem, int 
         else if (j == tamanho_direita)
             vetor[k] = vetor_esquerda[i++];
         else if (vetor_esquerda[i].nota < vetor_direita[j].nota)
-            vetor[k] = vetor_esquerda[i++];
-        else
-            vetor[k] = vetor_direita[j++];
-    }
-
-    free(vetor_direita);
-    free(vetor_esquerda);
-}
-
-void merge_sort_decrescente(int *vetor, int margem_esquerda, int nova_margem, int n)
-{
-    int tamanho_esquerda = (nova_margem - margem_esquerda + 1), tamanho_direita = (n - nova_margem);
-    Registro *vetor_esquerda = (Registro *)malloc(tamanho_esquerda * sizeof(Registro)));
-    Registro *vetor_direita = (Registro *)malloc(tamanho_direita * sizeof(Registro));
-    int i, j;
-
-    for (i = 0; i < tamanho_esquerda; i++)
-        vetor_esquerda[i] = vetor[i + margem_esquerda];
-
-    for (j = 0; j < tamanho_direita; j++)
-        vetor_direita[j] = vetor[nova_margem + j + 1];
-
-    i = 0, j = 0;
-
-    for (int k = margem_esquerda; k <= n; k++)
-    {
-        if (i == tamanho_esquerda)
-            vetor[k] = vetor_direita[j++];
-        else if (j == tamanho_direita)
-            vetor[k] = vetor_esquerda[i++];
-        else if (vetor_esquerda[i].nota > vetor_direita[j].nota)
             vetor[k] = vetor_esquerda[i++];
         else
             vetor[k] = vetor_direita[j++];

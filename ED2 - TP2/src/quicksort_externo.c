@@ -17,7 +17,8 @@ void quicksort_externo(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, int Esq, int D
     if (Dir - Esq < 1)
         return;
 
-    Registro *Area = (Registro *)malloc(TAM_AREA * sizeof(Registro));
+    TipoArea Area;
+    FAVazia(&Area);
 
     Particao(ArqLi, ArqEi, ArqLEs, Area, Esq, Dir, &i, &j);
 
@@ -33,7 +34,15 @@ void quicksort_externo(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, int Esq, int D
     }
 }
 
-void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, Registro *Area, int Esq, int Dir, int *i, int *j)
+void FAVazia(TipoArea* Area){
+    for (int i = 0; i < TAM_AREA; i++)
+        Area->array[i].nota = 99999.99;
+    Area->nro_cels_ocupadas = 0;
+}
+
+
+
+void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq, int Dir, int *i, int *j)
 {
     int Ls = Dir, Es = Dir, Li = Esq, Ei = Esq, NRArea = 0, Linf = INT_MIN, Lsup = INT_MAX;
     short OndeLer = 1;
@@ -52,7 +61,7 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, Registro *Area, int Esq
                 LeSup(ArqLEs, &UltLido, &Ls, &OndeLer);
             else
                 LeInf(ArqLi, &UltLido, &Li, &OndeLer);
-            InserirArea(Area, &UltLido, &NRArea);
+            InserirArea(&Area, &UltLido, &NRArea);
             continue;
         }
 
@@ -78,24 +87,24 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, Registro *Area, int Esq
             continue;
         }
 
-        InserirArea(Area, &UltLido, &NRArea);
+        InserirArea(&Area, &UltLido, &NRArea);
 
         if (Ei - Esq < Dir - Es)
         {
-            RetiraMin(Area, &R, &NRArea);
+            RetiraMin(&Area, &R, &NRArea);
             EscreveMin(ArqEi, R, &Ei);
             Linf = R.nota;
         }
         else
         {
-            RetiraMax(Area, &R, &NRArea);
+            RetiraMax(&Area, &R, &NRArea);
             EscreveMax(ArqLEs, R, &Es);
             Lsup = R.nota;
         }
 
         while (Ei <= Es)
         {
-            RetiraMin(Area, &R, &NRArea);
+            RetiraMin(&Area, &R, &NRArea);
             EscreveMin(ArqEi, R, &Ei);
         }
     }
@@ -116,10 +125,28 @@ void LeInf(FILE **ArqLi, Registro *UltLido, int *Li, short *OndeLer)
     *OndeLer = 1;
 }
 
-void InserirArea(Registro *Area, Registro *UltLido, int *NRArea)
+void InserirArea(TipoArea *Area, Registro *UltLido, int *NRArea)
 {
-    InsereItem(*UltLido, Area);
-    *NRArea = ObterNumCelOcupadas(Area);
+    InsereItem(UltLido, Area);
+    *NRArea = Area->nro_cels_ocupadas;
+}
+
+void InsereItem(Registro *UltLido, TipoArea *Area){
+    Area->array[Area->nro_cels_ocupadas] = *UltLido;
+    Area->nro_cels_ocupadas++;
+    merge_sort(Area->array, 0, TAM_AREA - 1);
+}
+
+void RetiraUltimo(TipoArea *Area, Registro *R){
+    *R = Area->array[Area->nro_cels_ocupadas - 1];
+    Area->array[Area->nro_cels_ocupadas].nota = 99999.99;
+    merge_sort(Area->array, 0, TAM_AREA - 1);
+}
+
+void RetiraPrimeiro(TipoArea *Area, Registro *R){
+    *R = Area->array[0];
+    Area->array[0].nota = 99999.99;
+    merge_sort(Area->array, 0, TAM_AREA - 1);
 }
 
 void EscreveMax(FILE **ArqLEs, Registro R, int *Es)
@@ -135,14 +162,14 @@ void EscreveMin(FILE **ArqEi, Registro R, int *Ei)
     (*Ei)++;
 }
 
-void RetiraMax(Registro *Area, Registro *R, int *NRArea)
+void RetiraMax(TipoArea *Area, Registro *R, int *NRArea)
 {
     RetiraUltimo(Area, R);
-    *NRArea = ObterNumCelOcupadas(Area);
+    *NRArea = Area->nro_cels_ocupadas;
 }
 
-void RetiraMin(Registro *Area, Registro *R, int *NRArea)
+void RetiraMin(TipoArea *Area, Registro *R, int *NRArea)
 {
     RetiraPrimeiro(Area, R);
-    *NRArea = ObterNumCelOcupadas(Area);
+    *NRArea = Area->nro_cels_ocupadas;
 }
