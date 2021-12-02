@@ -1,7 +1,7 @@
 #include "../headers/geral.h"
 //#include "../headers/intercalacao_ordenacao_interna.h"
 //#include "../headers/intercalacao_substituicao_selecao.h"
-//#include "../headers/quicksort_externo.h"
+#include "../headers/quicksort_externo.h"
 
 int main(int argc, char *argv[])
 {
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
         //intercalacao_substituicao_selecao(nro_metodo, nro_quantidade, nro_situacao, imprimir_dados);
         break;
     case 3:
-        //quicksort_externo_main(nome_arquivo, nro_quantidade);
+        quicksort_externo_main(nome_arquivo, nro_quantidade);
         break;
     }
 

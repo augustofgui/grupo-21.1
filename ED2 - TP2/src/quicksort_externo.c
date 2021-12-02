@@ -3,11 +3,15 @@
 
 void quicksort_externo_main(char argv[], int nro_quantidade)
 {
-    FILE *ArqLi, *ArqEi, *ArqLEs;
-    ArqLi = abrir_arquivo(argv, "r+b");
-    ArqEi = abrir_arquivo(argv, "r+b");
-    ArqLEs = abrir_arquivo(argv, "r+b");
+    FILE *ArqLi, *ArqEi, *ArqLEs, *ArqTXT, *ArqBinario;
+    ArqTXT = abrir_arquivo(argv, "r");
+    ArqBinario = converter_para_binario(ArqTXT, "arquivo_binario.bin");
+    ArqLi = abrir_arquivo("arquivo_binario.bin", "r+b");
+    ArqEi = abrir_arquivo("arquivo_binario.bin", "r+b");
+    ArqLEs = abrir_arquivo("arquivo_binario.bin", "r+b");
     quicksort_externo(&ArqLi, &ArqEi, &ArqLEs, 1, nro_quantidade);
+    rewind(ArqLi);
+    converter_para_txt(ArqBinario, "arquivo_texto.txt");
 }
 
 void quicksort_externo(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, int Esq, int Dir)
@@ -169,7 +173,7 @@ void RetiraMax(TipoArea *Area, Registro *R, int *NRArea)
 }
 
 void RetiraMin(TipoArea *Area, Registro *R, int *NRArea)
-{
+{where
     RetiraPrimeiro(Area, R);
     *NRArea = Area->nro_cels_ocupadas;
 }
