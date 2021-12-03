@@ -178,7 +178,7 @@ void InsereItem(Registro *UltLido, TipoArea *Area)
 {
     Area->array[Area->nro_cels_ocupadas] = *UltLido;
     Area->nro_cels_ocupadas++;
-    merge_sort(Area->array, 0, Area->nro_cels_ocupadas - 1);
+    selection_sort_ascendente(Area->array, Area->nro_cels_ocupadas);
 }
 
 void RetiraUltimo(TipoArea *Area, Registro *R)
@@ -193,7 +193,7 @@ void RetiraPrimeiro(TipoArea *Area, Registro *R)
     *R = Area->array[0];
     Area->array[0].nota = INT_MAX;
     Area->nro_cels_ocupadas--;
-    merge_sort(Area->array, 0, Area->nro_cels_ocupadas);
+    selection_sort_ascendente(Area->array, Area->nro_cels_ocupadas + 1);
 }
 
 void EscreveMax(FILE **ArqLEs, Registro R, int *Es, bool imprimir_dados)
