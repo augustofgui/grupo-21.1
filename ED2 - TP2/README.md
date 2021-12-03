@@ -21,7 +21,6 @@ Ou apenas 'make' para utilizar o makefile
 
 ### Instruções
 * Funções gerais e a estrutura de dados "Registro" estão implementadas em headers/geral.h, basta dar include para utilizá-las.
-* Não é necessário verificar os argumentos da linha de comando ou criar o arquivo binário, isso já está sendo feito no main.c/geral.c.
 * A impressão das estatísticas de execução deve ser feita inteiramente no arquivo .c do método de ordenação, tal como está feita no quicksort_externo.c
 
 ### Enunciado
