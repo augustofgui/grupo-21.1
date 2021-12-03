@@ -177,14 +177,14 @@ void InsereItem(Registro *UltLido, TipoArea *Area)
 void RetiraUltimo(TipoArea *Area, Registro *R)
 {
     *R = Area->array[Area->nro_cels_ocupadas - 1];
-    Area->array[Area->nro_cels_ocupadas - 1].nota = MAX_NOTA;
+    Area->array[Area->nro_cels_ocupadas - 1].nota = INT_MAX;
     Area->nro_cels_ocupadas--;
 }
 
 void RetiraPrimeiro(TipoArea *Area, Registro *R)
 {
     *R = Area->array[0];
-    Area->array[0].nota = MAX_NOTA;
+    Area->array[0].nota = INT_MAX;
     Area->nro_cels_ocupadas--;
     merge_sort(Area->array, 0, Area->nro_cels_ocupadas);
 }
@@ -216,7 +216,7 @@ void RetiraMin(TipoArea *Area, Registro *R)
 void FAVazia(TipoArea *Area)
 {
     for (int i = 0; i < TAM_AREA; i++)
-        Area->array[i].nota = MAX_NOTA;
+        Area->array[i].nota = INT_MAX;
 
     Area->nro_cels_ocupadas = 0;
 }

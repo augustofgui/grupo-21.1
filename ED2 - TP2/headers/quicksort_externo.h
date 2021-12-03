@@ -1,7 +1,6 @@
 #include <limits.h>
 
 #define TAM_AREA 20
-#define MAX_NOTA 999999.99
 
 typedef struct {
     Registro array[TAM_AREA];
