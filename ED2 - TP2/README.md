@@ -73,8 +73,9 @@ situação de ordem inicial do arquivo.
 
 Independente dos experimentos a serem efetuados, o programa deve ser implementado de tal forma
 que seja possível executá-lo, livremente, a partir da seguinte linha de comando no console:
- ordena <método> <quantidade> <situação> [-P]
+                ordena <método> <quantidade> <situação> [-P]
 onde:
+
 • <método> representa o método de ordenação externa a ser executado, podendo ser um número
 inteiro de 1 a 3, de acordo com a ordem dos métodos mencionados; 
 Universidade Federal de Ouro Preto – UFOP
@@ -94,6 +95,7 @@ quesitos de análise (número de transferências (leitura e escrita) entre as me
 número de comparações e tempo de execução), obtidos a partir de tal execução.
 
 Para fins de avaliação deste trabalho, devem ser entregues:
+
 1. Código-fonte do programa, bem indentado e comentado.
 2. Relatório contendo os seguintes pontos:
 • Introdução: especificação do problema a ser resolvido; descrição dos experimentos realizados.
@@ -103,6 +105,7 @@ realizados sobre o método.
 implementação dos métodos.
 
 Observações Importantes:
+
 • Toda mensagem de orientação e de erro deve ser devidamente tratada.
 • O código-fonte do programa deve estar bem indentado e comentado.
 • Trabalhos copiados terão suas notas divididas pelo número de cópias.
