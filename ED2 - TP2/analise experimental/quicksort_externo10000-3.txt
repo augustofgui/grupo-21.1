@@ -1,0 +1,11 @@
+Arquivo: PROVAO_ORDENADO_DESC.TXT
+
+Convertendo o arquivo .txt para binário. Aguarde...
+Ordenando o arquivo binário. Aguarde...
+
+Nº de comparações: 130839
+Nº de leituras(fread): 20235
+Nº de escritas(fwrite): 10035
+Tempo de execução: 0.156250 segundos
+
+Convertendo o arquivo binário para .txt. Aguarde...
