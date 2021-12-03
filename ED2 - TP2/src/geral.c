@@ -1,4 +1,5 @@
 #include "../headers/geral.h"
+#include "../headers/quicksort_externo.h"
 
 void merge_sort(Registro *vetor, int margem_esquerda, int n)
 {
@@ -40,6 +41,24 @@ void merge_sort_ascendente(Registro *vetor, int margem_esquerda, int nova_margem
 
     free(vetor_direita);
     free(vetor_esquerda);
+}
+
+void selection_sort_ascendente(Registro *array, int n){
+    Registro aux;
+    int min;
+
+    for (int i = 0; i < n - 1; i++){
+        min = i;
+        for (int j = i + 1; j < n; j++){
+            if (array[j].nota < array[min].nota)
+                min = j;
+        }
+        if (i != min){
+            aux = array[i];
+            array[i] = array[min];
+            array[min] = aux;
+        }
+    }
 }
 
 void verificar_parametros(int argc, int nro_metodo, int nro_quantidade, int nro_situacao)

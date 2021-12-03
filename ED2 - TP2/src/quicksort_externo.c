@@ -31,7 +31,7 @@ void quicksort_externo_main(char argv[], int nro_quantidade)
 
     printf("Convertendo o arquivo binário para .txt. Aguarde...\n");
     rewind(ArqLi);
-    converter_para_txt(ArqLi, "PROVAO.txt");
+    converter_para_txt(ArqLi, argv);
 
     fclose(ArqLi);
     fclose(ArqEi);
@@ -67,9 +67,9 @@ void quicksort_externo(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, int Esq, int D
 
 void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq, int Dir, int *i, int *j)
 {
-    int Ls = Dir, Es = Dir, Li = Esq, Ei = Esq, NRArea = 0;
+    int Ls = Dir, Es = Dir, Li = Esq, Ei = Esq;
     double Linf = INT_MIN, Lsup = INT_MAX;
-    short OndeLer = 1;
+    bool OndeLer = true;
     Registro UltLido, R;
 
     fseek(*ArqLi, (Li - 1) * sizeof(Registro), SEEK_SET);
@@ -80,7 +80,7 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
     while (Ls >= Li)
     {
         nro_comparacoes+=2;
-        if (NRArea < TAM_AREA - 1)
+        if (Area.nro_cels_ocupadas < TAM_AREA - 1)
         {
             nro_comparacoes++;
             if (OndeLer)
@@ -88,7 +88,7 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
             else
                 LeInf(ArqLi, &UltLido, &Li, &OndeLer);
 
-            InserirArea(&Area, &UltLido, &NRArea);
+            InsereItem(&UltLido, &Area);
 
             continue;
         }
@@ -126,18 +126,18 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
             continue;
         }
 
-        InserirArea(&Area, &UltLido, &NRArea);
+        InsereItem(&UltLido, &Area);
 
         nro_comparacoes++;
         if (Ei - Esq < Dir - Es)
         {
-            RetiraMin(&Area, &R, &NRArea);
+            RetiraMin(&Area, &R);
             EscreveMin(ArqEi, R, &Ei);
             Linf = R.nota;
         }
         else
         {
-            RetiraMax(&Area, &R, &NRArea);
+            RetiraMax(&Area, &R);
             EscreveMax(ArqLEs, R, &Es);
             Lsup = R.nota;
         }
@@ -145,39 +145,33 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
     while (Ei <= Es)
     {
         nro_comparacoes++;
-        RetiraMin(&Area, &R, &NRArea);
+        RetiraMin(&Area, &R);
         EscreveMin(ArqEi, R, &Ei);
     }
 }
 
-void LeSup(FILE **ArqLEs, Registro *UltLido, int *Ls, short *OndeLer)
+void LeSup(FILE **ArqLEs, Registro *UltLido, int *Ls, bool *OndeLer)
 {
     fseek(*ArqLEs, (*Ls - 1) * sizeof(Registro), SEEK_SET);
     nro_leituras++;
     fread(UltLido, sizeof(Registro), 1, *ArqLEs);
     (*Ls)--;
-    *OndeLer = 0;
+    *OndeLer = false;
 }
 
-void LeInf(FILE **ArqLi, Registro *UltLido, int *Li, short *OndeLer)
+void LeInf(FILE **ArqLi, Registro *UltLido, int *Li, bool *OndeLer)
 {
     nro_leituras++;
     fread(UltLido, sizeof(Registro), 1, *ArqLi);
     (*Li)++;
-    *OndeLer = 1;
-}
-
-void InserirArea(TipoArea *Area, Registro *UltLido, int *NRArea)
-{
-    InsereItem(UltLido, Area);
-    *NRArea = Area->nro_cels_ocupadas;
+    *OndeLer = true;
 }
 
 void InsereItem(Registro *UltLido, TipoArea *Area)
 {
     Area->array[Area->nro_cels_ocupadas] = *UltLido;
     Area->nro_cels_ocupadas++;
-    merge_sort(Area->array, 0, TAM_AREA - 1);
+    merge_sort(Area->array, 0, Area->nro_cels_ocupadas - 1);
 }
 
 void RetiraUltimo(TipoArea *Area, Registro *R)
@@ -192,7 +186,7 @@ void RetiraPrimeiro(TipoArea *Area, Registro *R)
     *R = Area->array[0];
     Area->array[0].nota = MAX_NOTA;
     Area->nro_cels_ocupadas--;
-    merge_sort(Area->array, 0, TAM_AREA - 1);
+    merge_sort(Area->array, 0, Area->nro_cels_ocupadas);
 }
 
 void EscreveMax(FILE **ArqLEs, Registro R, int *Es)
@@ -209,16 +203,14 @@ void EscreveMin(FILE **ArqEi, Registro R, int *Ei)
     (*Ei)++;
 }
 
-void RetiraMax(TipoArea *Area, Registro *R, int *NRArea)
+void RetiraMax(TipoArea *Area, Registro *R)
 {
     RetiraUltimo(Area, R);
-    *NRArea = Area->nro_cels_ocupadas;
 }
 
-void RetiraMin(TipoArea *Area, Registro *R, int *NRArea)
+void RetiraMin(TipoArea *Area, Registro *R)
 {
     RetiraPrimeiro(Area, R);
-    *NRArea = Area->nro_cels_ocupadas;
 }
 
 void FAVazia(TipoArea *Area)
