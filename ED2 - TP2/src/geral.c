@@ -78,7 +78,7 @@ void verificar_parametros(int argc, int nro_metodo, int nro_quantidade, int nro_
         printf("ERRO : Quantidade de registros fornecida não corresponde ao enunciado do trabalho. Por favor, corrija os parãmetros de execução.\n");
         exit(1);
     }
-    if (nro_situacao != 1 && nro_situacao != 2 && nro_situacao != 30)
+    if (nro_situacao != 1 && nro_situacao != 2 && nro_situacao != 3)
     {
         printf("ERRO : Situação fornecida não corresponde ao enunciado do trabalho. Por favor, corrija os parãmetros de execução.\n");
         exit(1);
@@ -95,11 +95,6 @@ FILE *abrir_arquivo(char nome_arquivo[], char modo_abertura[])
     }
 
     return abrir_arquivo;
-}
-
-void imprimir_registro(Registro x)
-{
-    printf("%08ld %05.1f%s\n", x.inscricao, x.nota, x.estado_cidade_curso);
 }
 
 FILE *converter_para_binario(FILE *arquivo_texto, char *argv)
@@ -133,8 +128,13 @@ void converter_para_txt(FILE *arquivo_binario, char *argv)
 
 void print_estatisticas(int nro_comparacoes, int nro_leituras, int nro_escritas, double tempo_execucao)
 {
-    printf("Nº de comparações: %d\n", nro_comparacoes);
+    printf("\nNº de comparações: %d\n", nro_comparacoes);
     printf("Nº de leituras(fread): %d\n", nro_leituras);
     printf("Nº de escritas(fwrite): %d\n", nro_escritas);
-    printf("Tempo de execução: %f segundos\n", tempo_execucao);
+    printf("Tempo de execução: %f segundos\n\n", tempo_execucao);
+}
+
+void PrintRegistro(Registro *R, char *comando)
+{
+    printf("%s: %08ld %05.1f%s\n", comando, R->inscricao, R->nota, R->estado_cidade_curso);
 }

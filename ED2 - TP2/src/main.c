@@ -10,13 +10,27 @@ int main(int argc, char *argv[])
     int nro_situacao = atoi(argv[3]);
     bool imprimir_dados = false;
     char nome_arquivo[50];
-
+    
     verificar_parametros(argc, nro_metodo, nro_quantidade, nro_situacao);
 
-    if (argc > 5)
-        imprimir_dados = (!strcmp(argv[5], "-P"));
+    switch(nro_situacao){
+        case 1 : 
+            strcpy(nome_arquivo, "PROVAO_DESORDENADO.TXT");
+            break;
+        case 2 : 
+            strcpy(nome_arquivo, "PROVAO_ORDENADO_ASC.TXT");
+            break;
+        case 3 : 
+            strcpy(nome_arquivo, "PROVAO_ORDENADO_DESC.TXT");
+            break;
+        default : {
+            printf("ERRO : Situação fornecida não corresponde ao enunciado do trabalho. Por favor, corrija os parãmetros de execução.\n");
+            exit(1);
+        }
+    }
 
-    argc > 6 ? strcpy(nome_arquivo, argv[6]) : strcpy(nome_arquivo, "PROVAO.TXT");
+    if (argc > 4)
+        imprimir_dados = (!strcmp(argv[4], "-P"));
 
     switch (nro_metodo)
     {
@@ -27,7 +41,7 @@ int main(int argc, char *argv[])
         //intercalacao_substituicao_selecao(nro_metodo, nro_quantidade, nro_situacao, imprimir_dados);
         break;
     case 3:
-        quicksort_externo_main(nome_arquivo, nro_quantidade);
+        quicksort_externo_main(nome_arquivo, nro_quantidade, imprimir_dados);
         break;
     }
 
