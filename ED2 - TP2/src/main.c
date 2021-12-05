@@ -13,6 +13,9 @@ int main(int argc, char *argv[])
     
     verificar_parametros(argc, nro_metodo, nro_quantidade, nro_situacao);
 
+    if (argc > 4)
+        imprimir_dados = (!strcmp(argv[4], "-P"));
+
     switch(nro_situacao){
         case 1 : 
             strcpy(nome_arquivo, "txt/PROVAO_DESORDENADO.TXT");
@@ -28,9 +31,6 @@ int main(int argc, char *argv[])
             exit(1);
         }
     }
-
-    if (argc > 4)
-        imprimir_dados = (!strcmp(argv[4], "-P"));
 
     switch (nro_metodo)
     {
