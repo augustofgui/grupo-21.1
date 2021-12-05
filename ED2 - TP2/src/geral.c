@@ -101,8 +101,8 @@ void converter_para_binario(FILE *arquivo_texto, char *nome_binario, char *nome_
 {
     Registro aux;
 
-    printf("Arquivo: %s\n", nome_txt);
-    printf("Convertendo o arquivo .txt para binário. Aguarde...\n");
+    printf(ANSI_BOLD"\nArquivo: "ANSI_COLOR_BLUE"%s\n"ANSI_RESET, nome_txt);
+    printf(ANSI_BOLD ANSI_COLOR_YELLOW"Convertendo"ANSI_RESET" o arquivo .txt para binário. Aguarde...\n");
 
     FILE *arquivo_binario = abrir_arquivo(nome_binario, "w+b");
 
@@ -119,25 +119,33 @@ void converter_para_txt(FILE *arquivo_binario, char *argv)
 {
     Registro aux;
     rewind(arquivo_binario);
-    printf("Convertendo o arquivo binário para .txt. Aguarde...\n");
+    printf(ANSI_BOLD ANSI_COLOR_YELLOW"Convertendo"ANSI_RESET" o arquivo binário para .txt. Aguarde...\n");
 
     FILE *arquivo_txt = abrir_arquivo(argv, "w+");
 
     while (fread(&aux, sizeof(Registro), 1, arquivo_binario))
         fprintf(arquivo_txt, "%08ld %05.1f%s\n", aux.inscricao, aux.nota, aux.estado_cidade_curso);
+    
+    printf(ANSI_BOLD"Resultado da ordenação impresso em: "ANSI_COLOR_BLUE"RESULTADO.TXT"ANSI_RESET"\n\n");
 
     fclose(arquivo_txt);
 }
 
 void print_estatisticas(int nro_comparacoes, int nro_leituras, int nro_escritas, double tempo_execucao)
 {
-    printf("\nNº de comparações: %d\n", nro_comparacoes);
-    printf("Nº de leituras(fread): %d\n", nro_leituras);
-    printf("Nº de escritas(fwrite): %d\n", nro_escritas);
-    printf("Tempo de execução: %f segundos\n\n", tempo_execucao);
+    printf(ANSI_BOLD ANSI_COLOR_GREEN"\n- ESTATÍSTICAS DA EXECUÇÃO -     \n"ANSI_RESET);
+    printf(ANSI_BOLD"\nNº de comparações: %d"ANSI_RESET"\n", nro_comparacoes);
+    printf(ANSI_BOLD"Nº de leituras(fread): %d"ANSI_RESET"\n", nro_leituras);
+    printf(ANSI_BOLD"Nº de escritas(fwrite): %d"ANSI_RESET"\n", nro_escritas);
+    printf(ANSI_BOLD"Tempo de execução: "ANSI_COLOR_YELLOW"%f"ANSI_RESET ANSI_BOLD" segundos"ANSI_RESET"\n\n", tempo_execucao);
 }
 
-void PrintRegistro(Registro *R, char *comando)
+void PrintFRead(Registro *R)
 {
-    printf("%s: %08ld %05.1f%s\n", comando, R->inscricao, R->nota, R->estado_cidade_curso);
+    printf(ANSI_BOLD ANSI_COLOR_BLUE"fread"ANSI_RESET"  : %08ld %05.1f%s\n", R->inscricao, R->nota, R->estado_cidade_curso);
+}
+
+void PrintFWrite(Registro *R)
+{
+    printf(ANSI_BOLD ANSI_COLOR_RED"fwrite"ANSI_RESET" : %08ld %05.1f%s\n", R->inscricao, R->nota, R->estado_cidade_curso);
 }

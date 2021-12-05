@@ -4,6 +4,13 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+#define ANSI_BOLD "\x1b[1m"
+#define ANSI_COLOR_RED "\x1b[31m"
+#define ANSI_COLOR_YELLOW "\e[0;33m"
+#define ANSI_RESET "\x1b[0m"
+#define ANSI_COLOR_BLUE "\x1b[34m"
+#define ANSI_COLOR_GREEN "\x1b[32m"
+
 /* 
     ED2 - TP 2 -> https://github.com/augustofgui/ed2-tp1
     - Augusto Guilarducci (20.1.4012)
@@ -27,4 +34,5 @@ void merge_sort(Registro *vetor, int margem_esquerda, int n);
 void merge_sort_ascendente(Registro *vetor, int margem_esquerda, int nova_margem, int n);
 void selection_sort_ascendente(Registro *array, int n);
 void print_estatisticas(int nro_comparacoes, int nro_leituras, int nro_escritas, double tempo_execucao);
-void PrintRegistro(Registro *R, char *comando);
+void PrintFRead(Registro *R);
+void PrintFWrite(Registro *R);

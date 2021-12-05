@@ -152,7 +152,7 @@ void LeSup(FILE **ArqLEs, Registro *UltLido, int *Ls, bool *OndeLer, bool imprim
     nro_leituras++;
     fread(UltLido, sizeof(Registro), 1, *ArqLEs);
     if (imprimir_dados)
-        PrintRegistro(UltLido, "fread  ");
+        PrintFRead(UltLido);
     (*Ls)--;
     *OndeLer = false;
 }
@@ -162,7 +162,7 @@ void LeInf(FILE **ArqLi, Registro *UltLido, int *Li, bool *OndeLer, bool imprimi
     nro_leituras++;
     fread(UltLido, sizeof(Registro), 1, *ArqLi);
     if (imprimir_dados)
-        PrintRegistro(UltLido, "fread  ");
+        PrintFRead(UltLido);
     (*Li)++;
     *OndeLer = true;
 }
@@ -195,7 +195,7 @@ void EscreveMax(FILE **ArqLEs, Registro R, int *Es, bool imprimir_dados)
     nro_escritas++;
     fwrite(&R, sizeof(Registro), 1, *ArqLEs);
     if (imprimir_dados)
-        PrintRegistro(&R, "fwrite ");
+        PrintFWrite(&R);
     (*Es)--;
 }
 
@@ -203,7 +203,7 @@ void EscreveMin(FILE **ArqEi, Registro R, int *Ei, bool imprimir_dados)
 {
     fwrite(&R, sizeof(Registro), 1, *ArqEi);
     if (imprimir_dados)
-        PrintRegistro(&R, "fwrite ");
+        PrintFWrite(&R);
     (*Ei)++;
 }
 
@@ -225,7 +225,7 @@ void PrintArea(TipoArea Area)
 
 void print_ordenacao(bool imprimir_dados)
 {
-    printf("Ordenando o arquivo binário. Aguarde...\n");
+    printf(ANSI_BOLD ANSI_COLOR_YELLOW"Ordenando"ANSI_RESET" o arquivo binário. Aguarde...\n");
     if (imprimir_dados)
         printf("\n");
 }
