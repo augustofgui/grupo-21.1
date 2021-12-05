@@ -97,9 +97,11 @@ FILE *abrir_arquivo(char nome_arquivo[], char modo_abertura[])
     return abrir_arquivo;
 }
 
-FILE *converter_para_binario(FILE *arquivo_texto, char *argv)
+void converter_para_binario(FILE *arquivo_texto, char *argv)
 {
     Registro aux;
+
+    printf("Convertendo o arquivo .txt para binário. Aguarde...\n");
 
     FILE *arquivo_binario = abrir_arquivo(argv, "w+b");
 
@@ -109,14 +111,14 @@ FILE *converter_para_binario(FILE *arquivo_texto, char *argv)
         fwrite(&aux, sizeof(Registro), 1, arquivo_binario);
     }
 
-    rewind(arquivo_binario);
-
-    return arquivo_binario;
+    fclose(arquivo_binario);
 }
 
 void converter_para_txt(FILE *arquivo_binario, char *argv)
 {
     Registro aux;
+    rewind(arquivo_binario);
+    printf("Convertendo o arquivo binário para .txt. Aguarde...\n");
 
     FILE *arquivo_txt = abrir_arquivo(argv, "w+");
 

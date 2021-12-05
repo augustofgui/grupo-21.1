@@ -14,10 +14,9 @@ void LeSup(FILE **ArqLEs, Registro *UltLido, int *Ls, bool *OndeLer, bool imprim
 void LeInf(FILE **ArqLi, Registro *UltLido, int *Li, bool *OndeLer, bool imprimir_dados);
 void EscreveMax(FILE **ArqLEs, Registro R, int *Es, bool imprimir_dados);
 void EscreveMin(FILE **ArqEi, Registro R, int *Ei, bool imprimir_dados);
-void RetiraMax(TipoArea *Area, Registro *R);
-void RetiraMin(TipoArea *Area, Registro *R);
 void FAVazia(TipoArea* Area);
 void RetiraUltimo(TipoArea *Area, Registro *R);
 void RetiraPrimeiro(TipoArea *Area, Registro *R);
 void InsereItem(Registro *UltLido, TipoArea *Area);
 void PrintArea(TipoArea Area);
+void print_ordenacao(bool imprimir_dados);
