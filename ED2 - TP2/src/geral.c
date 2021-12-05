@@ -97,13 +97,14 @@ FILE *abrir_arquivo(char nome_arquivo[], char modo_abertura[])
     return abrir_arquivo;
 }
 
-void converter_para_binario(FILE *arquivo_texto, char *argv)
+void converter_para_binario(FILE *arquivo_texto, char *nome_binario, char *nome_txt)
 {
     Registro aux;
 
+    printf("Arquivo: %s\n", nome_txt);
     printf("Convertendo o arquivo .txt para binário. Aguarde...\n");
 
-    FILE *arquivo_binario = abrir_arquivo(argv, "w+b");
+    FILE *arquivo_binario = abrir_arquivo(nome_binario, "w+b");
 
     while (fscanf(arquivo_texto, "%ld %f", &aux.inscricao, &aux.nota) != EOF)
     {
