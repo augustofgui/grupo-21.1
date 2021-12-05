@@ -107,7 +107,7 @@ void converter_para_binario(FILE *arquivo_texto, char *argv)
 
     while (fscanf(arquivo_texto, "%ld %f", &aux.inscricao, &aux.nota) != EOF)
     {
-        fgets(aux.estado_cidade_curso, 82, arquivo_texto);
+        fgets(aux.estado_cidade_curso, 87, arquivo_texto);
         fwrite(&aux, sizeof(Registro), 1, arquivo_binario);
     }
 

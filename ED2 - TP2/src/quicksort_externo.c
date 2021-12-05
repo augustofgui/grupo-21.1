@@ -7,7 +7,7 @@ int nro_escritas = 0;
 
 void quicksort_externo_main(char argv[], int nro_quantidade, bool imprimir_dados)
 {
-    FILE *ArqLi, *ArqEi, *ArqLEs, *ArqTXT, *ArqBinario;
+    FILE *ArqLi, *ArqEi, *ArqLEs, *ArqTXT;
 
     ArqTXT = abrir_arquivo(argv, "r");
     converter_para_binario(ArqTXT, "arquivo_binario.bin");
