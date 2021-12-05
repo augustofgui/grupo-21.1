@@ -1,3 +1,6 @@
+#ifndef QUICKSORT_EXTERNO_H
+#define QUICKSORT_EXTERNO_H
+
 #include <limits.h>
 
 #define TAM_AREA 20
@@ -20,3 +23,5 @@ void RetiraPrimeiro(TipoArea *Area, Registro *R);
 void InsereItem(Registro *UltLido, TipoArea *Area);
 void PrintArea(TipoArea Area);
 void print_ordenacao(bool imprimir_dados);
+
+#endif // QUICKSORT_EXTERNO_H

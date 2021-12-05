@@ -1,3 +1,6 @@
+#ifndef GERAL_H
+#define GERAL_H
+
 #include <time.h>
 #include <stdio.h>
 #include <string.h>
@@ -36,3 +39,5 @@ void selection_sort_ascendente(Registro *array, int n);
 void print_estatisticas(int nro_comparacoes, int nro_leituras, int nro_escritas, double tempo_execucao);
 void PrintFRead(Registro *R);
 void PrintFWrite(Registro *R);
+
+#endif // GERAL_H
