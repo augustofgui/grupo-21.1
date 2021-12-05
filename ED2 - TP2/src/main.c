@@ -15,13 +15,13 @@ int main(int argc, char *argv[])
 
     switch(nro_situacao){
         case 1 : 
-            strcpy(nome_arquivo, "PROVAO_DESORDENADO.TXT");
+            strcpy(nome_arquivo, "txt/PROVAO_DESORDENADO.TXT");
             break;
         case 2 : 
-            strcpy(nome_arquivo, "PROVAO_ORDENADO_ASC.TXT");
+            strcpy(nome_arquivo, "txt/PROVAO_ORDENADO_ASC.TXT");
             break;
         case 3 : 
-            strcpy(nome_arquivo, "PROVAO_ORDENADO_DESC.TXT");
+            strcpy(nome_arquivo, "txt/PROVAO_ORDENADO_DESC.TXT");
             break;
         default : {
             printf("ERRO : Situação fornecida não corresponde ao enunciado do trabalho. Por favor, corrija os parãmetros de execução.\n");
