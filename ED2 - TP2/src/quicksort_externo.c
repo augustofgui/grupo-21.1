@@ -225,7 +225,7 @@ void PrintArea(TipoArea Area)
 
 void print_ordenacao(bool imprimir_dados)
 {
-    printf(ANSI_BOLD ANSI_COLOR_YELLOW"Ordenando"ANSI_RESET" o arquivo binário. Aguarde...\n");
+    printf(ANSI_COLOR_YELLOW"Ordenando"ANSI_RESET" o arquivo binário. Aguarde...\n");
     if (imprimir_dados)
         printf("\n");
 }
