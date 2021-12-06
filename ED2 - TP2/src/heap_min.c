@@ -4,6 +4,7 @@
 void troca (Registro* A, int n) {
     Registro aux;
     for (int i = 1 ; i < n-1 ; i = (i*2) - 1) {
+        nro_iss_comparacoes+=2;
         if(A[i].nota > A[i+1].nota && A[i].f == A[i+1].f) {
         aux = A[i+1];
         A[i+1] = A[i];
@@ -19,11 +20,14 @@ void Refaz (int Esq, int Dir, Registro *A) {
     j = (i * 2);
     x = A[i];
     while (j <= Dir) {
+        nro_iss_comparacoes++;
         if (j < Dir) { 
+            nro_iss_comparacoes++;
             if (A[j].nota > A[j+1].nota) {
             j++;
             }    
         }
+        nro_iss_comparacoes++;
         if (x.nota <= A[j].nota) { 
             A[i] = x;
         }
@@ -40,11 +44,14 @@ void RefazPeloIndice (int Esq, int Dir, Registro *A) {
     j = (i * 2);
     x = A[i];
     while (j <= Dir) { 
+        nro_iss_comparacoes++;
         if (j < Dir) { 
+            nro_iss_comparacoes++;
             if (A[j].f > A[j+1].f) {
                 j++;
             }       
         }
+        nro_iss_comparacoes++;
         if (x.f <= A[j].f) { 
             A[i] = x;
         }         
@@ -79,6 +86,7 @@ Registro Min(Registro *A) {
 
 Registro RetiraMin (Registro *A, int *n) {
     Registro Min;
+    nro_iss_comparacoes++;
     if (*n < 1) 
     printf("Erro!!\n");
     else {
@@ -95,6 +103,7 @@ Registro RetiraMin (Registro *A, int *n) {
 
 void Aumenta (int i, double new, Registro *A) { 
     Registro x;
+    nro_iss_comparacoes++;
     if (new < A[i].nota) { 
         printf("Erro!!\n");
         return;
@@ -112,7 +121,7 @@ void Insere (Registro *x, Registro *A, int *n) {
     (*n)++;
     A[*n] = *x;  
     A[*n].nota = INT_MIN;
-    AumentaChave(*n, x->nota, A);
+    Aumenta(*n, x->nota, A);
     Constroi(A,n);
     ConstroiPeloIndice(A,n);
 }

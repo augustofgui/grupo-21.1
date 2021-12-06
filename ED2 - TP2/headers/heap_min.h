@@ -6,6 +6,10 @@
 #include <stdlib.h>
 #include <limits.h>
 
+int nro_iss_comparacoes = 0;
+int nro_iss_leituras = 0;
+int nro_iss_escritas = 0;
+
 #define MAXTAM 20
 
 void Refaz (int Esq, int Dir, Registro *A);
