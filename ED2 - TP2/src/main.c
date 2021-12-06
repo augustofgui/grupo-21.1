@@ -1,5 +1,5 @@
 #include "../headers/geral.h"
-//#include "../headers/intercalacao_ordenacao_interna.h"
+#include "../headers/intercalacao_ordenacao_interna.h"
 //#include "../headers/intercalacao_substituicao_selecao.h"
 #include "../headers/quicksort_externo.h"
 
@@ -26,6 +26,9 @@ int main(int argc, char *argv[])
         case 3 : 
             strcpy(nome_arquivo, "txt/PROVAO_ORDENADO_DESC.TXT");
             break;
+        case 4 : 
+            strcpy(nome_arquivo, "txt/DEBUG.TXT");
+            break;
         default : {
             printf("ERRO : Situação fornecida não corresponde ao enunciado do trabalho. Por favor, corrija os parãmetros de execução.\n");
             exit(1);
@@ -35,7 +38,7 @@ int main(int argc, char *argv[])
     switch (nro_metodo)
     {
     case 1:
-        //intercalacao_ordenacao_interna(nro_metodo, nro_quantidade, nro_situacao, imprimir_dados);
+        intercalacao_ordenacao_interna(nome_arquivo, nro_quantidade, imprimir_dados);
         break;
     case 2:
         //intercalacao_substituicao_selecao(nro_metodo, nro_quantidade, nro_situacao, imprimir_dados);

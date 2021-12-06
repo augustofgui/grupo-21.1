@@ -78,7 +78,7 @@ void verificar_parametros(int argc, int nro_metodo, int nro_quantidade, int nro_
         printf("ERRO : Quantidade de registros fornecida não corresponde ao enunciado do trabalho. Por favor, corrija os parãmetros de execução.\n");
         exit(1);
     }
-    if (nro_situacao != 1 && nro_situacao != 2 && nro_situacao != 3)
+    if (nro_situacao != 1 && nro_situacao != 2 && nro_situacao != 3 && nro_situacao != 4)
     {
         printf("ERRO : Situação fornecida não corresponde ao enunciado do trabalho. Por favor, corrija os parãmetros de execução.\n");
         exit(1);
