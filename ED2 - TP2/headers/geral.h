@@ -27,6 +27,7 @@ typedef struct registro
     long int inscricao;
     float nota;
     char estado_cidade_curso[87];
+    int f;
 } Registro;
 
 void verificar_parametros(int argc, int nro_metodo, int nro_quantidade, int nro_situacao);

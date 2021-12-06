@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "limits.h": "c",
+        "intercalacao_substituicao_selecao.h": "c"
     }
 }

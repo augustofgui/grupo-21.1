@@ -1,6 +1,6 @@
 #include "../headers/geral.h"
 #include "../headers/intercalacao_ordenacao_interna.h"
-//#include "../headers/intercalacao_substituicao_selecao.h"
+#include "../headers/intercalacao_substituicao_selecao.h"
 #include "../headers/quicksort_externo.h"
 
 int main(int argc, char *argv[])
