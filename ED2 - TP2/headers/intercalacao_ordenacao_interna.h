@@ -14,18 +14,18 @@
 typedef struct {
     FILE * arquivo;
     int quant_itens;
-    int tam_bloco;
+    int tam_ultimo_bloco;
 } Fita;
 
 typedef struct {
-    Fita * entrada;
-    Fita  * saida;
+    Fita entrada[NUM_FITAS_ENTRADA];
+    Fita saida[NUM_FITAS_SAIDA];
 } Fitas;
 
 void intercalacao_ordenacao_interna(char argv[], int nro_quantidade, bool imprimir_dados);
 void criar_blocos_ordenados(FILE * arquivo_binario, int num_registros, Fitas fitas, bool imprimir_dados);
 Fitas cria_fitas();
-Fita * cria_fitas_entrada();
-Fita * cria_fitas_saida();
+void cria_fitas_entrada(Fita * vetor);
+void cria_fitas_saida(Fita * vetor);
 
 #endif // INTERCALACAO_ORDENACAO_INTERNA_H
