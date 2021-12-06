@@ -8,11 +8,11 @@
 #include <stdbool.h>
 
 #define ANSI_BOLD "\x1b[1m"
-#define ANSI_COLOR_RED "\x1b[31m"
-#define ANSI_COLOR_YELLOW "\e[0;33m"
+#define ANSI_COLOR_RED "\e[1;91m"
+#define ANSI_COLOR_YELLOW "\e[1;93m"
 #define ANSI_RESET "\x1b[0m"
-#define ANSI_COLOR_BLUE "\x1b[34m"
-#define ANSI_COLOR_GREEN "\x1b[32m"
+#define ANSI_COLOR_BLUE "\e[1;94m"
+#define ANSI_COLOR_GREEN "\e[1;92m"
 
 /* 
     ED2 - TP 2 -> https://github.com/augustofgui/ed2-tp1
