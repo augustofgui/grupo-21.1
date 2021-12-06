@@ -109,6 +109,7 @@ void converter_para_binario(FILE *arquivo_texto, char *nome_binario, char *nome_
     while (fscanf(arquivo_texto, "%ld %f", &aux.inscricao, &aux.nota) != EOF)
     {
         fgets(aux.estado_cidade_curso, 87, arquivo_texto);
+        aux.estado_cidade_curso[85] = '\0';
         fwrite(&aux, sizeof(Registro), 1, arquivo_binario);
     }
 

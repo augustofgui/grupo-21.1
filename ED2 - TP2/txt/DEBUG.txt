@@ -99,3 +99,9 @@
 00086358 061.3 DF BRASILIA                                           ADMINISTRACAO                 
 00213829 067.3 DF BRASILIA                                           ADMINISTRACAO                 
 00019284 052.3 DF BRASILIA                                           ADMINISTRACAO                 
+00426064 072.3 MT CUIABA                                             ADMINISTRACAO                 
+00354405 043.8 MT CUIABA                                             ADMINISTRACAO                 
+00102393 040.5 MT CUIABA                                             ADMINISTRACAO                 
+00400008 042.0 MT CUIABA                                             ADMINISTRACAO                 
+00301503 065.3 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00182746 033.3 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
