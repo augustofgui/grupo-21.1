@@ -1,5 +1,5 @@
 #include "../headers/geral.h"
-//#include "../headers/intercalacao_ordenacao_interna.h"
+#include "../headers/intercalacao_ordenacao_interna.h"
 #include "../headers/intercalacao_substituicao_selecao.h"
 #include "../headers/quicksort_externo.h"
 
@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
     switch (nro_metodo)
     {
     case 1:
-        //intercalacao_ordenacao_interna(nome_arquivo, nro_quantidade, imprimir_dados);
+        intercalacao_ordenacao_interna(nome_arquivo, nro_quantidade, imprimir_dados);
         break;
     case 2:
         intercalacao_substituicao_selecao(nome_arquivo, imprimir_dados);

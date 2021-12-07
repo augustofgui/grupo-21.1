@@ -4,5 +4,6 @@
         "limits.h": "c",
         "intercalacao_substituicao_selecao.h": "c",
         "stdlib.h": "c"
-    }
+    },
+    "cmake.configureOnOpen": false
 }

@@ -1,18 +1,18 @@
 #include "../headers/geral.h"
 #include "../headers/quicksort_externo.h"
 
-void merge_sort(Registro *vetor, int margem_esquerda, int n)
+void merge_sort(Registro *vetor, int margem_esquerda, int n, Estatistica * estatistica)
 {
     if (margem_esquerda < n)
     {
         int nova_margem = (margem_esquerda + n) / 2;
-        merge_sort(vetor, margem_esquerda, nova_margem);
-        merge_sort(vetor, nova_margem + 1, n);
-        merge_sort_ascendente(vetor, margem_esquerda, nova_margem, n);
+        merge_sort(vetor, margem_esquerda, nova_margem, estatistica);
+        merge_sort(vetor, nova_margem + 1, n, estatistica);
+        merge_sort_ascendente(vetor, margem_esquerda, nova_margem, n, estatistica);
     }
 }
 
-void merge_sort_ascendente(Registro *vetor, int margem_esquerda, int nova_margem, int n)
+void merge_sort_ascendente(Registro *vetor, int margem_esquerda, int nova_margem, int n, Estatistica * estatistica)
 {
     int tamanho_esquerda = (nova_margem - margem_esquerda + 1), tamanho_direita = (n - nova_margem);
     Registro *vetor_esquerda = (Registro *)malloc(tamanho_esquerda * sizeof(Registro));
@@ -33,10 +33,14 @@ void merge_sort_ascendente(Registro *vetor, int margem_esquerda, int nova_margem
             vetor[k] = vetor_direita[j++];
         else if (j == tamanho_direita)
             vetor[k] = vetor_esquerda[i++];
-        else if (vetor_esquerda[i].nota < vetor_direita[j].nota)
+        else if (vetor_esquerda[i].nota < vetor_direita[j].nota){
             vetor[k] = vetor_esquerda[i++];
-        else
+            estatistica->nro_comparacoes++;
+        }
+        else{
             vetor[k] = vetor_direita[j++];
+            estatistica->nro_comparacoes++;
+        }
     }
 
     free(vetor_direita);
