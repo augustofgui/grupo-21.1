@@ -31,7 +31,8 @@ typedef struct registro
 } Registro;
 
 typedef struct {
-    int nro_comparacoes;
+    int nro_comparacoes_ord_interna;
+    int nro_comparacoes_ord_externa;
     int nro_leituras;
     int nro_escritas;
     double tempo_execucao;
@@ -43,8 +44,8 @@ void converter_para_binario(FILE *arquivo_texto, char *nome_binario, char *nome_
 void converter_para_txt(FILE *arquivo_binario, char *argv, int nro_registros);
 void merge_sort(Registro *vetor, int margem_esquerda, int n, Estatistica * estatistica);
 void merge_sort_ascendente(Registro *vetor, int margem_esquerda, int nova_margem, int n, Estatistica * estatistica);
-void selection_sort_ascendente(Registro *array, int n);
-void print_estatisticas(int nro_comparacoes, int nro_leituras, int nro_escritas, double tempo_execucao);
+void selection_sort_ascendente(Registro *array, int n, Estatistica * estatistica);
+void print_estatisticas(int nro_comparacoes_ord_interna, int nro_comparacoes_ord_externa, int nro_leituras, int nro_escritas, double tempo_execucao);
 void PrintFRead(Registro *R);
 void PrintFWrite(Registro *R);
 

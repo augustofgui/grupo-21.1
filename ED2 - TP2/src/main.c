@@ -29,10 +29,9 @@ int main(int argc, char *argv[])
         case 4 : 
             strcpy(nome_arquivo, "txt/DEBUG.TXT");
             break;
-        default : {
+        default : 
             printf("ERRO : Situação fornecida não corresponde ao enunciado do trabalho. Por favor, corrija os parãmetros de execução.\n");
             exit(1);
-        }
     }
 
     switch (nro_metodo)

@@ -1,9 +1,7 @@
 #include "../headers/geral.h"
 #include "../headers/quicksort_externo.h"
 
-int nro_comparacoes = 0;
-int nro_leituras = 0;
-int nro_escritas = 0;
+Estatistica estatistica = {0, 0, 0, 0, 0.0F};
 
 void quicksort_externo_main(char argv[], int nro_quantidade, bool imprimir_dados)
 {
@@ -23,10 +21,10 @@ void quicksort_externo_main(char argv[], int nro_quantidade, bool imprimir_dados
     clock_t t = clock();
     quicksort_externo(&ArqLi, &ArqEi, &ArqLEs, 1, nro_quantidade, imprimir_dados);
     t = clock() - t;
-    double tempo_execucao = ((double)t) / CLOCKS_PER_SEC;
+    estatistica.tempo_execucao = ((double)t) / CLOCKS_PER_SEC;
     // ----- Fim do Quicksort Externo
 
-    print_estatisticas(nro_comparacoes, nro_leituras, nro_escritas, tempo_execucao);
+    print_estatisticas(estatistica.nro_comparacoes_ord_externa, estatistica.nro_comparacoes_ord_interna, estatistica.nro_leituras, estatistica.nro_escritas, estatistica.tempo_execucao);
 
     converter_para_txt(ArqLi, "RESULTADO.TXT", nro_quantidade);
     fclose(ArqLi);
@@ -40,7 +38,7 @@ void quicksort_externo(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, int Esq, int D
     int i, j;
     TipoArea Area;
 
-    nro_comparacoes++;
+    estatistica.nro_comparacoes_ord_externa++;
     if (Dir - Esq < 1)
         return;
 
@@ -48,7 +46,7 @@ void quicksort_externo(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, int Esq, int D
 
     Particao(ArqLi, ArqEi, ArqLEs, Area, Esq, Dir, &i, &j, imprimir_dados);
 
-    nro_comparacoes++;
+    estatistica.nro_comparacoes_ord_externa++;
     if (i - Esq < Dir - j)
     {
         quicksort_externo(ArqLi, ArqEi, ArqLEs, Esq, i, imprimir_dados);
@@ -75,10 +73,10 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
 
     while (Ls >= Li)
     {
-        nro_comparacoes += 2;
+        estatistica.nro_comparacoes_ord_externa += 2;
         if (Area.nro_cels_ocupadas < TAM_AREA - 1)
         {
-            nro_comparacoes++;
+            estatistica.nro_comparacoes_ord_externa++;
             if (OndeLer)
                 LeSup(ArqLEs, &UltLido, &Ls, &OndeLer, imprimir_dados);
             else
@@ -89,32 +87,32 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
             continue;
         }
 
-        nro_comparacoes++;
+        estatistica.nro_comparacoes_ord_externa++;
         if (Ls == Es)
         {
             LeSup(ArqLEs, &UltLido, &Ls, &OndeLer, imprimir_dados);
         }
         else if (Li == Ei)
         {
-            nro_comparacoes++;
+            estatistica.nro_comparacoes_ord_externa++;
             LeInf(ArqLi, &UltLido, &Li, &OndeLer, imprimir_dados);
         }
         else if (OndeLer)
         {
-            nro_comparacoes++;
+            estatistica.nro_comparacoes_ord_externa++;
             LeSup(ArqLEs, &UltLido, &Ls, &OndeLer, imprimir_dados);
         }
         else
             LeInf(ArqLi, &UltLido, &Li, &OndeLer, imprimir_dados);
 
-        nro_comparacoes++;
+        estatistica.nro_comparacoes_ord_externa++;
         if (UltLido.nota > Lsup)
         {
             *j = Es;
             EscreveMax(ArqLEs, UltLido, &Es, imprimir_dados);
             continue;
         }
-        nro_comparacoes++;
+        estatistica.nro_comparacoes_ord_externa++;
         if (UltLido.nota < Linf)
         {
             *i = Ei;
@@ -124,7 +122,7 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
 
         InsereItem(&UltLido, &Area);
 
-        nro_comparacoes++;
+        estatistica.nro_comparacoes_ord_externa++;
         if (Ei - Esq < Dir - Es)
         {
             RetiraPrimeiro(&Area, &R);
@@ -140,7 +138,7 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
     }
     while (Ei <= Es)
     {
-        nro_comparacoes++;
+        estatistica.nro_comparacoes_ord_externa++;
         RetiraPrimeiro(&Area, &R);
         EscreveMin(ArqEi, R, &Ei, imprimir_dados);
     }
@@ -149,7 +147,7 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
 void LeSup(FILE **ArqLEs, Registro *UltLido, int *Ls, bool *OndeLer, bool imprimir_dados)
 {
     fseek(*ArqLEs, (*Ls - 1) * sizeof(Registro), SEEK_SET);
-    nro_leituras++;
+    estatistica.nro_leituras++;
     fread(UltLido, sizeof(Registro), 1, *ArqLEs);
     if (imprimir_dados)
         PrintFRead(UltLido);
@@ -159,7 +157,7 @@ void LeSup(FILE **ArqLEs, Registro *UltLido, int *Ls, bool *OndeLer, bool imprim
 
 void LeInf(FILE **ArqLi, Registro *UltLido, int *Li, bool *OndeLer, bool imprimir_dados)
 {
-    nro_leituras++;
+    estatistica.nro_leituras++;
     fread(UltLido, sizeof(Registro), 1, *ArqLi);
     if (imprimir_dados)
         PrintFRead(UltLido);
@@ -171,7 +169,7 @@ void InsereItem(Registro *UltLido, TipoArea *Area)
 {
     Area->array[Area->nro_cels_ocupadas] = *UltLido;
     Area->nro_cels_ocupadas++;
-    selection_sort_ascendente(Area->array, Area->nro_cels_ocupadas);
+    selection_sort_ascendente(Area->array, Area->nro_cels_ocupadas, &estatistica);
 }
 
 void RetiraUltimo(TipoArea *Area, Registro *R)
@@ -185,14 +183,14 @@ void RetiraPrimeiro(TipoArea *Area, Registro *R)
 {
     *R = Area->array[0];
     Area->array[0].nota = INT_MAX;
-    selection_sort_ascendente(Area->array, Area->nro_cels_ocupadas);
+    selection_sort_ascendente(Area->array, Area->nro_cels_ocupadas, &estatistica);
     Area->nro_cels_ocupadas--;
 }
 
 void EscreveMax(FILE **ArqLEs, Registro R, int *Es, bool imprimir_dados)
 {
     fseek(*ArqLEs, (*Es - 1) * sizeof(Registro), SEEK_SET);
-    nro_escritas++;
+    estatistica.nro_escritas++;
     fwrite(&R, sizeof(Registro), 1, *ArqLEs);
     if (imprimir_dados)
         PrintFWrite(&R);
@@ -201,6 +199,7 @@ void EscreveMax(FILE **ArqLEs, Registro R, int *Es, bool imprimir_dados)
 
 void EscreveMin(FILE **ArqEi, Registro R, int *Ei, bool imprimir_dados)
 {
+    estatistica.nro_escritas++;
     fwrite(&R, sizeof(Registro), 1, *ArqEi);
     if (imprimir_dados)
         PrintFWrite(&R);

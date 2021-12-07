@@ -35,11 +35,11 @@ void merge_sort_ascendente(Registro *vetor, int margem_esquerda, int nova_margem
             vetor[k] = vetor_esquerda[i++];
         else if (vetor_esquerda[i].nota < vetor_direita[j].nota){
             vetor[k] = vetor_esquerda[i++];
-            estatistica->nro_comparacoes++;
+            estatistica->nro_comparacoes_ord_interna++;
         }
         else{
             vetor[k] = vetor_direita[j++];
-            estatistica->nro_comparacoes++;
+            estatistica->nro_comparacoes_ord_interna++;
         }
     }
 
@@ -47,7 +47,7 @@ void merge_sort_ascendente(Registro *vetor, int margem_esquerda, int nova_margem
     free(vetor_esquerda);
 }
 
-void selection_sort_ascendente(Registro *array, int n)
+void selection_sort_ascendente(Registro *array, int n, Estatistica * estatistica)
 {
     Registro aux;
     int min;
@@ -57,6 +57,7 @@ void selection_sort_ascendente(Registro *array, int n)
         min = i;
         for (int j = i + 1; j < n; j++)
         {
+            estatistica->nro_comparacoes_ord_interna++;
             if (array[j].nota < array[min].nota)
                 min = j;
         }
@@ -144,10 +145,10 @@ void converter_para_txt(FILE *arquivo_binario, char *argv, int nro_registros)
     fclose(arquivo_txt);
 }
 
-void print_estatisticas(int nro_comparacoes, int nro_leituras, int nro_escritas, double tempo_execucao)
+void print_estatisticas(int nro_comparacoes_ord_interna, int nro_comparacoes_ord_externa, int nro_leituras, int nro_escritas, double tempo_execucao)
 {
     printf(ANSI_BOLD ANSI_COLOR_YELLOW "\n- ESTATÍSTICAS DA EXECUÇÃO -     \n" ANSI_RESET);
-    printf(ANSI_BOLD "\nNº de comparações: %d" ANSI_RESET "\n", nro_comparacoes);
+    printf(ANSI_BOLD "\nNº de comparações: %d (E : %d "ANSI_COLOR_YELLOW"&"ANSI_RESET ANSI_BOLD" I : %d)" ANSI_RESET "\n", nro_comparacoes_ord_externa + nro_comparacoes_ord_interna, nro_comparacoes_ord_externa, nro_comparacoes_ord_interna);
     printf(ANSI_BOLD "Nº de leituras(fread): %d" ANSI_RESET "\n", nro_leituras);
     printf(ANSI_BOLD "Nº de escritas(fwrite): %d" ANSI_RESET "\n", nro_escritas);
     printf(ANSI_BOLD "Tempo de execução: " ANSI_COLOR_YELLOW "%f" ANSI_RESET ANSI_BOLD " segundos" ANSI_RESET "\n\n", tempo_execucao);
