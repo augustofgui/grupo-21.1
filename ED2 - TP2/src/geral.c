@@ -43,17 +43,21 @@ void merge_sort_ascendente(Registro *vetor, int margem_esquerda, int nova_margem
     free(vetor_esquerda);
 }
 
-void selection_sort_ascendente(Registro *array, int n){
+void selection_sort_ascendente(Registro *array, int n)
+{
     Registro aux;
     int min;
 
-    for (int i = 0; i < n - 1; i++){
+    for (int i = 0; i < n - 1; i++)
+    {
         min = i;
-        for (int j = i + 1; j < n; j++){
+        for (int j = i + 1; j < n; j++)
+        {
             if (array[j].nota < array[min].nota)
                 min = j;
         }
-        if (i != min){
+        if (i != min)
+        {
             aux = array[i];
             array[i] = array[min];
             array[min] = aux;
@@ -97,17 +101,18 @@ FILE *abrir_arquivo(char nome_arquivo[], char modo_abertura[])
     return abrir_arquivo;
 }
 
-void converter_para_binario(FILE *arquivo_texto, char *nome_binario, char *nome_txt)
+void converter_para_binario(FILE *arquivo_texto, char *nome_binario, char *nome_txt, int nro_quantidade)
 {
     Registro aux;
 
-    printf(ANSI_BOLD"\nArquivo: "ANSI_COLOR_YELLOW"%s\n"ANSI_RESET, nome_txt);
-    printf(ANSI_BOLD ANSI_COLOR_YELLOW"Convertendo"ANSI_RESET" o arquivo .txt para binário. Aguarde...\n");
+    printf(ANSI_BOLD "\nArquivo: " ANSI_COLOR_YELLOW "%s\n" ANSI_RESET, nome_txt);
+    printf(ANSI_BOLD ANSI_COLOR_YELLOW "Convertendo" ANSI_RESET " o arquivo .txt para binário. Aguarde...\n");
 
     FILE *arquivo_binario = abrir_arquivo(nome_binario, "w+b");
 
-    while (fscanf(arquivo_texto, "%ld %f", &aux.inscricao, &aux.nota) != EOF)
+    while (nro_quantidade--)
     {
+        fscanf(arquivo_texto, "%ld %f", &aux.inscricao, &aux.nota);
         fgets(aux.estado_cidade_curso, 87, arquivo_texto);
         aux.estado_cidade_curso[85] = '\0';
         fwrite(&aux, sizeof(Registro), 1, arquivo_binario);
@@ -120,35 +125,36 @@ void converter_para_txt(FILE *arquivo_binario, char *argv, int nro_registros)
 {
     Registro aux;
     rewind(arquivo_binario);
-    printf(ANSI_BOLD ANSI_COLOR_YELLOW"Convertendo"ANSI_RESET" o arquivo binário para .txt. Aguarde...\n");
+    printf(ANSI_BOLD ANSI_COLOR_YELLOW "Convertendo" ANSI_RESET " o arquivo binário para .txt. Aguarde...\n");
 
     FILE *arquivo_txt = abrir_arquivo(argv, "w+");
 
-    while (nro_registros--){
+    while (nro_registros--)
+    {
         fread(&aux, sizeof(Registro), 1, arquivo_binario);
         fprintf(arquivo_txt, "%08ld %05.1f%s\n", aux.inscricao, aux.nota, aux.estado_cidade_curso);
     }
 
-    printf(ANSI_BOLD"Resultado da ordenação impresso em: "ANSI_RESET ANSI_COLOR_YELLOW"RESULTADO.TXT"ANSI_RESET"\n\n");
+    printf(ANSI_BOLD "Resultado da ordenação impresso em: " ANSI_RESET ANSI_COLOR_YELLOW "RESULTADO.TXT" ANSI_RESET "\n\n");
 
     fclose(arquivo_txt);
 }
 
 void print_estatisticas(int nro_comparacoes, int nro_leituras, int nro_escritas, double tempo_execucao)
 {
-    printf(ANSI_BOLD ANSI_COLOR_YELLOW"\n- ESTATÍSTICAS DA EXECUÇÃO -     \n"ANSI_RESET);
-    printf(ANSI_BOLD"\nNº de comparações: %d"ANSI_RESET"\n", nro_comparacoes);
-    printf(ANSI_BOLD"Nº de leituras(fread): %d"ANSI_RESET"\n", nro_leituras);
-    printf(ANSI_BOLD"Nº de escritas(fwrite): %d"ANSI_RESET"\n", nro_escritas);
-    printf(ANSI_BOLD"Tempo de execução: "ANSI_COLOR_YELLOW"%f"ANSI_RESET ANSI_BOLD" segundos"ANSI_RESET"\n\n", tempo_execucao);
+    printf(ANSI_BOLD ANSI_COLOR_YELLOW "\n- ESTATÍSTICAS DA EXECUÇÃO -     \n" ANSI_RESET);
+    printf(ANSI_BOLD "\nNº de comparações: %d" ANSI_RESET "\n", nro_comparacoes);
+    printf(ANSI_BOLD "Nº de leituras(fread): %d" ANSI_RESET "\n", nro_leituras);
+    printf(ANSI_BOLD "Nº de escritas(fwrite): %d" ANSI_RESET "\n", nro_escritas);
+    printf(ANSI_BOLD "Tempo de execução: " ANSI_COLOR_YELLOW "%f" ANSI_RESET ANSI_BOLD " segundos" ANSI_RESET "\n\n", tempo_execucao);
 }
 
 void PrintFRead(Registro *R)
 {
-    printf(ANSI_BOLD ANSI_COLOR_BLUE"fread"ANSI_RESET"  : %08ld %05.1f%s\n", R->inscricao, R->nota, R->estado_cidade_curso);
+    printf(ANSI_BOLD ANSI_COLOR_BLUE "fread" ANSI_RESET "  : %08ld %05.1f%s\n", R->inscricao, R->nota, R->estado_cidade_curso);
 }
 
 void PrintFWrite(Registro *R)
 {
-    printf(ANSI_BOLD ANSI_COLOR_RED"fwrite"ANSI_RESET" : %08ld %05.1f%s\n", R->inscricao, R->nota, R->estado_cidade_curso);
+    printf(ANSI_BOLD ANSI_COLOR_RED "fwrite" ANSI_RESET " : %08ld %05.1f%s\n", R->inscricao, R->nota, R->estado_cidade_curso);
 }

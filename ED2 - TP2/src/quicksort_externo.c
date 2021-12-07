@@ -10,7 +10,7 @@ void quicksort_externo_main(char argv[], int nro_quantidade, bool imprimir_dados
     FILE *ArqLi, *ArqEi, *ArqLEs, *ArqTXT;
 
     ArqTXT = abrir_arquivo(argv, "r");
-    converter_para_binario(ArqTXT, "arquivo_binario.bin", argv);
+    converter_para_binario(ArqTXT, "arquivo_binario.bin", argv, nro_quantidade);
     fclose(ArqTXT);
 
     // ----- Início do Quicksort Externo
@@ -225,7 +225,7 @@ void PrintArea(TipoArea Area)
 
 void print_ordenacao(bool imprimir_dados)
 {
-    printf(ANSI_COLOR_YELLOW"Ordenando"ANSI_RESET" o arquivo binário. Aguarde...\n");
+    printf(ANSI_COLOR_YELLOW "Ordenando" ANSI_RESET " o arquivo binário. Aguarde...\n");
     if (imprimir_dados)
         printf("\n");
 }
