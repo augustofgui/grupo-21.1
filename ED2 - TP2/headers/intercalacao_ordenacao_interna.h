@@ -32,6 +32,9 @@ void intercalacao_balanceada(Fita * origem, Fita * destino, int nro_registros, i
 void fitas_rewind(Fitas * fitas);
 int acha_posicao_menor_reg(Registro * vetor, int tam);
 Fitas cria_fitas();
+void remove_fitas(Fitas *fitas);
 void cria_fitas_tipo(Fita * vetor, int n, char * tipo);
+void string_caminho_fitas(char *tipo, char * num, char * str_out);
+void string_arquivo_fitas(char *tipo, char * num, char * str_out);
 
 #endif // INTERCALACAO_ORDENACAO_INTERNA_H
