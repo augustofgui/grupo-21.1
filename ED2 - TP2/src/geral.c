@@ -1,7 +1,7 @@
 #include "../headers/geral.h"
 #include "../headers/quicksort_externo.h"
 
-void merge_sort(Registro *vetor, int margem_esquerda, int n, Estatistica * estatistica)
+void merge_sort(Registro *vetor, int margem_esquerda, int n, Estatistica *estatistica)
 {
     if (margem_esquerda < n)
     {
@@ -12,7 +12,7 @@ void merge_sort(Registro *vetor, int margem_esquerda, int n, Estatistica * estat
     }
 }
 
-void merge_sort_ascendente(Registro *vetor, int margem_esquerda, int nova_margem, int n, Estatistica * estatistica)
+void merge_sort_ascendente(Registro *vetor, int margem_esquerda, int nova_margem, int n, Estatistica *estatistica)
 {
     int tamanho_esquerda = (nova_margem - margem_esquerda + 1), tamanho_direita = (n - nova_margem);
     Registro *vetor_esquerda = (Registro *)malloc(tamanho_esquerda * sizeof(Registro));
@@ -33,11 +33,13 @@ void merge_sort_ascendente(Registro *vetor, int margem_esquerda, int nova_margem
             vetor[k] = vetor_direita[j++];
         else if (j == tamanho_direita)
             vetor[k] = vetor_esquerda[i++];
-        else if (vetor_esquerda[i].nota < vetor_direita[j].nota){
+        else if (vetor_esquerda[i].nota < vetor_direita[j].nota)
+        {
             vetor[k] = vetor_esquerda[i++];
             estatistica->nro_comparacoes_ord_interna++;
         }
-        else{
+        else
+        {
             vetor[k] = vetor_direita[j++];
             estatistica->nro_comparacoes_ord_interna++;
         }
@@ -47,7 +49,26 @@ void merge_sort_ascendente(Registro *vetor, int margem_esquerda, int nova_margem
     free(vetor_esquerda);
 }
 
-void selection_sort_ascendente(Registro *array, int n, Estatistica * estatistica)
+void insertion_sort(Registro *array, int n, Estatistica *estatistica)
+{
+    int i, j;
+    Registro aux;
+
+    for (i = 1; i < n; i++)
+    {
+        aux = array[i];
+        j = i - 1;
+        while (j >= 0 && array[j].nota > aux.nota)
+        {
+            estatistica->nro_comparacoes_ord_interna++;
+            array[j + 1] = array[j];
+            j--;
+        }
+        array[j + 1] = aux;
+    }
+}
+
+void selection_sort(Registro *array, int n, Estatistica *estatistica)
 {
     Registro aux;
     int min;
@@ -148,7 +169,7 @@ void converter_para_txt(FILE *arquivo_binario, char *argv, int nro_registros)
 void print_estatisticas(int nro_comparacoes_ord_interna, int nro_comparacoes_ord_externa, int nro_leituras, int nro_escritas, double tempo_execucao)
 {
     printf(ANSI_BOLD ANSI_COLOR_YELLOW "\n- ESTATÍSTICAS DA EXECUÇÃO -     \n" ANSI_RESET);
-    printf(ANSI_BOLD "\nNº de comparações: %d (E : %d "ANSI_COLOR_YELLOW"&"ANSI_RESET ANSI_BOLD" I : %d)" ANSI_RESET "\n", nro_comparacoes_ord_externa + nro_comparacoes_ord_interna, nro_comparacoes_ord_externa, nro_comparacoes_ord_interna);
+    printf(ANSI_BOLD "\nNº de comparações: %d (E : %d " ANSI_COLOR_YELLOW "&" ANSI_RESET ANSI_BOLD " I : %d)" ANSI_RESET "\n", nro_comparacoes_ord_externa + nro_comparacoes_ord_interna, nro_comparacoes_ord_externa, nro_comparacoes_ord_interna);
     printf(ANSI_BOLD "Nº de leituras(fread): %d" ANSI_RESET "\n", nro_leituras);
     printf(ANSI_BOLD "Nº de escritas(fwrite): %d" ANSI_RESET "\n", nro_escritas);
     printf(ANSI_BOLD "Tempo de execução: " ANSI_COLOR_YELLOW "%f" ANSI_RESET ANSI_BOLD " segundos" ANSI_RESET "\n\n", tempo_execucao);

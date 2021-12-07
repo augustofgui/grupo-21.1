@@ -24,7 +24,7 @@ void quicksort_externo_main(char argv[], int nro_quantidade, bool imprimir_dados
     estatistica.tempo_execucao = ((double)t) / CLOCKS_PER_SEC;
     // ----- Fim do Quicksort Externo
 
-    print_estatisticas(estatistica.nro_comparacoes_ord_externa, estatistica.nro_comparacoes_ord_interna, estatistica.nro_leituras, estatistica.nro_escritas, estatistica.tempo_execucao);
+    print_estatisticas(estatistica.nro_comparacoes_ord_interna, estatistica.nro_comparacoes_ord_externa, estatistica.nro_leituras, estatistica.nro_escritas, estatistica.tempo_execucao);
 
     converter_para_txt(ArqLi, "RESULTADO.TXT", nro_quantidade);
     fclose(ArqLi);
@@ -38,7 +38,6 @@ void quicksort_externo(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, int Esq, int D
     int i, j;
     TipoArea Area;
 
-    estatistica.nro_comparacoes_ord_externa++;
     if (Dir - Esq < 1)
         return;
 
@@ -46,7 +45,6 @@ void quicksort_externo(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, int Esq, int D
 
     Particao(ArqLi, ArqEi, ArqLEs, Area, Esq, Dir, &i, &j, imprimir_dados);
 
-    estatistica.nro_comparacoes_ord_externa++;
     if (i - Esq < Dir - j)
     {
         quicksort_externo(ArqLi, ArqEi, ArqLEs, Esq, i, imprimir_dados);
@@ -73,10 +71,8 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
 
     while (Ls >= Li)
     {
-        estatistica.nro_comparacoes_ord_externa += 2;
         if (Area.nro_cels_ocupadas < TAM_AREA - 1)
         {
-            estatistica.nro_comparacoes_ord_externa++;
             if (OndeLer)
                 LeSup(ArqLEs, &UltLido, &Ls, &OndeLer, imprimir_dados);
             else
@@ -87,19 +83,16 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
             continue;
         }
 
-        estatistica.nro_comparacoes_ord_externa++;
         if (Ls == Es)
         {
             LeSup(ArqLEs, &UltLido, &Ls, &OndeLer, imprimir_dados);
         }
         else if (Li == Ei)
         {
-            estatistica.nro_comparacoes_ord_externa++;
             LeInf(ArqLi, &UltLido, &Li, &OndeLer, imprimir_dados);
         }
         else if (OndeLer)
         {
-            estatistica.nro_comparacoes_ord_externa++;
             LeSup(ArqLEs, &UltLido, &Ls, &OndeLer, imprimir_dados);
         }
         else
@@ -122,7 +115,6 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
 
         InsereItem(&UltLido, &Area);
 
-        estatistica.nro_comparacoes_ord_externa++;
         if (Ei - Esq < Dir - Es)
         {
             RetiraPrimeiro(&Area, &R);
@@ -138,7 +130,6 @@ void Particao(FILE **ArqLi, FILE **ArqEi, FILE **ArqLEs, TipoArea Area, int Esq,
     }
     while (Ei <= Es)
     {
-        estatistica.nro_comparacoes_ord_externa++;
         RetiraPrimeiro(&Area, &R);
         EscreveMin(ArqEi, R, &Ei, imprimir_dados);
     }
@@ -169,7 +160,7 @@ void InsereItem(Registro *UltLido, TipoArea *Area)
 {
     Area->array[Area->nro_cels_ocupadas] = *UltLido;
     Area->nro_cels_ocupadas++;
-    selection_sort_ascendente(Area->array, Area->nro_cels_ocupadas, &estatistica);
+    insertion_sort(Area->array, Area->nro_cels_ocupadas, &estatistica);
 }
 
 void RetiraUltimo(TipoArea *Area, Registro *R)
@@ -183,7 +174,7 @@ void RetiraPrimeiro(TipoArea *Area, Registro *R)
 {
     *R = Area->array[0];
     Area->array[0].nota = INT_MAX;
-    selection_sort_ascendente(Area->array, Area->nro_cels_ocupadas, &estatistica);
+    insertion_sort(Area->array, Area->nro_cels_ocupadas, &estatistica);
     Area->nro_cels_ocupadas--;
 }
 
