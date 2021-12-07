@@ -50,15 +50,15 @@ void intercalacao_ordenacao_interna(char argv[], int nro_quantidade, bool imprim
 
     printf(ANSI_BOLD ANSI_COLOR_GREEN "\nArquivo ordenado com sucesso!\n" ANSI_RESET);
 
-    converter_para_txt(entrada[0].arquivo, "RESULTADO.TXT", nro_quantidade);
-
     t = clock() - t;
     double tempo_execucao = ((double)t) / CLOCKS_PER_SEC;
     estatistica.tempo_execucao = tempo_execucao;
 
     print_estatisticas(estatistica.nro_comparacoes_ord_externa, estatistica.nro_comparacoes_ord_interna, estatistica.nro_leituras, estatistica.nro_escritas, estatistica.tempo_execucao);
 
-    remove("arquivo_binario.bin");
+    converter_para_txt(entrada[0].arquivo, "RESULTADO.TXT", nro_quantidade);
+
+    remove_fitas(&fitas);
 }
 
 void fitas_rewind(Fitas *fitas)
@@ -278,6 +278,30 @@ Fitas cria_fitas()
     return fitas_nova;
 }
 
+void remove_fitas(Fitas *fitas)
+{
+    int i;
+    char caminho[TEXT], num[TEXT];
+
+    for( i = 0; i < NUM_FITAS_ENTRADA; i++) {
+        sprintf(num, "%02d", i+1);
+
+        fclose(fitas->entrada[i].arquivo);
+        string_caminho_fitas("entrada", num, caminho);
+        remove(caminho);
+    }
+
+    for( i = 0; i < NUM_FITAS_SAIDA; i++) {
+        sprintf(num, "%02d", i+1);
+
+        fclose(fitas->saida[i].arquivo);
+        string_caminho_fitas("saida", num, caminho);
+        remove(caminho);
+    }
+
+    remove("arquivo_binario.bin");
+}
+
 void cria_fitas_tipo(Fita *vetor, int n, char *tipo)
 {
     printf(ANSI_BOLD ANSI_COLOR_YELLOW "\nCriando" ANSI_RESET " as fitas de %s. Aguarde...", tipo);
@@ -291,15 +315,8 @@ void cria_fitas_tipo(Fita *vetor, int n, char *tipo)
     {
         sprintf(num, "%02d", i);
 
-        strcpy(caminho, "./fitas/");
-        strcat(caminho, tipo);
-        strcat(caminho, "/");
-        strcpy(arquivo, tipo);
-        strcat(arquivo, "_");
-
-        strcat(arquivo, num);
-        strcat(arquivo, ".bin");
-        strcat(caminho, arquivo);
+        string_caminho_fitas(tipo, num, caminho);
+        string_arquivo_fitas(tipo, num, arquivo);
 
         vetor[i - 1].arquivo = abrir_arquivo(caminho, "w+b");
         vetor[i - 1].quant_itens = 0;
@@ -310,4 +327,32 @@ void cria_fitas_tipo(Fita *vetor, int n, char *tipo)
     }
 
     printf(ANSI_BOLD ANSI_COLOR_RED "\nFitas" ANSI_RESET " de %s: " ANSI_COLOR_GREEN "ok!\n" ANSI_RESET, tipo);
+}
+
+void string_caminho_fitas(char *tipo, char *num, char *str_out)
+{
+    char caminho[TEXT];
+    char arquivo[TEXT];
+
+    strcpy(caminho, "./fitas/");
+    strcat(caminho, tipo);
+    strcat(caminho, "/");
+
+    string_arquivo_fitas(tipo, num, arquivo);
+
+    strcat(caminho, arquivo);
+    strcpy(str_out, caminho);
+}
+
+void string_arquivo_fitas(char *tipo, char *num, char *str_out)
+{
+    char arquivo[TEXT];
+
+    strcpy(arquivo, tipo);
+    strcat(arquivo, "_");
+
+    strcat(arquivo, num);
+    strcat(arquivo, ".bin");
+
+    strcpy(str_out, arquivo);
 }
