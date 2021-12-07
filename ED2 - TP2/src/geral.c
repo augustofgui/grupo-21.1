@@ -184,3 +184,15 @@ void PrintFWrite(Registro *R)
 {
     printf(ANSI_BOLD ANSI_COLOR_RED "fwrite" ANSI_RESET " : %08ld %05.1f%s\n", R->inscricao, R->nota, R->estado_cidade_curso);
 }
+
+void print_resultado_ordenacao(FILE *arquivo_binario){
+    Registro aux;
+
+    rewind(arquivo_binario);
+
+    printf(ANSI_BOLD ANSI_COLOR_YELLOW "\n- RESULTADO DA ORDENAÇÃO -     \n\n" ANSI_RESET);
+
+    while (fread(&aux, sizeof(Registro), 1, arquivo_binario)){
+        printf("%08ld %05.1f%s\n", aux.inscricao, aux.nota, aux.estado_cidade_curso);
+    }
+}

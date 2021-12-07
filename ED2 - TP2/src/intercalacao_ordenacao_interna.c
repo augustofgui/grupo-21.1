@@ -54,6 +54,8 @@ void intercalacao_ordenacao_interna(char argv[], int nro_quantidade, bool imprim
     double tempo_execucao = ((double)t) / CLOCKS_PER_SEC;
     estatistica.tempo_execucao = tempo_execucao;
 
+    print_resultado_ordenacao(entrada[0].arquivo);
+
     print_estatisticas(estatistica.nro_comparacoes_ord_externa, estatistica.nro_comparacoes_ord_interna, estatistica.nro_leituras, estatistica.nro_escritas, estatistica.tempo_execucao);
 
     converter_para_txt(entrada[0].arquivo, "RESULTADO.TXT", nro_quantidade);

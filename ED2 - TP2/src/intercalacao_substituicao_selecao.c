@@ -120,7 +120,7 @@ void intercalacao_substituicao_selecao(char* nome_arquivo, bool imprimir_dados, 
     double tempo_execucao = ((double)t) / CLOCKS_PER_SEC;
 
    if(imprimir_dados){}
-    print_estatisticas(comparacoes,  leituras,  escritas, tempo_execucao);
+    //print_estatisticas(comparacoes,  leituras,  escritas, tempo_execucao);
 }
 
 ////////////////////
