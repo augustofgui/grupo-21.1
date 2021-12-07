@@ -84,14 +84,7 @@ void intercalacao_ordenacao_interna(char argv[], int nro_quantidade, bool imprim
     double tempo_execucao = ((double)t) / CLOCKS_PER_SEC;
     // Leva os segundos para a tabela de estatistica.
     estatistica.tempo_execucao = tempo_execucao;
-<<<<<<< HEAD
     // Printa a tabela de estatistica com os valores adiquiridos. 
-=======
-    
-    if(imprimir_dados)
-        print_resultado_ordenacao(entrada[0].arquivo);
-
->>>>>>> 24c84248a51bcf175b8cb0f3d8088f3157c87c1f
     print_estatisticas(estatistica.nro_comparacoes_ord_externa, estatistica.nro_comparacoes_ord_interna, estatistica.nro_leituras, estatistica.nro_escritas, estatistica.tempo_execucao);
 
     // Covnerte a fita da ultima intercalação de .bin para .txt.
