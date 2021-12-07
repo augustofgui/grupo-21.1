@@ -28,7 +28,7 @@ void quicksort_externo_main(char argv[], int nro_quantidade, bool imprimir_dados
 
     print_estatisticas(nro_comparacoes, nro_leituras, nro_escritas, tempo_execucao);
 
-    converter_para_txt(ArqLi, "RESULTADO.TXT");
+    converter_para_txt(ArqLi, "RESULTADO.TXT", nro_quantidade);
     fclose(ArqLi);
     fclose(ArqEi);
     fclose(ArqLEs);

@@ -116,7 +116,7 @@ void converter_para_binario(FILE *arquivo_texto, char *nome_binario, char *nome_
     fclose(arquivo_binario);
 }
 
-void converter_para_txt(FILE *arquivo_binario, char *argv)
+void converter_para_txt(FILE *arquivo_binario, char *argv, int nro_registros)
 {
     Registro aux;
     rewind(arquivo_binario);
@@ -124,9 +124,11 @@ void converter_para_txt(FILE *arquivo_binario, char *argv)
 
     FILE *arquivo_txt = abrir_arquivo(argv, "w+");
 
-    while (fread(&aux, sizeof(Registro), 1, arquivo_binario))
+    while (nro_registros--){
+        fread(&aux, sizeof(Registro), 1, arquivo_binario);
         fprintf(arquivo_txt, "%08ld %05.1f%s\n", aux.inscricao, aux.nota, aux.estado_cidade_curso);
-    
+    }
+
     printf(ANSI_BOLD"Resultado da ordenação impresso em: "ANSI_RESET ANSI_COLOR_YELLOW"RESULTADO.TXT"ANSI_RESET"\n\n");
 
     fclose(arquivo_txt);
