@@ -1,5 +1,11 @@
 # Estrutura de Dados 2 - Trabalho Prático 1
 
+Universidade Federal de Ouro Preto – UFOP
+Instituto de Ciências Exatas e Biológicas – ICEB
+Departamento de Computação – DECOM
+Estrutura de Dados II – BCC203
+Prof. Guilherme Tavares de Assis – 2021/1
+
 ### Membros
 ```
 Intercalação c/ ordenação interna - Augusto
@@ -77,11 +83,6 @@ onde:
 
 • <método> representa o método de ordenação externa a ser executado, podendo ser um número
 inteiro de 1 a 3, de acordo com a ordem dos métodos mencionados; 
-Universidade Federal de Ouro Preto – UFOP
-Instituto de Ciências Exatas e Biológicas – ICEB
-Departamento de Computação – DECOM
-Estrutura de Dados II – BCC203
-Prof. Guilherme Tavares de Assis – 2021/1
 • <quantidade> representa a quantidade de alunos (linhas do arquivo texto) a serem ordenados;
 • <situação> representa a situação de ordem inicial do arquivo, podendo ser 1 (arquivo ordenado
 ascendentemente pelas notas), 2 (arquivo ordenado descendentemente pelas notas) ou 3 (arquivo
