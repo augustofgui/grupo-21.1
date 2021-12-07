@@ -1,11 +1,15 @@
-Arquivo: PROVAO_ORDENADO_ASC.TXT
 
+Arquivo: txt/PROVAO_ORDENADO_ASC.TXT
 Convertendo o arquivo .txt para binário. Aguarde...
 Ordenando o arquivo binário. Aguarde...
 
-Nº de comparações: 64956
+- ESTATÍSTICAS DA EXECUÇÃO -     
+
+Nº de comparações: 114943 (E : 19962 & I : 94981)
 Nº de leituras(fread): 10000
-Nº de escritas(fwrite): 4991
+Nº de escritas(fwrite): 10000
 Tempo de execução: 0.046875 segundos
 
 Convertendo o arquivo binário para .txt. Aguarde...
+Resultado da ordenação impresso em: RESULTADO.TXT
+
