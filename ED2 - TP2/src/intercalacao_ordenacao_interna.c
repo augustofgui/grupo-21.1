@@ -1,85 +1,114 @@
 #include "../headers/intercalacao_ordenacao_interna.h"
 
+// ----- Função principal que organiza e executa a Intercalação com Ordenação Interna.
 void intercalacao_ordenacao_interna(char argv[], int nro_quantidade, bool imprimir_dados)
-{   
+{      
+    // ----- Printf de início de execução.
     printf(ANSI_BOLD ANSI_COLOR_YELLOW "\nIniciando" ANSI_RESET " o processo de intercalacao por ordenacao interna. Aguarde...\n");
 
+    // ----- Arquivos de entrada.
     FILE *arquivo_texto, *arquivo_bin;
 
+    // ----- Conversão do arquivo .txt para .bin.
     arquivo_texto = abrir_arquivo(argv, "r");
     converter_para_binario(arquivo_texto, "arquivo_binario.bin", argv, nro_quantidade);
     fclose(arquivo_texto);
 
-    // ----- Início do Intercalação Ordenação Interna
+    // ----- Início do Intercalação Ordenação Interna.
 
+    // ----- Início da contagem de tempo.
     clock_t t = clock();
+
+    // ----- Criada tabela das estatisticas de execução.
     Estatistica estatistica = {0, 0, 0, 0, 0.0F};
 
+    // ----- Declaração das fitas.
     Fitas fitas = cria_fitas();
+
+    // ----- Vetores auxiliares de fitas.
     Fita *entrada;
     Fita *saida;
     Fita *aux;
 
+    // ----- Contadores.
     int contador_fitas, i;
 
+    // ----- Tenta abrir o arquivo binário para leitura.
     arquivo_bin = abrir_arquivo("arquivo_binario.bin", "r+b");
 
+    // ----- Cria, ordena e escreve os blocos ordenados nas fitas de entrada.
     criar_blocos_ordenados(arquivo_bin, nro_quantidade, &fitas, &estatistica, imprimir_dados);
 
+    // ----- Executa rewind em todas as fita.
     fitas_rewind(&fitas);
 
+    // ----- Inicializa os vetores auxiliares com
+    // ----- os vetores respectivos de fitas.
     entrada = fitas.entrada;
     saida = fitas.saida;
 
+    // ----- Realiza a intercalação, invertendo as fitas
+    // ----- de saida e entrada até que a apenas
+    // ----- a primeira fita esteja preenchida.
     do
-    {
+    {   
+        // Inicia o contador de fitas preenchidas em 0.
         contador_fitas = 0;
 
+        // Realiza a intercalação balanceada, recebendo 2 vetores de Fita.
         intercalacao_balanceada(entrada, saida, nro_quantidade, entrada[0].tam_ultimo_bloco, &estatistica, imprimir_dados);
 
+        // Reinicia os contadores de fita.
         fitas_rewind(&fitas);
 
+        // Troca as fitas de entrada e saida.
+        // A de saida vira de entrada.
+        // E a entrada vira de saida.
         aux = entrada;
         entrada = saida;
         saida = aux;
 
+        // Conta quantas fitas estão preenchidas.
         for (i = 0; i < NUM_FITAS_ENTRADA; i++)
             contador_fitas += (entrada[i].preenchida) ? 1 : 0;
-
+    
+    // Continua enquanto não tiver restando apenas 1 fita
+    // preenchida, com todos os registro ordenados.
     } while (contador_fitas != 1);
 
+    // Printf de conclusão da ordenação interna.
     printf(ANSI_BOLD ANSI_COLOR_GREEN "\nArquivo ordenado com sucesso!\n" ANSI_RESET);
 
+    // Para o contador de tempo e calcula os segundos passados.
     t = clock() - t;
     double tempo_execucao = ((double)t) / CLOCKS_PER_SEC;
+    // Leva os segundos para a tabela de estatistica.
     estatistica.tempo_execucao = tempo_execucao;
-
+    // Printa a tabela de estatistica com os valores adiquiridos. 
     print_estatisticas(estatistica.nro_comparacoes_ord_externa, estatistica.nro_comparacoes_ord_interna, estatistica.nro_leituras, estatistica.nro_escritas, estatistica.tempo_execucao);
 
+    // Covnerte a fita da ultima intercalação de .bin para .txt.
     converter_para_txt(entrada[0].arquivo, "RESULTADO.TXT", nro_quantidade);
 
+    // Fecha e remove as fitasdo programa.
     remove_fitas(&fitas);
 }
 
-void fitas_rewind(Fitas *fitas)
-{
-    int i;
-    for (i = 0; i < NUM_FITAS_ENTRADA; i++)
-        rewind(fitas->entrada[i].arquivo);
-
-    for (i = 0; i < NUM_FITAS_SAIDA; i++)
-        rewind(fitas->saida[i].arquivo);
-}
-
+// ----- Cria, ordena e escreve os blocos ordenados.
 void criar_blocos_ordenados(FILE *arquivo_binario, int num_registros, Fitas *fitas, Estatistica *estatistica, bool imprimir_dados)
-{
+{   
+    // ----- Printf de inicio de execução
     printf(ANSI_BOLD ANSI_COLOR_YELLOW "\nCriando" ANSI_RESET " blocos ordenados. Aguarde...\n");
 
+    // ----- Calcula o numero de blocos completos de registros no arquivo
     int numero_leituras_completas = num_registros / TAM_BLOCO;
+
+    // ----- Calcula caso existem registros restantes, formando um bloco incompleto
     int tam_ultima_leitura = num_registros % TAM_BLOCO;
 
-    int i = numero_leituras_completas;
-    int j = 0;
+    // Contadores
+    int i = numero_leituras_completas;  // Contador de leituras
+    int j = 0;                          // Contador que cicla entre fitas
 
     while (i--)
     {
@@ -97,27 +126,6 @@ void criar_blocos_ordenados(FILE *arquivo_binario, int num_registros, Fitas *fit
     }
 
     printf(ANSI_BOLD ANSI_COLOR_RED "\nBlocos" ANSI_RESET " ordenados com " ANSI_COLOR_GREEN "sucesso!\n" ANSI_RESET);
-}
-
-void escreve_na_fita(FILE *arquivo_binario, Fita *fita_destino, int tam, Estatistica * estatistica ,bool imprimir_dados)
-{
-    Registro vetor_reg[TAM_BLOCO];
-    int k;
-
-    fread(vetor_reg, sizeof(Registro), tam, arquivo_binario);
-    if (imprimir_dados)
-        for (k = 0; k < tam; k++)
-            PrintFRead(&vetor_reg[k]);
-
-    merge_sort(vetor_reg, 0, tam-1, estatistica);
-    fwrite(vetor_reg, sizeof(Registro), tam, fita_destino->arquivo);
-    if (imprimir_dados)
-        for (k = 0; k < tam; k++)
-            PrintFWrite(&vetor_reg[k]);
-
-    fita_destino->quant_itens += tam;
-    fita_destino->tam_ultimo_bloco = tam;
-    fita_destino->preenchida = true;
 }
 
 void intercalacao_balanceada(Fita *origem, Fita *destino, int nro_registros, int tam_antigo_bloco, Estatistica * estatistica, bool imprimir_dados)
@@ -263,96 +271,4 @@ int acha_posicao_menor_reg(Registro *vetor, int tam)
     }
 
     return m;
-}
-
-Fitas cria_fitas()
-{
-    Fitas fitas_nova;
-
-    printf(ANSI_BOLD ANSI_COLOR_YELLOW "\nCriando" ANSI_RESET " as fitas para intercalação. Aguarde...\n");
-
-    cria_fitas_tipo(fitas_nova.entrada, NUM_FITAS_ENTRADA, "entrada");
-    cria_fitas_tipo(fitas_nova.saida, NUM_FITAS_SAIDA, "saida");
-
-    printf(ANSI_BOLD ANSI_COLOR_RED "\nFitas" ANSI_RESET " criadas com " ANSI_COLOR_GREEN "sucesso!\n" ANSI_RESET);
-    return fitas_nova;
-}
-
-void remove_fitas(Fitas *fitas)
-{
-    int i;
-    char caminho[TEXT], num[TEXT];
-
-    for( i = 0; i < NUM_FITAS_ENTRADA; i++) {
-        sprintf(num, "%02d", i+1);
-
-        fclose(fitas->entrada[i].arquivo);
-        string_caminho_fitas("entrada", num, caminho);
-        remove(caminho);
-    }
-
-    for( i = 0; i < NUM_FITAS_SAIDA; i++) {
-        sprintf(num, "%02d", i+1);
-
-        fclose(fitas->saida[i].arquivo);
-        string_caminho_fitas("saida", num, caminho);
-        remove(caminho);
-    }
-
-    remove("arquivo_binario.bin");
-}
-
-void cria_fitas_tipo(Fita *vetor, int n, char *tipo)
-{
-    printf(ANSI_BOLD ANSI_COLOR_YELLOW "\nCriando" ANSI_RESET " as fitas de %s. Aguarde...", tipo);
-
-    int i;
-    char num[TEXT];
-    char caminho[TEXT];
-    char arquivo[TEXT];
-
-    for (i = 1; i <= n; i++)
-    {
-        sprintf(num, "%02d", i);
-
-        string_caminho_fitas(tipo, num, caminho);
-        string_arquivo_fitas(tipo, num, arquivo);
-
-        vetor[i - 1].arquivo = abrir_arquivo(caminho, "w+b");
-        vetor[i - 1].quant_itens = 0;
-        vetor[i - 1].tam_ultimo_bloco = TAM_BLOCO;
-        vetor[i - 1].preenchida = false;
-
-        printf(ANSI_BOLD "\nFita " ANSI_COLOR_BLUE "%s" ANSI_RESET ": " ANSI_COLOR_GREEN "ok!" ANSI_RESET, arquivo);
-    }
-
-    printf(ANSI_BOLD ANSI_COLOR_RED "\nFitas" ANSI_RESET " de %s: " ANSI_COLOR_GREEN "ok!\n" ANSI_RESET, tipo);
-}
-
-void string_caminho_fitas(char *tipo, char *num, char *str_out)
-{
-    char caminho[TEXT];
-    char arquivo[TEXT];
-
-    strcpy(caminho, "./fitas/");
-    strcat(caminho, tipo);
-    strcat(caminho, "/");
-
-    string_arquivo_fitas(tipo, num, arquivo);
-
-    strcat(caminho, arquivo);
-    strcpy(str_out, caminho);
-}
-
-void string_arquivo_fitas(char *tipo, char *num, char *str_out)
-{
-    char arquivo[TEXT];
-
-    strcpy(arquivo, tipo);
-    strcat(arquivo, "_");
-
-    strcat(arquivo, num);
-    strcat(arquivo, ".bin");
-
-    strcpy(str_out, arquivo);
 }
