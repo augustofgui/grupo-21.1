@@ -12,7 +12,7 @@ void preencheVetor (Registro* vetor,FILE* fileEntrada);
 void converter_para_char (int num,char* c);
 void esvaziarVetor (Registro* vetor,int* n);
 void sub (FILE* nome_arquivo, Registro* vetor,int* n);
-void intercalacao_substituicao_selecao(char* nome_arquivo, bool imprimir_dados);
+void intercalacao_substituicao_selecao(char* nome_arquivo, bool imprimir_dados, int nro_quantidade);
 
 ////////////////////HEAP
 

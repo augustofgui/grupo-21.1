@@ -104,12 +104,12 @@ void sub (FILE* nome_arquivo, Registro* vetor, int* n ) {
     esvaziarVetor(vetor, &N);
 }
 
-void intercalacao_substituicao_selecao(char* nome_arquivo, bool imprimir_dados) {
+void intercalacao_substituicao_selecao(char* nome_arquivo, bool imprimir_dados, int nro_quantidade) {
 
     FILE *ArqTXT;
 
     ArqTXT = abrir_arquivo(nome_arquivo, "r");
-    converter_para_binario(ArqTXT, "arquivo_binario.bin", nome_arquivo);
+    converter_para_binario(ArqTXT, "arquivo_binario.bin", nome_arquivo, nro_quantidade);
     fclose(ArqTXT);
 
     clock_t t = clock();
