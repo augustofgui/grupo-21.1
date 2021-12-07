@@ -49,5 +49,6 @@ void insertion_sort(Registro *array, int n, Estatistica *estatistica);
 void print_estatisticas(int nro_comparacoes_ord_interna, int nro_comparacoes_ord_externa, int nro_leituras, int nro_escritas, double tempo_execucao);
 void PrintFRead(Registro *R);
 void PrintFWrite(Registro *R);
+void print_resultado_ordenacao(FILE *arquivo_binario);
 
 #endif // GERAL_H

@@ -24,6 +24,9 @@ void quicksort_externo_main(char argv[], int nro_quantidade, bool imprimir_dados
     estatistica.tempo_execucao = ((double)t) / CLOCKS_PER_SEC;
     // ----- Fim do Quicksort Externo
 
+    if (imprimir_dados)
+        print_resultado_ordenacao(ArqLi);
+
     print_estatisticas(estatistica.nro_comparacoes_ord_interna, estatistica.nro_comparacoes_ord_externa, estatistica.nro_leituras, estatistica.nro_escritas, estatistica.tempo_execucao);
 
     converter_para_txt(ArqLi, "RESULTADO.TXT", nro_quantidade);
