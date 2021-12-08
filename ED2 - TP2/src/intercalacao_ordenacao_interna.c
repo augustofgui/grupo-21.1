@@ -78,13 +78,17 @@ void intercalacao_ordenacao_interna(char argv[], int nro_quantidade, bool imprim
 
     // Printf de conclusão da ordenação interna.
     printf(ANSI_BOLD ANSI_COLOR_GREEN "\nArquivo ordenado com sucesso!\n" ANSI_RESET);
+    // Printa os valores de resultado
+    if(imprimir_dados)
+        print_resultado_ordenacao(entrada[0].arquivo);
 
     // Para o contador de tempo e calcula os segundos passados.
     t = clock() - t;
     double tempo_execucao = ((double)t) / CLOCKS_PER_SEC;
     // Leva os segundos para a tabela de estatistica.
     estatistica.tempo_execucao = tempo_execucao;
-    // Printa a tabela de estatistica com os valores adiquiridos. 
+
+    // Printa a tabela de estatistica com os valores adiquiridos.
     print_estatisticas(estatistica.nro_comparacoes_ord_externa, estatistica.nro_comparacoes_ord_interna, estatistica.nro_leituras, estatistica.nro_escritas, estatistica.tempo_execucao);
 
     // Covnerte a fita da ultima intercalação de .bin para .txt.

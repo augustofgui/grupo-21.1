@@ -1,0 +1,18 @@
+
+Iniciando o processo de intercalacao por ordenacao interna. Aguarde...
+
+Arquivo: txt/PROVAO_DESORDENADO.TXT
+Convertendo o arquivo .txt para binário. Aguarde...
+
+Arquivo ordenado com sucesso!
+
+- ESTATÍSTICAS DA EXECUÇÃO -     
+
+Nº de comparações: 421534 (E : 31534 & I : 390000)
+Nº de leituras(fread): 40000
+Nº de escritas(fwrite): 40000
+Tempo de execução: 0.390498 segundos
+
+Convertendo o arquivo binário para .txt. Aguarde...
+Resultado da ordenação impresso em: RESULTADO.TXT
+
