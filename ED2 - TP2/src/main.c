@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
         intercalacao_ordenacao_interna(nome_arquivo, nro_quantidade, imprimir_dados);
         break;
     case 2:
-        intercalacao_substituicao_selecao(nome_arquivo, imprimir_dados, nro_quantidade);
+        intercalacao_substituicao_selecao(nome_arquivo, nro_quantidade, imprimir_dados);
         break;
     case 3:
         quicksort_externo_main(nome_arquivo, nro_quantidade, imprimir_dados);

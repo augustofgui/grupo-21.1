@@ -2,28 +2,12 @@
 #define INTERCALACAO_SUBSTITUICAO_SELECAO_H
 
 #include "geral.h"
+#include "fita.h"
+#include "intercalacao_ordenacao_interna.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h> 
 
-#define MAXTAM 20
+void intercalacao_substituicao_selecao(char argv[], int nro_quantidade, bool imprimir_dados);
+void criar_blocos_ordenados_heap(FILE *arquivo_binario, int num_registros, Fitas *fitas, Estatistica *estatistica, bool imprimir_dados);
 
-void preencheVetor (Registro* vetor,FILE* fileEntrada);
-void converter_para_char (int num,char* c);
-void esvaziarVetor (Registro* vetor,int* n);
-void sub (FILE* nome_arquivo, Registro* vetor,int* n);
-void intercalacao_substituicao_selecao(char* nome_arquivo, bool imprimir_dados, int nro_quantidade);
-
-////////////////////HEAP
-
-void Refaz (int Esq, int Dir, Registro *A);
-void RefazPeloIndice (int Esq, int Dir, Registro *A);
-void Constroi (Registro *A, int  *n);
-void ConstroiPeloIndice (Registro *A, int *n);
-Registro Min (Registro *A);
-Registro RetiraMin (Registro *A, int *n);
-void Aumenta (int i, double new, Registro *A);
-void Insere (Registro *x, Registro *A, int *n);
-void Imprime (Registro *A, int *n);
-
-#endif
+#endif // INTERCALACAO_SUBSTITUICAO_SELECAO_H

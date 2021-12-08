@@ -49,6 +49,52 @@ void merge_sort_ascendente(Registro *vetor, int margem_esquerda, int nova_margem
     free(vetor_esquerda);
 }
 
+
+void heapsort(Registro *vet, int n, Estatistica *estatistica) {
+	Registro tmp;
+    int i;
+
+	for (i = (n / 2); i >= 0; i--) {
+		peneira(vet, i, n - 1,estatistica);
+	}
+
+	for (i = n-1; i >= 1; i--) {
+		tmp = vet[0];
+		vet[0] = vet[i];
+		vet[i] = tmp;
+		peneira(vet, 0, i-1,estatistica);
+	}
+}
+
+void peneira(Registro *vet, int raiz, int fundo, Estatistica *estatistica) {
+    Registro tmp;
+	int pronto, filhoMax;
+
+	pronto = 0;
+	while ((raiz*2 <= fundo) && (!pronto)) {
+        estatistica->nro_comparacoes_ord_interna++;
+		if (raiz*2 == fundo)
+			filhoMax = raiz * 2;
+		else {
+            estatistica->nro_comparacoes_ord_interna++;
+            if (vet[raiz * 2].nota > vet[raiz * 2 + 1].nota || vet[raiz * 2].f == 1)
+			    filhoMax = raiz * 2;
+		    else 
+			    filhoMax = raiz * 2 + 1;
+		}
+    estatistica->nro_comparacoes_ord_interna++;
+	if (vet[raiz].nota < vet[filhoMax].nota && vet[raiz].f == 0) {
+		tmp = vet[raiz];
+		vet[raiz] = vet[filhoMax];
+		vet[filhoMax] = tmp;
+		raiz = filhoMax;
+    }
+	else {
+      pronto = 1;
+	}
+  }
+}
+
 void insertion_sort(Registro *array, int n, Estatistica *estatistica)
 {
     int i, j;
