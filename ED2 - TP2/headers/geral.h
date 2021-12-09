@@ -52,5 +52,6 @@ void print_estatisticas(int nro_comparacoes_ord_interna, int nro_comparacoes_ord
 void PrintFRead(Registro *R);
 void PrintFWrite(Registro *R);
 void print_resultado_ordenacao(FILE *arquivo_binario);
+Registro novo_reg_nulo();
 
 #endif // GERAL_H

@@ -54,7 +54,7 @@ void heapsort(Registro *vet, int n, Estatistica *estatistica) {
 	Registro tmp;
     int i;
 
-	for (i = (n / 2); i >= 0; i--) {
+	for (i = ((n-1)/2); i >= 0; i--) {
 		peneira(vet, i, n - 1,estatistica);
 	}
 
@@ -67,32 +67,26 @@ void heapsort(Registro *vet, int n, Estatistica *estatistica) {
 }
 
 void peneira(Registro *vet, int raiz, int fundo, Estatistica *estatistica) {
-    Registro tmp;
-	int pronto, filhoMax;
+    Registro aux = vet[raiz];
+    int j = raiz * 2 + 1;
 
-	pronto = 0;
-	while ((raiz*2 <= fundo) && (!pronto)) {
-        estatistica->nro_comparacoes_ord_interna++;
-		if (raiz*2 == fundo)
-			filhoMax = raiz * 2;
-		else {
+    while(j <= fundo){
+        if(j < fundo){
             estatistica->nro_comparacoes_ord_interna++;
-            if (vet[raiz * 2].nota > vet[raiz * 2 + 1].nota || vet[raiz * 2].f == 1)
-			    filhoMax = raiz * 2;
-		    else 
-			    filhoMax = raiz * 2 + 1;
-		}
-    estatistica->nro_comparacoes_ord_interna++;
-	if (vet[raiz].nota < vet[filhoMax].nota && vet[raiz].f == 0) {
-		tmp = vet[raiz];
-		vet[raiz] = vet[filhoMax];
-		vet[filhoMax] = tmp;
-		raiz = filhoMax;
+            if((vet[j].nota < vet[j+1].nota || vet[j].f == 1) && vet[j].f == 0){
+                j = j + 1;
+            }
+        }
+        estatistica->nro_comparacoes_ord_interna++;
+        if((aux.nota < vet[j].nota || vet[j].f == 1) && aux.f == 0){
+            vet[raiz] = vet[j];
+            raiz = j;
+            j = 2*raiz +1;
+        }else{
+            j = fundo + 1;
+        }
     }
-	else {
-      pronto = 1;
-	}
-  }
+    vet[raiz] = aux;
 }
 
 void insertion_sort(Registro *array, int n, Estatistica *estatistica)
@@ -135,6 +129,17 @@ void selection_sort(Registro *array, int n, Estatistica *estatistica)
             array[min] = aux;
         }
     }
+}
+
+Registro novo_reg_nulo(){
+    Registro nulo;
+
+    strcpy(nulo.estado_cidade_curso, "nulo");
+    nulo.nota = -1.0F;
+    nulo.inscricao = -1;
+    nulo.f = -1;
+
+    return nulo;
 }
 
 void verificar_parametros(int argc, int nro_metodo, int nro_quantidade, int nro_situacao)
@@ -187,6 +192,7 @@ void converter_para_binario(FILE *arquivo_texto, char *nome_binario, char *nome_
         fscanf(arquivo_texto, "%ld %f", &aux.inscricao, &aux.nota);
         fgets(aux.estado_cidade_curso, 87, arquivo_texto);
         aux.estado_cidade_curso[85] = '\0';
+        aux.f = 0;
         fwrite(&aux, sizeof(Registro), 1, arquivo_binario);
     }
 
@@ -238,7 +244,7 @@ void print_resultado_ordenacao(FILE *arquivo_binario){
 
     printf(ANSI_BOLD ANSI_COLOR_YELLOW "\n- RESULTADO DA ORDENAÇÃO -     \n\n" ANSI_RESET);
 
-    while (fread(&aux, sizeof(Registro), 1, arquivo_binario)){
+    while (fread(&aux, sizeof(Registro), 1, arquivo_binario) && aux.nota >= 0.0F){
         printf("%08ld %05.1f%s\n", aux.inscricao, aux.nota, aux.estado_cidade_curso);
     }
 }
