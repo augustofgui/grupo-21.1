@@ -1,0 +1,80 @@
+
+Iniciando o processo de intercalacao por ordenacao interna. Aguarde...
+
+Arquivo: txt/PROVAO_DESORDENADO.TXT
+Convertendo o arquivo .txt para binário. Aguarde...
+
+Criando as fitas para intercalação. Aguarde...
+
+Criando as fitas de entrada. Aguarde...
+Fita [1;94mentrada_01.bin: ok!
+Fita [1;94mentrada_02.bin: ok!
+Fita [1;94mentrada_03.bin: ok!
+Fita [1;94mentrada_04.bin: ok!
+Fita [1;94mentrada_05.bin: ok!
+Fita [1;94mentrada_06.bin: ok!
+Fita [1;94mentrada_07.bin: ok!
+Fita [1;94mentrada_08.bin: ok!
+Fita [1;94mentrada_09.bin: ok!
+Fita [1;94mentrada_10.bin: ok!
+Fita [1;94mentrada_11.bin: ok!
+Fita [1;94mentrada_12.bin: ok!
+Fita [1;94mentrada_13.bin: ok!
+Fita [1;94mentrada_14.bin: ok!
+Fita [1;94mentrada_15.bin: ok!
+Fita [1;94mentrada_16.bin: ok!
+Fita [1;94mentrada_17.bin: ok!
+Fita [1;94mentrada_18.bin: ok!
+Fita [1;94mentrada_19.bin: ok!
+Fita [1;94mentrada_20.bin: ok!
+Fitas de entrada: ok!
+
+Criando as fitas de saida. Aguarde...
+Fita [1;94msaida_01.bin: ok!
+Fita [1;94msaida_02.bin: ok!
+Fita [1;94msaida_03.bin: ok!
+Fita [1;94msaida_04.bin: ok!
+Fita [1;94msaida_05.bin: ok!
+Fita [1;94msaida_06.bin: ok!
+Fita [1;94msaida_07.bin: ok!
+Fita [1;94msaida_08.bin: ok!
+Fita [1;94msaida_09.bin: ok!
+Fita [1;94msaida_10.bin: ok!
+Fita [1;94msaida_11.bin: ok!
+Fita [1;94msaida_12.bin: ok!
+Fita [1;94msaida_13.bin: ok!
+Fita [1;94msaida_14.bin: ok!
+Fita [1;94msaida_15.bin: ok!
+Fita [1;94msaida_16.bin: ok!
+Fita [1;94msaida_17.bin: ok!
+Fita [1;94msaida_18.bin: ok!
+Fita [1;94msaida_19.bin: ok!
+Fita [1;94msaida_20.bin: ok!
+Fitas de saida: ok!
+
+Fitas criadas com sucesso!
+
+Criando blocos ordenados. Aguarde...
+
+Blocos ordenados com sucesso!
+
+Iniciando a 1° intercalacao de blocos. Aguarde...
+
+Intercalacao realizada com sucesso!
+
+Iniciando a 2° intercalacao de blocos. Aguarde...
+
+Intercalacao realizada com sucesso!
+
+Arquivo ordenado com sucesso!
+
+- ESTATÍSTICAS DA EXECUÇÃO -     
+
+Nº de comparações: 1307978 (E : 998036 & I : 309942)
+Nº de leituras(fread): 30001
+Nº de escritas(fwrite): 30000
+Tempo de execução: 0.046875 segundos
+
+Convertendo o arquivo binário para .txt. Aguarde...
+Resultado da ordenação impresso em: RESULTADO.TXT
+
