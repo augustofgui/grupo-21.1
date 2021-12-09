@@ -98,3 +98,903 @@
 00052133 000.0 DF BRASILIA                                           PEDAGOGIA                     
 00002507 000.0 PA BELEM                                              ODONTOLOGIA                   
 00359594 000.0 RR BOA VISTA                                          LETRAS                        
+00105509 000.0 SC JARAGUA DO SUL                                     ADMINISTRACAO                 
+00406051 000.0 RR BOA VISTA                                          LETRAS                        
+00052472 000.0 SP MOCOCA                                             CIENCIAS CONTABEIS            
+00215570 000.0 MT CUIABA                                             LETRAS                        
+00121687 000.0 RR BOA VISTA                                          LETRAS                        
+00162740 000.0 MT CUIABA                                             LETRAS                        
+00308825 000.0 MT CUIABA                                             LETRAS                        
+00082753 000.0 MT CUIABA                                             LETRAS                        
+00036210 000.0 RR BOA VISTA                                          LETRAS                        
+00033286 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00224584 000.0 RR BOA VISTA                                          LETRAS                        
+00353936 000.0 SC JARAGUA DO SUL                                     ADMINISTRACAO                 
+00037009 000.0 MT CUIABA                                             LETRAS                        
+00441968 000.0 MT CUIABA                                             LETRAS                        
+00132341 000.0 PA BELEM                                              ODONTOLOGIA                   
+00110057 000.0 RR BOA VISTA                                          LETRAS                        
+00224466 000.0 SP SAO BERNARDO DO CAMPO                              CIENCIAS CONTABEIS            
+00184388 000.0 RR BOA VISTA                                          LETRAS                        
+00262663 000.0 SP SAO BERNARDO DO CAMPO                              CIENCIAS CONTABEIS            
+00101831 000.0 MT CUIABA                                             LETRAS                        
+00260448 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00035516 000.0 RR BOA VISTA                                          LETRAS                        
+00147849 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00230431 000.0 SP SAO PAULO                                          DIREITO                       
+00052832 000.0 RR BOA VISTA                                          LETRAS                        
+00152860 000.0 SP SAO BERNARDO DO CAMPO                              CIENCIAS CONTABEIS            
+00364032 000.0 RR BOA VISTA                                          LETRAS                        
+00450650 000.0 CE FORTALEZA                                          ODONTOLOGIA                   
+00414155 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00341433 000.0 MT CUIABA                                             LETRAS                        
+00286246 000.0 RR BOA VISTA                                          LETRAS                        
+00433788 000.0 MT CUIABA                                             LETRAS                        
+00031665 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00068097 000.0 RR BOA VISTA                                          LETRAS                        
+00388664 000.0 RR BOA VISTA                                          LETRAS                        
+00091271 000.0 PR CURITIBA                                           CIENCIAS CONTABEIS            
+00079002 000.0 RR BOA VISTA                                          LETRAS                        
+00099810 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00432214 000.0 SC JARAGUA DO SUL                                     ADMINISTRACAO                 
+00038843 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00427131 000.0 MT DIAMANTINO                                         PEDAGOGIA                     
+00316036 000.0 SC JARAGUA DO SUL                                     ADMINISTRACAO                 
+00053818 000.0 PR CURITIBA                                           CIENCIAS CONTABEIS            
+00250180 000.0 SC JARAGUA DO SUL                                     ADMINISTRACAO                 
+00094188 000.0 MT JUINA                                              PEDAGOGIA                     
+00173931 000.0 MT CUIABA                                             LETRAS                        
+00230939 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00280429 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00442994 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00023047 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00206867 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00369704 000.0 PR CURITIBA                                           CIENCIAS CONTABEIS            
+00050050 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00009365 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00153051 000.0 RJ NITEROI                                            ODONTOLOGIA                   
+00264408 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00147869 000.0 RR BOA VISTA                                          LETRAS                        
+00148000 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00119415 000.0 RR BOA VISTA                                          LETRAS                        
+00060067 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00210167 000.0 MT CUIABA                                             LETRAS                        
+00417372 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00057329 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00262325 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00463854 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00182787 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00148212 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00180761 000.0 SC JARAGUA DO SUL                                     ADMINISTRACAO                 
+00409720 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00052492 000.0 SP SAO PAULO                                          DIREITO                       
+00347286 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00193538 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00204503 000.0 CE FORTALEZA                                          ODONTOLOGIA                   
+00108976 000.0 MT CUIABA                                             LETRAS                        
+00007644 000.0 PR CURITIBA                                           CIENCIAS CONTABEIS            
+00249326 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00359595 000.0 PR CURITIBA                                           CIENCIAS CONTABEIS            
+00249869 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00104414 000.0 MT JUINA                                              PEDAGOGIA                     
+00102241 000.0 PR CURITIBA                                           CIENCIAS CONTABEIS            
+00229893 000.0 SC JARAGUA DO SUL                                     ADMINISTRACAO                 
+00189134 000.0 MT JUINA                                              PEDAGOGIA                     
+00143177 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00425032 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00391781 000.0 MT JUINA                                              PEDAGOGIA                     
+00076915 000.0 ES VITORIA                                            ODONTOLOGIA                   
+00372309 000.0 MT VARZEA GRANDE                                      LETRAS                        
+00396344 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00259213 000.0 DF BRASILIA                                           ADMINISTRACAO                 
+00452805 000.0 MT JUINA                                              PEDAGOGIA                     
+00342219 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00365058 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00201142 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00271449 000.0 PR CURITIBA                                           CIENCIAS CONTABEIS            
+00414960 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00091307 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00417511 000.0 MT VARZEA GRANDE                                      LETRAS                        
+00133615 000.0 MT CUIABA                                             LETRAS                        
+00298108 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00465512 000.0 MT VARZEA GRANDE                                      LETRAS                        
+00399662 000.0 PB CAMPINA GRANDE                                     ODONTOLOGIA                   
+00073583 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00096326 000.0 MT CUIABA                                             LETRAS                        
+00087672 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00457888 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00471469 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00069215 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00119390 000.0 DF BRASILIA                                           ADMINISTRACAO                 
+00359917 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00199750 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00227907 000.0 MT VARZEA GRANDE                                      LETRAS                        
+00378938 000.0 SP SAO PAULO                                          DIREITO                       
+00253430 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00378669 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00465313 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00167217 000.0 RJ RIO DE JANEIRO                                     DIREITO                       
+00297852 000.0 PE CARUARU                                            CIENCIAS CONTABEIS            
+00208632 000.0 MA SAO LUIS                                           ODONTOLOGIA                   
+00026589 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00056397 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00138231 000.0 PE CARUARU                                            CIENCIAS CONTABEIS            
+00260656 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00464036 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00178660 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00117316 000.0 MS PONTA PORA                                         LETRAS                        
+00266880 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00202276 000.0 ES ARACRUZ                                            LETRAS                        
+00262355 000.0 ES ARACRUZ                                            LETRAS                        
+00382506 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00126006 000.0 PE CARUARU                                            CIENCIAS CONTABEIS            
+00295375 000.0 ES ARACRUZ                                            LETRAS                        
+00412029 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00034050 000.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00188552 000.0 PE CARUARU                                            CIENCIAS CONTABEIS            
+00107420 000.0 AM MANAUS                                             PEDAGOGIA                     
+00146808 000.0 ES ARACRUZ                                            LETRAS                        
+00267439 000.0 ES ARACRUZ                                            LETRAS                        
+00437141 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00406588 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00134234 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00082785 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00347016 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00392120 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00123250 000.0 MG BELO HORIZONTE                                     ODONTOLOGIA                   
+00076860 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00189775 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00454180 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00241567 000.0 SP SAO PAULO                                          DIREITO                       
+00371621 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00161277 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00344484 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00093377 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00303865 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00398042 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00029604 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00295399 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00271770 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00421174 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00104765 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00264125 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00106076 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00259061 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00136234 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00348829 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00233084 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00471428 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00126829 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00436455 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00015683 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00439894 000.0 SP SAO PAULO                                          DIREITO                       
+00249927 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00250968 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00407661 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00305030 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00084118 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00126491 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00004371 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00187291 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00049259 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00111437 000.0 MT DIAMANTINO                                         PEDAGOGIA                     
+00163282 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00346075 000.0 MS NAVIRAI                                            LETRAS                        
+00123139 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00313005 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00178148 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00281435 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00349161 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00283033 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00064927 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00355266 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00325594 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00105619 000.0 MA SAO LUIS                                           LETRAS                        
+00455868 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00466018 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00160954 000.0 MS NAVIRAI                                            LETRAS                        
+00390573 000.0 MA SAO LUIS                                           LETRAS                        
+00239965 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00149996 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00099898 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00110283 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00129834 000.0 MT JUINA                                              PEDAGOGIA                     
+00119170 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00070105 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00000845 000.0 SP MOGI DAS CRUZES                                    ODONTOLOGIA                   
+00195064 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00111009 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00452521 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00441240 000.0 SP MOGI DAS CRUZES                                    ODONTOLOGIA                   
+00226085 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00088147 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00130145 000.0 MS NAVIRAI                                            LETRAS                        
+00135364 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00001123 000.0 SP MOGI DAS CRUZES                                    ODONTOLOGIA                   
+00073438 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00049794 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00004798 000.0 BA SALVADOR                                           CIENCIAS CONTABEIS            
+00078506 000.0 AM MANAUS                                             ADMINISTRACAO                 
+00403800 000.0 SP SOROCABA                                           CIENCIAS CONTABEIS            
+00408917 000.0 TO GUARAI                                             LETRAS                        
+00113818 000.0 TO ARAGUAINA                                          LETRAS                        
+00114510 000.0 TO ARAGUAINA                                          LETRAS                        
+00454953 000.0 MS NAVIRAI                                            LETRAS                        
+00197623 000.0 AP MACAPA                                             LETRAS                        
+00393599 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00413847 000.0 AP MACAPA                                             LETRAS                        
+00365694 000.0 MG BELO HORIZONTE                                     ODONTOLOGIA                   
+00410831 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00376492 000.0 AP MACAPA                                             LETRAS                        
+00361622 000.0 MT JUINA                                              PEDAGOGIA                     
+00087591 000.0 AP MACAPA                                             LETRAS                        
+00325223 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00367959 000.0 SP SAO PAULO                                          ADMINISTRACAO                 
+00182985 000.0 AP MACAPA                                             LETRAS                        
+00367057 000.0 AP MACAPA                                             LETRAS                        
+00324603 000.0 AP MACAPA                                             LETRAS                        
+00326263 000.0 AP MACAPA                                             LETRAS                        
+00347871 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00378597 000.0 PR UNIAO DA VITORIA                                   ADMINISTRACAO                 
+00023144 000.0 AP MACAPA                                             LETRAS                        
+00288955 000.0 RS PELOTAS                                            ADMINISTRACAO                 
+00062503 000.0 AP MACAPA                                             LETRAS                        
+00057190 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00365305 000.0 MS FATIMA DO SUL                                      LETRAS                        
+00037718 000.0 AP MACAPA                                             LETRAS                        
+00123975 000.0 AP MACAPA                                             LETRAS                        
+00406124 000.0 MG UBERLANDIA                                         CIENCIAS CONTABEIS            
+00274462 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00070794 000.0 AP MACAPA                                             LETRAS                        
+00276694 000.0 AP MACAPA                                             LETRAS                        
+00011014 000.0 AP MACAPA                                             LETRAS                        
+00166412 000.0 RS PELOTAS                                            ADMINISTRACAO                 
+00128880 000.0 AP MACAPA                                             LETRAS                        
+00357302 000.0 AP MACAPA                                             LETRAS                        
+00167910 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00058735 000.0 AP MACAPA                                             LETRAS                        
+00101511 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00441447 000.0 MS FATIMA DO SUL                                      LETRAS                        
+00320757 000.0 AP MACAPA                                             LETRAS                        
+00358692 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00413925 000.0 AP MACAPA                                             LETRAS                        
+00344535 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00208691 000.0 AP MACAPA                                             LETRAS                        
+00384976 000.0 MS FATIMA DO SUL                                      LETRAS                        
+00335451 000.0 AP MACAPA                                             LETRAS                        
+00400366 000.0 MS FATIMA DO SUL                                      LETRAS                        
+00089427 000.0 AP MACAPA                                             LETRAS                        
+00226092 000.0 AP MACAPA                                             LETRAS                        
+00248370 000.0 MG SAO SEBASTIAO DO PARAISO                           ADMINISTRACAO                 
+00311431 000.0 AP MACAPA                                             LETRAS                        
+00164943 000.0 AP MACAPA                                             LETRAS                        
+00235655 000.0 AP MACAPA                                             LETRAS                        
+00338722 000.0 AP MACAPA                                             LETRAS                        
+00259289 000.0 AP MACAPA                                             LETRAS                        
+00442277 000.0 MG UBERLANDIA                                         CIENCIAS CONTABEIS            
+00161928 000.0 AP MACAPA                                             LETRAS                        
+00371191 000.0 AP MACAPA                                             LETRAS                        
+00150982 000.0 MS FATIMA DO SUL                                      LETRAS                        
+00063089 000.0 AP MACAPA                                             LETRAS                        
+00354801 000.0 AP MACAPA                                             LETRAS                        
+00261339 000.0 MT JUINA                                              PEDAGOGIA                     
+00357520 000.0 AP MACAPA                                             LETRAS                        
+00076310 000.0 MT JUINA                                              PEDAGOGIA                     
+00176634 000.0 MG SAO SEBASTIAO DO PARAISO                           ADMINISTRACAO                 
+00184743 000.0 AP MACAPA                                             LETRAS                        
+00184212 000.0 AP MACAPA                                             LETRAS                        
+00004402 000.0 AP MACAPA                                             LETRAS                        
+00252233 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00278045 000.0 AP MACAPA                                             LETRAS                        
+00300852 000.0 AP MACAPA                                             LETRAS                        
+00317815 000.0 AP MACAPA                                             LETRAS                        
+00300184 000.0 AP MACAPA                                             LETRAS                        
+00333886 000.0 MS FATIMA DO SUL                                      LETRAS                        
+00361761 000.0 AP MACAPA                                             LETRAS                        
+00411590 000.0 AP MACAPA                                             LETRAS                        
+00437598 000.0 AP MACAPA                                             LETRAS                        
+00068024 000.0 MG GOVERNADOR VALADARES                               ODONTOLOGIA                   
+00333775 000.0 AP MACAPA                                             LETRAS                        
+00052510 000.0 AP MACAPA                                             LETRAS                        
+00062447 000.0 AP MACAPA                                             LETRAS                        
+00353824 000.0 MS FATIMA DO SUL                                      LETRAS                        
+00253576 000.0 AP MACAPA                                             LETRAS                        
+00375485 000.0 MS FATIMA DO SUL                                      LETRAS                        
+00309335 000.0 AP MACAPA                                             LETRAS                        
+00267005 000.0 AP MACAPA                                             LETRAS                        
+00137782 000.0 AP MACAPA                                             LETRAS                        
+00293442 000.0 MG GOVERNADOR VALADARES                               ADMINISTRACAO                 
+00460568 000.0 AP MACAPA                                             LETRAS                        
+00327939 000.0 MT JUINA                                              PEDAGOGIA                     
+00129268 000.0 AP MACAPA                                             LETRAS                        
+00200557 000.0 AP MACAPA                                             LETRAS                        
+00374821 000.0 MG SAO SEBASTIAO DO PARAISO                           ADMINISTRACAO                 
+00412591 000.0 AP MACAPA                                             LETRAS                        
+00292614 000.0 AP MACAPA                                             LETRAS                        
+00039557 000.0 AP MACAPA                                             LETRAS                        
+00096176 000.0 MG SAO SEBASTIAO DO PARAISO                           ADMINISTRACAO                 
+00026628 000.0 AP MACAPA                                             LETRAS                        
+00069981 000.0 MG GOVERNADOR VALADARES                               ADMINISTRACAO                 
+00319858 000.0 PI SAO RAIMUNDO NONATO                                LETRAS                        
+00449147 000.0 AP MACAPA                                             LETRAS                        
+00089762 000.0 AP MACAPA                                             LETRAS                        
+00296028 000.0 AP MACAPA                                             LETRAS                        
+00260869 000.0 AP MACAPA                                             LETRAS                        
+00155082 000.0 AP MACAPA                                             LETRAS                        
+00445399 000.0 AP MACAPA                                             LETRAS                        
+00345273 000.0 MG SAO SEBASTIAO DO PARAISO                           ADMINISTRACAO                 
+00470123 000.0 AP MACAPA                                             LETRAS                        
+00407214 000.0 MG GOVERNADOR VALADARES                               ADMINISTRACAO                 
+00250858 000.0 AP MACAPA                                             LETRAS                        
+00444668 000.0 MG SAO SEBASTIAO DO PARAISO                           ADMINISTRACAO                 
+00125076 000.0 AP MACAPA                                             LETRAS                        
+00332321 000.0 AP MACAPA                                             LETRAS                        
+00290405 000.0 MG SAO SEBASTIAO DO PARAISO                           ADMINISTRACAO                 
+00056350 000.0 AP MACAPA                                             LETRAS                        
+00403117 000.0 MG SAO SEBASTIAO DO PARAISO                           ADMINISTRACAO                 
+00236903 000.0 AP MACAPA                                             LETRAS                        
+00190178 000.0 AP MACAPA                                             LETRAS                        
+00037454 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00025819 000.0 AP MACAPA                                             LETRAS                        
+00273019 000.0 AM MANAUS                                             ADMINISTRACAO                 
+00277593 000.0 AP MACAPA                                             LETRAS                        
+00309665 000.0 AP MACAPA                                             LETRAS                        
+00005241 000.0 MG SAO SEBASTIAO DO PARAISO                           ADMINISTRACAO                 
+00425232 000.0 AP MACAPA                                             LETRAS                        
+00170708 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00318320 000.0 AP MACAPA                                             LETRAS                        
+00459780 000.0 AP MACAPA                                             LETRAS                        
+00325429 000.0 AP MACAPA                                             LETRAS                        
+00304593 000.0 AP MACAPA                                             LETRAS                        
+00351341 000.0 AP MACAPA                                             LETRAS                        
+00015575 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00199522 000.0 MG UBERABA                                            CIENCIAS CONTABEIS            
+00143088 000.0 AP MACAPA                                             LETRAS                        
+00231499 000.0 AP MACAPA                                             LETRAS                        
+00467545 000.0 AP MACAPA                                             LETRAS                        
+00295848 000.0 AM MANAUS                                             ADMINISTRACAO                 
+00450930 000.0 AP MACAPA                                             LETRAS                        
+00016844 000.0 AP MACAPA                                             LETRAS                        
+00086988 000.0 AP MACAPA                                             LETRAS                        
+00252472 000.0 SP ATIBAIA                                            CIENCIAS CONTABEIS            
+00456080 000.0 AP MACAPA                                             LETRAS                        
+00398413 000.0 AP MACAPA                                             LETRAS                        
+00173889 000.0 AP MACAPA                                             LETRAS                        
+00013240 000.0 AP MACAPA                                             LETRAS                        
+00242986 000.0 SP ANDRADINA                                          CIENCIAS CONTABEIS            
+00120715 000.0 AP MACAPA                                             LETRAS                        
+00101070 000.0 PI VALENCA DO PIAUI                                   LETRAS                        
+00455099 000.0 AP MACAPA                                             LETRAS                        
+00247567 000.0 PI OEIRAS                                             LETRAS                        
+00090512 000.0 AP MACAPA                                             LETRAS                        
+00112013 000.0 AP MACAPA                                             LETRAS                        
+00415776 000.0 AP MACAPA                                             LETRAS                        
+00292844 000.0 AP MACAPA                                             LETRAS                        
+00247163 000.0 AP MACAPA                                             LETRAS                        
+00275026 000.0 MG GOVERNADOR VALADARES                               ADMINISTRACAO                 
+00412944 000.0 MG MACHADO                                            CIENCIAS CONTABEIS            
+00167247 000.0 MG MACHADO                                            CIENCIAS CONTABEIS            
+00460637 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00236991 000.0 MG MACHADO                                            CIENCIAS CONTABEIS            
+00245815 000.0 MG GOVERNADOR VALADARES                               ADMINISTRACAO                 
+00072486 000.0 PI TERESINA                                           LETRAS                        
+00209932 000.0 MG MACHADO                                            CIENCIAS CONTABEIS            
+00049293 000.0 MG MACHADO                                            CIENCIAS CONTABEIS            
+00062261 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00184496 000.0 MG MACHADO                                            CIENCIAS CONTABEIS            
+00209508 000.0 MG MACHADO                                            CIENCIAS CONTABEIS            
+00109219 000.0 MG GOVERNADOR VALADARES                               ADMINISTRACAO                 
+00100517 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00462800 000.0 MG MACHADO                                            CIENCIAS CONTABEIS            
+00345115 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00361675 000.0 MG MACHADO                                            CIENCIAS CONTABEIS            
+00385071 000.0 RS FARROUPILHA                                        ADMINISTRACAO                 
+00234588 000.0 CE SOBRAL                                             CIENCIAS CONTABEIS            
+00041393 000.0 CE SOBRAL                                             CIENCIAS CONTABEIS            
+00283513 000.0 CE SOBRAL                                             CIENCIAS CONTABEIS            
+00124263 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00179964 000.0 CE SOBRAL                                             CIENCIAS CONTABEIS            
+00412347 000.0 CE SOBRAL                                             CIENCIAS CONTABEIS            
+00406625 000.0 RJ NITEROI                                            ADMINISTRACAO                 
+00353469 000.0 PE RECIFE                                             ADMINISTRACAO                 
+00448248 000.0 CE SOBRAL                                             CIENCIAS CONTABEIS            
+00019402 000.0 CE SOBRAL                                             CIENCIAS CONTABEIS            
+00313881 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00015432 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00466716 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00007968 000.0 PI TERESINA                                           LETRAS                        
+00106259 000.0 PI TERESINA                                           LETRAS                        
+00386785 000.0 CE SOBRAL                                             CIENCIAS CONTABEIS            
+00057633 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00376216 000.0 RS OSORIO                                             ADMINISTRACAO                 
+00265671 000.0 CE SOBRAL                                             CIENCIAS CONTABEIS            
+00314481 000.0 RJ NITEROI                                            ADMINISTRACAO                 
+00232147 000.0 RS OSORIO                                             ADMINISTRACAO                 
+00379514 000.0 MT DIAMANTINO                                         PEDAGOGIA                     
+00370199 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00032972 000.0 SP SAO PAULO                                          LETRAS                        
+00279024 000.0 RS OSORIO                                             ADMINISTRACAO                 
+00370918 000.0 RJ RIO DE JANEIRO                                     DIREITO                       
+00157091 000.0 PI SAO RAIMUNDO NONATO                                LETRAS                        
+00250268 000.0 MT JUINA                                              PEDAGOGIA                     
+00406604 000.0 SP SAO PAULO                                          LETRAS                        
+00063887 000.0 RJ RIO DE JANEIRO                                     CIENCIAS CONTABEIS            
+00141313 000.0 CE SOBRAL                                             CIENCIAS CONTABEIS            
+00219752 000.0 PI PARNAIBA                                           ADMINISTRACAO                 
+00426013 000.0 PI URUCUI                                             LETRAS                        
+00453541 000.0 RJ SAO GONCALO                                        ADMINISTRACAO                 
+00082005 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00326797 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00154216 000.0 MT JUINA                                              PEDAGOGIA                     
+00304772 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00203161 000.0 CE SOBRAL                                             CIENCIAS CONTABEIS            
+00187353 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00025616 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00124433 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00109381 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00255905 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00391364 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00333047 000.0 CE SOBRAL                                             CIENCIAS CONTABEIS            
+00036769 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00250436 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00062376 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00258288 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00403236 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00338122 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00293167 000.0 SP SAO PAULO                                          LETRAS                        
+00352041 000.0 SP SAO PAULO                                          LETRAS                        
+00071621 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00466590 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00270976 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00017351 000.0 SP SAO PAULO                                          LETRAS                        
+00373023 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00299624 000.0 SP SAO PAULO                                          LETRAS                        
+00232796 000.0 SP SAO PAULO                                          LETRAS                        
+00304582 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00353813 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00392838 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00404095 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00155997 000.0 CE SOBRAL                                             CIENCIAS CONTABEIS            
+00052479 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00433894 000.0 SP SAO PAULO                                          LETRAS                        
+00058383 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00088655 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00184783 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00019504 000.0 RJ CAMPOS DOS GOYTACAZES                              ADMINISTRACAO                 
+00195593 000.0 BA SALVADOR                                           ODONTOLOGIA                   
+00061846 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00377685 000.0 MT JUINA                                              PEDAGOGIA                     
+00437249 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00319713 000.0 MT DIAMANTINO                                         PEDAGOGIA                     
+00159724 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00092189 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00027063 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00127943 000.0 SP SAO PAULO                                          LETRAS                        
+00217436 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00048484 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00387490 000.0 SP SAO PAULO                                          LETRAS                        
+00325670 000.0 RJ NITEROI                                            ADMINISTRACAO                 
+00046345 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00094789 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00002704 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00324669 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00336654 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00457359 000.0 RJ NITEROI                                            ADMINISTRACAO                 
+00000657 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00170631 000.0 RJ SAO GONCALO                                        ADMINISTRACAO                 
+00079077 000.0 SP SAO PAULO                                          LETRAS                        
+00228346 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00329279 000.0 SP SAO PAULO                                          LETRAS                        
+00061167 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00343965 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00354742 000.0 SP SAO PAULO                                          LETRAS                        
+00242202 000.0 RJ NITEROI                                            ADMINISTRACAO                 
+00067689 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00356471 000.0 SC BRUSQUE                                            CIENCIAS CONTABEIS            
+00142129 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00360436 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00461522 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00220527 000.0 RJ SAO GONCALO                                        ADMINISTRACAO                 
+00390775 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00201090 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00187494 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00175567 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00405582 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00326786 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00202655 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00137070 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00282133 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00462642 000.0 AP MACAPA                                             GEOGRAFIA                     
+00004754 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00383022 000.0 PE RECIFE                                             ADMINISTRACAO                 
+00069934 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00244900 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00360849 000.0 SC BRUSQUE                                            CIENCIAS CONTABEIS            
+00047712 000.0 SC BRUSQUE                                            CIENCIAS CONTABEIS            
+00136605 000.0 MG VARGINHA                                           ADMINISTRACAO                 
+00424104 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00128881 000.0 MT ALTA FLORESTA                                      LETRAS                        
+00420777 000.0 PI TERESINA                                           LETRAS                        
+00228602 000.0 PI VALENCA DO PIAUI                                   LETRAS                        
+00140281 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00075161 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00226080 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00205324 000.0 AP MACAPA                                             GEOGRAFIA                     
+00236850 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00298629 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00058224 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00432743 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00420013 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00112457 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00333242 000.0 AP MACAPA                                             GEOGRAFIA                     
+00402733 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00327958 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00072589 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00117690 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00435157 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00436675 000.0 AP MACAPA                                             GEOGRAFIA                     
+00229374 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00359204 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00187111 000.0 MG VICOSA                                             ADMINISTRACAO                 
+00256092 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00029293 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00141819 000.0 MS PONTA PORA                                         LETRAS                        
+00155457 000.0 RJ NITEROI                                            ADMINISTRACAO                 
+00085723 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00379064 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00341318 000.0 AP MACAPA                                             GEOGRAFIA                     
+00412010 000.0 AP MACAPA                                             GEOGRAFIA                     
+00303995 000.0 MS PONTA PORA                                         LETRAS                        
+00397943 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00268180 000.0 RJ NITEROI                                            ADMINISTRACAO                 
+00471137 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00008563 000.0 MS PONTA PORA                                         LETRAS                        
+00073428 000.0 AP MACAPA                                             GEOGRAFIA                     
+00285770 000.0 SP CAPIVARI                                           ADMINISTRACAO                 
+00203840 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00367465 000.0 AP MACAPA                                             GEOGRAFIA                     
+00332654 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00124325 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00188542 000.0 AP MACAPA                                             GEOGRAFIA                     
+00385730 000.0 MG CONGONHAS                                          LETRAS                        
+00056487 000.0 PI OEIRAS                                             LETRAS                        
+00361094 000.0 AP MACAPA                                             GEOGRAFIA                     
+00380449 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00162925 000.0 PI SAO RAIMUNDO NONATO                                LETRAS                        
+00212596 000.0 PI PIRIPIRI                                           LETRAS                        
+00298152 000.0 MG CONGONHAS                                          LETRAS                        
+00223659 000.0 AP MACAPA                                             GEOGRAFIA                     
+00449123 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00062899 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00161469 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00402754 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00077969 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00187455 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00394459 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00283431 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00129356 000.0 PI PICOS                                              LETRAS                        
+00181114 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00402518 000.0 PE AFOGADOS DA INGAZEIRA                              LETRAS                        
+00140660 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00130722 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00199651 000.0 PE AFOGADOS DA INGAZEIRA                              LETRAS                        
+00049763 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00014360 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00332075 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00312120 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00423043 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00324591 000.0 PI SAO RAIMUNDO NONATO                                LETRAS                        
+00395601 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00275383 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00148220 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00278429 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00161703 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00326044 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00045980 000.0 PE AFOGADOS DA INGAZEIRA                              LETRAS                        
+00347965 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00222301 000.0 SC PICARRAS                                           CIENCIAS CONTABEIS            
+00255076 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00315203 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00137283 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00018633 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00281287 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00067709 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00248990 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00097520 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00243982 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00095376 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00185809 000.0 AL MACEIO                                             ADMINISTRACAO                 
+00263161 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00331184 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00248223 000.0 MT DIAMANTINO                                         PEDAGOGIA                     
+00405646 000.0 AL MACEIO                                             ADMINISTRACAO                 
+00341236 000.0 RJ SAO GONCALO                                        ADMINISTRACAO                 
+00303620 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00017831 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00231948 000.0 MS DOURADOS                                           LETRAS                        
+00042344 000.0 PI OEIRAS                                             LETRAS                        
+00461077 000.0 SC PICARRAS                                           CIENCIAS CONTABEIS            
+00067444 000.0 MT JUINA                                              PEDAGOGIA                     
+00024958 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00335036 000.0 PI VALENCA DO PIAUI                                   LETRAS                        
+00225598 000.0 SC PICARRAS                                           CIENCIAS CONTABEIS            
+00301217 000.0 RJ SAO GONCALO                                        ADMINISTRACAO                 
+00401938 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00015746 000.0 MS DOURADOS                                           LETRAS                        
+00111469 000.0 SC TIJUCAS                                            CIENCIAS CONTABEIS            
+00178081 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00346607 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00381646 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00072955 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00047408 000.0 RJ NITEROI                                            ADMINISTRACAO                 
+00392504 000.0 PI TERESINA                                           LETRAS                        
+00112682 000.0 PI VALENCA DO PIAUI                                   LETRAS                        
+00264375 000.0 AL MACEIO                                             ADMINISTRACAO                 
+00088868 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00309339 000.0 AL MACEIO                                             ADMINISTRACAO                 
+00081672 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00061894 000.0 SP RIBEIRAO PRETO                                     CIENCIAS CONTABEIS            
+00175691 000.0 SC PICARRAS                                           CIENCIAS CONTABEIS            
+00091440 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00324115 000.0 MT DIAMANTINO                                         PEDAGOGIA                     
+00237093 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00412403 000.0 MS JARDIM                                             LETRAS                        
+00289009 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00298522 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00442964 000.0 SC PICARRAS                                           CIENCIAS CONTABEIS            
+00311274 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00221612 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00110805 000.0 PE OLINDA                                             LETRAS                        
+00305837 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00458205 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00014144 000.0 SP RIBEIRAO PRETO                                     CIENCIAS CONTABEIS            
+00022699 000.0 MT JUINA                                              PEDAGOGIA                     
+00376785 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00335433 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00441411 000.0 PE OLINDA                                             LETRAS                        
+00214777 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00332787 000.0 PE OLINDA                                             LETRAS                        
+00275885 000.0 SC TIJUCAS                                            CIENCIAS CONTABEIS            
+00337447 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00351202 000.0 PE OLINDA                                             LETRAS                        
+00122888 000.0 AL MACEIO                                             ADMINISTRACAO                 
+00142311 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00039742 000.0 SP RIBEIRAO PRETO                                     CIENCIAS CONTABEIS            
+00021289 000.0 MT JUINA                                              PEDAGOGIA                     
+00307304 000.0 AL MACEIO                                             ADMINISTRACAO                 
+00466805 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00126487 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00038614 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00413032 000.0 RJ CAMPOS DOS GOYTACAZES                              ADMINISTRACAO                 
+00349336 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00159818 000.0 PI VALENCA DO PIAUI                                   LETRAS                        
+00437377 000.0 PE RECIFE                                             ADMINISTRACAO                 
+00144587 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00007503 000.0 AL MACEIO                                             ADMINISTRACAO                 
+00410384 000.0 PE OLINDA                                             LETRAS                        
+00000688 000.0 PI VALENCA DO PIAUI                                   LETRAS                        
+00091636 000.0 MT JUINA                                              PEDAGOGIA                     
+00226383 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00265053 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00429625 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00191224 000.0 SC PICARRAS                                           CIENCIAS CONTABEIS            
+00164754 000.0 PE OLINDA                                             LETRAS                        
+00017168 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00216963 000.0 PE OLINDA                                             LETRAS                        
+00187929 000.0 SC PICARRAS                                           CIENCIAS CONTABEIS            
+00318090 000.0 PE OLINDA                                             LETRAS                        
+00303886 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00440400 000.0 SC TIJUCAS                                            CIENCIAS CONTABEIS            
+00107079 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00221992 000.0 SC TIJUCAS                                            CIENCIAS CONTABEIS            
+00443148 000.0 PE OLINDA                                             LETRAS                        
+00317077 000.0 PE OLINDA                                             LETRAS                        
+00219738 000.0 PE OLINDA                                             LETRAS                        
+00009638 000.0 AL MACEIO                                             ADMINISTRACAO                 
+00344084 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00080786 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00011355 000.0 PE OLINDA                                             LETRAS                        
+00174219 000.0 SP RIBEIRAO PRETO                                     CIENCIAS CONTABEIS            
+00079829 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00413092 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00385715 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00084354 000.0 SP RIBEIRAO PRETO                                     CIENCIAS CONTABEIS            
+00127880 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00244745 000.0 PE OLINDA                                             LETRAS                        
+00059261 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00223158 000.0 RJ SAO GONCALO                                        ADMINISTRACAO                 
+00102389 000.0 PE OLINDA                                             LETRAS                        
+00032763 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00307029 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00287937 000.0 AL MACEIO                                             ADMINISTRACAO                 
+00440187 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00147057 000.0 SP RIBEIRAO PRETO                                     CIENCIAS CONTABEIS            
+00117006 000.0 PE OLINDA                                             LETRAS                        
+00438490 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00447500 000.0 AL MACEIO                                             ADMINISTRACAO                 
+00372416 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00381580 000.0 SP SANTO ANDRE                                        DIREITO                       
+00074316 000.0 PE OLINDA                                             LETRAS                        
+00239161 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00092309 000.0 RJ SAO GONCALO                                        ADMINISTRACAO                 
+00052860 000.0 RJ NITEROI                                            ADMINISTRACAO                 
+00125119 000.0 AL MACEIO                                             ADMINISTRACAO                 
+00363544 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00271360 000.0 AL MACEIO                                             ADMINISTRACAO                 
+00127876 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00414372 000.0 PE RECIFE                                             ADMINISTRACAO                 
+00207196 000.0 SC PICARRAS                                           CIENCIAS CONTABEIS            
+00006083 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00238974 000.0 AL MACEIO                                             ADMINISTRACAO                 
+00455320 000.0 MT DIAMANTINO                                         PEDAGOGIA                     
+00025015 000.0 PE OLINDA                                             LETRAS                        
+00283601 000.0 SP RIBEIRAO PRETO                                     CIENCIAS CONTABEIS            
+00405288 000.0 AL MACEIO                                             ADMINISTRACAO                 
+00278538 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00294170 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00337592 000.0 SP RIBEIRAO PRETO                                     CIENCIAS CONTABEIS            
+00081514 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00108864 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00051530 000.0 RJ DUQUE DE CAXIAS                                    ODONTOLOGIA                   
+00357138 000.0 RJ SAO GONCALO                                        ADMINISTRACAO                 
+00039754 000.0 PE OLINDA                                             LETRAS                        
+00169092 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00344586 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00386327 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00445523 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00138956 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00277022 000.0 PE OLINDA                                             LETRAS                        
+00003767 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00103646 000.0 PE OLINDA                                             LETRAS                        
+00300753 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00060171 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00020337 000.0 PI OEIRAS                                             LETRAS                        
+00262777 000.0 PI VALENCA DO PIAUI                                   LETRAS                        
+00058238 000.0 RJ NITEROI                                            ADMINISTRACAO                 
+00013596 000.0 PE OLINDA                                             LETRAS                        
+00101227 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00379807 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00054769 000.0 SC PICARRAS                                           CIENCIAS CONTABEIS            
+00153540 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00183468 000.0 PE OLINDA                                             LETRAS                        
+00039433 000.0 TO PORTO NACIONAL                                     GEOGRAFIA                     
+00336099 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00354832 000.0 SC TIJUCAS                                            CIENCIAS CONTABEIS            
+00365921 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00162602 000.0 PE OLINDA                                             LETRAS                        
+00034426 000.0 RJ DUQUE DE CAXIAS                                    ODONTOLOGIA                   
+00013003 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00392034 000.0 AL MACEIO                                             ADMINISTRACAO                 
+00130295 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00105214 000.0 RJ DUQUE DE CAXIAS                                    ODONTOLOGIA                   
+00427204 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00111251 000.0 AL MACEIO                                             ADMINISTRACAO                 
+00379138 000.0 SC TIJUCAS                                            CIENCIAS CONTABEIS            
+00291460 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00353019 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00412354 000.0 RJ NITEROI                                            ADMINISTRACAO                 
+00457916 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00399155 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00247416 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00070682 000.0 AL MACEIO                                             ADMINISTRACAO                 
+00323495 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00000653 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00329410 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00060012 000.0 MG ITUIUTABA                                          LETRAS                        
+00229122 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00326259 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00270022 000.0 RJ RIO DE JANEIRO                                     DIREITO                       
+00464384 000.0 SC PICARRAS                                           CIENCIAS CONTABEIS            
+00231969 000.0 PI LUZILANDIA                                         LETRAS                        
+00047445 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00247018 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00145059 000.0 SC TIJUCAS                                            CIENCIAS CONTABEIS            
+00212370 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00140467 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00126337 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00232293 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00291781 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00339695 000.0 SC TIJUCAS                                            CIENCIAS CONTABEIS            
+00043122 000.0 RJ RIO DE JANEIRO                                     ADMINISTRACAO                 
+00001057 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00316394 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00166718 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00066293 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00385026 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00276361 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00261083 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00090423 000.0 PE RECIFE                                             ADMINISTRACAO                 
+00021606 000.0 RJ RIO DE JANEIRO                                     DIREITO                       
+00224627 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00249086 000.0 RJ RIO DE JANEIRO                                     ADMINISTRACAO                 
+00411054 000.0 SC TIJUCAS                                            CIENCIAS CONTABEIS            
+00325371 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00160212 000.0 MT JUINA                                              PEDAGOGIA                     
+00184399 000.0 RJ RIO DE JANEIRO                                     ADMINISTRACAO                 
+00011389 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00302252 000.0 PI TERESINA                                           LETRAS                        
+00315219 000.0 RJ RIO DE JANEIRO                                     ADMINISTRACAO                 
+00112231 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00170915 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00355651 000.0 PI TERESINA                                           LETRAS                        
+00260180 000.0 SC TIJUCAS                                            CIENCIAS CONTABEIS            
+00068780 000.0 RJ RIO DE JANEIRO                                     ADMINISTRACAO                 
+00092671 000.0 MG DIVINOPOLIS                                        LETRAS                        
+00164641 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00182184 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00322896 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00108298 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00159631 000.0 RJ RIO DE JANEIRO                                     ADMINISTRACAO                 
+00362406 000.0 MG DIVINOPOLIS                                        LETRAS                        
+00267430 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00080124 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00129885 000.0 RJ RIO DE JANEIRO                                     ADMINISTRACAO                 
+00145335 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00210010 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00380276 000.0 RS PORTO ALEGRE                                       ODONTOLOGIA                   
+00025039 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00312111 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00267066 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00185802 000.0 RJ RIO DE JANEIRO                                     ADMINISTRACAO                 
+00163710 000.0 SC ITAJAI                                             CIENCIAS CONTABEIS            
+00117031 000.0 PI PICOS                                              LETRAS                        
+00427213 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00285186 000.0 SC PICARRAS                                           CIENCIAS CONTABEIS            
+00388366 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00224151 000.0 SC BIGUACU                                            CIENCIAS CONTABEIS            
+00040321 000.0 SP SAO PAULO                                          CIENCIAS CONTABEIS            
+00376140 000.0 MT JUINA                                              PEDAGOGIA                     
+00242119 000.0 RJ DUQUE DE CAXIAS                                    ODONTOLOGIA                   
+00240399 000.0 RJ DUQUE DE CAXIAS                                    ODONTOLOGIA                   
+00065872 000.0 SC VIDEIRA                                            CIENCIAS CONTABEIS            
+00177217 000.0 RJ NITEROI                                            ADMINISTRACAO                 
+00400167 000.0 SP SANTO ANDRE                                        CIENCIAS CONTABEIS            
+00078642 000.0 GO GOIANIA                                            ADMINISTRACAO                 
+00296448 000.0 SC SAO MIGUEL D'OESTE                                 CIENCIAS CONTABEIS            
+00193027 000.0 SC VIDEIRA                                            CIENCIAS CONTABEIS            
+00282738 000.0 PI VALENCA DO PIAUI                                   LETRAS                        
+00119592 000.0 SP SANTO ANDRE                                        DIREITO                       
+00017482 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00393427 000.0 MT DIAMANTINO                                         PEDAGOGIA                     
+00355063 000.0 PI VALENCA DO PIAUI                                   LETRAS                        
+00002138 000.0 MG PASSOS                                             LETRAS                        
+00042396 000.0 SC SAO MIGUEL D'OESTE                                 CIENCIAS CONTABEIS            
+00092463 000.0 SP TAUBATE                                            ADMINISTRACAO                 
+00069715 000.0 RJ RIO DE JANEIRO                                     ADMINISTRACAO                 
+00071277 000.0 SP TAUBATE                                            ADMINISTRACAO                 
+00452523 000.0 SP TAUBATE                                            ADMINISTRACAO                 
+00018643 000.0 SP TAUBATE                                            ADMINISTRACAO                 
+00106320 000.0 MG DIAMANTINA                                         LETRAS                        
+00016348 000.0 RJ RIO DE JANEIRO                                     ADMINISTRACAO                 
+00056733 000.0 RJ NOVA FRIBURGO                                      ODONTOLOGIA                   
+00082547 000.0 RJ RIO DE JANEIRO                                     ADMINISTRACAO                 
+00292804 000.0 SP TAUBATE                                            ADMINISTRACAO                 
+00174578 000.0 SC JOINVILLE                                          CIENCIAS CONTABEIS            
+00042579 000.0 SC JOINVILLE                                          CIENCIAS CONTABEIS            
+00049569 000.0 PI PAULISTANA                                         LETRAS                        
+00406605 000.0 MG PASSOS                                             LETRAS                        
+00133210 000.0 SC JOINVILLE                                          CIENCIAS CONTABEIS            
+00265095 000.0 SC SAO BENTO DO SUL                                   CIENCIAS CONTABEIS            
+00105314 000.0 SP TAUBATE                                            ADMINISTRACAO                 
+00386398 000.0 RJ RIO DE JANEIRO                                     ADMINISTRACAO                 
+00013955 000.0 MG CARANGOLA                                          LETRAS                        
+00005886 000.0 RJ RIO DE JANEIRO                                     ADMINISTRACAO                 
+00134270 000.0 SC JOINVILLE                                          CIENCIAS CONTABEIS            
+00287736 000.0 SC JOINVILLE                                          CIENCIAS CONTABEIS            
+00383067 000.0 SP SAO PAULO                                          ODONTOLOGIA                   
+00044218 000.0 SC JOINVILLE                                          CIENCIAS CONTABEIS            
+00055159 000.0 PR UMUARAMA                                           LETRAS                        
+00163471 000.0 SP TAUBATE                                            ADMINISTRACAO                 
+00351331 000.0 RJ RIO DE JANEIRO                                     ADMINISTRACAO                 
+00110835 000.0 SC SAO BENTO DO SUL                                   CIENCIAS CONTABEIS            
+00083447 000.0 SC JOINVILLE                                          CIENCIAS CONTABEIS            
+00254876 000.0 RJ RIO DE JANEIRO                                     ADMINISTRACAO                 
+00130642 000.0 SP TAUBATE                                            ADMINISTRACAO                 
+00249198 000.0 SP SAO JOAO DA BOA VISTA                              CIENCIAS CONTABEIS            
+00307092 000.0 PI VALENCA DO PIAUI                                   LETRAS                        
+00235318 000.0 SP SAO PAULO                                          ODONTOLOGIA                   
+00240214 000.0 SC JOINVILLE                                          CIENCIAS CONTABEIS            
+00014620 000.0 SP SAO JOAO DA BOA VISTA                              CIENCIAS CONTABEIS            
+00257507 000.0 SC JOINVILLE                                          CIENCIAS CONTABEIS            
+00252512 000.0 SP TAUBATE                                            ADMINISTRACAO                 
+00104359 000.0 SC SAO BENTO DO SUL                                   CIENCIAS CONTABEIS            
