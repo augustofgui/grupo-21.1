@@ -146,7 +146,7 @@ void escreve_na_fita(FILE *arquivo_binario, Fita *fita_destino, int tam, Estatis
             PrintFRead(&vetor_reg[k]);
 
     // ----- Ordena o vetor em memória principal, usando o método de merge sort.
-    merge_sort(vetor_reg, 0, tam - 1, estatistica);
+    heapsort(vetor_reg, tam, estatistica);
 
     // ----- Escreve na fita destino os registros lidos.
     fwrite(vetor_reg, sizeof(Registro), tam, fita_destino->arquivo);

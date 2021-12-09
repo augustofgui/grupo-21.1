@@ -267,7 +267,7 @@ int acha_posicao_menor_reg(Registro *vetor, int tam)
 
     for (i = 0; i < tam; i++)
     {
-        if (vetor[i].nota < menor)
+        if (vetor[i].nota >= 0.0F && vetor[i].nota < menor)
         {
             m = i;
             menor = vetor[i].nota;

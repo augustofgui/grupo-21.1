@@ -1,100 +1,1000 @@
+00412790 000.0 MT CUIABA                                             ADMINISTRACAO                 
+00370724 000.0 MT CUIABA                                             ADMINISTRACAO                 
+00423855 000.0 MT CUIABA                                             ADMINISTRACAO                 
+00059573 000.0 MT CUIABA                                             ADMINISTRACAO                 
+00151750 000.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
 00057202 000.0 MT AGUA BOA                                           ADMINISTRACAO                 
 00239419 000.0 MT CUIABA                                             ADMINISTRACAO                 
+00207334 000.0 MT CUIABA                                             ADMINISTRACAO                 
 00047497 000.0 DF BRASILIA                                           ADMINISTRACAO                 
-00412790 001.0 MT CUIABA                                             ADMINISTRACAO                 
+00144473 000.0 DF BRASILIA                                           ADMINISTRACAO                 
+00072808 000.0 DF BRASILIA                                           ADMINISTRACAO                 
+00221890 000.0 DF BRASILIA                                           ADMINISTRACAO                 
+00454736 000.0 DF BRASILIA                                           ADMINISTRACAO                 
+00161889 000.0 DF BRASILIA                                           ADMINISTRACAO                 
+00084421 000.0 DF BRASILIA                                           ADMINISTRACAO                 
+00119390 000.0 DF BRASILIA                                           ADMINISTRACAO                 
+00259213 000.0 DF BRASILIA                                           ADMINISTRACAO                 
+00339589 000.0 DF BRASILIA                                           ADMINISTRACAO                 
+00453078 000.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00369658 000.0 DF BRASILIA                                           ADMINISTRACAO                 
+00283054 000.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00022952 000.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00034050 000.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00461082 000.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00417534 000.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00230537 000.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00032997 000.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00435753 000.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00367644 000.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00370976 000.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00136049 000.0 AM MANAUS                                             ADMINISTRACAO                 
+00078506 000.0 AM MANAUS                                             ADMINISTRACAO                 
+00159186 000.0 AM MANAUS                                             ADMINISTRACAO                 
+00021239 000.0 AM MANAUS                                             ADMINISTRACAO                 
+00030293 000.0 AM MANAUS                                             ADMINISTRACAO                 
+00352323 000.0 AM MANAUS                                             ADMINISTRACAO                 
+00018874 000.0 AM MANAUS                                             ADMINISTRACAO                 
+00259826 000.0 AM MANAUS                                             ADMINISTRACAO                 
+00001486 000.0 AM MANAUS                                             ADMINISTRACAO                 
+00195746 000.0 AM MANAUS                                             ADMINISTRACAO                 
+00295848 000.0 AM MANAUS                                             ADMINISTRACAO                 
+00273019 000.0 AM MANAUS                                             ADMINISTRACAO                 
+00219752 000.0 PI PARNAIBA                                           ADMINISTRACAO                 
+00273076 000.0 AM MANAUS                                             ADMINISTRACAO                 
+00099183 000.0 PI PARNAIBA                                           ADMINISTRACAO                 
+00115970 000.0 PI PARNAIBA                                           ADMINISTRACAO                 
+00351682 000.0 AM MANAUS                                             ADMINISTRACAO                 
+00255664 000.0 PI TERESINA                                           ADMINISTRACAO                 
+00415030 000.0 PI TERESINA                                           ADMINISTRACAO                 
+00384614 000.0 PI TERESINA                                           ADMINISTRACAO                 
+00386574 000.0 PI PARNAIBA                                           ADMINISTRACAO                 
+00090529 000.0 PI TERESINA                                           ADMINISTRACAO                 
+00112194 000.0 MG VICOSA                                             ADMINISTRACAO                 
+00187111 000.0 MG VICOSA                                             ADMINISTRACAO                 
+00110621 000.0 MG VICOSA                                             ADMINISTRACAO                 
+00350210 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00045496 000.0 MG VICOSA                                             ADMINISTRACAO                 
+00321961 000.0 MG VICOSA                                             ADMINISTRACAO                 
+00273968 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00012427 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00094945 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00202929 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00470311 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00305837 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00204803 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00098672 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00337849 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00091130 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00109012 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00374893 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00009709 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00430397 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00011327 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00470990 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00283649 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00206581 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00141989 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00468267 000.0 PR CURITIBA                                           ADMINISTRACAO                 
+00029001 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00184508 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00265302 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00359793 000.0 PR LONDRINA                                           ADMINISTRACAO                 
+00144718 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00061544 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00385026 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00466064 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00231764 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00283295 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00127326 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00340438 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00103160 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00312111 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00425888 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00226231 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00130911 000.0 PR CURITIBA                                           ADMINISTRACAO                 
+00276929 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00376771 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00024106 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00093169 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00200707 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00057324 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00181742 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00140708 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00048163 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00314555 000.0 PR CURITIBA                                           ADMINISTRACAO                 
+00330044 000.0 PR CURITIBA                                           ADMINISTRACAO                 
+00103825 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00286995 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00400505 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00289304 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00179919 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00017482 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00168156 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00046771 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00375826 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00446905 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00446102 000.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00213978 010.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00254349 012.5 DF BRASILIA                                           ADMINISTRACAO                 
+00346592 014.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00013977 014.5 PI PARNAIBA                                           ADMINISTRACAO                 
+00280953 015.0 PI PARNAIBA                                           ADMINISTRACAO                 
+00443242 015.3 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00065996 016.3 MT AGUA BOA                                           ADMINISTRACAO                 
+00167390 016.3 PI PARNAIBA                                           ADMINISTRACAO                 
+00421729 016.8 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00269932 017.5 MT CUIABA                                             ADMINISTRACAO                 
+00288612 017.5 AM MANAUS                                             ADMINISTRACAO                 
+00054048 017.5 AM MANAUS                                             ADMINISTRACAO                 
+00209168 017.5 PR LONDRINA                                           ADMINISTRACAO                 
+00421422 017.5 PR LONDRINA                                           ADMINISTRACAO                 
 00037379 017.8 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00080301 018.3 AM MANAUS                                             ADMINISTRACAO                 
+00027801 018.3 AM MANAUS                                             ADMINISTRACAO                 
+00340639 018.5 AM MANAUS                                             ADMINISTRACAO                 
+00121505 018.8 MT CUIABA                                             ADMINISTRACAO                 
 00402740 018.8 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00150517 018.8 DF BRASILIA                                           ADMINISTRACAO                 
+00036392 018.8 AM MANAUS                                             ADMINISTRACAO                 
+00301802 020.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00040975 020.0 DF BRASILIA                                           ADMINISTRACAO                 
+00147344 020.0 AM MANAUS                                             ADMINISTRACAO                 
+00116536 020.0 AM MANAUS                                             ADMINISTRACAO                 
+00418828 020.0 AM MANAUS                                             ADMINISTRACAO                 
+00312544 020.0 AM MANAUS                                             ADMINISTRACAO                 
+00112781 020.3 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
 00412481 020.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00161694 021.0 PR LONDRINA                                           ADMINISTRACAO                 
+00338433 021.3 DF BRASILIA                                           ADMINISTRACAO                 
+00063830 021.3 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00306030 021.3 AM MANAUS                                             ADMINISTRACAO                 
+00084990 021.3 PI PARNAIBA                                           ADMINISTRACAO                 
+00108171 021.5 AM MANAUS                                             ADMINISTRACAO                 
+00463955 021.5 PI TERESINA                                           ADMINISTRACAO                 
+00352409 021.8 PI TERESINA                                           ADMINISTRACAO                 
+00233101 021.8 MG VICOSA                                             ADMINISTRACAO                 
 00300056 022.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
 00456679 022.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00360367 022.0 PR LONDRINA                                           ADMINISTRACAO                 
+00286286 022.5 DF BRASILIA                                           ADMINISTRACAO                 
+00125100 022.5 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00107733 022.5 AM MANAUS                                             ADMINISTRACAO                 
+00367656 022.5 AM MANAUS                                             ADMINISTRACAO                 
+00274212 022.5 AM MANAUS                                             ADMINISTRACAO                 
+00340592 022.5 AM MANAUS                                             ADMINISTRACAO                 
+00101432 022.5 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00134399 023.0 PI PARNAIBA                                           ADMINISTRACAO                 
+00339451 023.5 AM MANAUS                                             ADMINISTRACAO                 
+00381653 023.5 AM MANAUS                                             ADMINISTRACAO                 
+00344756 023.5 AM MANAUS                                             ADMINISTRACAO                 
+00408831 023.5 PI PARNAIBA                                           ADMINISTRACAO                 
+00111657 023.5 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
 00163079 023.8 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
 00306088 024.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00457807 024.3 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00113892 024.3 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00210550 024.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
 00386413 024.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00398672 024.5 PI PARNAIBA                                           ADMINISTRACAO                 
+00251361 024.8 AM MANAUS                                             ADMINISTRACAO                 
+00084008 024.8 AM MANAUS                                             ADMINISTRACAO                 
+00139918 024.8 AM MANAUS                                             ADMINISTRACAO                 
+00243219 025.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00200441 025.0 AM MANAUS                                             ADMINISTRACAO                 
+00292670 025.0 AM MANAUS                                             ADMINISTRACAO                 
+00133721 025.3 AM MANAUS                                             ADMINISTRACAO                 
+00005317 025.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00229115 025.8 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00471379 026.0 PI PARNAIBA                                           ADMINISTRACAO                 
+00318273 026.3 PI TERESINA                                           ADMINISTRACAO                 
+00119835 026.3 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00143639 026.3 PR CURITIBA                                           ADMINISTRACAO                 
+00322422 026.8 AM MANAUS                                             ADMINISTRACAO                 
+00324897 027.0 MG VICOSA                                             ADMINISTRACAO                 
+00413253 027.3 AM MANAUS                                             ADMINISTRACAO                 
+00323220 027.3 PI PARNAIBA                                           ADMINISTRACAO                 
 00111954 027.5 MT CUIABA                                             ADMINISTRACAO                 
+00362081 027.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00343392 027.5 PI TERESINA                                           ADMINISTRACAO                 
+00073822 027.5 PI PARNAIBA                                           ADMINISTRACAO                 
+00317024 027.8 AM MANAUS                                             ADMINISTRACAO                 
+00296012 027.8 PR LONDRINA                                           ADMINISTRACAO                 
+00300538 027.8 PR CURITIBA                                           ADMINISTRACAO                 
 00023133 028.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00293078 028.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00316162 028.3 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00298783 028.3 PR CURITIBA                                           ADMINISTRACAO                 
+00335198 028.5 PI PARNAIBA                                           ADMINISTRACAO                 
+00258966 028.8 PR LONDRINA                                           ADMINISTRACAO                 
+00214523 029.0 PR CURITIBA                                           ADMINISTRACAO                 
+00293831 029.3 AM MANAUS                                             ADMINISTRACAO                 
+00025999 029.5 PI PARNAIBA                                           ADMINISTRACAO                 
+00047472 029.5 PI PARNAIBA                                           ADMINISTRACAO                 
+00291665 029.8 AM MANAUS                                             ADMINISTRACAO                 
+00171020 029.8 PI PARNAIBA                                           ADMINISTRACAO                 
 00203779 030.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00268715 030.0 DF BRASILIA                                           ADMINISTRACAO                 
+00444180 030.0 PR LONDRINA                                           ADMINISTRACAO                 
+00071577 030.3 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00129275 030.3 PR LONDRINA                                           ADMINISTRACAO                 
+00391346 030.5 AM MANAUS                                             ADMINISTRACAO                 
 00142590 031.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00097052 031.0 AM MANAUS                                             ADMINISTRACAO                 
+00333364 031.0 PI TERESINA                                           ADMINISTRACAO                 
+00185865 031.0 PI PARNAIBA                                           ADMINISTRACAO                 
+00387585 031.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00221570 031.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00088312 031.3 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00113382 031.3 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00422511 031.3 AM MANAUS                                             ADMINISTRACAO                 
+00183699 031.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00123938 031.5 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00126136 031.5 AM MANAUS                                             ADMINISTRACAO                 
+00029891 031.5 MG VICOSA                                             ADMINISTRACAO                 
+00372167 031.5 PR CURITIBA                                           ADMINISTRACAO                 
 00085344 031.8 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00329608 031.8 DF BRASILIA                                           ADMINISTRACAO                 
+00021110 031.8 AM MANAUS                                             ADMINISTRACAO                 
+00232317 031.8 PI PARNAIBA                                           ADMINISTRACAO                 
+00010942 032.0 DF BRASILIA                                           ADMINISTRACAO                 
+00304166 032.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00435142 032.0 AM MANAUS                                             ADMINISTRACAO                 
+00058525 032.0 PI PARNAIBA                                           ADMINISTRACAO                 
+00455789 032.0 PI PARNAIBA                                           ADMINISTRACAO                 
+00432322 032.0 PR LONDRINA                                           ADMINISTRACAO                 
+00360424 032.0 PR LONDRINA                                           ADMINISTRACAO                 
 00213434 032.3 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00219113 032.3 AM MANAUS                                             ADMINISTRACAO                 
+00167379 032.3 MG VICOSA                                             ADMINISTRACAO                 
+00361724 032.3 PR LONDRINA                                           ADMINISTRACAO                 
+00462658 032.5 AM MANAUS                                             ADMINISTRACAO                 
+00400218 032.5 MG VICOSA                                             ADMINISTRACAO                 
+00275596 032.5 PR LONDRINA                                           ADMINISTRACAO                 
+00445958 032.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00221150 032.8 PI PARNAIBA                                           ADMINISTRACAO                 
+00399531 032.8 PI TERESINA                                           ADMINISTRACAO                 
+00455270 032.8 MG VICOSA                                             ADMINISTRACAO                 
+00349603 032.8 PR LONDRINA                                           ADMINISTRACAO                 
+00008834 033.0 DF BRASILIA                                           ADMINISTRACAO                 
+00012236 033.0 AM MANAUS                                             ADMINISTRACAO                 
+00441323 033.0 PI TERESINA                                           ADMINISTRACAO                 
 00182746 033.3 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00366962 033.3 AM MANAUS                                             ADMINISTRACAO                 
+00085670 033.3 AM MANAUS                                             ADMINISTRACAO                 
+00249107 033.3 PI PARNAIBA                                           ADMINISTRACAO                 
 00101991 033.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00205746 033.5 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00332160 033.5 AM MANAUS                                             ADMINISTRACAO                 
+00458650 033.5 PI PARNAIBA                                           ADMINISTRACAO                 
+00026256 033.5 PR LONDRINA                                           ADMINISTRACAO                 
+00137887 033.8 AM MANAUS                                             ADMINISTRACAO                 
+00451115 033.8 AM MANAUS                                             ADMINISTRACAO                 
+00057637 033.8 AM MANAUS                                             ADMINISTRACAO                 
+00082340 034.0 AM MANAUS                                             ADMINISTRACAO                 
+00233795 034.0 AM MANAUS                                             ADMINISTRACAO                 
+00297053 034.0 PI PARNAIBA                                           ADMINISTRACAO                 
+00102238 034.0 PI PARNAIBA                                           ADMINISTRACAO                 
+00224341 034.0 MG VICOSA                                             ADMINISTRACAO                 
+00195137 034.0 PR LONDRINA                                           ADMINISTRACAO                 
 00173550 034.3 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00325545 034.3 DF BRASILIA                                           ADMINISTRACAO                 
+00224240 034.3 AM MANAUS                                             ADMINISTRACAO                 
+00074556 034.3 PI PARNAIBA                                           ADMINISTRACAO                 
+00368312 034.3 PI PARNAIBA                                           ADMINISTRACAO                 
+00130373 034.3 PI TERESINA                                           ADMINISTRACAO                 
+00400170 034.5 AM MANAUS                                             ADMINISTRACAO                 
+00045273 034.5 AM MANAUS                                             ADMINISTRACAO                 
+00078706 034.5 PR LONDRINA                                           ADMINISTRACAO                 
 00170838 034.8 MT CUIABA                                             ADMINISTRACAO                 
+00219126 034.8 AM MANAUS                                             ADMINISTRACAO                 
+00311591 035.0 DF BRASILIA                                           ADMINISTRACAO                 
+00112564 035.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00294906 035.0 AM MANAUS                                             ADMINISTRACAO                 
+00192376 035.0 PR LONDRINA                                           ADMINISTRACAO                 
 00170558 035.3 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00004921 035.3 PI TERESINA                                           ADMINISTRACAO                 
+00177525 035.3 PI TERESINA                                           ADMINISTRACAO                 
+00392820 035.3 PI PARNAIBA                                           ADMINISTRACAO                 
+00407932 035.3 PR LONDRINA                                           ADMINISTRACAO                 
+00159825 035.5 AM MANAUS                                             ADMINISTRACAO                 
+00365545 035.5 AM MANAUS                                             ADMINISTRACAO                 
+00061892 035.5 AM MANAUS                                             ADMINISTRACAO                 
+00071684 035.5 PR CURITIBA                                           ADMINISTRACAO                 
+00396530 035.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00002934 035.8 PI PARNAIBA                                           ADMINISTRACAO                 
+00363557 035.8 PR LONDRINA                                           ADMINISTRACAO                 
+00408321 036.0 AM MANAUS                                             ADMINISTRACAO                 
+00197975 036.0 AM MANAUS                                             ADMINISTRACAO                 
+00094374 036.0 AM MANAUS                                             ADMINISTRACAO                 
+00219879 036.0 PR CURITIBA                                           ADMINISTRACAO                 
+00257538 036.0 PR CURITIBA                                           ADMINISTRACAO                 
+00190351 036.3 DF BRASILIA                                           ADMINISTRACAO                 
+00153723 036.3 AM MANAUS                                             ADMINISTRACAO                 
+00162633 036.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
 00037778 036.5 MT CUIABA                                             ADMINISTRACAO                 
 00059131 036.8 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00266061 036.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00337091 036.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00024213 036.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
 00409928 037.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00255680 037.0 DF BRASILIA                                           ADMINISTRACAO                 
+00114422 037.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00251426 037.0 AM MANAUS                                             ADMINISTRACAO                 
+00005627 037.0 PI PARNAIBA                                           ADMINISTRACAO                 
+00317654 037.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00066354 037.3 DF BRASILIA                                           ADMINISTRACAO                 
+00113285 037.3 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00228618 037.3 AM MANAUS                                             ADMINISTRACAO                 
+00368900 037.3 AM MANAUS                                             ADMINISTRACAO                 
+00118861 037.3 AM MANAUS                                             ADMINISTRACAO                 
+00003393 037.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00191878 037.5 DF BRASILIA                                           ADMINISTRACAO                 
+00149603 037.5 AM MANAUS                                             ADMINISTRACAO                 
+00268784 037.8 AM MANAUS                                             ADMINISTRACAO                 
+00248417 037.8 PI PARNAIBA                                           ADMINISTRACAO                 
+00381429 037.8 MG VICOSA                                             ADMINISTRACAO                 
 00238292 038.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00124494 038.0 DF BRASILIA                                           ADMINISTRACAO                 
+00268678 038.0 DF BRASILIA                                           ADMINISTRACAO                 
+00095662 038.3 DF BRASILIA                                           ADMINISTRACAO                 
+00276824 038.5 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00051080 038.5 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00036078 038.5 AM MANAUS                                             ADMINISTRACAO                 
+00314025 038.5 MG VICOSA                                             ADMINISTRACAO                 
+00202266 038.8 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00085432 038.8 DF BRASILIA                                           ADMINISTRACAO                 
+00314937 038.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00356030 038.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00113716 038.8 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00025188 039.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00353811 039.0 PI TERESINA                                           ADMINISTRACAO                 
+00135750 039.0 PR LONDRINA                                           ADMINISTRACAO                 
+00249816 039.3 PI PARNAIBA                                           ADMINISTRACAO                 
+00053475 039.3 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00203084 039.5 DF BRASILIA                                           ADMINISTRACAO                 
+00140962 039.5 AM MANAUS                                             ADMINISTRACAO                 
+00301300 039.5 AM MANAUS                                             ADMINISTRACAO                 
+00011450 039.5 MG VICOSA                                             ADMINISTRACAO                 
+00298201 039.5 PR LONDRINA                                           ADMINISTRACAO                 
+00429917 039.5 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
 00278763 039.8 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00291453 039.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00419670 039.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00134103 039.8 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00383153 040.0 AM MANAUS                                             ADMINISTRACAO                 
+00283081 040.0 AM MANAUS                                             ADMINISTRACAO                 
+00413185 040.0 MG VICOSA                                             ADMINISTRACAO                 
+00019346 040.0 MG VICOSA                                             ADMINISTRACAO                 
+00107236 040.3 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00251484 040.3 AM MANAUS                                             ADMINISTRACAO                 
+00207373 040.3 AM MANAUS                                             ADMINISTRACAO                 
+00085358 040.3 AM MANAUS                                             ADMINISTRACAO                 
+00069926 040.3 AM MANAUS                                             ADMINISTRACAO                 
+00463351 040.3 PR CURITIBA                                           ADMINISTRACAO                 
+00447123 040.3 PR CURITIBA                                           ADMINISTRACAO                 
+00224450 040.5 MT CUIABA                                             ADMINISTRACAO                 
 00102393 040.5 MT CUIABA                                             ADMINISTRACAO                 
+00186893 040.5 AM MANAUS                                             ADMINISTRACAO                 
+00214331 040.5 MG VICOSA                                             ADMINISTRACAO                 
+00224687 040.5 PR LONDRINA                                           ADMINISTRACAO                 
+00112505 040.5 PR LONDRINA                                           ADMINISTRACAO                 
+00036075 040.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00419751 040.8 PI PARNAIBA                                           ADMINISTRACAO                 
+00076367 040.8 PR LONDRINA                                           ADMINISTRACAO                 
+00097378 040.8 PR LONDRINA                                           ADMINISTRACAO                 
+00381088 040.8 PR LONDRINA                                           ADMINISTRACAO                 
+00175921 041.0 DF BRASILIA                                           ADMINISTRACAO                 
+00149115 041.0 AM MANAUS                                             ADMINISTRACAO                 
+00305445 041.0 AM MANAUS                                             ADMINISTRACAO                 
+00348940 041.0 PR LONDRINA                                           ADMINISTRACAO                 
+00069108 041.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00065840 041.3 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00170034 041.3 AM MANAUS                                             ADMINISTRACAO                 
+00395218 041.3 PI TERESINA                                           ADMINISTRACAO                 
+00116493 041.5 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00285318 041.5 PR LONDRINA                                           ADMINISTRACAO                 
+00440868 041.5 PR LONDRINA                                           ADMINISTRACAO                 
+00092849 041.5 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
 00340424 041.8 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00208266 041.8 AM MANAUS                                             ADMINISTRACAO                 
+00405280 041.8 PR LONDRINA                                           ADMINISTRACAO                 
+00421168 041.8 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00374342 041.8 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
 00400008 042.0 MT CUIABA                                             ADMINISTRACAO                 
+00003517 042.0 AM MANAUS                                             ADMINISTRACAO                 
+00386583 042.0 AM MANAUS                                             ADMINISTRACAO                 
+00337846 042.0 PI PARNAIBA                                           ADMINISTRACAO                 
+00262744 042.0 MG VICOSA                                             ADMINISTRACAO                 
+00368345 042.0 PR LONDRINA                                           ADMINISTRACAO                 
 00364281 042.3 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00168228 042.3 AM MANAUS                                             ADMINISTRACAO                 
+00128972 042.3 AM MANAUS                                             ADMINISTRACAO                 
+00205242 042.3 PI TERESINA                                           ADMINISTRACAO                 
+00301704 042.3 MG VICOSA                                             ADMINISTRACAO                 
+00381184 042.3 PR LONDRINA                                           ADMINISTRACAO                 
 00221291 042.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00220132 043.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00337759 042.5 DF BRASILIA                                           ADMINISTRACAO                 
+00468659 042.5 AM MANAUS                                             ADMINISTRACAO                 
+00394362 042.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00218999 042.8 MG VICOSA                                             ADMINISTRACAO                 
+00251057 042.8 MG VICOSA                                             ADMINISTRACAO                 
+00194344 042.8 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00042668 042.8 PR CURITIBA                                           ADMINISTRACAO                 
+00168351 043.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00234756 043.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00047218 043.0 AM MANAUS                                             ADMINISTRACAO                 
+00065453 043.0 PR LONDRINA                                           ADMINISTRACAO                 
+00002717 043.0 PR LONDRINA                                           ADMINISTRACAO                 
+00354067 043.3 AM MANAUS                                             ADMINISTRACAO                 
+00169912 043.3 PI TERESINA                                           ADMINISTRACAO                 
+00097761 043.3 MG VICOSA                                             ADMINISTRACAO                 
+00152355 043.3 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
 00061117 043.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00220132 043.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
 00009997 043.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00184524 043.5 AM MANAUS                                             ADMINISTRACAO                 
+00021971 043.5 PI PARNAIBA                                           ADMINISTRACAO                 
+00017999 043.5 MG VICOSA                                             ADMINISTRACAO                 
 00354405 043.8 MT CUIABA                                             ADMINISTRACAO                 
+00346924 043.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00355310 044.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00092172 044.0 PI PARNAIBA                                           ADMINISTRACAO                 
+00110356 044.0 MG VICOSA                                             ADMINISTRACAO                 
+00016047 044.0 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00069224 044.0 PR CURITIBA                                           ADMINISTRACAO                 
 00216194 044.3 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
 00373477 044.3 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00306648 044.3 DF BRASILIA                                           ADMINISTRACAO                 
+00273426 044.3 MG VICOSA                                             ADMINISTRACAO                 
+00325485 044.3 PR LONDRINA                                           ADMINISTRACAO                 
+00231014 044.3 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
 00412715 044.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00336015 046.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00313201 000.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00065996 016.3 MT AGUA BOA                                           ADMINISTRACAO                 
-00362081 027.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00034535 046.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00269932 017.5 MT CUIABA                                             ADMINISTRACAO                 
+00108114 044.5 AM MANAUS                                             ADMINISTRACAO                 
+00378258 044.5 AM MANAUS                                             ADMINISTRACAO                 
+00464997 044.5 PR LONDRINA                                           ADMINISTRACAO                 
+00313078 044.5 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00212231 044.8 DF BRASILIA                                           ADMINISTRACAO                 
+00352413 044.8 PI PARNAIBA                                           ADMINISTRACAO                 
+00457319 044.8 PR LONDRINA                                           ADMINISTRACAO                 
+00219119 044.8 PR CURITIBA                                           ADMINISTRACAO                 
 00035798 045.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00162633 036.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00224450 040.5 MT CUIABA                                             ADMINISTRACAO                 
+00119830 045.0 DF BRASILIA                                           ADMINISTRACAO                 
+00304832 045.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00307860 045.0 AM MANAUS                                             ADMINISTRACAO                 
+00130458 045.0 PR LONDRINA                                           ADMINISTRACAO                 
+00170937 045.0 PR LONDRINA                                           ADMINISTRACAO                 
+00266463 045.0 PR CURITIBA                                           ADMINISTRACAO                 
+00049198 045.0 PR LONDRINA                                           ADMINISTRACAO                 
+00210080 045.3 DF BRASILIA                                           ADMINISTRACAO                 
+00022147 045.3 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00295744 045.3 PI PARNAIBA                                           ADMINISTRACAO                 
+00195989 045.3 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00226720 045.3 PR CURITIBA                                           ADMINISTRACAO                 
+00366462 045.5 DF BRASILIA                                           ADMINISTRACAO                 
+00129347 045.5 AM MANAUS                                             ADMINISTRACAO                 
+00437129 045.5 AM MANAUS                                             ADMINISTRACAO                 
+00327045 045.5 AM MANAUS                                             ADMINISTRACAO                 
+00153829 045.5 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00003196 045.8 AM MANAUS                                             ADMINISTRACAO                 
+00459925 045.8 AM MANAUS                                             ADMINISTRACAO                 
+00200147 045.8 PR LONDRINA                                           ADMINISTRACAO                 
+00146301 045.8 PR CURITIBA                                           ADMINISTRACAO                 
+00304505 045.8 PR CURITIBA                                           ADMINISTRACAO                 
+00209858 045.8 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00034535 046.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00336015 046.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
 00254576 046.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00041603 047.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00010357 048.8 MT CUIABA                                             ADMINISTRACAO                 
-00331437 049.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00295222 049.3 MT CUIABA                                             ADMINISTRACAO                 
-00346592 014.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00454483 050.0 MT CUIABA                                             ADMINISTRACAO                 
-00005317 025.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00059573 000.0 MT CUIABA                                             ADMINISTRACAO                 
-00207334 000.0 MT CUIABA                                             ADMINISTRACAO                 
-00301802 020.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00151750 000.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00370724 000.0 MT CUIABA                                             ADMINISTRACAO                 
-00210550 024.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00088312 031.3 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00183699 031.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00423855 000.0 MT CUIABA                                             ADMINISTRACAO                 
-00202266 038.8 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00003393 037.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
-00121505 018.8 MT CUIABA                                             ADMINISTRACAO                 
-00107236 040.3 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00422625 046.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00459126 046.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00029920 046.0 AM MANAUS                                             ADMINISTRACAO                 
+00084823 046.0 AM MANAUS                                             ADMINISTRACAO                 
+00013553 046.0 MG VICOSA                                             ADMINISTRACAO                 
+00289862 046.0 MG VICOSA                                             ADMINISTRACAO                 
+00024438 046.0 PR LONDRINA                                           ADMINISTRACAO                 
+00444554 046.0 PR CURITIBA                                           ADMINISTRACAO                 
+00220216 046.3 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00326232 046.3 PI PARNAIBA                                           ADMINISTRACAO                 
+00096765 046.3 PR LONDRINA                                           ADMINISTRACAO                 
+00326182 046.3 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00156344 046.3 PR CURITIBA                                           ADMINISTRACAO                 
 00369241 046.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00329668 046.5 DF BRASILIA                                           ADMINISTRACAO                 
+00193803 046.5 AM MANAUS                                             ADMINISTRACAO                 
+00319117 046.5 PR LONDRINA                                           ADMINISTRACAO                 
+00071366 046.5 PR CURITIBA                                           ADMINISTRACAO                 
+00142837 046.8 DF BRASILIA                                           ADMINISTRACAO                 
+00058361 046.8 DF BRASILIA                                           ADMINISTRACAO                 
+00109386 046.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00033559 046.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00239866 046.8 AM MANAUS                                             ADMINISTRACAO                 
+00307220 046.8 PI TERESINA                                           ADMINISTRACAO                 
+00416795 046.8 PI TERESINA                                           ADMINISTRACAO                 
+00132834 046.8 MG VICOSA                                             ADMINISTRACAO                 
+00221936 046.8 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00280259 046.8 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00041603 047.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00186581 047.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00463262 047.0 AM MANAUS                                             ADMINISTRACAO                 
+00050848 047.0 AM MANAUS                                             ADMINISTRACAO                 
+00089359 047.0 PI TERESINA                                           ADMINISTRACAO                 
+00380532 047.0 PI TERESINA                                           ADMINISTRACAO                 
+00303348 047.0 PR CURITIBA                                           ADMINISTRACAO                 
+00317055 047.3 AM MANAUS                                             ADMINISTRACAO                 
+00028009 047.3 AM MANAUS                                             ADMINISTRACAO                 
+00233406 047.3 AM MANAUS                                             ADMINISTRACAO                 
+00008586 047.3 PI PARNAIBA                                           ADMINISTRACAO                 
+00225632 047.3 PR LONDRINA                                           ADMINISTRACAO                 
+00012279 047.3 PR LONDRINA                                           ADMINISTRACAO                 
 00406263 047.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00368815 047.5 DF BRASILIA                                           ADMINISTRACAO                 
+00360165 047.5 DF BRASILIA                                           ADMINISTRACAO                 
+00066569 047.5 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00452420 047.5 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00356952 047.5 AM MANAUS                                             ADMINISTRACAO                 
+00005553 047.5 AM MANAUS                                             ADMINISTRACAO                 
+00109676 047.5 PI PARNAIBA                                           ADMINISTRACAO                 
+00304747 047.5 MG VICOSA                                             ADMINISTRACAO                 
+00163641 047.5 PR LONDRINA                                           ADMINISTRACAO                 
+00100680 047.5 PR CURITIBA                                           ADMINISTRACAO                 
+00015820 047.5 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00469270 047.5 PR CURITIBA                                           ADMINISTRACAO                 
+00384572 047.8 DF BRASILIA                                           ADMINISTRACAO                 
+00034800 047.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00026451 047.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00086323 047.8 AM MANAUS                                             ADMINISTRACAO                 
+00467354 047.8 MG VICOSA                                             ADMINISTRACAO                 
+00187784 047.8 PR LONDRINA                                           ADMINISTRACAO                 
+00289433 047.8 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00219212 047.8 PR CURITIBA                                           ADMINISTRACAO                 
 00106233 048.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
 00213784 048.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00253139 048.0 DF BRASILIA                                           ADMINISTRACAO                 
+00241228 048.0 DF BRASILIA                                           ADMINISTRACAO                 
+00234043 048.0 DF BRASILIA                                           ADMINISTRACAO                 
+00368431 048.0 AM MANAUS                                             ADMINISTRACAO                 
+00052105 048.0 MG VICOSA                                             ADMINISTRACAO                 
+00175131 048.0 PR LONDRINA                                           ADMINISTRACAO                 
+00198918 048.3 DF BRASILIA                                           ADMINISTRACAO                 
+00096183 048.3 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00227159 048.3 AM MANAUS                                             ADMINISTRACAO                 
+00347661 048.3 PR LONDRINA                                           ADMINISTRACAO                 
+00002744 048.5 DF BRASILIA                                           ADMINISTRACAO                 
+00317807 048.5 DF BRASILIA                                           ADMINISTRACAO                 
+00327968 048.5 PI PARNAIBA                                           ADMINISTRACAO                 
+00144242 048.5 MG VICOSA                                             ADMINISTRACAO                 
+00354373 048.5 PR LONDRINA                                           ADMINISTRACAO                 
+00073691 048.5 PR LONDRINA                                           ADMINISTRACAO                 
+00107535 048.5 PR CURITIBA                                           ADMINISTRACAO                 
+00229079 048.5 PR CURITIBA                                           ADMINISTRACAO                 
+00313201 048.8 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00010357 048.8 MT CUIABA                                             ADMINISTRACAO                 
+00222027 048.8 MG VICOSA                                             ADMINISTRACAO                 
+00331437 049.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00300790 049.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00178216 049.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00118668 049.0 PR LONDRINA                                           ADMINISTRACAO                 
+00290808 049.0 PR LONDRINA                                           ADMINISTRACAO                 
+00295222 049.3 MT CUIABA                                             ADMINISTRACAO                 
+00337653 049.3 DF BRASILIA                                           ADMINISTRACAO                 
+00099378 049.3 MG VICOSA                                             ADMINISTRACAO                 
+00209461 049.3 MG VICOSA                                             ADMINISTRACAO                 
+00240348 049.3 PR LONDRINA                                           ADMINISTRACAO                 
+00227988 049.3 PR LONDRINA                                           ADMINISTRACAO                 
+00339404 049.3 PR CURITIBA                                           ADMINISTRACAO                 
+00065744 049.5 DF BRASILIA                                           ADMINISTRACAO                 
+00355968 049.5 DF BRASILIA                                           ADMINISTRACAO                 
+00324740 049.5 AM MANAUS                                             ADMINISTRACAO                 
+00016318 049.5 PI TERESINA                                           ADMINISTRACAO                 
+00037021 049.5 PR LONDRINA                                           ADMINISTRACAO                 
+00446373 049.8 DF BRASILIA                                           ADMINISTRACAO                 
+00158000 049.8 PI PARNAIBA                                           ADMINISTRACAO                 
+00223395 049.8 MG VICOSA                                             ADMINISTRACAO                 
+00458248 049.8 PR LONDRINA                                           ADMINISTRACAO                 
+00454483 050.0 MT CUIABA                                             ADMINISTRACAO                 
+00354122 050.0 DF BRASILIA                                           ADMINISTRACAO                 
+00026638 050.0 DF BRASILIA                                           ADMINISTRACAO                 
+00278537 050.0 DF BRASILIA                                           ADMINISTRACAO                 
+00257474 050.0 PR LONDRINA                                           ADMINISTRACAO                 
+00392432 050.0 PR LONDRINA                                           ADMINISTRACAO                 
+00369324 050.0 PR CURITIBA                                           ADMINISTRACAO                 
+00055231 050.3 DF BRASILIA                                           ADMINISTRACAO                 
+00401505 050.3 DF BRASILIA                                           ADMINISTRACAO                 
+00210559 050.3 PI TERESINA                                           ADMINISTRACAO                 
+00354669 050.3 PI TERESINA                                           ADMINISTRACAO                 
+00210867 050.3 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00142408 050.3 PR CURITIBA                                           ADMINISTRACAO                 
+00130170 050.5 DF BRASILIA                                           ADMINISTRACAO                 
+00131218 050.5 DF BRASILIA                                           ADMINISTRACAO                 
+00106676 050.5 AM MANAUS                                             ADMINISTRACAO                 
+00007814 050.5 AM MANAUS                                             ADMINISTRACAO                 
+00355732 050.5 PI TERESINA                                           ADMINISTRACAO                 
+00422254 050.5 PR LONDRINA                                           ADMINISTRACAO                 
+00164685 050.8 DF BRASILIA                                           ADMINISTRACAO                 
+00071325 050.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00388701 050.8 MG VICOSA                                             ADMINISTRACAO                 
+00049605 050.8 PR CURITIBA                                           ADMINISTRACAO                 
+00345170 051.0 DF BRASILIA                                           ADMINISTRACAO                 
+00427785 051.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00180621 051.0 PR LONDRINA                                           ADMINISTRACAO                 
+00072731 051.3 DF BRASILIA                                           ADMINISTRACAO                 
+00205101 051.3 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00015294 051.3 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00166314 051.3 PR LONDRINA                                           ADMINISTRACAO                 
+00064305 051.3 PR LONDRINA                                           ADMINISTRACAO                 
+00336507 051.5 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00387342 051.5 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00167833 051.5 AM MANAUS                                             ADMINISTRACAO                 
+00118340 051.5 MG VICOSA                                             ADMINISTRACAO                 
+00271291 051.5 PR LONDRINA                                           ADMINISTRACAO                 
+00162993 051.5 PR CURITIBA                                           ADMINISTRACAO                 
 00021887 051.8 MT CUIABA                                             ADMINISTRACAO                 
+00155589 051.8 DF BRASILIA                                           ADMINISTRACAO                 
+00119746 051.8 DF BRASILIA                                           ADMINISTRACAO                 
+00402164 051.8 AM MANAUS                                             ADMINISTRACAO                 
+00088300 051.8 PI TERESINA                                           ADMINISTRACAO                 
+00029095 051.8 PI TERESINA                                           ADMINISTRACAO                 
+00317012 051.8 MG VICOSA                                             ADMINISTRACAO                 
+00081136 051.8 PR LONDRINA                                           ADMINISTRACAO                 
+00133850 051.8 PR CURITIBA                                           ADMINISTRACAO                 
+00308793 051.8 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00047978 052.0 DF BRASILIA                                           ADMINISTRACAO                 
+00258469 052.0 DF BRASILIA                                           ADMINISTRACAO                 
+00285465 052.0 DF BRASILIA                                           ADMINISTRACAO                 
+00427229 052.0 MG VICOSA                                             ADMINISTRACAO                 
+00011372 052.0 PR LONDRINA                                           ADMINISTRACAO                 
+00018642 052.0 PR LONDRINA                                           ADMINISTRACAO                 
+00089539 052.0 PR LONDRINA                                           ADMINISTRACAO                 
+00019284 052.3 DF BRASILIA                                           ADMINISTRACAO                 
+00100312 052.3 DF BRASILIA                                           ADMINISTRACAO                 
+00380734 052.3 AM MANAUS                                             ADMINISTRACAO                 
+00410910 052.3 PI TERESINA                                           ADMINISTRACAO                 
+00049454 052.3 PI TERESINA                                           ADMINISTRACAO                 
+00415432 052.3 PI PARNAIBA                                           ADMINISTRACAO                 
+00099721 052.3 PR LONDRINA                                           ADMINISTRACAO                 
+00266521 052.3 PR LONDRINA                                           ADMINISTRACAO                 
+00454208 052.5 AM MANAUS                                             ADMINISTRACAO                 
+00401893 052.5 PI PARNAIBA                                           ADMINISTRACAO                 
+00235866 052.5 PR CURITIBA                                           ADMINISTRACAO                 
+00430923 052.5 PR LONDRINA                                           ADMINISTRACAO                 
+00001370 052.5 PR CURITIBA                                           ADMINISTRACAO                 
+00135818 052.8 DF BRASILIA                                           ADMINISTRACAO                 
+00284402 052.8 PR LONDRINA                                           ADMINISTRACAO                 
 00209822 053.0 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00415741 053.0 DF BRASILIA                                           ADMINISTRACAO                 
+00335581 053.0 AM MANAUS                                             ADMINISTRACAO                 
+00121373 053.0 AM MANAUS                                             ADMINISTRACAO                 
+00052569 053.0 PR LONDRINA                                           ADMINISTRACAO                 
+00439069 053.0 PR LONDRINA                                           ADMINISTRACAO                 
+00183899 053.0 PR LONDRINA                                           ADMINISTRACAO                 
+00267396 053.0 PR LONDRINA                                           ADMINISTRACAO                 
+00059542 053.3 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00324555 053.3 AM MANAUS                                             ADMINISTRACAO                 
+00195348 053.3 AM MANAUS                                             ADMINISTRACAO                 
+00350312 053.3 MG VICOSA                                             ADMINISTRACAO                 
+00060631 053.3 MG VICOSA                                             ADMINISTRACAO                 
+00267657 053.3 MG VICOSA                                             ADMINISTRACAO                 
+00379237 053.3 PR LONDRINA                                           ADMINISTRACAO                 
 00301105 053.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00049975 053.5 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00453379 053.5 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00115074 053.5 AM MANAUS                                             ADMINISTRACAO                 
+00321747 053.5 PR LONDRINA                                           ADMINISTRACAO                 
+00451403 053.5 PR LONDRINA                                           ADMINISTRACAO                 
+00032247 053.5 PR LONDRINA                                           ADMINISTRACAO                 
+00301840 053.5 PR LONDRINA                                           ADMINISTRACAO                 
+00030272 053.5 PR LONDRINA                                           ADMINISTRACAO                 
+00229720 053.5 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00190046 053.5 PR CURITIBA                                           ADMINISTRACAO                 
+00454137 053.5 PR CURITIBA                                           ADMINISTRACAO                 
 00123883 053.8 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
 00124947 053.8 DF BRASILIA                                           ADMINISTRACAO                 
+00190369 053.8 DF BRASILIA                                           ADMINISTRACAO                 
+00070951 053.8 DF BRASILIA                                           ADMINISTRACAO                 
+00305092 053.8 DF BRASILIA                                           ADMINISTRACAO                 
+00378110 053.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00357755 053.8 PI TERESINA                                           ADMINISTRACAO                 
+00179989 053.8 MG VICOSA                                             ADMINISTRACAO                 
+00037256 053.8 MG VICOSA                                             ADMINISTRACAO                 
+00294443 053.8 PR LONDRINA                                           ADMINISTRACAO                 
+00284633 053.8 PR LONDRINA                                           ADMINISTRACAO                 
+00392635 054.0 DF BRASILIA                                           ADMINISTRACAO                 
+00299622 054.0 MG VICOSA                                             ADMINISTRACAO                 
+00429859 054.0 PR LONDRINA                                           ADMINISTRACAO                 
+00374514 054.0 PR CURITIBA                                           ADMINISTRACAO                 
+00436352 054.0 PR CURITIBA                                           ADMINISTRACAO                 
+00464932 054.3 MG VICOSA                                             ADMINISTRACAO                 
+00327058 054.3 MG VICOSA                                             ADMINISTRACAO                 
+00114641 054.3 MG VICOSA                                             ADMINISTRACAO                 
+00106091 054.3 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00279415 054.3 PR CURITIBA                                           ADMINISTRACAO                 
+00267147 054.5 DF BRASILIA                                           ADMINISTRACAO                 
+00051603 054.5 PI TERESINA                                           ADMINISTRACAO                 
+00078289 054.5 MG VICOSA                                             ADMINISTRACAO                 
+00062175 054.5 PR LONDRINA                                           ADMINISTRACAO                 
+00332468 054.5 PR LONDRINA                                           ADMINISTRACAO                 
+00084187 054.5 PR CURITIBA                                           ADMINISTRACAO                 
+00034474 054.5 PR CURITIBA                                           ADMINISTRACAO                 
+00414861 054.8 DF BRASILIA                                           ADMINISTRACAO                 
+00005213 054.8 DF BRASILIA                                           ADMINISTRACAO                 
+00022350 054.8 DF BRASILIA                                           ADMINISTRACAO                 
+00452861 054.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00145535 054.8 AM MANAUS                                             ADMINISTRACAO                 
+00294257 054.8 MG VICOSA                                             ADMINISTRACAO                 
+00271484 054.8 MG VICOSA                                             ADMINISTRACAO                 
+00123309 054.8 PR CURITIBA                                           ADMINISTRACAO                 
+00369726 055.0 DF BRASILIA                                           ADMINISTRACAO                 
+00115010 055.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00182292 055.0 MG VICOSA                                             ADMINISTRACAO                 
+00205606 055.0 PR CURITIBA                                           ADMINISTRACAO                 
 00280714 055.3 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00281116 055.3 DF BRASILIA                                           ADMINISTRACAO                 
+00053055 055.3 MG VICOSA                                             ADMINISTRACAO                 
+00012390 055.3 MG VICOSA                                             ADMINISTRACAO                 
+00255793 055.3 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00088839 055.5 DF BRASILIA                                           ADMINISTRACAO                 
+00130673 055.5 DF BRASILIA                                           ADMINISTRACAO                 
+00067407 055.5 DF BRASILIA                                           ADMINISTRACAO                 
+00425270 055.5 MG VICOSA                                             ADMINISTRACAO                 
+00292061 055.5 PR LONDRINA                                           ADMINISTRACAO                 
+00276000 055.5 PR LONDRINA                                           ADMINISTRACAO                 
 00382513 055.8 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
 00124597 055.8 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00280726 055.8 DF BRASILIA                                           ADMINISTRACAO                 
+00085413 055.8 AM MANAUS                                             ADMINISTRACAO                 
+00311610 055.8 AM MANAUS                                             ADMINISTRACAO                 
+00280009 055.8 PI TERESINA                                           ADMINISTRACAO                 
+00461815 055.8 MG VICOSA                                             ADMINISTRACAO                 
+00348614 055.8 PR CURITIBA                                           ADMINISTRACAO                 
+00140865 055.8 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
 00066198 056.0 MT CUIABA                                             ADMINISTRACAO                 
+00153042 056.0 PI TERESINA                                           ADMINISTRACAO                 
+00048121 056.0 MG VICOSA                                             ADMINISTRACAO                 
+00246816 056.0 MG VICOSA                                             ADMINISTRACAO                 
+00071811 056.0 PR LONDRINA                                           ADMINISTRACAO                 
+00003916 056.0 PR LONDRINA                                           ADMINISTRACAO                 
+00048161 056.0 PR CURITIBA                                           ADMINISTRACAO                 
+00384724 056.3 DF BRASILIA                                           ADMINISTRACAO                 
+00253930 056.3 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00051336 056.3 MG VICOSA                                             ADMINISTRACAO                 
+00368930 056.3 MG VICOSA                                             ADMINISTRACAO                 
+00361018 056.3 PR LONDRINA                                           ADMINISTRACAO                 
+00171898 056.3 PR LONDRINA                                           ADMINISTRACAO                 
+00258502 056.3 PR LONDRINA                                           ADMINISTRACAO                 
+00265994 056.5 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00228864 056.5 AM MANAUS                                             ADMINISTRACAO                 
+00433602 056.8 DF BRASILIA                                           ADMINISTRACAO                 
+00021798 056.8 DF BRASILIA                                           ADMINISTRACAO                 
+00105583 056.8 DF BRASILIA                                           ADMINISTRACAO                 
+00005659 056.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00022724 056.8 PR LONDRINA                                           ADMINISTRACAO                 
+00425187 056.8 PR LONDRINA                                           ADMINISTRACAO                 
+00214949 056.8 PR CURITIBA                                           ADMINISTRACAO                 
+00443742 057.0 DF BRASILIA                                           ADMINISTRACAO                 
+00310850 057.0 DF BRASILIA                                           ADMINISTRACAO                 
+00081689 057.0 DF BRASILIA                                           ADMINISTRACAO                 
+00076729 057.0 PI TERESINA                                           ADMINISTRACAO                 
+00401904 057.0 MG VICOSA                                             ADMINISTRACAO                 
+00214669 057.0 PR LONDRINA                                           ADMINISTRACAO                 
+00202039 057.0 PR LONDRINA                                           ADMINISTRACAO                 
 00131227 057.3 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00068791 057.3 DF BRASILIA                                           ADMINISTRACAO                 
+00387819 057.3 AM MANAUS                                             ADMINISTRACAO                 
 00394101 057.5 DF BRASILIA                                           ADMINISTRACAO                 
+00228543 057.5 DF BRASILIA                                           ADMINISTRACAO                 
+00164090 057.5 DF BRASILIA                                           ADMINISTRACAO                 
+00080915 057.5 AM MANAUS                                             ADMINISTRACAO                 
+00214421 057.5 MG VICOSA                                             ADMINISTRACAO                 
+00253017 057.5 PR LONDRINA                                           ADMINISTRACAO                 
+00046627 057.5 PR LONDRINA                                           ADMINISTRACAO                 
 00351991 057.8 MT CUIABA                                             ADMINISTRACAO                 
+00311853 057.8 PI TERESINA                                           ADMINISTRACAO                 
+00094462 057.8 PR LONDRINA                                           ADMINISTRACAO                 
+00317407 058.0 DF BRASILIA                                           ADMINISTRACAO                 
 00120699 058.3 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00212501 058.3 DF BRASILIA                                           ADMINISTRACAO                 
+00225218 058.3 PR LONDRINA                                           ADMINISTRACAO                 
+00007008 058.3 PR LONDRINA                                           ADMINISTRACAO                 
+00122665 058.3 PR LONDRINA                                           ADMINISTRACAO                 
+00081658 058.3 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00438411 058.3 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00355550 058.5 DF BRASILIA                                           ADMINISTRACAO                 
+00348074 058.5 DF BRASILIA                                           ADMINISTRACAO                 
+00425803 058.5 DF BRASILIA                                           ADMINISTRACAO                 
+00152828 058.5 DF BRASILIA                                           ADMINISTRACAO                 
+00433353 058.5 DF BRASILIA                                           ADMINISTRACAO                 
+00261845 058.5 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00410926 058.5 MG VICOSA                                             ADMINISTRACAO                 
+00014281 058.5 MG VICOSA                                             ADMINISTRACAO                 
+00027309 058.5 MG VICOSA                                             ADMINISTRACAO                 
+00351965 058.5 PR LONDRINA                                           ADMINISTRACAO                 
+00210753 058.5 PR CURITIBA                                           ADMINISTRACAO                 
 00409557 058.8 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00169350 058.8 DF BRASILIA                                           ADMINISTRACAO                 
+00401313 058.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00417884 058.8 AM MANAUS                                             ADMINISTRACAO                 
+00114544 058.8 AM MANAUS                                             ADMINISTRACAO                 
+00030824 058.8 MG VICOSA                                             ADMINISTRACAO                 
+00213197 058.8 MG VICOSA                                             ADMINISTRACAO                 
+00367133 058.8 MG VICOSA                                             ADMINISTRACAO                 
+00454475 058.8 PR LONDRINA                                           ADMINISTRACAO                 
+00313733 058.8 PR LONDRINA                                           ADMINISTRACAO                 
+00138277 058.8 PR LONDRINA                                           ADMINISTRACAO                 
+00312745 059.0 AM MANAUS                                             ADMINISTRACAO                 
+00076327 059.0 MG VICOSA                                             ADMINISTRACAO                 
+00352040 059.3 DF BRASILIA                                           ADMINISTRACAO                 
+00457856 059.3 MG VICOSA                                             ADMINISTRACAO                 
+00166169 059.3 PR LONDRINA                                           ADMINISTRACAO                 
+00379843 059.3 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00452191 059.5 DF BRASILIA                                           ADMINISTRACAO                 
+00395287 059.5 AM MANAUS                                             ADMINISTRACAO                 
+00130949 059.5 AM MANAUS                                             ADMINISTRACAO                 
+00108933 059.5 MG VICOSA                                             ADMINISTRACAO                 
+00382884 059.5 MG VICOSA                                             ADMINISTRACAO                 
+00173538 059.8 DF BRASILIA                                           ADMINISTRACAO                 
+00162535 059.8 DF BRASILIA                                           ADMINISTRACAO                 
+00063641 059.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00044810 059.8 MG VICOSA                                             ADMINISTRACAO                 
+00082456 059.8 PR LONDRINA                                           ADMINISTRACAO                 
+00198972 059.8 PR LONDRINA                                           ADMINISTRACAO                 
+00417697 059.8 PR CURITIBA                                           ADMINISTRACAO                 
 00319299 060.0 MT CUIABA                                             ADMINISTRACAO                 
+00441443 060.0 DF BRASILIA                                           ADMINISTRACAO                 
+00003861 060.0 DF BRASILIA                                           ADMINISTRACAO                 
+00226563 060.0 PI TERESINA                                           ADMINISTRACAO                 
+00106751 060.0 MG VICOSA                                             ADMINISTRACAO                 
+00096889 060.0 MG VICOSA                                             ADMINISTRACAO                 
+00453786 060.0 MG VICOSA                                             ADMINISTRACAO                 
+00021433 060.3 DF BRASILIA                                           ADMINISTRACAO                 
+00315733 060.3 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00012753 060.3 AM MANAUS                                             ADMINISTRACAO                 
+00183839 060.3 AM MANAUS                                             ADMINISTRACAO                 
+00103618 060.3 MG VICOSA                                             ADMINISTRACAO                 
+00107705 060.3 MG VICOSA                                             ADMINISTRACAO                 
+00265237 060.3 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00230931 060.5 DF BRASILIA                                           ADMINISTRACAO                 
+00469266 060.5 DF BRASILIA                                           ADMINISTRACAO                 
+00252985 060.5 MG VICOSA                                             ADMINISTRACAO                 
+00374759 060.5 MG VICOSA                                             ADMINISTRACAO                 
+00059605 060.5 PR LONDRINA                                           ADMINISTRACAO                 
+00228222 060.8 DF BRASILIA                                           ADMINISTRACAO                 
+00295148 060.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00122455 060.8 AM MANAUS                                             ADMINISTRACAO                 
+00094490 060.8 PR LONDRINA                                           ADMINISTRACAO                 
+00005885 060.8 PR CURITIBA                                           ADMINISTRACAO                 
+00073527 061.0 AM MANAUS                                             ADMINISTRACAO                 
+00142597 061.0 AM MANAUS                                             ADMINISTRACAO                 
+00004194 061.0 MG VICOSA                                             ADMINISTRACAO                 
+00212488 061.0 MG VICOSA                                             ADMINISTRACAO                 
+00189407 061.0 MG VICOSA                                             ADMINISTRACAO                 
+00052017 061.0 PR LONDRINA                                           ADMINISTRACAO                 
 00086358 061.3 DF BRASILIA                                           ADMINISTRACAO                 
+00266889 061.3 DF BRASILIA                                           ADMINISTRACAO                 
+00200258 061.3 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00045171 061.3 PI TERESINA                                           ADMINISTRACAO                 
+00329987 061.3 PI TERESINA                                           ADMINISTRACAO                 
+00447781 061.3 MG VICOSA                                             ADMINISTRACAO                 
+00191157 061.3 PR LONDRINA                                           ADMINISTRACAO                 
+00140465 061.3 PR LONDRINA                                           ADMINISTRACAO                 
+00256471 061.3 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
 00058175 061.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00164535 061.5 DF BRASILIA                                           ADMINISTRACAO                 
+00403081 061.5 AM MANAUS                                             ADMINISTRACAO                 
+00417510 061.5 MG VICOSA                                             ADMINISTRACAO                 
+00165788 061.8 AM MANAUS                                             ADMINISTRACAO                 
+00259302 061.8 MG VICOSA                                             ADMINISTRACAO                 
+00215769 061.8 MG VICOSA                                             ADMINISTRACAO                 
+00256727 061.8 PR LONDRINA                                           ADMINISTRACAO                 
+00228957 061.8 PR LONDRINA                                           ADMINISTRACAO                 
+00275900 061.8 PR LONDRINA                                           ADMINISTRACAO                 
+00376528 061.8 PR LONDRINA                                           ADMINISTRACAO                 
+00435515 061.8 PR CURITIBA                                           ADMINISTRACAO                 
+00116081 062.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00173481 062.0 MG VICOSA                                             ADMINISTRACAO                 
+00348112 062.0 PR LONDRINA                                           ADMINISTRACAO                 
+00428336 062.3 DF BRASILIA                                           ADMINISTRACAO                 
+00112212 062.3 DF BRASILIA                                           ADMINISTRACAO                 
+00433866 062.3 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
 00386649 062.5 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00278666 062.5 DF BRASILIA                                           ADMINISTRACAO                 
+00163934 062.5 DF BRASILIA                                           ADMINISTRACAO                 
+00109120 062.5 DF BRASILIA                                           ADMINISTRACAO                 
+00346552 062.5 AM MANAUS                                             ADMINISTRACAO                 
+00080507 062.5 PI TERESINA                                           ADMINISTRACAO                 
+00226760 062.5 PR LONDRINA                                           ADMINISTRACAO                 
+00302587 062.5 PR CURITIBA                                           ADMINISTRACAO                 
 00150205 062.8 DF BRASILIA                                           ADMINISTRACAO                 
+00139669 062.8 DF BRASILIA                                           ADMINISTRACAO                 
+00157560 062.8 AM MANAUS                                             ADMINISTRACAO                 
+00233237 062.8 MG VICOSA                                             ADMINISTRACAO                 
+00460650 063.0 DF BRASILIA                                           ADMINISTRACAO                 
+00398699 063.0 PR LONDRINA                                           ADMINISTRACAO                 
+00134115 063.0 PR CURITIBA                                           ADMINISTRACAO                 
+00169792 063.3 DF BRASILIA                                           ADMINISTRACAO                 
+00359807 063.3 PR LONDRINA                                           ADMINISTRACAO                 
+00077617 063.5 DF BRASILIA                                           ADMINISTRACAO                 
+00166187 063.5 DF BRASILIA                                           ADMINISTRACAO                 
+00052638 063.5 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00241850 063.5 PR LONDRINA                                           ADMINISTRACAO                 
+00335967 063.8 DF BRASILIA                                           ADMINISTRACAO                 
+00145396 063.8 AM MANAUS                                             ADMINISTRACAO                 
+00217201 063.8 AM MANAUS                                             ADMINISTRACAO                 
+00333852 063.8 PR LONDRINA                                           ADMINISTRACAO                 
+00272718 064.0 MG VICOSA                                             ADMINISTRACAO                 
+00414264 064.0 PR LONDRINA                                           ADMINISTRACAO                 
+00277132 064.3 DF BRASILIA                                           ADMINISTRACAO                 
+00450981 064.5 DF BRASILIA                                           ADMINISTRACAO                 
+00250589 064.5 DF BRASILIA                                           ADMINISTRACAO                 
+00309584 064.5 DF BRASILIA                                           ADMINISTRACAO                 
+00448374 064.8 DF BRASILIA                                           ADMINISTRACAO                 
+00384104 064.8 MG VICOSA                                             ADMINISTRACAO                 
+00024986 064.8 PR LONDRINA                                           ADMINISTRACAO                 
+00206712 064.8 PR LONDRINA                                           ADMINISTRACAO                 
+00456165 065.0 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00255215 065.0 PR LONDRINA                                           ADMINISTRACAO                 
+00339678 065.0 PR LONDRINA                                           ADMINISTRACAO                 
 00301503 065.3 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00188515 065.3 PR LONDRINA                                           ADMINISTRACAO                 
+00200146 065.5 AM MANAUS                                             ADMINISTRACAO                 
+00414859 065.5 MG VICOSA                                             ADMINISTRACAO                 
+00231457 065.5 PR LONDRINA                                           ADMINISTRACAO                 
+00382871 065.8 DF BRASILIA                                           ADMINISTRACAO                 
+00336096 065.8 DF BRASILIA                                           ADMINISTRACAO                 
+00273070 065.8 PR LONDRINA                                           ADMINISTRACAO                 
+00325691 066.0 PI TERESINA                                           ADMINISTRACAO                 
+00056650 066.0 PI TERESINA                                           ADMINISTRACAO                 
+00025193 066.3 DF BRASILIA                                           ADMINISTRACAO                 
+00346047 066.3 DF BRASILIA                                           ADMINISTRACAO                 
+00432962 066.3 PR LONDRINA                                           ADMINISTRACAO                 
+00349722 066.5 PR CURITIBA                                           ADMINISTRACAO                 
 00440588 066.8 MT PRIMAVERA DO LESTE                                 ADMINISTRACAO                 
+00416897 066.8 DF BRASILIA                                           ADMINISTRACAO                 
+00464169 066.8 PR LONDRINA                                           ADMINISTRACAO                 
 00113812 067.3 MT CUIABA                                             ADMINISTRACAO                 
 00213829 067.3 DF BRASILIA                                           ADMINISTRACAO                 
+00240915 067.3 DF BRASILIA                                           ADMINISTRACAO                 
+00219990 067.3 PR LONDRINA                                           ADMINISTRACAO                 
+00453200 068.0 DF BRASILIA                                           ADMINISTRACAO                 
+00464249 068.0 AM MANAUS                                             ADMINISTRACAO                 
+00105494 068.0 PR CURITIBA                                           ADMINISTRACAO                 
+00286772 068.3 DF BRASILIA                                           ADMINISTRACAO                 
+00169983 068.3 AM MANAUS                                             ADMINISTRACAO                 
+00090902 068.3 PR LONDRINA                                           ADMINISTRACAO                 
+00112768 068.3 PR LONDRINA                                           ADMINISTRACAO                 
+00114415 068.8 PI TERESINA                                           ADMINISTRACAO                 
+00105072 068.8 MG VICOSA                                             ADMINISTRACAO                 
+00052319 068.8 PR CURITIBA                                           ADMINISTRACAO                 
+00205218 068.8 PR CURITIBA                                           ADMINISTRACAO                 
+00424746 069.0 DF BRASILIA                                           ADMINISTRACAO                 
 00350655 069.3 MT CUIABA                                             ADMINISTRACAO                 
+00195190 069.3 DF BRASILIA                                           ADMINISTRACAO                 
+00092076 069.3 DF BRASILIA                                           ADMINISTRACAO                 
+00129163 069.3 PR LONDRINA                                           ADMINISTRACAO                 
+00017250 069.5 DF BRASILIA                                           ADMINISTRACAO                 
+00406521 069.5 DF BRASILIA                                           ADMINISTRACAO                 
+00196197 069.8 DF BRASILIA                                           ADMINISTRACAO                 
+00216227 069.8 DF BRASILIA                                           ADMINISTRACAO                 
+00428679 069.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00447253 070.0 DF BRASILIA                                           ADMINISTRACAO                 
+00324583 070.0 DF BRASILIA                                           ADMINISTRACAO                 
+00167165 070.0 DF BRASILIA                                           ADMINISTRACAO                 
+00149018 070.0 DF BRASILIA                                           ADMINISTRACAO                 
+00397177 070.0 DF BRASILIA                                           ADMINISTRACAO                 
 00382868 070.3 DF BRASILIA                                           ADMINISTRACAO                 
+00411299 070.8 SE SAO CRISTOVAO                                      ADMINISTRACAO                 
+00463527 071.5 DF BRASILIA                                           ADMINISTRACAO                 
+00444743 071.8 PR CURITIBA                                           ADMINISTRACAO                 
+00149220 072.0 DF BRASILIA                                           ADMINISTRACAO                 
 00426064 072.3 MT CUIABA                                             ADMINISTRACAO                 
+00350881 072.3 DF BRASILIA                                           ADMINISTRACAO                 
+00114282 072.5 DF BRASILIA                                           ADMINISTRACAO                 
+00223710 072.8 DF BRASILIA                                           ADMINISTRACAO                 
+00347068 073.3 DF BRASILIA                                           ADMINISTRACAO                 
+00060648 073.5 DF BRASILIA                                           ADMINISTRACAO                 
+00273715 073.8 PR CURITIBA                                           ADMINISTRACAO                 
+00092372 074.8 PR CURITIBA                                           ADMINISTRACAO                 
+00444331 076.8 DF BRASILIA                                           ADMINISTRACAO                 
+00217886 076.8 DF BRASILIA                                           ADMINISTRACAO                 
+00347810 078.3 PR LONDRINA                                           ADMINISTRACAO                 
+00201952 079.5 PR SAO JOSE DOS PINHAIS                               ADMINISTRACAO                 
+00082780 084.3 PR LONDRINA                                           ADMINISTRACAO                 
