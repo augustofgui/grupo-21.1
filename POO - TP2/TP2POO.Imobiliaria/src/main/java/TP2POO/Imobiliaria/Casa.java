@@ -9,10 +9,16 @@ public class Casa extends Imovel {
         this.sala_jantar = sala_jantar;
     }
 
+    public void setAndares(int andares) {
+        this.andares = andares;
+    }
+    public void setSala_jantar(boolean sala_jantar) {
+        this.sala_jantar = sala_jantar;
+    }
+
     public int getAndares() {
         return andares;
     }
-
     public boolean isSala_jantar() {
         return sala_jantar;
     }
