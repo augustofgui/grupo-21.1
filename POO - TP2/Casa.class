@@ -1,0 +1,23 @@
+public class Casa extends Imovel {
+    private boolean andares, sala_jantar;
+    
+    public Casa(float _valor, String _proprietario, String _rua, String _bairro, String _cidade, int _numero, int _quartos, int _banheiros, boolean _andares, boolean _sala_jantar){
+        super (_valor, _proprietario, _rua, _bairro, _cidade, _numero, _quartos, _banheiros);
+        this.andares = _andares;
+        this.sala_jantar = _sala_jantar;
+    }
+
+    public getAndares (){
+        return andares;
+    }
+    public getSalaJantar(){
+        return sala_jantar;
+    }
+
+    @Override
+    public String toString(){
+        return "    Proprietário: " + this.proprietario + "\nValor: "  + this.valor
+        + "\nNúmero de quartos: " + this.quartos + "\nRua: " + this.rua +
+        "\nBairro: " + this.bairro + "\nCidade: " + this.cidade + "\nAndares: " + this.andares + "\n";
+    }
+}

@@ -1,0 +1,47 @@
+public class Imovel {
+    private float valor;
+    private String proprietario, rua, bairro, cidade;
+    private int numero, quartos, banheiros;
+
+    public Imovel (float _valor, String _proprietario, String _rua, String _bairro, String _cidade, int _numero, int _quartos, int _banheiros){
+        this.valor = _valor;
+        this.proprietario = _proprietario;
+        this.rua = _rua;
+        this.bairro = _bairro;
+        this.cidade = _cidade;
+        this.numero = _numero;
+        this.quartos = _quartos;
+        this.banheiros = _banheiros;
+    }
+
+    public float getValor(){
+        return valor;
+    }
+    public String getProprietario(){
+        return proprietario;
+    }
+    public String getRua(){
+        return rua;
+    }
+    public String getBairro(){
+        return bairro;
+    }
+    public String getCidade(){
+        return cidade;
+    }
+    public int getNumero(){
+        return numero;
+    }
+    public int getQuartos(){
+        return quartos;
+    }
+    public int getBanheiros(){
+        return banheiros;
+    }
+
+    public String toString(){
+        return "    Proprietário: " + this.proprietario + "\nValor: "  + this.valor
+        + "\nNúmero de quartos: " + this.quartos + "\nRua: " + this.rua +
+        "\nBairro: " + this.bairro + "\nCidade: " + this.cidade + "\n";
+    }
+}
