@@ -11,22 +11,34 @@ public class Chacara extends Imovel {
         this.piscina = piscina;
     }
 
+    public void setSalao_festa(boolean salao_festa) {
+        this.salao_festa = salao_festa;
+    }
+    public void setSalao_jogos(boolean salao_jogos) {
+        this.salao_jogos = salao_jogos;
+    }
+    public void setCampo_futebol(boolean campo_futebol) {
+        this.campo_futebol = campo_futebol;
+    }
+    public void setChurrasqueira(boolean churrasqueira) {
+        this.churrasqueira = churrasqueira;
+    }
+    public void setPiscina(boolean piscina) {
+        this.piscina = piscina;
+    }
+
     public boolean isSalao_festa() {
         return salao_festa;
     }
-
     public boolean isSalao_jogos() {
         return salao_jogos;
     }
-
     public boolean isCampo_futebol() {
         return campo_futebol;
     }
-
     public boolean isChurrasqueira() {
         return churrasqueira;
     }
-
     public boolean isPiscina() {
         return piscina;
     }

@@ -12,18 +12,28 @@ public class Apartamento extends Imovel {
         this.sacada = sacada;
     }
 
+    public void setAndar(int andar) {
+        this.andar = andar;
+    }
+    public void setTaxa_condominio(float taxa_condominio) {
+        this.taxa_condominio = taxa_condominio;
+    }
+    public void setElevador(boolean elevador) {
+        this.elevador = elevador;
+    }
+    public void setSacada(boolean sacada) {
+        this.sacada = sacada;
+    }
+
     public int getAndar() {
         return andar;
     }
-
     public float getTaxa_condominio() {
         return taxa_condominio;
     }
-
     public boolean isElevador() {
         return elevador;
     }
-
     public boolean isSacada() {
         return sacada;
     }
