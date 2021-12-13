@@ -1,5 +1,5 @@
 package TP2POO.Imobiliaria;
-public class Imovel {
+public class Imovel implements Comparable <Imovel> {
     private final float valor;
     private String proprietario, rua, bairro, cidade;
     private int numero, quartos, banheiros;
@@ -68,4 +68,10 @@ public class Imovel {
         + "\nNúmero de quartos: " + this.getQuartos() + "\nRua: " + this.getRua() +
         "\nBairro: " + this.getBairro() + "\nCidade: " + this.getCidade() + "\n";
     }
+
+    public int compareTo(Imovel imovel)
+    {
+        return Float.compare(this.getValor(), imovel.getValor());
+    }
+
 }

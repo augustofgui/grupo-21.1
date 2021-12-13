@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Imobiliaria {
     public static void main(String[] args) {
@@ -40,6 +41,38 @@ public class Imobiliaria {
         }
     }
 
+    public static void ordenarCrescente(ArrayList<Imovel> imoveis){
+        Collections.sort(imoveis);
+    }
+
+    public static ArrayList<Imovel> buscarPorTipo(ArrayList<Imovel> imoveis){
+        ArrayList<Imovel> resultado = new ArrayList<Imovel>();
+        int tipo_imovel = 0; // - > placeholder
+
+        switch(tipo_imovel){
+            case 1 :
+                for (Imovel imovel : imoveis){
+                    if (imovel instanceof Casa)
+                        resultado.add(imovel);
+                }
+                break;
+            case 2 :
+                for (Imovel imovel : imoveis){
+                    if (imovel instanceof Apartamento)
+                        resultado.add(imovel);
+                }
+                break;
+            case 3 :
+                for (Imovel imovel : imoveis){
+                    if (imovel instanceof Chacara)
+                        resultado.add(imovel);
+                }
+                break;
+        }
+
+        return resultado;
+    }
+
     public static ArrayList<Imovel> buscarProprietario(ArrayList<Imovel> imoveis) {
         ArrayList<Imovel> resultado = new ArrayList<Imovel>();
         for (Imovel imovel : imoveis) {
@@ -53,7 +86,7 @@ public class Imobiliaria {
     public static ArrayList<Imovel> buscarPrecoMaximo(ArrayList<Imovel> imoveis) {
         ArrayList<Imovel> resultado = new ArrayList<Imovel>();
         for (Imovel imovel : imoveis) {
-            if (imovel.getValor() < 1000000) // - > placeholder value
+            if (imovel.getValor() < 1000000) // - > placeholder
                 resultado.add(imovel);
         }
 
@@ -73,7 +106,7 @@ public class Imobiliaria {
     public static ArrayList<Imovel> buscarQuartos(ArrayList<Imovel> imoveis) {
         ArrayList<Imovel> resultado = new ArrayList<Imovel>();
         for (Imovel imovel : imoveis) {
-            if (imovel.getQuartos() < 1000000) // - > placeholder value
+            if (imovel.getQuartos() < 1000000) // - > placeholder
                 resultado.add(imovel);
         }
 
