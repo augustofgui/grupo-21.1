@@ -76,11 +76,11 @@ public class Imobiliaria {
             FileWriter colecao = new FileWriter("colecao_imoveis.txt");
             for (Imovel imovel : imoveis) {
                 if (imovel instanceof Casa)
-                    colecao.write(writeCasa(imovel) + "\n");
+                    colecao.write(writeCasa(imovel));
                 else if (imovel instanceof Apartamento)
-                    colecao.write(writeApartamento(imovel) + "\n");
+                    colecao.write(writeApartamento(imovel));
                 else if (imovel instanceof Chacara)
-                    colecao.write(writeChacara(imovel) + "\n");
+                    colecao.write(writeChacara(imovel));
             }
             colecao.close();
             System.out.println("Coleção salva em colecao_imoveis.txt!");
@@ -94,7 +94,7 @@ public class Imobiliaria {
         return "casa;" + imovel.getValor() + ";" + imovel.getProprietario() + ";" + imovel.getRua() + ";"
                 + imovel.getBairro() + ";" + imovel.getCidade() + ";" + imovel.getNumero() + ";" + imovel.getQuartos()
                 + ";" + imovel.getBanheiros() + ";" + ((Casa) imovel).getAndares() + ";"
-                + booleanToInt(((Casa) imovel).isSala_jantar()) + ";";
+                + booleanToInt(((Casa) imovel).isSala_jantar()) + ";\n";
     }
 
     public static String writeApartamento(Imovel imovel) {
@@ -103,7 +103,7 @@ public class Imobiliaria {
                 + ";" + imovel.getBanheiros() + ";" + ((Apartamento) imovel).getAndar() + ";"
                 + ((Apartamento) imovel).getTaxa_condominio() + ";" + booleanToInt(((Apartamento) imovel).isElevador())
                 + ";"
-                + booleanToInt(((Apartamento) imovel).isSacada()) + ";";
+                + booleanToInt(((Apartamento) imovel).isSacada()) + ";\n";
     }
 
     public static String writeChacara(Imovel imovel) {
@@ -113,7 +113,7 @@ public class Imobiliaria {
                 + booleanToInt(((Chacara) imovel).isSalao_jogos()) + ";"
                 + booleanToInt(((Chacara) imovel).isCampo_futebol()) + ";"
                 + booleanToInt(((Chacara) imovel).isChurrasqueira()) + ";"
-                + booleanToInt(((Chacara) imovel).isPiscina()) + ";";
+                + booleanToInt(((Chacara) imovel).isPiscina()) + ";\n";
     }
 
     public static ArrayList<Imovel> buscarProprietario(ArrayList<Imovel> imoveis) {
