@@ -41,10 +41,9 @@ public class Imobiliaria {
             System.out.println("ERRO : Arquivo não encontrado.\n");
             e.printStackTrace();
         }
-    }
 
-    public static void ordenarCrescente(ArrayList<Imovel> imoveis) {
-        Collections.sort(imoveis);
+        ordenarDecrescente(imoveis);
+        printColecao(imoveis);
     }
 
     public static ArrayList<Imovel> buscarPorTipo(ArrayList<Imovel> imoveis) {
@@ -161,6 +160,14 @@ public class Imobiliaria {
         }
 
         return resultado;
+    }
+    
+    public static void ordenarCrescente(ArrayList<Imovel> imoveis) {
+        Collections.sort(imoveis);
+    }
+
+    public static void ordenarDecrescente(ArrayList<Imovel> imoveis) {
+        Collections.sort(imoveis, Collections.reverseOrder());
     }
 
     public static void printColecao(ArrayList<Imovel> imoveis) {
