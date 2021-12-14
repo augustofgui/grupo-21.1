@@ -21,18 +21,18 @@ public class Imobiliaria {
                 if (data[0].equals("casa")) // - > Criação do objeto e push_back no vetor polimórfico de imóveis
                     imoveis.add(new Casa(Float.parseFloat(data[1]), data[2], data[3], data[4], data[5],
                             Integer.parseInt(data[6]), Integer.parseInt(data[7]), Integer.parseInt(data[8]),
-                            Integer.parseInt(data[9]), Boolean.parseBoolean(data[10])));
+                            Integer.parseInt(data[9]), intToBoolean(data[10])));
                 else if (data[0].equals("apartamento"))
                     imoveis.add(new Apartamento(Float.parseFloat(data[1]), data[2], data[3], data[4], data[5],
                             Integer.parseInt(data[6]), Integer.parseInt(data[7]), Integer.parseInt(data[8]),
-                            Integer.parseInt(data[9]), Float.parseFloat(data[10]), Boolean.parseBoolean(data[11]),
-                            Boolean.parseBoolean(data[12])));
+                            Integer.parseInt(data[9]), Float.parseFloat(data[10]), intToBoolean(data[11]),
+                            intToBoolean(data[12])));
                 else if (data[0].equals("chacara"))
                     imoveis.add(new Chacara(Float.parseFloat(data[1]), data[2], data[3], data[4], data[5],
                             Integer.parseInt(data[6]), Integer.parseInt(data[7]), Integer.parseInt(data[8]),
-                            Boolean.parseBoolean(data[9]), Boolean.parseBoolean(data[10]),
-                            Boolean.parseBoolean(data[11]), Boolean.parseBoolean(data[12]),
-                            Boolean.parseBoolean(data[13])));
+                            intToBoolean(data[9]), intToBoolean(data[10]),
+                            intToBoolean(data[11]), intToBoolean(data[12]),
+                            intToBoolean(data[13])));
                 else
                     System.out.println("ERRO : Imóvel inválido.\n");
             }
@@ -41,9 +41,6 @@ public class Imobiliaria {
             System.out.println("ERRO : Arquivo não encontrado.\n");
             e.printStackTrace();
         }
-
-        ordenarDecrescente(imoveis);
-        printColecao(imoveis);
     }
 
     public static ArrayList<Imovel> buscarPorTipo(ArrayList<Imovel> imoveis) {
@@ -97,23 +94,26 @@ public class Imobiliaria {
         return "casa;" + imovel.getValor() + ";" + imovel.getProprietario() + ";" + imovel.getRua() + ";"
                 + imovel.getBairro() + ";" + imovel.getCidade() + ";" + imovel.getNumero() + ";" + imovel.getQuartos()
                 + ";" + imovel.getBanheiros() + ";" + ((Casa) imovel).getAndares() + ";"
-                + ((Casa) imovel).isSala_jantar();
+                + booleanToInt(((Casa) imovel).isSala_jantar()) + ";";
     }
 
     public static String writeApartamento(Imovel imovel) {
         return "apartamento;" + imovel.getValor() + ";" + imovel.getProprietario() + ";" + imovel.getRua() + ";"
                 + imovel.getBairro() + ";" + imovel.getCidade() + ";" + imovel.getNumero() + ";" + imovel.getQuartos()
                 + ";" + imovel.getBanheiros() + ";" + ((Apartamento) imovel).getAndar() + ";"
-                + ((Apartamento) imovel).getTaxa_condominio() + ";" + ((Apartamento) imovel).isElevador() + ";"
-                + ((Apartamento) imovel).isSacada();
+                + ((Apartamento) imovel).getTaxa_condominio() + ";" + booleanToInt(((Apartamento) imovel).isElevador())
+                + ";"
+                + booleanToInt(((Apartamento) imovel).isSacada()) + ";";
     }
 
     public static String writeChacara(Imovel imovel) {
         return "chacara;" + imovel.getValor() + ";" + imovel.getProprietario() + ";" + imovel.getRua() + ";"
                 + imovel.getBairro() + ";" + imovel.getCidade() + ";" + imovel.getNumero() + ";" + imovel.getQuartos()
-                + ";" + imovel.getBanheiros() + ";" + ((Chacara) imovel).isSalao_festa() + ";"
-                + ((Chacara) imovel).isSalao_jogos() + ";" + ((Chacara) imovel).isCampo_futebol() + ";"
-                + ((Chacara) imovel).isChurrasqueira() + ";" + ((Chacara) imovel).isPiscina();
+                + ";" + imovel.getBanheiros() + ";" + booleanToInt(((Chacara) imovel).isSalao_festa()) + ";"
+                + booleanToInt(((Chacara) imovel).isSalao_jogos()) + ";"
+                + booleanToInt(((Chacara) imovel).isCampo_futebol()) + ";"
+                + booleanToInt(((Chacara) imovel).isChurrasqueira()) + ";"
+                + booleanToInt(((Chacara) imovel).isPiscina()) + ";";
     }
 
     public static ArrayList<Imovel> buscarProprietario(ArrayList<Imovel> imoveis) {
@@ -161,7 +161,7 @@ public class Imobiliaria {
 
         return resultado;
     }
-    
+
     public static void ordenarCrescente(ArrayList<Imovel> imoveis) {
         Collections.sort(imoveis);
     }
@@ -173,5 +173,13 @@ public class Imobiliaria {
     public static void printColecao(ArrayList<Imovel> imoveis) {
         for (Imovel imovel : imoveis)
             System.out.println(imovel.toString());
+    }
+
+    public static int booleanToInt(boolean x) {
+        return (x) ? 1 : 0;
+    }
+
+    public static boolean intToBoolean(String x) {
+        return (Integer.parseInt(x) == 0) ? false : true;
     }
 }
