@@ -1,15 +1,10 @@
 package TP2POO.Imobiliaria;
 
-import java.awt.Color;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -19,7 +14,7 @@ public class Imobiliaria {
         ArrayList<Imovel> imoveis = new ArrayList<Imovel>();
         // - > Leitura do arquivo database_imoveis.txt
         try {
-            File database_imoveis = new File("POO - TP2/TP2POO.Imobiliaria/database_imoveis.txt");
+            File database_imoveis = new File(System.getProperty("user.dir") + "/POO - TP2/TP2POO.Imobiliaria/database_imoveis.txt");
             Scanner txt = new Scanner(database_imoveis);
             while (txt.hasNextLine()) {
                 String imovel = txt.nextLine();

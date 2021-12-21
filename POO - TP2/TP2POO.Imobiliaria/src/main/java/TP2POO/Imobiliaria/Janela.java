@@ -2,31 +2,44 @@ package TP2POO.Imobiliaria;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
+import java.io.File;
 
-public class Janela extends JFrame {
+public class Janela extends JFrame implements ActionListener {
+
+    JButton changeFileButton;
 
     Janela(){
         this.setTitle("Imobiliária");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
-        this.setSize(1280,720);
+        this.setSize(1280, 720);
+        this.setBackground(Color.white);
         
-        ImageIcon logo = new ImageIcon("POO - TP2/TP2POO.Imobiliaria/logo.png");
+        ImageIcon logo = new ImageIcon(System.getProperty("user.dir") + "/POO - TP2/TP2POO.Imobiliaria/img/logo.png");
         this.setIconImage(logo.getImage());
 
         this.setLayout(new BorderLayout());
 
-        JPanel navBar = new JPanel();
-        navBar.setPreferredSize(new Dimension(120, 120));
-        navBar.setBackground(Color.blue);
-        JLabel navBarLabel = new JLabel("Imobiliária");
-        navBarLabel.setBounds(120, 120, 0, 0);
-        navBarLabel.setFont(new Font("Verdana", Font.PLAIN, 48));
+        HomePage homePage = new HomePage();
 
-        navBar.add(navBarLabel);
-        
-        this.add(navBar, BorderLayout.NORTH);
+        this.add(homePage, BorderLayout.CENTER);
         this.setVisible(true);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(e.getSource() == changeFileButton) {
+            JFileChooser fileChooser = new JFileChooser();
+
+            int response = fileChooser.showOpenDialog(null);
+
+            if(response == JFileChooser.APPROVE_OPTION) {
+                File file = new File(fileChooser.getSelectedFile().getAbsolutePath());
+                System.out.println(file);
+            }
+        }
+        
     }
     
 }
