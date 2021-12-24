@@ -41,7 +41,16 @@ public class Apartamento extends Imovel {
     @Override
     public String toString() {
         return "    Proprietário: " + this.getProprietario() + "\nValor: "  + this.getValor()
-        + "\nNúmero de quartos: " + this.getQuartos() + "\nRua: " + this.getRua() +
-        "\nBairro: " + this.getBairro() + "\nCidade: " + this.getCidade() + "\nElevador: " + this.isElevador() + "\n";
+                + "\nNúmero de quartos: " + this.getQuartos() + "\nRua: " + this.getRua() +
+                "\nBairro: " + this.getBairro() + "\nCidade: " + this.getCidade() + "\nElevador: " + this.isElevador() + "\n";
+    }
+
+    @Override
+    public String toWrite(){
+        return "apartamento;" + this.getValor() + ";" + this.getProprietario() + ";" + this.getRua() + ";"
+                + this.getBairro() + ";" + this.getCidade() + ";" + this.getNumero() + ";" + this.getQuartos()
+                + ";" + this.getBanheiros() + ";" + this.getAndar() + ";"
+                + this.getTaxa_condominio() + ";" + booleanToInt(this.isElevador())
+                + ";" + booleanToInt(this.isSacada()) + ";\n";
     }
 }

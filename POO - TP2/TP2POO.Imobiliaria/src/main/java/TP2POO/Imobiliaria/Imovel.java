@@ -69,9 +69,22 @@ public class Imovel implements Comparable <Imovel> {
         "\nBairro: " + this.getBairro() + "\nCidade: " + this.getCidade() + "\n";
     }
 
+    @Override
+    public String toWrite() {
+        return "";
+    }
+
     public int compareTo(Imovel imovel)
     {
         return Float.compare(this.getValor(), imovel.getValor());
+    }
+
+    public static int booleanToInt(boolean x) {
+        return (x) ? 1 : 0;
+    }
+
+    public static boolean intToBoolean(String x) {
+        return (Integer.parseInt(x) == 0) ? false : true;
     }
 
 }

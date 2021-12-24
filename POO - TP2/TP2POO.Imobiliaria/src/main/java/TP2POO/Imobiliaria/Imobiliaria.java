@@ -42,9 +42,6 @@ public class Imobiliaria {
             System.out.println("ERRO : Arquivo não encontrado.\n");
             e.printStackTrace();
         }
-
-        Janela myFrame = new Janela();
-
     }
 
     public static ArrayList<Imovel> buscarPorTipo(ArrayList<Imovel> imoveis) {
@@ -78,46 +75,14 @@ public class Imobiliaria {
     public static void salvarColecao(ArrayList<Imovel> imoveis) {
         try {
             FileWriter colecao = new FileWriter("colecao_imoveis.txt");
-            for (Imovel imovel : imoveis) {
-                if (imovel instanceof Casa)
-                    colecao.write(writeCasa(imovel));
-                else if (imovel instanceof Apartamento)
-                    colecao.write(writeApartamento(imovel));
-                else if (imovel instanceof Chacara)
-                    colecao.write(writeChacara(imovel));
-            }
+            for (Imovel imovel : imoveis) 
+                colecao.write(imovel.toWrite());
             colecao.close();
             System.out.println("Coleção salva em colecao_imoveis.txt!");
         } catch (IOException e) {
             System.out.println("ERRO : I/O.");
             e.printStackTrace();
         }
-    }
-
-    public static String writeCasa(Imovel imovel) {
-        return "casa;" + imovel.getValor() + ";" + imovel.getProprietario() + ";" + imovel.getRua() + ";"
-                + imovel.getBairro() + ";" + imovel.getCidade() + ";" + imovel.getNumero() + ";" + imovel.getQuartos()
-                + ";" + imovel.getBanheiros() + ";" + ((Casa) imovel).getAndares() + ";"
-                + booleanToInt(((Casa) imovel).isSala_jantar()) + ";\n";
-    }
-
-    public static String writeApartamento(Imovel imovel) {
-        return "apartamento;" + imovel.getValor() + ";" + imovel.getProprietario() + ";" + imovel.getRua() + ";"
-                + imovel.getBairro() + ";" + imovel.getCidade() + ";" + imovel.getNumero() + ";" + imovel.getQuartos()
-                + ";" + imovel.getBanheiros() + ";" + ((Apartamento) imovel).getAndar() + ";"
-                + ((Apartamento) imovel).getTaxa_condominio() + ";" + booleanToInt(((Apartamento) imovel).isElevador())
-                + ";"
-                + booleanToInt(((Apartamento) imovel).isSacada()) + ";\n";
-    }
-
-    public static String writeChacara(Imovel imovel) {
-        return "chacara;" + imovel.getValor() + ";" + imovel.getProprietario() + ";" + imovel.getRua() + ";"
-                + imovel.getBairro() + ";" + imovel.getCidade() + ";" + imovel.getNumero() + ";" + imovel.getQuartos()
-                + ";" + imovel.getBanheiros() + ";" + booleanToInt(((Chacara) imovel).isSalao_festa()) + ";"
-                + booleanToInt(((Chacara) imovel).isSalao_jogos()) + ";"
-                + booleanToInt(((Chacara) imovel).isCampo_futebol()) + ";"
-                + booleanToInt(((Chacara) imovel).isChurrasqueira()) + ";"
-                + booleanToInt(((Chacara) imovel).isPiscina()) + ";\n";
     }
 
     public static ArrayList<Imovel> buscarProprietario(ArrayList<Imovel> imoveis) {
@@ -177,10 +142,6 @@ public class Imobiliaria {
     public static void printColecao(ArrayList<Imovel> imoveis) {
         for (Imovel imovel : imoveis)
             System.out.println(imovel.toString());
-    }
-
-    public static int booleanToInt(boolean x) {
-        return (x) ? 1 : 0;
     }
 
     public static boolean intToBoolean(String x) {

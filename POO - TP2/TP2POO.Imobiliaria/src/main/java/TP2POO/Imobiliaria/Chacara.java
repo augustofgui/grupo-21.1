@@ -46,7 +46,18 @@ public class Chacara extends Imovel {
     @Override
     public String toString() {
         return "    Proprietário: " + this.getProprietario() + "\nValor: "  + this.getValor()
-        + "\nNúmero de quartos: " + this.getQuartos() + "\nRua: " + this.getRua() +
-        "\nBairro: " + this.getBairro() + "\nCidade: " + this.getCidade() + "\nPiscina: " + this.isPiscina() + "\n";
+                + "\nNúmero de quartos: " + this.getQuartos() + "\nRua: " + this.getRua() +
+                "\nBairro: " + this.getBairro() + "\nCidade: " + this.getCidade() + "\nPiscina: " + this.isPiscina() + "\n";
+    }
+
+    @Override
+    public String toWrite() {
+        return "chacara;" + this.getValor() + ";" + this.getProprietario() + ";" + this.getRua() + ";"
+                + this.getBairro() + ";" + this.getCidade() + ";" + this.getNumero() + ";" + this.getQuartos()
+                + ";" + this.getBanheiros() + ";" + booleanToInt(this.isSalao_festa()) + ";"
+                + booleanToInt(this.isSalao_jogos()) + ";"
+                + booleanToInt(this.isCampo_futebol()) + ";"
+                + booleanToInt(this.isChurrasqueira()) + ";"
+                + booleanToInt(this.isPiscina()) + ";\n";
     }
 }

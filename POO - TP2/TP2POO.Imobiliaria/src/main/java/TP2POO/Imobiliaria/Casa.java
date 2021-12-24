@@ -26,7 +26,15 @@ public class Casa extends Imovel {
     @Override
     public String toString() {
         return "    Proprietário: " + this.getProprietario() + "\nValor: "  + this.getValor()
-        + "\nNúmero de quartos: " + this.getQuartos() + "\nRua: " + this.getRua() +
-        "\nBairro: " + this.getBairro() + "\nCidade: " + this.getCidade() + "\nAndares: " + this.getAndares() + "\n";
+                + "\nNúmero de quartos: " + this.getQuartos() + "\nRua: " + this.getRua() +
+                "\nBairro: " + this.getBairro() + "\nCidade: " + this.getCidade() + "\nAndares: " + this.getAndares() + "\n";
+    }
+
+    @Override
+    public String toWrite() {
+        return "casa;" + this.getValor() + ";" + this.getProprietario() + ";" + this.getRua() + ";"
+                + this.getBairro() + ";" + this.getCidade() + ";" + this.getNumero() + ";" + this.getQuartos()
+                + ";" + this.getBanheiros() + ";" + this.getAndares() + ";"
+                + booleanToInt(this.isSala_jantar()) + ";\n";
     }
 }
