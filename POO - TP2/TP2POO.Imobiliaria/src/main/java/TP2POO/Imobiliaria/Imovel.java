@@ -62,16 +62,16 @@ public class Imovel implements Comparable <Imovel> {
         return banheiros;
     }
 
-    @Override
     public String toString() {
         return "    Proprietário: " + this.getProprietario() + "\nValor: "  + this.getValor()
         + "\nNúmero de quartos: " + this.getQuartos() + "\nRua: " + this.getRua() +
         "\nBairro: " + this.getBairro() + "\nCidade: " + this.getCidade() + "\n";
     }
 
-    @Override
     public String toWrite() {
-        return "";
+        return "imovel;" + this.getValor() + ";" + this.getProprietario() + ";" + this.getRua() + ";"
+        + this.getBairro() + ";" + this.getCidade() + ";" + this.getNumero() + ";" + this.getQuartos()
+        + ";" + this.getBanheiros() + ";\n";
     }
 
     public int compareTo(Imovel imovel)
