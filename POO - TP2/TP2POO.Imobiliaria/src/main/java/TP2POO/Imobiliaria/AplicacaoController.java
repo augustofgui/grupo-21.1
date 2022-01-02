@@ -1,5 +1,6 @@
 package TP2POO.Imobiliaria;
 
+import java.awt.Image;
 import java.io.File;
 
 public class AplicacaoController {

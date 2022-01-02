@@ -36,4 +36,8 @@ public class Aplicacao {
 		frame.setVisible(true);
 		frame.revalidate();
 	}
+	
+	public JFrame getFrame() {
+		return frame;
+	}
 }

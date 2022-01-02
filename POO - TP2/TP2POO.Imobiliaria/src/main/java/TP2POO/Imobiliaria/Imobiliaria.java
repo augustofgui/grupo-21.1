@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-
 import java.util.Scanner;
 
 import java.util.ArrayList;
@@ -21,16 +20,16 @@ public class Imobiliaria{
 			public void run() {
 				try {
 					Aplicacao window = new Aplicacao();
+					window.getFrame().setResizable(false);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
 			}
 		});
-        
         imoveis = leArquivo("database_imoveis.txt");
         printColecao(imoveis);
     }
-
+    
     public static  ArrayList<Imovel> leArquivo(String nome_arquivo){
         ArrayList<Imovel> imoveisArquivo = new ArrayList<Imovel>();
         

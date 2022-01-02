@@ -47,13 +47,14 @@ public class MainPage extends JPanel {
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		btnNewButton.setForeground(Color.WHITE);
 		btnNewButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+		btnNewButton.setBackground(Color.WHITE);
 		btnNewButton.setBounds(10, 11, 263, 35);
 		add(btnNewButton);
 		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\jeron\\Downloads\\imgMain.png"));
-		lblNewLabel.setBounds(0, 0, 1264, 681);
-		add(lblNewLabel);
+		JLabel background = new JLabel("");
+		background.setIcon(new ImageIcon(MainPage.class.getResource("/images/imgMain.png")));
+		background.setBounds(0, 0, 1264, 681);
+		add(background);
 	}
 	private class SwingAction extends AbstractAction {
 		

@@ -106,10 +106,10 @@ public class LandingPage extends JPanel {
 		selectedFile.setBorder(null);
 		fileArquivoText.add(selectedFile);
 		
-		JLabel logoImg_1 = new JLabel("");
-		logoImg_1.setIcon(new ImageIcon("C:\\Users\\jeron\\Downloads\\imgLanding.png"));
-		logoImg_1.setBounds(0, -32, 1264, 713);
-		add(logoImg_1);
+		JLabel background = new JLabel("");
+		background.setIcon(new ImageIcon(LandingPage.class.getResource("/images/imgLanding.png")));
+		background.setBounds(0, -32, 1264, 713);
+		add(background);
 	}
 	
 
