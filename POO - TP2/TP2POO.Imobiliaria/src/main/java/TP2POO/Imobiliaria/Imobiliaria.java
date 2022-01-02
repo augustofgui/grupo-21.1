@@ -1,35 +1,58 @@
 package TP2POO.Imobiliaria;
 
+import java.awt.EventQueue;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+
 import java.util.Scanner;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Imobiliaria {
-    public static void main(String[] args) {
+public class Imobiliaria{
+	ArrayList<Imovel> imoveis = new ArrayList<Imovel>();	
+    public static void main(String[] args){
         ArrayList<Imovel> imoveis = new ArrayList<Imovel>();
         // - > Leitura do arquivo database_imoveis.txt
+               
+        EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Aplicacao window = new Aplicacao();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+        
+        imoveis = leArquivo("database_imoveis.txt");
+        printColecao(imoveis);
+    }
+
+    public static  ArrayList<Imovel> leArquivo(String nome_arquivo){
+        ArrayList<Imovel> imoveisArquivo = new ArrayList<Imovel>();
+        
+        // - > Leitura do arquivo database_imoveis.txt
+
         try {
-            File database_imoveis = new File(System.getProperty("user.dir") + "/POO - TP2/TP2POO.Imobiliaria/database_imoveis.txt");
+            File database_imoveis = new File(nome_arquivo);
             Scanner txt = new Scanner(database_imoveis);
             while (txt.hasNextLine()) {
                 String imovel = txt.nextLine();
                 String[] data = imovel.split(";");
                 if (data[0].equals("casa")) // - > Criação do objeto e push_back no vetor polimórfico de imóveis
-                    imoveis.add(new Casa(Float.parseFloat(data[1]), data[2], data[3], data[4], data[5],
+                    imoveisArquivo.add(new Casa(Float.parseFloat(data[1]), data[2], data[3], data[4], data[5],
                             Integer.parseInt(data[6]), Integer.parseInt(data[7]), Integer.parseInt(data[8]),
                             Integer.parseInt(data[9]), intToBoolean(data[10])));
                 else if (data[0].equals("apartamento"))
-                    imoveis.add(new Apartamento(Float.parseFloat(data[1]), data[2], data[3], data[4], data[5],
+                    imoveisArquivo.add(new Apartamento(Float.parseFloat(data[1]), data[2], data[3], data[4], data[5],
                             Integer.parseInt(data[6]), Integer.parseInt(data[7]), Integer.parseInt(data[8]),
                             Integer.parseInt(data[9]), Float.parseFloat(data[10]), intToBoolean(data[11]),
                             intToBoolean(data[12])));
                 else if (data[0].equals("chacara"))
-                    imoveis.add(new Chacara(Float.parseFloat(data[1]), data[2], data[3], data[4], data[5],
+                    imoveisArquivo.add(new Chacara(Float.parseFloat(data[1]), data[2], data[3], data[4], data[5],
                             Integer.parseInt(data[6]), Integer.parseInt(data[7]), Integer.parseInt(data[8]),
                             intToBoolean(data[9]), intToBoolean(data[10]),
                             intToBoolean(data[11]), intToBoolean(data[12]),
@@ -42,6 +65,8 @@ public class Imobiliaria {
             System.out.println("ERRO : Arquivo não encontrado.\n");
             e.printStackTrace();
         }
+
+        return imoveisArquivo;
     }
 
     public static ArrayList<Imovel> buscarPorTipo(ArrayList<Imovel> imoveis) {

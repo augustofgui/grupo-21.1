@@ -16,7 +16,7 @@ public class Janela extends JFrame implements ActionListener {
         this.setSize(1280, 720);
         this.setBackground(Color.white);
         
-        ImageIcon logo = new ImageIcon(System.getProperty("user.dir") + "/POO - TP2/TP2POO.Imobiliaria/img/logo.png");
+        ImageIcon logo = new ImageIcon(System.getProperty("user.dir") + "/TP2POO.Imobiliaria/img/logo.png");
         this.setIconImage(logo.getImage());
 
         this.setLayout(new BorderLayout());
