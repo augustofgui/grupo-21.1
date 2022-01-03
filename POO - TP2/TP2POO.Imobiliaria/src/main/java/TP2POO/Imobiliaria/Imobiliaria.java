@@ -134,7 +134,7 @@ public class Imobiliaria {
     public static ArrayList<Imovel> buscarCidade(ArrayList<Imovel> imoveis, String cidade) {
         ArrayList<Imovel> resultado = new ArrayList<Imovel>();
         for (Imovel imovel : imoveis) {
-            if (imovel.getProprietario().equals(cidade))
+            if (imovel.getCidade().equals(cidade))
                 resultado.add(imovel);
         }
 
