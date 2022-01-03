@@ -22,6 +22,10 @@ import javax.swing.Action;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import java.awt.Cursor;
+import javax.swing.border.CompoundBorder;
+import javax.swing.border.LineBorder;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JTextPane;
 
 public class SearchPage extends JPanel {
 	private static final long serialVersionUID = 1L;
@@ -30,7 +34,8 @@ public class SearchPage extends JPanel {
 	Font rationaleFont = null;
 	private final Action action = new SwingAction();
 
-	JLabel pesquisaTitle;
+	private JLabel pesquisaTitle;
+	private JTextPane textPane;
 	private JTextField textField;
 	private final Action action_1 = new SwingAction_1();
 	
@@ -68,17 +73,20 @@ public class SearchPage extends JPanel {
 		pesquisaTitle.setFont(rationaleFont.deriveFont(45f));
 		add(pesquisaTitle);
 		
-		JPanel panel = new JPanel();
-		panel.setBounds(15, 200, 450, 450);
-		
-		JScrollPane scrollPane = new JScrollPane(panel);
+		textPane = new JTextPane();
+		textPane.setEditable(false);
+		textPane.setBorder(new CompoundBorder(new LineBorder(new Color(0, 0, 0), 3), new EmptyBorder(15, 15, 15, 15)));
+		textPane.setBounds(15, 200, 450, 450);
+				
+		JScrollPane scrollPane = new JScrollPane(textPane);
 		scrollPane.setBounds(15, 200, 450, 450);
 		add(scrollPane);
 		
 		textField = new JTextField();
+		textField.setBorder(new CompoundBorder(new LineBorder(new Color(0, 0, 0), 3), new EmptyBorder(0, 15, 0, 0)));
 		textField.setBounds(15, 140, 400, 40);
-		add(textField);
 		textField.setColumns(10);
+		add(textField);
 		
 		JButton btnNewButton_1 = new JButton("");
 		btnNewButton_1.setAction(action_1);
@@ -122,6 +130,18 @@ public class SearchPage extends JPanel {
 			pesquisaTitle.setText("Pesquisa");
 		}
 	}
+	
+	public void changeTextPane(String str) {
+		textPane.setText(str);
+	}
+	
+	public void resetTextField() {
+		textField.setText("");
+	}
+	
+	public void resetTextPane() {
+		textPane.setText("");
+	}
 
 	private class SwingAction extends AbstractAction {
 		
@@ -142,9 +162,7 @@ public class SearchPage extends JPanel {
 		public SwingAction_1() {
 			putValue(NAME, "");
 		}
-		public void actionPerformed(ActionEvent e) {
-			System.out.println(textField.getText());
-			
+		public void actionPerformed(ActionEvent e) {	
 			controller.realizarPesquisa(tipoPesquisa, textField.getText());
 		}
 	}

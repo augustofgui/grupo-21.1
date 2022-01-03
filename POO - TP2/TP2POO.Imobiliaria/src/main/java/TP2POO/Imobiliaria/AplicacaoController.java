@@ -11,7 +11,7 @@ public class AplicacaoController {
 	
 	Imobiliaria imobiliaria;
 	
-	ArrayList<Imovel> imoveis = null;
+	ArrayList<Imovel> imoveisPesquisados = null;
 	
 	File arquivoSelecionado = null;
 	Font rationaleFont = null;
@@ -66,6 +66,8 @@ public class AplicacaoController {
 		landing.setVisible(false);
 		main.setVisible(true);
 		search.setVisible(false);
+		search.resetTextField();
+		search.resetTextPane();
 	}
 
 	public void showSearchPageByType(TiposPesquisa tipo) {
@@ -76,21 +78,34 @@ public class AplicacaoController {
 		search.setTipoPesquisa(tipo);
 	}
 	
+	public void insereNoTextField(ArrayList<Imovel> imoveis) {
+		String pesquisa = "";
+		
+		if(imoveis.isEmpty())
+			pesquisa = "Não foi encontrado nenhum imóvel com este parametro!";
+		
+		for (Imovel imovel : imoveis) {
+			pesquisa = pesquisa.concat(imovel.toString() + System.lineSeparator());
+        }
+		
+		search.changeTextPane(pesquisa);
+	}
+	
 	public void realizarPesquisa(TiposPesquisa tipo, String strValor) {
-		System.out.println("Tipos pesquisa: " + tipo);
 		if (tipo == TiposPesquisa.Cidade) {
-			Imobiliaria.printColecao(Imobiliaria.buscarCidade(imobiliaria.imoveis, strValor));
+			imoveisPesquisados = Imobiliaria.buscarCidade(imobiliaria.imoveis, strValor);
 		} else if (tipo == TiposPesquisa.NumQuartos) {
-			Imobiliaria.printColecao(Imobiliaria.buscarQuartos(imobiliaria.imoveis, Integer.parseInt(strValor)));
+			imoveisPesquisados = Imobiliaria.buscarQuartos(imobiliaria.imoveis, Integer.parseInt(strValor));
 		} else if (tipo == TiposPesquisa.Proprietario) {
-			Imobiliaria.printColecao(Imobiliaria.buscarProprietario(imobiliaria.imoveis, strValor));
+			imoveisPesquisados = Imobiliaria.buscarProprietario(imobiliaria.imoveis, strValor);
 		} else if (tipo == TiposPesquisa.Tipo) {
-			Imobiliaria.printColecao(Imobiliaria.buscarPorTipo(imobiliaria.imoveis, strValor));
+			imoveisPesquisados = Imobiliaria.buscarPorTipo(imobiliaria.imoveis, strValor);
 		} else if (tipo == TiposPesquisa.Valor) {
-			Imobiliaria.printColecao(Imobiliaria.buscarPrecoMaximo(imobiliaria.imoveis, Float.parseFloat(strValor)));
+			imoveisPesquisados = Imobiliaria.buscarPrecoMaximo(imobiliaria.imoveis, Float.parseFloat(strValor));
 		} else {
 			System.out.println("Pesquisa inválida!");
 		}
-		System.out.println("===================================================");
+		
+		insereNoTextField(imoveisPesquisados);
 	}
 }
