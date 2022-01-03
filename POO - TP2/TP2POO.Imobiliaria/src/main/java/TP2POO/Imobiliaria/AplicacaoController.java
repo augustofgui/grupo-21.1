@@ -1,6 +1,5 @@
 package TP2POO.Imobiliaria;
 
-import java.awt.Font;
 import java.io.File;
 import java.util.ArrayList;
 
@@ -15,7 +14,6 @@ public class AplicacaoController {
 	private ArrayList<Imovel> imoveisPesquisados = null;
 	
 	private File arquivoSelecionado = null;
-	private Font rationaleFont = null;
 
 	public enum TiposPesquisa {
 		Valor(1), Proprietario(2), Tipo(3), Cidade(4), NumQuartos(5);
@@ -42,11 +40,6 @@ public class AplicacaoController {
 		arquivoSelecionado = new File("database_imoveis.txt");
 
 		showLanding();
-	}
-	
-
-	public Font getFont() {
-		return rationaleFont;
 	}
 	
 	public LandingPage getLanding() {

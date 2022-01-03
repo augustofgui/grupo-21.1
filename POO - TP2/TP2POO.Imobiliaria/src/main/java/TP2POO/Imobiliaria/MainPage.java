@@ -49,7 +49,7 @@ public class MainPage extends JPanel {
 			GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
 			ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("Rationale.ttf")));
 		} catch (IOException | FontFormatException e) {
-			System.out.println("Não foi possivel carregar fonte - " + e.getMessage());
+			rationaleFont = new Font("Microsoft Yi Baiti", Font.PLAIN, 8);
 		}
 
 		setBounds(new Rectangle(0, 0, 1280, 720));
