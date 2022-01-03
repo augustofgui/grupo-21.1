@@ -28,12 +28,12 @@ import java.awt.Dimension;
 import java.awt.Insets;
 
 public class MainPage extends JPanel {
-	
+
 	private static final long serialVersionUID = 1L;
 
 	AplicacaoController controller = null;
 	private final Action voltarLandingPage = new SwingAction();
-	
+
 	Font rationaleFont = null;
 	private final Action action = new SwingAction_1();
 	private final Action action_1 = new SwingAction_2();
@@ -43,30 +43,30 @@ public class MainPage extends JPanel {
 
 	public MainPage(AplicacaoController c) {
 		controller = c;
-		
+
 		try {
 			rationaleFont = Font.createFont(Font.TRUETYPE_FONT, new File("Rationale.ttf")).deriveFont(24f);
 			GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-		    ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("Rationale.ttf")));
-		} catch (IOException|FontFormatException e) {
-		    System.out.println("Não foi possivel carregar fonte - " + e.getMessage());
+			ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("Rationale.ttf")));
+		} catch (IOException | FontFormatException e) {
+			System.out.println("Não foi possivel carregar fonte - " + e.getMessage());
 		}
-		
-		setBounds(new Rectangle(0, 0, 1280, 720));		
+
+		setBounds(new Rectangle(0, 0, 1280, 720));
 		setBackground(Color.WHITE);
 		setLayout(null);
-		
+
 		JPanel panel = new JPanel();
 		panel.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 		panel.setBackground(Color.WHITE);
 		panel.setBounds(240, 160, 160, 160);
 		add(panel);
 		panel.setLayout(new BorderLayout(0, 0));
-		
+
 		Component verticalStrut = Box.createVerticalStrut(20);
 		verticalStrut.setPreferredSize(new Dimension(0, 40));
 		panel.add(verticalStrut, BorderLayout.NORTH);
-		
+
 		JButton btnNewButton_1 = new JButton("Por Valor");
 		btnNewButton_1.setFont(rationaleFont.deriveFont(18f));
 		btnNewButton_1.setFocusable(false);
@@ -81,17 +81,17 @@ public class MainPage extends JPanel {
 		btnNewButton_1.setMargin(new Insets(0, 0, 0, 0));
 		btnNewButton_1.setBorder(null);
 		panel.add(btnNewButton_1, BorderLayout.CENTER);
-		
+
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(Color.WHITE);
 		panel_1.setBounds(400, 160, 160, 160);
 		add(panel_1);
 		panel_1.setLayout(new BorderLayout(0, 0));
-		
+
 		Component verticalStrut_1 = Box.createVerticalStrut(20);
 		verticalStrut_1.setPreferredSize(new Dimension(0, 40));
 		panel_1.add(verticalStrut_1, BorderLayout.NORTH);
-		
+
 		JButton btnNewButton_1_1 = new JButton("Por proprietário");
 		btnNewButton_1_1.setFocusable(false);
 		btnNewButton_1_1.setFont(rationaleFont.deriveFont(18f));
@@ -106,17 +106,17 @@ public class MainPage extends JPanel {
 		btnNewButton_1_1.setMargin(new Insets(0, 0, 0, 0));
 		btnNewButton_1_1.setBorder(null);
 		panel_1.add(btnNewButton_1_1, BorderLayout.CENTER);
-		
+
 		JPanel panel_1_1 = new JPanel();
 		panel_1_1.setBackground(Color.WHITE);
 		panel_1_1.setBounds(560, 160, 160, 160);
 		add(panel_1_1);
 		panel_1_1.setLayout(new BorderLayout(0, 0));
-		
+
 		Component verticalStrut_1_1 = Box.createVerticalStrut(20);
 		verticalStrut_1_1.setPreferredSize(new Dimension(0, 40));
 		panel_1_1.add(verticalStrut_1_1, BorderLayout.NORTH);
-		
+
 		JButton btnNewButton_1_1_1 = new JButton("Por Tipo");
 		btnNewButton_1_1_1.setFont(rationaleFont.deriveFont(18f));
 		btnNewButton_1_1_1.setFocusable(false);
@@ -131,17 +131,17 @@ public class MainPage extends JPanel {
 		btnNewButton_1_1_1.setMargin(new Insets(0, 0, 0, 0));
 		btnNewButton_1_1_1.setBorder(null);
 		panel_1_1.add(btnNewButton_1_1_1, BorderLayout.CENTER);
-		
+
 		JPanel panel_1_2 = new JPanel();
 		panel_1_2.setBackground(Color.WHITE);
 		panel_1_2.setBounds(720, 160, 160, 160);
 		add(panel_1_2);
 		panel_1_2.setLayout(new BorderLayout(0, 0));
-		
+
 		Component verticalStrut_1_2 = Box.createVerticalStrut(20);
 		verticalStrut_1_2.setPreferredSize(new Dimension(0, 40));
 		panel_1_2.add(verticalStrut_1_2, BorderLayout.NORTH);
-		
+
 		JButton btnNewButton_1_1_2 = new JButton("Por Cidade");
 		btnNewButton_1_1_2.setFont(rationaleFont.deriveFont(18f));
 		btnNewButton_1_1_2.setFocusable(false);
@@ -156,17 +156,17 @@ public class MainPage extends JPanel {
 		btnNewButton_1_1_2.setMargin(new Insets(0, 0, 0, 0));
 		btnNewButton_1_1_2.setBorder(null);
 		panel_1_2.add(btnNewButton_1_1_2, BorderLayout.CENTER);
-		
+
 		JPanel panel_1_2_1 = new JPanel();
 		panel_1_2_1.setBackground(Color.WHITE);
 		panel_1_2_1.setBounds(880, 160, 160, 160);
 		add(panel_1_2_1);
 		panel_1_2_1.setLayout(new BorderLayout(0, 0));
-		
+
 		Component verticalStrut_1_3 = Box.createVerticalStrut(20);
 		verticalStrut_1_3.setPreferredSize(new Dimension(0, 40));
 		panel_1_2_1.add(verticalStrut_1_3, BorderLayout.NORTH);
-		
+
 		JButton btnNewButton_1_1_3 = new JButton("Por Número Quarto");
 		btnNewButton_1_1_3.setFont(rationaleFont.deriveFont(18f));
 		btnNewButton_1_1_3.setFocusable(false);
@@ -181,7 +181,7 @@ public class MainPage extends JPanel {
 		btnNewButton_1_1_3.setMargin(new Insets(0, 0, 0, 0));
 		btnNewButton_1_1_3.setBorder(null);
 		panel_1_2_1.add(btnNewButton_1_1_3, BorderLayout.CENTER);
-		
+
 		JButton btnNewButton = new JButton("< Escolher outro arquivo");
 		btnNewButton.setAction(voltarLandingPage);
 		btnNewButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
@@ -196,70 +196,88 @@ public class MainPage extends JPanel {
 		btnNewButton.setBackground(Color.WHITE);
 		btnNewButton.setBounds(0, 5, 237, 35);
 		add(btnNewButton);
-		
+
 		JLabel lblNewLabel = new JLabel("Pesquisa");
 		lblNewLabel.setFont(rationaleFont.deriveFont(72f));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setBounds(0, 15, 1280, 64);
 		add(lblNewLabel);
-		
+
 		JLabel background = new JLabel("");
 		background.setIcon(new ImageIcon(MainPage.class.getResource("/images/imgMain.png")));
 		background.setBounds(0, 0, 1264, 681);
 		add(background);
 	}
+
 	private class SwingAction extends AbstractAction {
-		
+
 		private static final long serialVersionUID = 1L;
+
 		public SwingAction() {
 			putValue(NAME, "< Escolher outro Arquivo");
 		}
+
 		public void actionPerformed(ActionEvent e) {
 			controller.showLanding();
 		}
 	}
+
 	private class SwingAction_1 extends AbstractAction {
-		
+
 		private static final long serialVersionUID = 1L;
+
 		public SwingAction_1() {
 			putValue(NAME, "Por Valor");
 		}
+
 		public void actionPerformed(ActionEvent e) {
 			controller.showSearchPageByType(TiposPesquisa.Valor);
 		}
 	}
+
 	private class SwingAction_2 extends AbstractAction {
 		private static final long serialVersionUID = 1L;
+
 		public SwingAction_2() {
 			putValue(NAME, "Por Proprietário");
 		}
+
 		public void actionPerformed(ActionEvent e) {
 			controller.showSearchPageByType(TiposPesquisa.Proprietario);
 		}
 	}
+
 	private class SwingAction_3 extends AbstractAction {
 		private static final long serialVersionUID = 1L;
+
 		public SwingAction_3() {
 			putValue(NAME, "Por Tipo");
 		}
+
 		public void actionPerformed(ActionEvent e) {
 			controller.showSearchPageByType(TiposPesquisa.Tipo);
 		}
 	}
+
 	private class SwingAction_4 extends AbstractAction {
 		private static final long serialVersionUID = 1L;
+
 		public SwingAction_4() {
 			putValue(NAME, "Por Cidade");
 		}
+
 		public void actionPerformed(ActionEvent e) {
 			controller.showSearchPageByType(TiposPesquisa.Cidade);
 		}
 	}
+
 	private class SwingAction_5 extends AbstractAction {
 		private static final long serialVersionUID = 1L;
+
 		public SwingAction_5() {
 			putValue(NAME, "Por Número de Quartos");
 		}
+
 		public void actionPerformed(ActionEvent e) {
 			controller.showSearchPageByType(TiposPesquisa.NumQuartos);
 		}

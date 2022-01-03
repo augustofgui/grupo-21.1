@@ -1,6 +1,5 @@
 package TP2POO.Imobiliaria;
 
-import java.awt.EventQueue;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
@@ -10,33 +9,18 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Imobiliaria{
-	ArrayList<Imovel> imoveis = new ArrayList<Imovel>();	
-    public static void main(String[] args){
-        ArrayList<Imovel> imoveis = new ArrayList<Imovel>();
-        // - > Leitura do arquivo database_imoveis.txt
-               
-        EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Aplicacao window = new Aplicacao();
-					window.getFrame().setResizable(false);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-        imoveis = leArquivo("database_imoveis.txt");
-        printColecao(imoveis);
-    }
-    
-    public static  ArrayList<Imovel> leArquivo(String nome_arquivo){
+public class Imobiliaria {
+	public ArrayList<Imovel> imoveis = null;
+	
+	
+	public Imobiliaria() {
+		imoveis = new ArrayList<Imovel>();
+	}
+	
+    public static ArrayList<Imovel> leArquivo(File database_imoveis) {
         ArrayList<Imovel> imoveisArquivo = new ArrayList<Imovel>();
-        
-        // - > Leitura do arquivo database_imoveis.txt
 
         try {
-            File database_imoveis = new File(nome_arquivo);
             Scanner txt = new Scanner(database_imoveis);
             while (txt.hasNextLine()) {
                 String imovel = txt.nextLine();
@@ -68,10 +52,20 @@ public class Imobiliaria{
         return imoveisArquivo;
     }
 
-    public static ArrayList<Imovel> buscarPorTipo(ArrayList<Imovel> imoveis) {
+    public static ArrayList<Imovel> buscarPorTipo(ArrayList<Imovel> imoveis, String tipo) {
         ArrayList<Imovel> resultado = new ArrayList<Imovel>();
         int tipo_imovel = 0; // - > placeholder
-
+        
+        tipo.toLowerCase();
+        
+        if(tipo.equals("casa")) {
+        	tipo_imovel = 1;
+        } else if(tipo.equals("apartamento")) {
+        	tipo_imovel = 2;
+        } else if(tipo.equals("chacara")) {
+        	tipo_imovel = 3;
+        }
+        
         switch (tipo_imovel) {
             case 1:
                 for (Imovel imovel : imoveis) {
@@ -99,7 +93,7 @@ public class Imobiliaria{
     public static void salvarColecao(ArrayList<Imovel> imoveis) {
         try {
             FileWriter colecao = new FileWriter("colecao_imoveis.txt");
-            for (Imovel imovel : imoveis) 
+            for (Imovel imovel : imoveis)
                 colecao.write(imovel.toWrite());
             colecao.close();
             System.out.println("Coleção salva em colecao_imoveis.txt!");
@@ -108,47 +102,49 @@ public class Imobiliaria{
             e.printStackTrace();
         }
     }
-
-    public static ArrayList<Imovel> buscarProprietario(ArrayList<Imovel> imoveis) {
-        ArrayList<Imovel> resultado = new ArrayList<Imovel>();
-        for (Imovel imovel : imoveis) {
-            if (imovel.getProprietario().equals("#placeholder#"))
-                resultado.add(imovel);
-        }
-
-        /*
-         * É possível utilizar essa função para os critérios 2 e 7.
-         * Para o 7, basta imprimir o array 'resultado',
-         * Para o 2, basta verificar se 'resultado' é um array vazio.
-         */
-
-        return resultado;
+    
+    public static Boolean ehProprietario(Imovel imovel, String proprietario) {
+    	
+    	if (imovel.getProprietario().equals(proprietario))
+    		return true;
+       
+    	return false;
     }
 
-    public static ArrayList<Imovel> buscarPrecoMaximo(ArrayList<Imovel> imoveis) {
+    public static ArrayList<Imovel> buscarProprietario(ArrayList<Imovel> imoveis, String proprietario) {
         ArrayList<Imovel> resultado = new ArrayList<Imovel>();
         for (Imovel imovel : imoveis) {
-            if (imovel.getValor() < 1000000) // - > placeholder
+            if (ehProprietario(imovel, proprietario))
                 resultado.add(imovel);
         }
 
         return resultado;
     }
 
-    public static ArrayList<Imovel> buscarCidade(ArrayList<Imovel> imoveis) {
+    public static ArrayList<Imovel> buscarPrecoMaximo(ArrayList<Imovel> imoveis, float valorMax) {
         ArrayList<Imovel> resultado = new ArrayList<Imovel>();
         for (Imovel imovel : imoveis) {
-            if (imovel.getProprietario().equals("#placeholder#"))
+            if (imovel.getValor() < valorMax) // - > placeholder
                 resultado.add(imovel);
         }
 
         return resultado;
     }
 
-    public static ArrayList<Imovel> buscarQuartos(ArrayList<Imovel> imoveis) {
+    public static ArrayList<Imovel> buscarCidade(ArrayList<Imovel> imoveis, String cidade) {
         ArrayList<Imovel> resultado = new ArrayList<Imovel>();
         for (Imovel imovel : imoveis) {
-            if (imovel.getQuartos() < 1000000) // - > placeholder
+            if (imovel.getProprietario().equals(cidade))
+                resultado.add(imovel);
+        }
+
+        return resultado;
+    }
+
+    public static ArrayList<Imovel> buscarQuartos(ArrayList<Imovel> imoveis, int numQuartos) {
+        ArrayList<Imovel> resultado = new ArrayList<Imovel>();
+        for (Imovel imovel : imoveis) {
+            if (imovel.getQuartos() <= numQuartos) // - > placeholder
                 resultado.add(imovel);
         }
 
