@@ -24,21 +24,15 @@ import java.awt.Rectangle;
 
 public class LandingPage extends JPanel {
 
-	AplicacaoController controller = null;
+	private AplicacaoController controller = null;
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private final Action alterarArquivo = new alterarArquivo();
 	private final Action continuaPrograma = new SwingAction();
 	private JLabel selectedFile;
 
-	Font rationaleFont = null;
+	private Font rationaleFont = null;
 
-	/**
-	 * Create the panel.
-	 */
 	public LandingPage(AplicacaoController c) {
 		try {
 			rationaleFont = Font.createFont(Font.TRUETYPE_FONT, new File("Rationale.ttf")).deriveFont(24f);
@@ -54,25 +48,25 @@ public class LandingPage extends JPanel {
 		setBackground(Color.WHITE);
 		setLayout(null);
 
-		JLabel lblNewLabel = new JLabel("Imobiliária");
-		lblNewLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
-		lblNewLabel.setFont(rationaleFont.deriveFont(72f));
-		lblNewLabel.setBounds(180, 140, 280, 80);
-		add(lblNewLabel);
+		JLabel logoText = new JLabel("Imobiliária");
+		logoText.setAlignmentX(Component.CENTER_ALIGNMENT);
+		logoText.setFont(rationaleFont.deriveFont(72f));
+		logoText.setBounds(180, 140, 280, 80);
+		add(logoText);
 
-		JPanel panel = new JPanel();
-		panel.setBorder(null);
-		FlowLayout flowLayout_1 = (FlowLayout) panel.getLayout();
-		flowLayout_1.setVgap(1);
-		flowLayout_1.setHgap(1);
-		panel.setBackground(Color.BLACK);
-		panel.setBounds(176, 220, 280, 5);
-		add(panel);
+		JPanel rectangleDetail = new JPanel();
+		rectangleDetail.setBorder(null);
+		FlowLayout fl_rectangleDetail = (FlowLayout) rectangleDetail.getLayout();
+		fl_rectangleDetail.setVgap(1);
+		fl_rectangleDetail.setHgap(1);
+		rectangleDetail.setBackground(Color.BLACK);
+		rectangleDetail.setBounds(176, 220, 280, 5);
+		add(rectangleDetail);
 
-		JLabel lblNewLabel_1 = new JLabel("Arquivo");
-		lblNewLabel_1.setFont(rationaleFont.deriveFont(36f));
-		lblNewLabel_1.setBounds(180, 460, 280, 40);
-		add(lblNewLabel_1);
+		JLabel arquivoText = new JLabel("Arquivo");
+		arquivoText.setFont(rationaleFont.deriveFont(36f));
+		arquivoText.setBounds(180, 460, 280, 40);
+		add(arquivoText);
 
 		JButton buttonContinuar = new JButton("Continuar");
 		buttonContinuar.setAction(continuaPrograma);
@@ -86,22 +80,22 @@ public class LandingPage extends JPanel {
 		buttonContinuar.setBounds(180, 550, 130, 40);
 		add(buttonContinuar);
 
-		JPanel buttonArquivo = new JPanel();
-		buttonArquivo.setBorder(new LineBorder(new Color(0, 0, 0), 3));
-		buttonArquivo.setBounds(330, 550, 130, 40);
-		add(buttonArquivo);
-		buttonArquivo.setLayout(new BorderLayout(0, 0));
+		JPanel buttonPanel = new JPanel();
+		buttonPanel.setBorder(new LineBorder(new Color(0, 0, 0), 3));
+		buttonPanel.setBounds(330, 550, 130, 40);
+		add(buttonPanel);
+		buttonPanel.setLayout(new BorderLayout(0, 0));
 
-		JButton btnAlterarArquivo = new JButton("Alterar arquivo");
-		btnAlterarArquivo.setAction(alterarArquivo);
-		btnAlterarArquivo.setFocusPainted(false);
-		btnAlterarArquivo.setFocusable(false);
-		btnAlterarArquivo.setBorder(null);
-		btnAlterarArquivo.setForeground(Color.BLACK);
-		btnAlterarArquivo.setFont(rationaleFont.deriveFont(18f));
-		btnAlterarArquivo.setBackground(Color.WHITE);
-		btnAlterarArquivo.setAutoscrolls(true);
-		buttonArquivo.add(btnAlterarArquivo);
+		JButton buttonArquivo = new JButton("Alterar arquivo");
+		buttonArquivo.setAction(alterarArquivo);
+		buttonArquivo.setFocusPainted(false);
+		buttonArquivo.setFocusable(false);
+		buttonArquivo.setBorder(null);
+		buttonArquivo.setForeground(Color.BLACK);
+		buttonArquivo.setFont(rationaleFont.deriveFont(18f));
+		buttonArquivo.setBackground(Color.WHITE);
+		buttonArquivo.setAutoscrolls(true);
+		buttonPanel.add(buttonArquivo);
 
 		JPanel fileArquivoText = new JPanel();
 		fileArquivoText.setBackground(Color.WHITE);
@@ -126,9 +120,7 @@ public class LandingPage extends JPanel {
 	}
 
 	private class alterarArquivo extends AbstractAction {
-		/**
-		 * 
-		 */
+		
 		private static final long serialVersionUID = 1L;
 
 		public alterarArquivo() {
@@ -147,14 +139,13 @@ public class LandingPage extends JPanel {
 				File file = new File(fileChooser.getSelectedFile().getAbsolutePath());
 
 				selectedFile.setText(file.getName());
+				controller.setArquivoSelecionado(file);
 			}
 		}
 	}
 
 	private class SwingAction extends AbstractAction {
-		/**
-		 * 
-		 */
+		
 		private static final long serialVersionUID = 1L;
 
 		public SwingAction() {

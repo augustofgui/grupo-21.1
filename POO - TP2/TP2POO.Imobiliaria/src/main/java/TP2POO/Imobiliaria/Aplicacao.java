@@ -37,9 +37,9 @@ public class Aplicacao {
 
 		AplicacaoController controller = new AplicacaoController();
 
-		frame.getContentPane().add(controller.landing);
-		frame.getContentPane().add(controller.main);
-		frame.getContentPane().add(controller.search);
+		frame.getContentPane().add(controller.getLanding());
+		frame.getContentPane().add(controller.getMain());
+		frame.getContentPane().add(controller.getSearch());
 
 		frame.getContentPane().setLayout(new CardLayout(0, 0));
 

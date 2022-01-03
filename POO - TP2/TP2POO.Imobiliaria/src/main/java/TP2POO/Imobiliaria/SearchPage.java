@@ -30,16 +30,21 @@ import javax.swing.JTextPane;
 public class SearchPage extends JPanel {
 	private static final long serialVersionUID = 1L;
 
-	AplicacaoController controller = null;
-	Font rationaleFont = null;
-	private final Action action = new SwingAction();
-
+	private AplicacaoController controller = null;
+	
+	private Font rationaleFont = null;
+	
+	private final Action voltar = new SwingAction();
+	private final Action executaPesquisa = new SwingAction_1();
+	
 	private JLabel pesquisaTitle;
-	private JTextPane textPane;
-	private JTextField textField;
-	private final Action action_1 = new SwingAction_1();
+	private JTextPane resultadoPesquisa;
+	private JTextField textPesquisa;
+	
 	
 	private TiposPesquisa tipoPesquisa;
+	private final Action action = new SwingAction_2();
+	private final Action action_1 = new SwingAction_3();
 
 	public SearchPage(AplicacaoController c) {
 		controller = c;
@@ -56,16 +61,16 @@ public class SearchPage extends JPanel {
 		setBackground(Color.WHITE);
 		setLayout(null);
 
-		JButton btnNewButton = new JButton("< Voltar");
-		btnNewButton.setFont(rationaleFont.deriveFont(24f));
-		btnNewButton.setAction(action);
-		btnNewButton.setHorizontalTextPosition(SwingConstants.LEFT);
-		btnNewButton.setHorizontalAlignment(SwingConstants.LEFT);
-		btnNewButton.setBorderPainted(false);
-		btnNewButton.setBorder(null);
-		btnNewButton.setBackground(Color.WHITE);
-		btnNewButton.setBounds(15, 0, 150, 40);
-		add(btnNewButton);
+		JButton buttonVoltar = new JButton("< Voltar");
+		buttonVoltar.setFont(rationaleFont.deriveFont(24f));
+		buttonVoltar.setAction(voltar);
+		buttonVoltar.setHorizontalTextPosition(SwingConstants.LEFT);
+		buttonVoltar.setHorizontalAlignment(SwingConstants.LEFT);
+		buttonVoltar.setBorderPainted(false);
+		buttonVoltar.setBorder(null);
+		buttonVoltar.setBackground(Color.WHITE);
+		buttonVoltar.setBounds(15, 0, 150, 40);
+		add(buttonVoltar);
 
 		pesquisaTitle = new JLabel("Pesquisa");
 		pesquisaTitle.setHorizontalAlignment(SwingConstants.LEFT);
@@ -73,36 +78,63 @@ public class SearchPage extends JPanel {
 		pesquisaTitle.setFont(rationaleFont.deriveFont(45f));
 		add(pesquisaTitle);
 		
-		textPane = new JTextPane();
-		textPane.setEditable(false);
-		textPane.setBorder(new CompoundBorder(new LineBorder(new Color(0, 0, 0), 3), new EmptyBorder(15, 15, 15, 15)));
-		textPane.setBounds(15, 200, 450, 450);
+		resultadoPesquisa = new JTextPane();
+		resultadoPesquisa.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		resultadoPesquisa.setEditable(false);
+		resultadoPesquisa.setBorder(new EmptyBorder(15, 15, 15, 15));
+		resultadoPesquisa.setBounds(15, 200, 450, 450);
 				
-		JScrollPane scrollPane = new JScrollPane(textPane);
-		scrollPane.setBounds(15, 200, 450, 450);
-		add(scrollPane);
+		JScrollPane panelScroll = new JScrollPane(resultadoPesquisa);
+		panelScroll.setBorder(new LineBorder(new Color(0, 0, 0), 3));
+		panelScroll.setBounds(15, 200, 450, 400);
+		add(panelScroll);
 		
-		textField = new JTextField();
-		textField.setBorder(new CompoundBorder(new LineBorder(new Color(0, 0, 0), 3), new EmptyBorder(0, 15, 0, 0)));
-		textField.setBounds(15, 140, 400, 40);
-		textField.setColumns(10);
-		add(textField);
+		textPesquisa = new JTextField();
+		textPesquisa.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		textPesquisa.setBounds(15, 140, 400, 40);
+		textPesquisa.setBorder(new CompoundBorder(new LineBorder(new Color(0, 0, 0), 3), new EmptyBorder(0, 15, 0, 0)));
+		textPesquisa.setColumns(10);
+		add(textPesquisa);
 		
-		JButton btnNewButton_1 = new JButton("");
-		btnNewButton_1.setAction(action_1);
-		btnNewButton_1.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		btnNewButton_1.setIcon(new ImageIcon(SearchPage.class.getResource("/images/iconSearch.png")));
-		btnNewButton_1.setHorizontalTextPosition(SwingConstants.CENTER);
-		btnNewButton_1.setBackground(Color.WHITE);
-		btnNewButton_1.setBorderPainted(false);
-		btnNewButton_1.setBorder(null);
-		btnNewButton_1.setBounds(425, 140, 40, 40);
-		add(btnNewButton_1);
+		JButton buttonIconPesquisa = new JButton("");
+		buttonIconPesquisa.setAction(executaPesquisa);
+		buttonIconPesquisa.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		buttonIconPesquisa.setIcon(new ImageIcon(SearchPage.class.getResource("/images/iconSearch.png")));
+		buttonIconPesquisa.setHorizontalTextPosition(SwingConstants.CENTER);
+		buttonIconPesquisa.setBackground(Color.WHITE);
+		buttonIconPesquisa.setBorderPainted(false);
+		buttonIconPesquisa.setBorder(null);
+		buttonIconPesquisa.setBounds(425, 140, 40, 40);
+		add(buttonIconPesquisa);
+		
+		JButton buttonSalvar = new JButton("Printar no terminal");
+		buttonSalvar.setFocusable(false);
+		buttonSalvar.setFocusTraversalKeysEnabled(false);
+		buttonSalvar.setFocusPainted(false);
+		buttonSalvar.setForeground(Color.WHITE);
+		buttonSalvar.setBackground(Color.BLACK);
+		buttonSalvar.setFont(rationaleFont.deriveFont(18f));
+		buttonSalvar.setBorder(null);
+		buttonSalvar.setAction(action);
+		buttonSalvar.setBounds(265, 611, 200, 30);
+		add(buttonSalvar);
+		
+		JButton buttonPrint = new JButton("Salvar em um arquivo");
+		buttonPrint.setFocusable(false);
+		buttonPrint.setFocusTraversalKeysEnabled(false);
+		buttonPrint.setFocusPainted(false);
+		buttonPrint.setForeground(Color.WHITE);
+		buttonPrint.setBackground(Color.BLACK);
+		buttonPrint.setFont(rationaleFont.deriveFont(18f));
+		buttonPrint.setBorder(null);
+		buttonPrint.setAction(action_1);
+		buttonPrint.setBounds(15, 611, 200, 30);
+		add(buttonPrint);
 
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setBounds(-10, -37, 1280, 720);
-		lblNewLabel.setIcon(new ImageIcon(SearchPage.class.getResource("/images/imgSearch.png")));
-		add(lblNewLabel);
+		JLabel background = new JLabel("");
+		background.setBounds(-10, -37, 1280, 720);
+		background.setIcon(new ImageIcon(SearchPage.class.getResource("/images/imgSearch.png")));
+		add(background);
 
 	}
 	
@@ -132,15 +164,15 @@ public class SearchPage extends JPanel {
 	}
 	
 	public void changeTextPane(String str) {
-		textPane.setText(str);
+		resultadoPesquisa.setText(str);
 	}
 	
 	public void resetTextField() {
-		textField.setText("");
+		textPesquisa.setText("");
 	}
 	
 	public void resetTextPane() {
-		textPane.setText("");
+		resultadoPesquisa.setText("");
 	}
 
 	private class SwingAction extends AbstractAction {
@@ -155,6 +187,7 @@ public class SearchPage extends JPanel {
 			controller.returnToMain();
 		}
 	}
+	
 	private class SwingAction_1 extends AbstractAction {
 		
 		private static final long serialVersionUID = 1L;
@@ -163,7 +196,29 @@ public class SearchPage extends JPanel {
 			putValue(NAME, "");
 		}
 		public void actionPerformed(ActionEvent e) {	
-			controller.realizarPesquisa(tipoPesquisa, textField.getText());
+			controller.realizarPesquisa(tipoPesquisa, textPesquisa.getText());
+		}
+	}
+	private class SwingAction_2 extends AbstractAction {
+		
+		private static final long serialVersionUID = 1L;
+		
+		public SwingAction_2() {
+			putValue(NAME, "Salvar em um arquivo");
+		}
+		public void actionPerformed(ActionEvent e) {
+			controller.salvaPesquisa();
+		}
+	}
+	private class SwingAction_3 extends AbstractAction {
+		
+		private static final long serialVersionUID = 1L;
+		
+		public SwingAction_3() {
+			putValue(NAME, "Printar no terminal");
+		}
+		public void actionPerformed(ActionEvent e) {
+			controller.printPesquisa();
 		}
 	}
 }

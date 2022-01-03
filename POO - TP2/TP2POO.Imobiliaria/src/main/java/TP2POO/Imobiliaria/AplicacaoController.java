@@ -4,19 +4,18 @@ import java.awt.Font;
 import java.io.File;
 import java.util.ArrayList;
 
-public class AplicacaoController {
-	LandingPage landing = null;
-	MainPage main = null;
-	SearchPage search = null;
-	
-	Imobiliaria imobiliaria;
-	
-	ArrayList<Imovel> imoveisPesquisados = null;
-	
-	File arquivoSelecionado = null;
-	Font rationaleFont = null;
+import javax.swing.JOptionPane;
 
-	TiposPesquisa pesquisa;
+public class AplicacaoController {
+	private LandingPage landing = null;
+	private MainPage main = null;
+	private SearchPage search = null;
+	
+	private ArrayList<Imovel> imoveisBase = null;
+	private ArrayList<Imovel> imoveisPesquisados = null;
+	
+	private File arquivoSelecionado = null;
+	private Font rationaleFont = null;
 
 	public enum TiposPesquisa {
 		Valor(1), Proprietario(2), Tipo(3), Cidade(4), NumQuartos(5);
@@ -37,16 +36,33 @@ public class AplicacaoController {
 		main = new MainPage(this);
 		search = new SearchPage(this);
 		
-		imobiliaria = new Imobiliaria();
-		imobiliaria.imoveis = new ArrayList<Imovel>();
+		imoveisBase = new ArrayList<Imovel>();
+		imoveisPesquisados = new ArrayList<Imovel>();
 		
 		arquivoSelecionado = new File("database_imoveis.txt");
 
 		showLanding();
 	}
+	
 
 	public Font getFont() {
 		return rationaleFont;
+	}
+	
+	public LandingPage getLanding() {
+		return landing;
+	}
+	
+	public MainPage getMain() {
+		return main;
+	}
+	
+	public SearchPage getSearch() {
+		return search;
+	}
+	
+	public void setArquivoSelecionado(File newFile) {
+		arquivoSelecionado = newFile;
 	}
 
 	public void showLanding() {
@@ -56,10 +72,17 @@ public class AplicacaoController {
 	}
 
 	public void showMain() {
+		imoveisBase.clear();
+		imoveisBase = Imobiliaria.leArquivo(arquivoSelecionado);
+		if(imoveisBase.isEmpty()) {
+			JOptionPane.showMessageDialog(landing, "Não foi encontrado nenhum imóvel neste arquivo!!", "Erro de arquivo", JOptionPane.ERROR_MESSAGE);
+			showLanding();
+			return;
+		}
+		
 		landing.setVisible(false);
 		main.setVisible(true);
 		search.setVisible(false);
-		imobiliaria.imoveis = Imobiliaria.leArquivo(arquivoSelecionado);
 	}
 	
 	public void returnToMain() {
@@ -68,10 +91,12 @@ public class AplicacaoController {
 		search.setVisible(false);
 		search.resetTextField();
 		search.resetTextPane();
+		
+		if(imoveisPesquisados != null)
+			imoveisPesquisados.clear();
 	}
 
 	public void showSearchPageByType(TiposPesquisa tipo) {
-		pesquisa = tipo;
 		landing.setVisible(false);
 		main.setVisible(false);
 		search.setVisible(true);
@@ -91,17 +116,25 @@ public class AplicacaoController {
 		search.changeTextPane(pesquisa);
 	}
 	
+	public void salvaPesquisa() {
+		Imobiliaria.salvarColecao(imoveisPesquisados);
+	}
+	
+	public void printPesquisa() {
+		Imobiliaria.printColecao(imoveisPesquisados);
+	}
+	
 	public void realizarPesquisa(TiposPesquisa tipo, String strValor) {
 		if (tipo == TiposPesquisa.Cidade) {
-			imoveisPesquisados = Imobiliaria.buscarCidade(imobiliaria.imoveis, strValor);
+			imoveisPesquisados = Imobiliaria.buscarCidade(imoveisBase, strValor);
 		} else if (tipo == TiposPesquisa.NumQuartos) {
-			imoveisPesquisados = Imobiliaria.buscarQuartos(imobiliaria.imoveis, Integer.parseInt(strValor));
+			imoveisPesquisados = Imobiliaria.buscarQuartos(imoveisBase, Integer.parseInt(strValor));
 		} else if (tipo == TiposPesquisa.Proprietario) {
-			imoveisPesquisados = Imobiliaria.buscarProprietario(imobiliaria.imoveis, strValor);
+			imoveisPesquisados = Imobiliaria.buscarProprietario(imoveisBase, strValor);
 		} else if (tipo == TiposPesquisa.Tipo) {
-			imoveisPesquisados = Imobiliaria.buscarPorTipo(imobiliaria.imoveis, strValor);
+			imoveisPesquisados = Imobiliaria.buscarPorTipo(imoveisBase, strValor);
 		} else if (tipo == TiposPesquisa.Valor) {
-			imoveisPesquisados = Imobiliaria.buscarPrecoMaximo(imobiliaria.imoveis, Float.parseFloat(strValor));
+			imoveisPesquisados = Imobiliaria.buscarPrecoMaximo(imoveisBase, Float.parseFloat(strValor));
 		} else {
 			System.out.println("Pesquisa inválida!");
 		}
