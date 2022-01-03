@@ -91,5 +91,6 @@ public class AplicacaoController {
 		} else {
 			System.out.println("Pesquisa inválida!");
 		}
+		System.out.println("===================================================");
 	}
 }
