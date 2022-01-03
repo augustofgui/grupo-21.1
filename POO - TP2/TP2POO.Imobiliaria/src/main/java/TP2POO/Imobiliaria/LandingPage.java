@@ -5,8 +5,11 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.FlowLayout;
 import java.awt.Font;
+import java.awt.FontFormatException;
+import java.awt.GraphicsEnvironment;
 import java.awt.event.ActionEvent;
 import java.io.File;
+import java.io.IOException;
 
 import javax.swing.AbstractAction;
 import javax.swing.Action;
@@ -31,10 +34,20 @@ public class LandingPage extends JPanel {
 	private final Action continuaPrograma = new SwingAction();
 	private JLabel selectedFile;
 	
+	Font rationaleFont = null;
+	
 	/**
 	 * Create the panel.
 	 */
 	public LandingPage(AplicacaoController c) {
+		try {
+			rationaleFont = Font.createFont(Font.TRUETYPE_FONT, new File("Rationale.ttf")).deriveFont(24f);
+			GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+		    ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("Rationale.ttf")));
+		} catch (IOException|FontFormatException e) {
+		    System.out.println("Não foi possivel carregar fonte - " + e.getMessage());
+		}
+		
 		setBounds(new Rectangle(0, 0, 1280, 720));
 		controller = c;
 		
@@ -43,7 +56,7 @@ public class LandingPage extends JPanel {
 		
 		JLabel lblNewLabel = new JLabel("Imobiliária");
 		lblNewLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
-		lblNewLabel.setFont(new Font("Segoe UI Historic", Font.PLAIN, 56));
+		lblNewLabel.setFont(rationaleFont.deriveFont(72f));
 		lblNewLabel.setBounds(180, 140, 280, 80);
 		add(lblNewLabel);
 		
@@ -53,12 +66,12 @@ public class LandingPage extends JPanel {
 		flowLayout_1.setVgap(1);
 		flowLayout_1.setHgap(1);
 		panel.setBackground(Color.BLACK);
-		panel.setBounds(180, 220, 265, 5);
+		panel.setBounds(176, 220, 280, 5);
 		add(panel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Arquivo");
-		lblNewLabel_1.setFont(new Font("Trebuchet MS", Font.PLAIN, 24));
-		lblNewLabel_1.setBounds(180, 460, 100, 40);
+		lblNewLabel_1.setFont(rationaleFont.deriveFont(36f));
+		lblNewLabel_1.setBounds(180, 460, 280, 40);
 		add(lblNewLabel_1);
 		
 		JButton buttonContinuar = new JButton("Continuar");
@@ -68,7 +81,7 @@ public class LandingPage extends JPanel {
 		buttonContinuar.setBackground(Color.BLACK);
 		buttonContinuar.setBorder(null);
 		buttonContinuar.setAutoscrolls(true);
-		buttonContinuar.setFont(new Font("Verdana", Font.BOLD, 12));
+		buttonContinuar.setFont(rationaleFont.deriveFont(18f));
 		buttonContinuar.setForeground(Color.WHITE);
 		buttonContinuar.setBounds(180, 550, 130, 40);
 		add(buttonContinuar);
@@ -85,7 +98,7 @@ public class LandingPage extends JPanel {
 		btnAlterarArquivo.setFocusable(false);
 		btnAlterarArquivo.setBorder(null);
 		btnAlterarArquivo.setForeground(Color.BLACK);
-		btnAlterarArquivo.setFont(new Font("Verdana", Font.BOLD, 12));
+		btnAlterarArquivo.setFont(rationaleFont.deriveFont(18f));
 		btnAlterarArquivo.setBackground(Color.WHITE);
 		btnAlterarArquivo.setAutoscrolls(true);
 		buttonArquivo.add(btnAlterarArquivo);
@@ -102,7 +115,7 @@ public class LandingPage extends JPanel {
 		selectedFile = new JLabel("database_imoveis.txt");
 		selectedFile.setHorizontalTextPosition(SwingConstants.LEFT);
 		selectedFile.setForeground(Color.GRAY);
-		selectedFile.setFont(new Font("Verdana", Font.PLAIN, 20));
+		selectedFile.setFont(rationaleFont.deriveFont(24f));
 		selectedFile.setBorder(null);
 		fileArquivoText.add(selectedFile);
 		

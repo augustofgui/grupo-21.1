@@ -15,10 +15,8 @@ public class Aplicacao {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
-	private void initialize() {
+	
+	private void initialize(){
 		frame = new JFrame();
 		frame.setBackground(Color.WHITE);
 		frame.setResizable(false);
@@ -28,6 +26,7 @@ public class Aplicacao {
 		
 		frame.getContentPane().add(controller.landing);
 		frame.getContentPane().add(controller.main);
+		frame.getContentPane().add(controller.search);
 		
 		frame.getContentPane().setLayout(new CardLayout(0, 0));
 		
