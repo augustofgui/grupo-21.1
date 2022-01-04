@@ -145,6 +145,7 @@ public class AplicacaoController {
 	// Função de salvar a pesquisa num arquivo separado
 	public void salvaPesquisa() {
 		Imobiliaria.salvarColecao(imoveisPesquisados);
+		JOptionPane.showMessageDialog(landing, "A coleção foi salva com sucesso no arquivo: colecao_imoveis.txt", "Coleção salva com sucesso!", JOptionPane.INFORMATION_MESSAGE);		
 	}
 	
 	// Função de printar a pesquisa no terminal

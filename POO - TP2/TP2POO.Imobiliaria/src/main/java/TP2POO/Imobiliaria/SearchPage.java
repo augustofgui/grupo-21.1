@@ -227,6 +227,7 @@ public class SearchPage extends JPanel {
 		}
 		public void actionPerformed(ActionEvent e) {
 			controller.salvaPesquisa();
+			
 		}
 	}
 
