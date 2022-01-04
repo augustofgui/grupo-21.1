@@ -1,5 +1,6 @@
 package TP2POO.Imobiliaria;
 
+// Imports
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
@@ -22,18 +23,27 @@ import javax.swing.SwingConstants;
 import javax.swing.border.LineBorder;
 import java.awt.Rectangle;
 
+// Classe de página incial, JPanel
 public class LandingPage extends JPanel {
 
+	// Instancia  do controlador, criando encapsulamento
 	private AplicacaoController controller = null;
 
+	// Variáveis
+	private JLabel selectedFile;
 	private static final long serialVersionUID = 1L;
+	
+	// Ações dos botões
 	private final Action alterarArquivo = new alterarArquivo();
 	private final Action continuaPrograma = new SwingAction();
-	private JLabel selectedFile;
-
+	
+	// Fonte customizada
 	private Font rationaleFont = null;
 
+	// Construtor da página/classe
 	public LandingPage(AplicacaoController c) {
+		
+		// Tenta recuperar a fonte customizada, caso não funcione, setta fonte como um padrão
 		try {
 			rationaleFont = Font.createFont(Font.TRUETYPE_FONT, new File("Rationale.ttf")).deriveFont(24f);
 			GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
@@ -42,12 +52,17 @@ public class LandingPage extends JPanel {
 			rationaleFont = new Font("Microsoft Yi Baiti", Font.PLAIN, 8);
 		}
 
+		// Define tamanho do panel
 		setBounds(new Rectangle(0, 0, 1280, 720));
+
+		// Insere o controlador na classe
 		controller = c;
 
+		// Configs do JPanel
 		setBackground(Color.WHITE);
 		setLayout(null);
 
+		// Cria componentes da página
 		JLabel logoText = new JLabel("Imobiliária");
 		logoText.setAlignmentX(Component.CENTER_ALIGNMENT);
 		logoText.setFont(rationaleFont.deriveFont(72f));
@@ -119,6 +134,7 @@ public class LandingPage extends JPanel {
 		add(background);
 	}
 
+	// Recupera e altera o arquivo selecionado peo usuário
 	private class alterarArquivo extends AbstractAction {
 		
 		private static final long serialVersionUID = 1L;
@@ -129,21 +145,26 @@ public class LandingPage extends JPanel {
 		}
 
 		public void actionPerformed(ActionEvent e) {
+			// Exibe a tela de escolha de arquivo
 			JFileChooser fileChooser = new JFileChooser();
 
 			fileChooser.setCurrentDirectory(new File("."));
 			fileChooser.setBounds(50, 50, 0, 0);
 			int response = fileChooser.showOpenDialog(null);
 
+			// Caso o arquivo seja alterado
 			if (response == JFileChooser.APPROVE_OPTION) {
 				File file = new File(fileChooser.getSelectedFile().getAbsolutePath());
 
+				// altera a variável de File do controlador
+				// e o nome do arquivo escrito na tela
 				selectedFile.setText(file.getName());
 				controller.setArquivoSelecionado(file);
 			}
 		}
 	}
 
+	// Continua a aplicação e passa para a próxima tela
 	private class SwingAction extends AbstractAction {
 		
 		private static final long serialVersionUID = 1L;

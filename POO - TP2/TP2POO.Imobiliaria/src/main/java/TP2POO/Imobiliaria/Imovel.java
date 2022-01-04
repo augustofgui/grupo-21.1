@@ -1,10 +1,14 @@
 package TP2POO.Imobiliaria;
 
+// Classe base de Imovel
 public class Imovel implements Comparable<Imovel> {
+
+    // Variáveis
     private final float valor;
     private String proprietario, rua, bairro, cidade;
     private int numero, quartos, banheiros;
 
+    // Construtor da classe
     public Imovel(float valor, String proprietario, String rua, String bairro, String cidade, int numero, int quartos,
             int banheiros) {
         this.valor = valor;
@@ -17,6 +21,7 @@ public class Imovel implements Comparable<Imovel> {
         this.banheiros = banheiros;
     }
 
+    // Setters
     public void setProprietario(String proprietario) {
         this.proprietario = proprietario;
     }
@@ -45,6 +50,7 @@ public class Imovel implements Comparable<Imovel> {
         this.banheiros = banheiros;
     }
 
+    // Getters
     public float getValor() {
         return valor;
     }
@@ -77,12 +83,15 @@ public class Imovel implements Comparable<Imovel> {
         return banheiros;
     }
 
+
+    // Sobrecarga do operador toString
     public String toString() {
         return "    Proprietário: " + this.getProprietario() + "\nValor: " + this.getValor()
                 + "\nNúmero de quartos: " + this.getQuartos() + "\nRua: " + this.getRua() +
                 "\nBairro: " + this.getBairro() + "\nCidade: " + this.getCidade() + "\n";
     }
 
+    // Sobrecarga do operador toWrite
     public String toWrite() {
         return "imovel;" + this.getValor() + ";" + this.getProprietario() + ";" + this.getRua() + ";"
                 + this.getBairro() + ";" + this.getCidade() + ";" + this.getNumero() + ";" + this.getQuartos()

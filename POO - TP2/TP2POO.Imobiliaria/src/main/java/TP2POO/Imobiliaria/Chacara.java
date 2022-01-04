@@ -1,8 +1,12 @@
 package TP2POO.Imobiliaria;
 
+// Classe derivada do Imovel
 public class Chacara extends Imovel {
+
+    // Variáveis
     private boolean salao_festa, salao_jogos, campo_futebol, churrasqueira, piscina;
 
+    // Construtor da classe
     public Chacara(float valor, String proprietario, String rua, String bairro, String cidade, int numero, int quartos,
             int banheiros, boolean salao_festa, boolean salao_jogos, boolean campo_futebol, boolean churrasqueira,
             boolean piscina) {
@@ -14,6 +18,7 @@ public class Chacara extends Imovel {
         this.piscina = piscina;
     }
 
+    // Setter
     public void setSalao_festa(boolean salao_festa) {
         this.salao_festa = salao_festa;
     }
@@ -34,6 +39,7 @@ public class Chacara extends Imovel {
         this.piscina = piscina;
     }
 
+    // Funções que retornam true caso exista a respectiva caracteristica
     public boolean isSalao_festa() {
         return salao_festa;
     }
@@ -54,6 +60,7 @@ public class Chacara extends Imovel {
         return piscina;
     }
 
+    // Sobrecarga do operador toString
     @Override
     public String toString() {
         return "    Proprietário: " + this.getProprietario() + "\nValor: " + this.getValor()
@@ -62,6 +69,7 @@ public class Chacara extends Imovel {
                 + "\n";
     }
 
+    // Sobrecarga do operador toWrite
     @Override
     public String toWrite() {
         return "chacara;" + this.getValor() + ";" + this.getProprietario() + ";" + this.getRua() + ";"

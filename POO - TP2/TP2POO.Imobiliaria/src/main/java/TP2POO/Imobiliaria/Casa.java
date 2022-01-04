@@ -1,9 +1,13 @@
 package TP2POO.Imobiliaria;
 
+// Classe derivada do Imovel
 public class Casa extends Imovel {
+    
+    // Variáveis
     private int andares;
     private boolean sala_jantar;
 
+    // Construtor da classe
     public Casa(float valor, String proprietario, String rua, String bairro, String cidade, int numero, int quartos,
             int banheiros, int andares, boolean sala_jantar) {
         super(valor, proprietario, rua, bairro, cidade, numero, quartos, banheiros);
@@ -11,6 +15,7 @@ public class Casa extends Imovel {
         this.sala_jantar = sala_jantar;
     }
 
+    // Setter
     public void setAndares(int andares) {
         this.andares = andares;
     }
@@ -19,14 +24,17 @@ public class Casa extends Imovel {
         this.sala_jantar = sala_jantar;
     }
 
+    // Getter
     public int getAndares() {
         return andares;
     }
 
+    // Retorna true caso exista sala de jantar
     public boolean isSala_jantar() {
         return sala_jantar;
     }
 
+    // Sobrecarga do operador toString
     @Override
     public String toString() {
         return "    Proprietário: " + this.getProprietario() + "\nValor: " + this.getValor()
@@ -35,6 +43,7 @@ public class Casa extends Imovel {
                 + "\n";
     }
 
+    // Sobrecarga do operador toWrite
     @Override
     public String toWrite() {
         return "casa;" + this.getValor() + ";" + this.getProprietario() + ";" + this.getRua() + ";"

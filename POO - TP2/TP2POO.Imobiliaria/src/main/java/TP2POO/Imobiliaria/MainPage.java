@@ -1,5 +1,6 @@
 package TP2POO.Imobiliaria;
 
+// Imports
 import javax.swing.JPanel;
 import java.awt.Rectangle;
 import java.awt.Color;
@@ -27,23 +28,30 @@ import javax.swing.Box;
 import java.awt.Dimension;
 import java.awt.Insets;
 
+// Classe de página principal, JPanel
 public class MainPage extends JPanel {
-
-	private static final long serialVersionUID = 1L;
-
+	
+	// Instancia  do controlador, criando encapsulamento
 	private AplicacaoController controller = null;
-	private final Action voltarLandingPage = new SwingAction();
 
-	private Font rationaleFont = null;
+	// Variáveis
+	private static final long serialVersionUID = 1L;
+	
+	// Ações dos botões
+	private final Action voltarLandingPage = new SwingAction();
 	private final Action pesquisaValor = new SwingAction_1();
 	private final Action pesquisaProprietario = new SwingAction_2();
 	private final Action pesquisaTipo = new SwingAction_3();
 	private final Action pesquisaCidade = new SwingAction_4();
 	private final Action pesquisaNumQuartos = new SwingAction_5();
+	
+	// Fonte customizada
+	private Font rationaleFont = null;
 
+	// Construtor da página/classe
 	public MainPage(AplicacaoController c) {
-		controller = c;
 
+		// Tenta recuperar a fonte customizada, caso não funcione, setta fonte como um padrão
 		try {
 			rationaleFont = Font.createFont(Font.TRUETYPE_FONT, new File("Rationale.ttf")).deriveFont(24f);
 			GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
@@ -51,11 +59,16 @@ public class MainPage extends JPanel {
 		} catch (IOException | FontFormatException e) {
 			rationaleFont = new Font("Microsoft Yi Baiti", Font.PLAIN, 8);
 		}
+		
+		// Insere o controlador na classe
+		controller = c;
 
+		// Configs JPanel
 		setBounds(new Rectangle(0, 0, 1280, 720));
 		setBackground(Color.WHITE);
 		setLayout(null);
 
+		// Cria componentes da página
 		JPanel panelValor = new JPanel();
 		panelValor.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 		panelValor.setBackground(Color.WHITE);
@@ -209,6 +222,7 @@ public class MainPage extends JPanel {
 		add(background);
 	}
 
+	// Retorna a aplicacao para a tela inicial
 	private class SwingAction extends AbstractAction {
 
 		private static final long serialVersionUID = 1L;
@@ -222,6 +236,7 @@ public class MainPage extends JPanel {
 		}
 	}
 
+	// Passa para a tela de pesquisa por Valor Máximo
 	private class SwingAction_1 extends AbstractAction {
 
 		private static final long serialVersionUID = 1L;
@@ -235,6 +250,7 @@ public class MainPage extends JPanel {
 		}
 	}
 
+	// Passa para a tela de pesquisa por Proprietário
 	private class SwingAction_2 extends AbstractAction {
 		private static final long serialVersionUID = 1L;
 
@@ -247,6 +263,7 @@ public class MainPage extends JPanel {
 		}
 	}
 
+	// Passa para a tela de pesquisa por Tipo do Imovel
 	private class SwingAction_3 extends AbstractAction {
 		private static final long serialVersionUID = 1L;
 
@@ -259,6 +276,7 @@ public class MainPage extends JPanel {
 		}
 	}
 
+	// Passa para a tela de pesquisa por Cidade
 	private class SwingAction_4 extends AbstractAction {
 		private static final long serialVersionUID = 1L;
 
@@ -271,6 +289,7 @@ public class MainPage extends JPanel {
 		}
 	}
 
+	// Passa para a tela de pesquisa por Número de Quartos
 	private class SwingAction_5 extends AbstractAction {
 		private static final long serialVersionUID = 1L;
 

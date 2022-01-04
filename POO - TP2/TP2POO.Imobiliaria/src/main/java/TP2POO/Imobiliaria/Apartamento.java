@@ -1,10 +1,14 @@
 package TP2POO.Imobiliaria;
 
+// Classe derivada do Imovel
 public class Apartamento extends Imovel {
+
+    // Variáveis
     private int andar;
     private float taxa_condominio;
     private boolean elevador, sacada;
 
+    // Construtor da classe
     public Apartamento(float valor, String proprietario, String rua, String bairro, String cidade, int numero,
             int quartos, int banheiros, int andar, float taxa_condominio, boolean elevador, boolean sacada) {
         super(valor, proprietario, rua, bairro, cidade, numero, quartos, banheiros);
@@ -14,6 +18,7 @@ public class Apartamento extends Imovel {
         this.sacada = sacada;
     }
 
+    // Setter
     public void setAndar(int andar) {
         this.andar = andar;
     }
@@ -30,6 +35,7 @@ public class Apartamento extends Imovel {
         this.sacada = sacada;
     }
 
+    // Getters
     public int getAndar() {
         return andar;
     }
@@ -38,14 +44,17 @@ public class Apartamento extends Imovel {
         return taxa_condominio;
     }
 
+    // Retorna true caso exista elevador
     public boolean isElevador() {
         return elevador;
     }
 
+    // Retorna true caso exista sacada
     public boolean isSacada() {
         return sacada;
     }
 
+    // Sobrecarga do operador toString
     @Override
     public String toString() {
         return "    Proprietário: " + this.getProprietario() + "\nValor: " + this.getValor()
@@ -54,6 +63,7 @@ public class Apartamento extends Imovel {
                 + "\n";
     }
 
+    // Sobrecarga do operador toWrite
     @Override
     public String toWrite() {
         return "apartamento;" + this.getValor() + ";" + this.getProprietario() + ";" + this.getRua() + ";"

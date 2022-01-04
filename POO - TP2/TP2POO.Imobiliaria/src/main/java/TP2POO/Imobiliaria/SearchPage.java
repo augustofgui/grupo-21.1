@@ -1,5 +1,6 @@
 package TP2POO.Imobiliaria;
 
+// Imports
 import javax.swing.JPanel;
 import java.awt.Rectangle;
 import java.io.File;
@@ -27,28 +28,34 @@ import javax.swing.border.LineBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
 
+// Classe de página de pesquisa, JPanel
 public class SearchPage extends JPanel {
-	private static final long serialVersionUID = 1L;
-
+	// Instancia  do controlador, criando encapsulamento
 	private AplicacaoController controller = null;
 	
-	private Font rationaleFont = null;
+	// Variáveis
 	
-	private final Action voltar = new SwingAction();
-	private final Action executaPesquisa = new SwingAction_1();
-	
+	private static final long serialVersionUID = 1L;
 	private JLabel pesquisaTitle;
 	private JTextPane resultadoPesquisa;
 	private JTextField textPesquisa;
-	
-	
 	private TiposPesquisa tipoPesquisa;
+	
+	// Ações dos botões
+	private final Action voltar = new SwingAction();
+	private final Action executaPesquisa = new SwingAction_1();
 	private final Action action = new SwingAction_2();
 	private final Action action_1 = new SwingAction_3();
+	
+	// Fonte customizada
+	private Font rationaleFont = null;
 
+	// Construtor da página/classe
 	public SearchPage(AplicacaoController c) {
+		// Insere o controlador na classe
 		controller = c;
 
+		// Tenta recuperar a fonte customizada, caso não funcione, setta fonte como um padrão
 		try {
 			rationaleFont = Font.createFont(Font.TRUETYPE_FONT, new File("Rationale.ttf")).deriveFont(24f);
 			GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
@@ -57,10 +64,12 @@ public class SearchPage extends JPanel {
 			rationaleFont = new Font("Microsoft Yi Baiti", Font.PLAIN, 8);
 		}
 
+		// Configs do JPanel
 		setBounds(new Rectangle(0, 0, 1280, 720));
 		setBackground(Color.WHITE);
 		setLayout(null);
 
+		// Cria componentes da página
 		JButton buttonVoltar = new JButton("< Voltar");
 		buttonVoltar.setFont(rationaleFont.deriveFont(24f));
 		buttonVoltar.setAction(voltar);
@@ -138,15 +147,18 @@ public class SearchPage extends JPanel {
 
 	}
 	
+	// Getters
 	public TiposPesquisa getTipoPesquisa() {
 		return tipoPesquisa;
 	}
 	
+	// Setters
 	public void setTipoPesquisa(TiposPesquisa tipo) {
 		tipoPesquisa = tipo;
 		changeTitle(tipoPesquisa);
 	}
 	
+	// Altera o título da página de acordo com o tipo de pesquisa selecionado
 	public void changeTitle(TiposPesquisa tipo) {
 		if (tipo == TiposPesquisa.Cidade) {
 			pesquisaTitle.setText("Por Cidade");
@@ -163,20 +175,23 @@ public class SearchPage extends JPanel {
 		}
 	}
 	
+	// Altera o campo de resultado da pesquisa
 	public void changeTextPane(String str) {
 		resultadoPesquisa.setText(str);
 	}
 	
+	// Limpa o campo de pesquisa
 	public void resetTextField() {
 		textPesquisa.setText("");
 	}
 	
+	// Limpa o campo de resultado da pesquisa
 	public void resetTextPane() {
 		resultadoPesquisa.setText("");
 	}
 
+	// Retorna a aplicação para a página princiapal
 	private class SwingAction extends AbstractAction {
-		
 		private static final long serialVersionUID = 1L;
 
 		public SwingAction() {
@@ -188,6 +203,8 @@ public class SearchPage extends JPanel {
 		}
 	}
 	
+	// Recupera a resposta do usuário no campo de pesquisa
+	// e inicia a pesquisa de acordo com o tipo de pesquisa
 	private class SwingAction_1 extends AbstractAction {
 		
 		private static final long serialVersionUID = 1L;
@@ -199,6 +216,8 @@ public class SearchPage extends JPanel {
 			controller.realizarPesquisa(tipoPesquisa, textPesquisa.getText());
 		}
 	}
+
+	// Salva a string de pesquisa realizada em um arquivo
 	private class SwingAction_2 extends AbstractAction {
 		
 		private static final long serialVersionUID = 1L;
@@ -210,6 +229,8 @@ public class SearchPage extends JPanel {
 			controller.salvaPesquisa();
 		}
 	}
+
+	// Printa a string de pesquisa realizada no terminal
 	private class SwingAction_3 extends AbstractAction {
 		
 		private static final long serialVersionUID = 1L;
