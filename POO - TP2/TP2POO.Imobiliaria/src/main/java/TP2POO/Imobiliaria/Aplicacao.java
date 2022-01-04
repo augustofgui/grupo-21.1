@@ -1,5 +1,14 @@
 package TP2POO.Imobiliaria;
 
+// Trabalho de POO feito por:
+// Augusto Ferreira Guilarducci (20.1.4012) 
+// Caio Monteiro (20.1.4110) 
+// Matheus Silva Araújo (20.1.1018)
+// Paulo Correa (20.1.4036) 
+// Pedro Lucas Damasceno (20.1.4003) 
+
+
+
 // Imports para fazer a GUI
 import javax.swing.JFrame;
 import java.awt.Color;
